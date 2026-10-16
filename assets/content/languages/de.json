@@ -1,0 +1,292 @@
+{
+ "code": "de",
+ "name": "German",
+ "nativeName": "Deutsch",
+ "flag": "🇩🇪",
+ "ttsLocale": "de-DE",
+ "entries": {
+  "hello": {
+   "text": "Hallo"
+  },
+  "goodbye": {
+   "text": "Tschüss",
+   "note": "Informal. Formal: “Auf Wiedersehen”."
+  },
+  "thank_you": {
+   "text": "Danke"
+  },
+  "please": {
+   "text": "Bitte"
+  },
+  "yes": {
+   "text": "Ja"
+  },
+  "no": {
+   "text": "Nein"
+  },
+  "sorry": {
+   "text": "Entschuldigung"
+  },
+  "good_morning": {
+   "text": "Guten Morgen"
+  },
+  "good_night": {
+   "text": "Gute Nacht"
+  },
+  "how_are_you": {
+   "text": "Wie geht's?",
+   "note": "Informal. Formal: “Wie geht es Ihnen?”"
+  },
+  "im_fine": {
+   "text": "Mir geht's gut"
+  },
+  "my_name_is": {
+   "text": "Ich heiße …"
+  },
+  "one": {
+   "text": "eins"
+  },
+  "two": {
+   "text": "zwei"
+  },
+  "three": {
+   "text": "drei"
+  },
+  "four": {
+   "text": "vier"
+  },
+  "five": {
+   "text": "fünf"
+  },
+  "six": {
+   "text": "sechs"
+  },
+  "seven": {
+   "text": "sieben"
+  },
+  "eight": {
+   "text": "acht"
+  },
+  "nine": {
+   "text": "neun"
+  },
+  "ten": {
+   "text": "zehn"
+  },
+  "water": {
+   "text": "das Wasser"
+  },
+  "coffee": {
+   "text": "der Kaffee"
+  },
+  "tea": {
+   "text": "der Tee"
+  },
+  "bread": {
+   "text": "das Brot"
+  },
+  "rice": {
+   "text": "der Reis"
+  },
+  "apple": {
+   "text": "der Apfel"
+  },
+  "milk": {
+   "text": "die Milch"
+  },
+  "egg": {
+   "text": "das Ei"
+  },
+  "fish": {
+   "text": "der Fisch"
+  },
+  "meat": {
+   "text": "das Fleisch"
+  },
+  "beer": {
+   "text": "das Bier"
+  },
+  "delicious": {
+   "text": "lecker"
+  },
+  "im_hungry": {
+   "text": "Ich habe Hunger"
+  },
+  "the_bill": {
+   "text": "Die Rechnung, bitte"
+  },
+  "mother": {
+   "text": "die Mutter"
+  },
+  "father": {
+   "text": "der Vater"
+  },
+  "brother": {
+   "text": "der Bruder"
+  },
+  "sister": {
+   "text": "die Schwester"
+  },
+  "friend": {
+   "text": "der Freund",
+   "note": "Female: die Freundin."
+  },
+  "child": {
+   "text": "das Kind"
+  },
+  "man": {
+   "text": "der Mann"
+  },
+  "woman": {
+   "text": "die Frau"
+  },
+  "i": {
+   "text": "ich"
+  },
+  "you": {
+   "text": "du",
+   "note": "Informal. Formal: Sie."
+  },
+  "he": {
+   "text": "er"
+  },
+  "she": {
+   "text": "sie"
+  },
+  "we": {
+   "text": "wir"
+  },
+  "red": {
+   "text": "rot"
+  },
+  "blue": {
+   "text": "blau"
+  },
+  "green": {
+   "text": "grün"
+  },
+  "yellow": {
+   "text": "gelb"
+  },
+  "black": {
+   "text": "schwarz"
+  },
+  "white": {
+   "text": "weiß"
+  },
+  "big": {
+   "text": "groß"
+  },
+  "small": {
+   "text": "klein"
+  },
+  "hot": {
+   "text": "heiß"
+  },
+  "cold": {
+   "text": "kalt"
+  },
+  "good": {
+   "text": "gut"
+  },
+  "bad": {
+   "text": "schlecht"
+  },
+  "airport": {
+   "text": "der Flughafen"
+  },
+  "train_station": {
+   "text": "der Bahnhof"
+  },
+  "hotel": {
+   "text": "das Hotel"
+  },
+  "taxi": {
+   "text": "das Taxi"
+  },
+  "toilet": {
+   "text": "die Toilette"
+  },
+  "ticket": {
+   "text": "das Ticket"
+  },
+  "left": {
+   "text": "links"
+  },
+  "right": {
+   "text": "rechts"
+  },
+  "straight_ahead": {
+   "text": "geradeaus"
+  },
+  "where_is": {
+   "text": "Wo ist …?"
+  },
+  "how_much": {
+   "text": "Wie viel kostet das?"
+  },
+  "i_dont_understand": {
+   "text": "Ich verstehe nicht"
+  },
+  "speak_english": {
+   "text": "Sprechen Sie Englisch?"
+  },
+  "today": {
+   "text": "heute"
+  },
+  "tomorrow": {
+   "text": "morgen"
+  },
+  "yesterday": {
+   "text": "gestern"
+  },
+  "now": {
+   "text": "jetzt"
+  },
+  "day": {
+   "text": "der Tag"
+  },
+  "week": {
+   "text": "die Woche"
+  },
+  "month": {
+   "text": "der Monat"
+  },
+  "year": {
+   "text": "das Jahr"
+  },
+  "what_time": {
+   "text": "Wie spät ist es?"
+  },
+  "to_eat": {
+   "text": "essen"
+  },
+  "to_drink": {
+   "text": "trinken"
+  },
+  "to_go": {
+   "text": "gehen"
+  },
+  "to_come": {
+   "text": "kommen"
+  },
+  "to_see": {
+   "text": "sehen"
+  },
+  "to_speak": {
+   "text": "sprechen"
+  },
+  "to_want": {
+   "text": "wollen"
+  },
+  "to_like": {
+   "text": "mögen"
+  },
+  "to_sleep": {
+   "text": "schlafen"
+  },
+  "to_learn": {
+   "text": "lernen"
+  }
+ }
+}

@@ -1,0 +1,288 @@
+{
+ "code": "en",
+ "name": "English",
+ "nativeName": "English",
+ "flag": "🇬🇧",
+ "ttsLocale": "en-US",
+ "entries": {
+  "hello": {
+   "text": "Hello"
+  },
+  "goodbye": {
+   "text": "Goodbye"
+  },
+  "thank_you": {
+   "text": "Thank you"
+  },
+  "please": {
+   "text": "Please"
+  },
+  "yes": {
+   "text": "Yes"
+  },
+  "no": {
+   "text": "No"
+  },
+  "sorry": {
+   "text": "Sorry"
+  },
+  "good_morning": {
+   "text": "Good morning"
+  },
+  "good_night": {
+   "text": "Good night"
+  },
+  "how_are_you": {
+   "text": "How are you?"
+  },
+  "im_fine": {
+   "text": "I'm fine"
+  },
+  "my_name_is": {
+   "text": "My name is …"
+  },
+  "one": {
+   "text": "One"
+  },
+  "two": {
+   "text": "Two"
+  },
+  "three": {
+   "text": "Three"
+  },
+  "four": {
+   "text": "Four"
+  },
+  "five": {
+   "text": "Five"
+  },
+  "six": {
+   "text": "Six"
+  },
+  "seven": {
+   "text": "Seven"
+  },
+  "eight": {
+   "text": "Eight"
+  },
+  "nine": {
+   "text": "Nine"
+  },
+  "ten": {
+   "text": "Ten"
+  },
+  "water": {
+   "text": "Water"
+  },
+  "coffee": {
+   "text": "Coffee"
+  },
+  "tea": {
+   "text": "Tea"
+  },
+  "bread": {
+   "text": "Bread"
+  },
+  "rice": {
+   "text": "Rice"
+  },
+  "apple": {
+   "text": "Apple"
+  },
+  "milk": {
+   "text": "Milk"
+  },
+  "egg": {
+   "text": "Egg"
+  },
+  "fish": {
+   "text": "Fish"
+  },
+  "meat": {
+   "text": "Meat"
+  },
+  "beer": {
+   "text": "Beer"
+  },
+  "delicious": {
+   "text": "Delicious"
+  },
+  "im_hungry": {
+   "text": "I'm hungry"
+  },
+  "the_bill": {
+   "text": "The bill, please"
+  },
+  "mother": {
+   "text": "Mother"
+  },
+  "father": {
+   "text": "Father"
+  },
+  "brother": {
+   "text": "Brother"
+  },
+  "sister": {
+   "text": "Sister"
+  },
+  "friend": {
+   "text": "Friend"
+  },
+  "child": {
+   "text": "Child"
+  },
+  "man": {
+   "text": "Man"
+  },
+  "woman": {
+   "text": "Woman"
+  },
+  "i": {
+   "text": "I"
+  },
+  "you": {
+   "text": "You"
+  },
+  "he": {
+   "text": "He"
+  },
+  "she": {
+   "text": "She"
+  },
+  "we": {
+   "text": "We"
+  },
+  "red": {
+   "text": "Red"
+  },
+  "blue": {
+   "text": "Blue"
+  },
+  "green": {
+   "text": "Green"
+  },
+  "yellow": {
+   "text": "Yellow"
+  },
+  "black": {
+   "text": "Black"
+  },
+  "white": {
+   "text": "White"
+  },
+  "big": {
+   "text": "Big"
+  },
+  "small": {
+   "text": "Small"
+  },
+  "hot": {
+   "text": "Hot"
+  },
+  "cold": {
+   "text": "Cold"
+  },
+  "good": {
+   "text": "Good"
+  },
+  "bad": {
+   "text": "Bad"
+  },
+  "airport": {
+   "text": "Airport"
+  },
+  "train_station": {
+   "text": "Train station"
+  },
+  "hotel": {
+   "text": "Hotel"
+  },
+  "taxi": {
+   "text": "Taxi"
+  },
+  "toilet": {
+   "text": "Toilet"
+  },
+  "ticket": {
+   "text": "Ticket"
+  },
+  "left": {
+   "text": "Left"
+  },
+  "right": {
+   "text": "Right"
+  },
+  "straight_ahead": {
+   "text": "Straight ahead"
+  },
+  "where_is": {
+   "text": "Where is …?"
+  },
+  "how_much": {
+   "text": "How much is it?"
+  },
+  "i_dont_understand": {
+   "text": "I don't understand"
+  },
+  "speak_english": {
+   "text": "Do you speak English?"
+  },
+  "today": {
+   "text": "Today"
+  },
+  "tomorrow": {
+   "text": "Tomorrow"
+  },
+  "yesterday": {
+   "text": "Yesterday"
+  },
+  "now": {
+   "text": "Now"
+  },
+  "day": {
+   "text": "Day"
+  },
+  "week": {
+   "text": "Week"
+  },
+  "month": {
+   "text": "Month"
+  },
+  "year": {
+   "text": "Year"
+  },
+  "what_time": {
+   "text": "What time is it?"
+  },
+  "to_eat": {
+   "text": "to eat"
+  },
+  "to_drink": {
+   "text": "to drink"
+  },
+  "to_go": {
+   "text": "to go"
+  },
+  "to_come": {
+   "text": "to come"
+  },
+  "to_see": {
+   "text": "to see"
+  },
+  "to_speak": {
+   "text": "to speak"
+  },
+  "to_want": {
+   "text": "to want"
+  },
+  "to_like": {
+   "text": "to like"
+  },
+  "to_sleep": {
+   "text": "to sleep"
+  },
+  "to_learn": {
+   "text": "to learn"
+  }
+ }
+}

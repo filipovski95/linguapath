@@ -1,0 +1,710 @@
+{
+ "version": 1,
+ "concepts": {
+  "hello": {
+   "emoji": "👋"
+  },
+  "goodbye": {
+   "emoji": "🚪"
+  },
+  "thank_you": {
+   "emoji": "🙏"
+  },
+  "please": {
+   "emoji": "💁"
+  },
+  "yes": {
+   "emoji": "✅"
+  },
+  "no": {
+   "emoji": "❌"
+  },
+  "sorry": {
+   "emoji": "😔"
+  },
+  "good_morning": {
+   "emoji": "🌅"
+  },
+  "good_night": {
+   "emoji": "🌙"
+  },
+  "how_are_you": {
+   "emoji": "🤔"
+  },
+  "im_fine": {
+   "emoji": "😊"
+  },
+  "my_name_is": {
+   "emoji": "📛"
+  },
+  "one": {
+   "emoji": "1️⃣"
+  },
+  "two": {
+   "emoji": "2️⃣"
+  },
+  "three": {
+   "emoji": "3️⃣"
+  },
+  "four": {
+   "emoji": "4️⃣"
+  },
+  "five": {
+   "emoji": "5️⃣"
+  },
+  "six": {
+   "emoji": "6️⃣"
+  },
+  "seven": {
+   "emoji": "7️⃣"
+  },
+  "eight": {
+   "emoji": "8️⃣"
+  },
+  "nine": {
+   "emoji": "9️⃣"
+  },
+  "ten": {
+   "emoji": "🔟"
+  },
+  "water": {
+   "emoji": "💧"
+  },
+  "coffee": {
+   "emoji": "☕"
+  },
+  "tea": {
+   "emoji": "🍵"
+  },
+  "bread": {
+   "emoji": "🍞"
+  },
+  "rice": {
+   "emoji": "🍚"
+  },
+  "apple": {
+   "emoji": "🍎"
+  },
+  "milk": {
+   "emoji": "🥛"
+  },
+  "egg": {
+   "emoji": "🥚"
+  },
+  "fish": {
+   "emoji": "🐟"
+  },
+  "meat": {
+   "emoji": "🥩"
+  },
+  "beer": {
+   "emoji": "🍺"
+  },
+  "delicious": {
+   "emoji": "😋"
+  },
+  "im_hungry": {
+   "emoji": "🍽️"
+  },
+  "the_bill": {
+   "emoji": "🧾"
+  },
+  "mother": {
+   "emoji": "👩"
+  },
+  "father": {
+   "emoji": "👨"
+  },
+  "brother": {
+   "emoji": "👦"
+  },
+  "sister": {
+   "emoji": "👧"
+  },
+  "friend": {
+   "emoji": "🤝"
+  },
+  "child": {
+   "emoji": "🧒"
+  },
+  "man": {
+   "emoji": "🧔"
+  },
+  "woman": {
+   "emoji": "👱‍♀️"
+  },
+  "i": {
+   "emoji": "🙋"
+  },
+  "you": {
+   "emoji": "👉"
+  },
+  "he": {
+   "emoji": "🙎‍♂️"
+  },
+  "she": {
+   "emoji": "🙎‍♀️"
+  },
+  "we": {
+   "emoji": "👫"
+  },
+  "red": {
+   "emoji": "🔴"
+  },
+  "blue": {
+   "emoji": "🔵"
+  },
+  "green": {
+   "emoji": "🟢"
+  },
+  "yellow": {
+   "emoji": "🟡"
+  },
+  "black": {
+   "emoji": "⚫"
+  },
+  "white": {
+   "emoji": "⚪"
+  },
+  "big": {
+   "emoji": "🐘"
+  },
+  "small": {
+   "emoji": "🐭"
+  },
+  "hot": {
+   "emoji": "🔥"
+  },
+  "cold": {
+   "emoji": "🧊"
+  },
+  "good": {
+   "emoji": "👍"
+  },
+  "bad": {
+   "emoji": "👎"
+  },
+  "airport": {
+   "emoji": "✈️"
+  },
+  "train_station": {
+   "emoji": "🚉"
+  },
+  "hotel": {
+   "emoji": "🏨"
+  },
+  "taxi": {
+   "emoji": "🚕"
+  },
+  "toilet": {
+   "emoji": "🚻"
+  },
+  "ticket": {
+   "emoji": "🎫"
+  },
+  "left": {
+   "emoji": "⬅️"
+  },
+  "right": {
+   "emoji": "➡️"
+  },
+  "straight_ahead": {
+   "emoji": "⬆️"
+  },
+  "where_is": {
+   "emoji": "📍"
+  },
+  "how_much": {
+   "emoji": "💰"
+  },
+  "i_dont_understand": {
+   "emoji": "🤷"
+  },
+  "speak_english": {
+   "emoji": "🗣️"
+  },
+  "today": {
+   "emoji": "📅"
+  },
+  "tomorrow": {
+   "emoji": "⏭️"
+  },
+  "yesterday": {
+   "emoji": "⏮️"
+  },
+  "now": {
+   "emoji": "⏱️"
+  },
+  "day": {
+   "emoji": "☀️"
+  },
+  "week": {
+   "emoji": "🗓️"
+  },
+  "month": {
+   "emoji": "📆"
+  },
+  "year": {
+   "emoji": "🎆"
+  },
+  "what_time": {
+   "emoji": "🕒"
+  },
+  "to_eat": {
+   "emoji": "🍽️"
+  },
+  "to_drink": {
+   "emoji": "🥤"
+  },
+  "to_go": {
+   "emoji": "🚶"
+  },
+  "to_come": {
+   "emoji": "🫴"
+  },
+  "to_see": {
+   "emoji": "👀"
+  },
+  "to_speak": {
+   "emoji": "💬"
+  },
+  "to_want": {
+   "emoji": "🎯"
+  },
+  "to_like": {
+   "emoji": "❤️"
+  },
+  "to_sleep": {
+   "emoji": "😴"
+  },
+  "to_learn": {
+   "emoji": "📚"
+  }
+ },
+ "units": [
+  {
+   "id": "greetings",
+   "title": "Greetings & basics",
+   "emoji": "👋",
+   "lessons": [
+    {
+     "id": "greetings_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "hello",
+      "goodbye",
+      "thank_you",
+      "please"
+     ]
+    },
+    {
+     "id": "greetings_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "yes",
+      "no",
+      "sorry",
+      "good_morning"
+     ]
+    },
+    {
+     "id": "greetings_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "good_night",
+      "how_are_you",
+      "im_fine",
+      "my_name_is"
+     ]
+    },
+    {
+     "id": "greetings_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "hello",
+      "goodbye",
+      "thank_you",
+      "please",
+      "yes",
+      "no",
+      "sorry",
+      "good_morning",
+      "good_night",
+      "how_are_you",
+      "im_fine",
+      "my_name_is"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "title": "Numbers 1–10",
+   "emoji": "🔢",
+   "lessons": [
+    {
+     "id": "numbers_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+     ]
+    },
+    {
+     "id": "numbers_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten"
+     ]
+    },
+    {
+     "id": "numbers_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "food",
+   "title": "Food & drink",
+   "emoji": "🍜",
+   "lessons": [
+    {
+     "id": "food_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "water",
+      "coffee",
+      "tea",
+      "bread",
+      "rice"
+     ]
+    },
+    {
+     "id": "food_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "apple",
+      "milk",
+      "egg",
+      "fish",
+      "meat"
+     ]
+    },
+    {
+     "id": "food_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "beer",
+      "delicious",
+      "im_hungry",
+      "the_bill"
+     ]
+    },
+    {
+     "id": "food_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "water",
+      "coffee",
+      "tea",
+      "bread",
+      "rice",
+      "apple",
+      "milk",
+      "egg",
+      "fish",
+      "meat",
+      "beer",
+      "delicious",
+      "im_hungry",
+      "the_bill"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "people",
+   "title": "Family & people",
+   "emoji": "👪",
+   "lessons": [
+    {
+     "id": "people_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "mother",
+      "father",
+      "brother",
+      "sister",
+      "friend"
+     ]
+    },
+    {
+     "id": "people_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "child",
+      "man",
+      "woman",
+      "i",
+      "you"
+     ]
+    },
+    {
+     "id": "people_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "he",
+      "she",
+      "we"
+     ]
+    },
+    {
+     "id": "people_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "mother",
+      "father",
+      "brother",
+      "sister",
+      "friend",
+      "child",
+      "man",
+      "woman",
+      "i",
+      "you",
+      "he",
+      "she",
+      "we"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "describe",
+   "title": "Colors & describing",
+   "emoji": "🎨",
+   "lessons": [
+    {
+     "id": "describe_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "red",
+      "blue",
+      "green",
+      "yellow"
+     ]
+    },
+    {
+     "id": "describe_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "black",
+      "white",
+      "big",
+      "small"
+     ]
+    },
+    {
+     "id": "describe_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "hot",
+      "cold",
+      "good",
+      "bad"
+     ]
+    },
+    {
+     "id": "describe_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "red",
+      "blue",
+      "green",
+      "yellow",
+      "black",
+      "white",
+      "big",
+      "small",
+      "hot",
+      "cold",
+      "good",
+      "bad"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "title": "Travel & directions",
+   "emoji": "✈️",
+   "lessons": [
+    {
+     "id": "travel_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "airport",
+      "train_station",
+      "hotel",
+      "taxi",
+      "toilet"
+     ]
+    },
+    {
+     "id": "travel_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "ticket",
+      "left",
+      "right",
+      "straight_ahead",
+      "where_is"
+     ]
+    },
+    {
+     "id": "travel_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "how_much",
+      "i_dont_understand",
+      "speak_english"
+     ]
+    },
+    {
+     "id": "travel_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "airport",
+      "train_station",
+      "hotel",
+      "taxi",
+      "toilet",
+      "ticket",
+      "left",
+      "right",
+      "straight_ahead",
+      "where_is",
+      "how_much",
+      "i_dont_understand",
+      "speak_english"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "time",
+   "title": "Time & days",
+   "emoji": "📅",
+   "lessons": [
+    {
+     "id": "time_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "today",
+      "tomorrow",
+      "yesterday",
+      "now",
+      "day"
+     ]
+    },
+    {
+     "id": "time_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "week",
+      "month",
+      "year",
+      "what_time"
+     ]
+    },
+    {
+     "id": "time_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "today",
+      "tomorrow",
+      "yesterday",
+      "now",
+      "day",
+      "week",
+      "month",
+      "year",
+      "what_time"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "verbs",
+   "title": "Everyday actions",
+   "emoji": "🏃",
+   "lessons": [
+    {
+     "id": "verbs_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "to_eat",
+      "to_drink",
+      "to_go",
+      "to_come",
+      "to_see"
+     ]
+    },
+    {
+     "id": "verbs_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "to_speak",
+      "to_want",
+      "to_like",
+      "to_sleep",
+      "to_learn"
+     ]
+    },
+    {
+     "id": "verbs_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "to_eat",
+      "to_drink",
+      "to_go",
+      "to_come",
+      "to_see",
+      "to_speak",
+      "to_want",
+      "to_like",
+      "to_sleep",
+      "to_learn"
+     ],
+     "practice": true
+    }
+   ]
+  }
+ ]
+}

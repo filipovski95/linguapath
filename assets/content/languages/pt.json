@@ -1,0 +1,294 @@
+{
+ "code": "pt",
+ "name": "Portuguese (Brazil)",
+ "nativeName": "Português",
+ "flag": "🇧🇷",
+ "ttsLocale": "pt-BR",
+ "entries": {
+  "hello": {
+   "text": "Olá"
+  },
+  "goodbye": {
+   "text": "Tchau"
+  },
+  "thank_you": {
+   "text": "Obrigado",
+   "note": "A woman says “obrigada”."
+  },
+  "please": {
+   "text": "Por favor"
+  },
+  "yes": {
+   "text": "Sim"
+  },
+  "no": {
+   "text": "Não"
+  },
+  "sorry": {
+   "text": "Desculpa"
+  },
+  "good_morning": {
+   "text": "Bom dia"
+  },
+  "good_night": {
+   "text": "Boa noite"
+  },
+  "how_are_you": {
+   "text": "Tudo bem?",
+   "note": "Brazilian everyday greeting."
+  },
+  "im_fine": {
+   "text": "Estou bem"
+  },
+  "my_name_is": {
+   "text": "Meu nome é …"
+  },
+  "one": {
+   "text": "um"
+  },
+  "two": {
+   "text": "dois"
+  },
+  "three": {
+   "text": "três"
+  },
+  "four": {
+   "text": "quatro"
+  },
+  "five": {
+   "text": "cinco"
+  },
+  "six": {
+   "text": "seis"
+  },
+  "seven": {
+   "text": "sete"
+  },
+  "eight": {
+   "text": "oito"
+  },
+  "nine": {
+   "text": "nove"
+  },
+  "ten": {
+   "text": "dez"
+  },
+  "water": {
+   "text": "a água"
+  },
+  "coffee": {
+   "text": "o café"
+  },
+  "tea": {
+   "text": "o chá"
+  },
+  "bread": {
+   "text": "o pão"
+  },
+  "rice": {
+   "text": "o arroz"
+  },
+  "apple": {
+   "text": "a maçã"
+  },
+  "milk": {
+   "text": "o leite"
+  },
+  "egg": {
+   "text": "o ovo"
+  },
+  "fish": {
+   "text": "o peixe"
+  },
+  "meat": {
+   "text": "a carne"
+  },
+  "beer": {
+   "text": "a cerveja"
+  },
+  "delicious": {
+   "text": "delicioso"
+  },
+  "im_hungry": {
+   "text": "Estou com fome"
+  },
+  "the_bill": {
+   "text": "A conta, por favor"
+  },
+  "mother": {
+   "text": "a mãe"
+  },
+  "father": {
+   "text": "o pai"
+  },
+  "brother": {
+   "text": "o irmão"
+  },
+  "sister": {
+   "text": "a irmã"
+  },
+  "friend": {
+   "text": "o amigo",
+   "note": "Female: a amiga."
+  },
+  "child": {
+   "text": "a criança"
+  },
+  "man": {
+   "text": "o homem"
+  },
+  "woman": {
+   "text": "a mulher"
+  },
+  "i": {
+   "text": "eu"
+  },
+  "you": {
+   "text": "você"
+  },
+  "he": {
+   "text": "ele"
+  },
+  "she": {
+   "text": "ela"
+  },
+  "we": {
+   "text": "nós"
+  },
+  "red": {
+   "text": "vermelho"
+  },
+  "blue": {
+   "text": "azul"
+  },
+  "green": {
+   "text": "verde"
+  },
+  "yellow": {
+   "text": "amarelo"
+  },
+  "black": {
+   "text": "preto"
+  },
+  "white": {
+   "text": "branco"
+  },
+  "big": {
+   "text": "grande"
+  },
+  "small": {
+   "text": "pequeno"
+  },
+  "hot": {
+   "text": "quente"
+  },
+  "cold": {
+   "text": "frio"
+  },
+  "good": {
+   "text": "bom"
+  },
+  "bad": {
+   "text": "ruim"
+  },
+  "airport": {
+   "text": "o aeroporto"
+  },
+  "train_station": {
+   "text": "a estação de trem",
+   "note": "Brazil: estação de trem. Portugal: estação de comboios."
+  },
+  "hotel": {
+   "text": "o hotel"
+  },
+  "taxi": {
+   "text": "o táxi"
+  },
+  "toilet": {
+   "text": "o banheiro",
+   "note": "Brazil: banheiro. Portugal: casa de banho."
+  },
+  "ticket": {
+   "text": "o bilhete"
+  },
+  "left": {
+   "text": "esquerda"
+  },
+  "right": {
+   "text": "direita"
+  },
+  "straight_ahead": {
+   "text": "em frente"
+  },
+  "where_is": {
+   "text": "Onde fica …?"
+  },
+  "how_much": {
+   "text": "Quanto custa?"
+  },
+  "i_dont_understand": {
+   "text": "Não entendo"
+  },
+  "speak_english": {
+   "text": "Você fala inglês?"
+  },
+  "today": {
+   "text": "hoje"
+  },
+  "tomorrow": {
+   "text": "amanhã"
+  },
+  "yesterday": {
+   "text": "ontem"
+  },
+  "now": {
+   "text": "agora"
+  },
+  "day": {
+   "text": "o dia"
+  },
+  "week": {
+   "text": "a semana"
+  },
+  "month": {
+   "text": "o mês"
+  },
+  "year": {
+   "text": "o ano"
+  },
+  "what_time": {
+   "text": "Que horas são?"
+  },
+  "to_eat": {
+   "text": "comer"
+  },
+  "to_drink": {
+   "text": "beber"
+  },
+  "to_go": {
+   "text": "ir"
+  },
+  "to_come": {
+   "text": "vir"
+  },
+  "to_see": {
+   "text": "ver"
+  },
+  "to_speak": {
+   "text": "falar"
+  },
+  "to_want": {
+   "text": "querer"
+  },
+  "to_like": {
+   "text": "gostar",
+   "note": "Used with “de”: gosto de café."
+  },
+  "to_sleep": {
+   "text": "dormir"
+  },
+  "to_learn": {
+   "text": "aprender"
+  }
+ }
+}

@@ -1,0 +1,387 @@
+{
+ "code": "zh",
+ "name": "Chinese (Mandarin)",
+ "nativeName": "中文",
+ "flag": "🇨🇳",
+ "ttsLocale": "zh-CN",
+ "romanization": "Pinyin",
+ "entries": {
+  "hello": {
+   "text": "你好",
+   "roman": "nǐ hǎo"
+  },
+  "goodbye": {
+   "text": "再见",
+   "roman": "zàijiàn"
+  },
+  "thank_you": {
+   "text": "谢谢",
+   "roman": "xièxie"
+  },
+  "please": {
+   "text": "请",
+   "roman": "qǐng"
+  },
+  "yes": {
+   "text": "是",
+   "roman": "shì",
+   "note": "Chinese often answers by repeating the verb; 对 (duì, “right”) is also common."
+  },
+  "no": {
+   "text": "不",
+   "roman": "bù"
+  },
+  "sorry": {
+   "text": "对不起",
+   "roman": "duìbuqǐ"
+  },
+  "good_morning": {
+   "text": "早上好",
+   "roman": "zǎoshang hǎo"
+  },
+  "good_night": {
+   "text": "晚安",
+   "roman": "wǎn'ān"
+  },
+  "how_are_you": {
+   "text": "你好吗？",
+   "roman": "nǐ hǎo ma?"
+  },
+  "im_fine": {
+   "text": "我很好",
+   "roman": "wǒ hěn hǎo"
+  },
+  "my_name_is": {
+   "text": "我叫…",
+   "roman": "wǒ jiào …"
+  },
+  "one": {
+   "text": "一",
+   "roman": "yī"
+  },
+  "two": {
+   "text": "二",
+   "roman": "èr"
+  },
+  "three": {
+   "text": "三",
+   "roman": "sān"
+  },
+  "four": {
+   "text": "四",
+   "roman": "sì"
+  },
+  "five": {
+   "text": "五",
+   "roman": "wǔ"
+  },
+  "six": {
+   "text": "六",
+   "roman": "liù"
+  },
+  "seven": {
+   "text": "七",
+   "roman": "qī"
+  },
+  "eight": {
+   "text": "八",
+   "roman": "bā"
+  },
+  "nine": {
+   "text": "九",
+   "roman": "jiǔ"
+  },
+  "ten": {
+   "text": "十",
+   "roman": "shí"
+  },
+  "water": {
+   "text": "水",
+   "roman": "shuǐ"
+  },
+  "coffee": {
+   "text": "咖啡",
+   "roman": "kāfēi"
+  },
+  "tea": {
+   "text": "茶",
+   "roman": "chá"
+  },
+  "bread": {
+   "text": "面包",
+   "roman": "miànbāo"
+  },
+  "rice": {
+   "text": "米饭",
+   "roman": "mǐfàn"
+  },
+  "apple": {
+   "text": "苹果",
+   "roman": "píngguǒ"
+  },
+  "milk": {
+   "text": "牛奶",
+   "roman": "niúnǎi"
+  },
+  "egg": {
+   "text": "鸡蛋",
+   "roman": "jīdàn"
+  },
+  "fish": {
+   "text": "鱼",
+   "roman": "yú"
+  },
+  "meat": {
+   "text": "肉",
+   "roman": "ròu"
+  },
+  "beer": {
+   "text": "啤酒",
+   "roman": "píjiǔ"
+  },
+  "delicious": {
+   "text": "好吃",
+   "roman": "hǎochī"
+  },
+  "im_hungry": {
+   "text": "我饿了",
+   "roman": "wǒ è le"
+  },
+  "the_bill": {
+   "text": "请买单",
+   "roman": "qǐng mǎidān"
+  },
+  "mother": {
+   "text": "妈妈",
+   "roman": "māma"
+  },
+  "father": {
+   "text": "爸爸",
+   "roman": "bàba"
+  },
+  "brother": {
+   "text": "哥哥",
+   "roman": "gēge",
+   "note": "哥哥 is an older brother; a younger brother is 弟弟 (dìdi)."
+  },
+  "sister": {
+   "text": "姐姐",
+   "roman": "jiějie",
+   "note": "姐姐 is an older sister; a younger sister is 妹妹 (mèimei)."
+  },
+  "friend": {
+   "text": "朋友",
+   "roman": "péngyou"
+  },
+  "child": {
+   "text": "孩子",
+   "roman": "háizi"
+  },
+  "man": {
+   "text": "男人",
+   "roman": "nánrén"
+  },
+  "woman": {
+   "text": "女人",
+   "roman": "nǚrén"
+  },
+  "i": {
+   "text": "我",
+   "roman": "wǒ"
+  },
+  "you": {
+   "text": "你",
+   "roman": "nǐ",
+   "note": "Polite form: 您 (nín)."
+  },
+  "he": {
+   "text": "他",
+   "roman": "tā"
+  },
+  "she": {
+   "text": "她",
+   "roman": "tā",
+   "note": "Sounds the same as 他 (he)."
+  },
+  "we": {
+   "text": "我们",
+   "roman": "wǒmen"
+  },
+  "red": {
+   "text": "红色",
+   "roman": "hóngsè"
+  },
+  "blue": {
+   "text": "蓝色",
+   "roman": "lánsè"
+  },
+  "green": {
+   "text": "绿色",
+   "roman": "lǜsè"
+  },
+  "yellow": {
+   "text": "黄色",
+   "roman": "huángsè"
+  },
+  "black": {
+   "text": "黑色",
+   "roman": "hēisè"
+  },
+  "white": {
+   "text": "白色",
+   "roman": "báisè"
+  },
+  "big": {
+   "text": "大",
+   "roman": "dà"
+  },
+  "small": {
+   "text": "小",
+   "roman": "xiǎo"
+  },
+  "hot": {
+   "text": "热",
+   "roman": "rè"
+  },
+  "cold": {
+   "text": "冷",
+   "roman": "lěng"
+  },
+  "good": {
+   "text": "好",
+   "roman": "hǎo"
+  },
+  "bad": {
+   "text": "坏",
+   "roman": "huài"
+  },
+  "airport": {
+   "text": "机场",
+   "roman": "jīchǎng"
+  },
+  "train_station": {
+   "text": "火车站",
+   "roman": "huǒchēzhàn"
+  },
+  "hotel": {
+   "text": "酒店",
+   "roman": "jiǔdiàn"
+  },
+  "taxi": {
+   "text": "出租车",
+   "roman": "chūzūchē"
+  },
+  "toilet": {
+   "text": "厕所",
+   "roman": "cèsuǒ"
+  },
+  "ticket": {
+   "text": "票",
+   "roman": "piào"
+  },
+  "left": {
+   "text": "左",
+   "roman": "zuǒ"
+  },
+  "right": {
+   "text": "右",
+   "roman": "yòu"
+  },
+  "straight_ahead": {
+   "text": "一直走",
+   "roman": "yìzhí zǒu"
+  },
+  "where_is": {
+   "text": "…在哪里？",
+   "roman": "… zài nǎlǐ?"
+  },
+  "how_much": {
+   "text": "多少钱？",
+   "roman": "duōshao qián?"
+  },
+  "i_dont_understand": {
+   "text": "我不明白",
+   "roman": "wǒ bù míngbai"
+  },
+  "speak_english": {
+   "text": "你会说英语吗？",
+   "roman": "nǐ huì shuō Yīngyǔ ma?"
+  },
+  "today": {
+   "text": "今天",
+   "roman": "jīntiān"
+  },
+  "tomorrow": {
+   "text": "明天",
+   "roman": "míngtiān"
+  },
+  "yesterday": {
+   "text": "昨天",
+   "roman": "zuótiān"
+  },
+  "now": {
+   "text": "现在",
+   "roman": "xiànzài"
+  },
+  "day": {
+   "text": "天",
+   "roman": "tiān"
+  },
+  "week": {
+   "text": "星期",
+   "roman": "xīngqī"
+  },
+  "month": {
+   "text": "月",
+   "roman": "yuè"
+  },
+  "year": {
+   "text": "年",
+   "roman": "nián"
+  },
+  "what_time": {
+   "text": "几点了？",
+   "roman": "jǐ diǎn le?"
+  },
+  "to_eat": {
+   "text": "吃",
+   "roman": "chī"
+  },
+  "to_drink": {
+   "text": "喝",
+   "roman": "hē"
+  },
+  "to_go": {
+   "text": "去",
+   "roman": "qù"
+  },
+  "to_come": {
+   "text": "来",
+   "roman": "lái"
+  },
+  "to_see": {
+   "text": "看",
+   "roman": "kàn"
+  },
+  "to_speak": {
+   "text": "说",
+   "roman": "shuō"
+  },
+  "to_want": {
+   "text": "要",
+   "roman": "yào"
+  },
+  "to_like": {
+   "text": "喜欢",
+   "roman": "xǐhuan"
+  },
+  "to_sleep": {
+   "text": "睡觉",
+   "roman": "shuìjiào"
+  },
+  "to_learn": {
+   "text": "学习",
+   "roman": "xuéxí"
+  }
+ }
+}
