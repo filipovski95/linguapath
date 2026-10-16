@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../logic/app_state.dart';
+import '../logic/cheers.dart';
 import '../logic/exercises.dart';
-import '../logic/speech.dart';
+import '../logic/sounds.dart';
+import '../ui/chunky_button.dart';
+import '../ui/confetti.dart';
+import '../ui/mascot.dart';
+import '../ui/palette.dart';
 import '../widgets/word_text.dart';
 
 /// Runs a list of exercises one at a time and reports the results.
@@ -25,12 +31,11 @@ class _QuizSessionState extends State<QuizSession> {
   final _retried = <Exercise>{};
   final _answers = <String, bool>{};
   int _index = 0;
+  int _inARow = 0;
 
-  // Choice exercise state
   String? _selected;
   bool _checked = false;
-
-  // Match exercise state
+  String _cheer = '';
   bool _matchDone = false;
 
   Exercise get _current => _queue[_index];
@@ -42,7 +47,18 @@ class _QuizSessionState extends State<QuizSession> {
   void _check(ChoiceExercise e) {
     final correct = _selected == e.conceptId;
     _record(e.conceptId, correct);
-    if (!correct && _retried.add(e)) _queue.add(e);
+    if (correct) {
+      _inARow++;
+      _cheer = _inARow >= 3 && _inARow % 3 == 0 ? Cheers.streak(_inARow) : Cheers.correct();
+      Sounds.instance.correct();
+      HapticFeedback.lightImpact();
+    } else {
+      _inARow = 0;
+      _cheer = Cheers.wrong();
+      Sounds.instance.wrong();
+      HapticFeedback.heavyImpact();
+      if (_retried.add(e)) _queue.add(e);
+    }
     setState(() => _checked = true);
   }
 
@@ -65,30 +81,34 @@ class _QuizSessionState extends State<QuizSession> {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.fromLTRB(4, 4, 16, 8),
+          padding: const EdgeInsets.fromLTRB(4, 8, 20, 8),
           child: Row(
             children: [
               IconButton(
-                icon: const Icon(Icons.close),
+                icon: const Icon(Icons.close_rounded, size: 30, color: Palette.lockedDark),
                 tooltip: 'Quit',
                 onPressed: () => Navigator.of(context).maybePop(),
               ),
-              Expanded(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: TweenAnimationBuilder<double>(
-                    tween: Tween(end: _index / _queue.length),
-                    duration: const Duration(milliseconds: 300),
-                    builder: (_, v, _) => LinearProgressIndicator(value: v, minHeight: 12),
-                  ),
-                ),
-              ),
+              const SizedBox(width: 4),
+              Expanded(child: _ProgressBar(value: _index / _queue.length)),
+              if (_inARow >= 3) ...[
+                const SizedBox(width: 10),
+                Text('🔥$_inARow',
+                    style: const TextStyle(fontWeight: FontWeight.w900, color: Palette.flame, fontSize: 16)),
+              ],
             ],
           ),
         ),
         Expanded(
           child: AnimatedSwitcher(
-            duration: const Duration(milliseconds: 200),
+            duration: const Duration(milliseconds: 250),
+            transitionBuilder: (child, a) => FadeTransition(
+              opacity: a,
+              child: SlideTransition(
+                position: Tween(begin: const Offset(0.08, 0), end: Offset.zero).animate(a),
+                child: child,
+              ),
+            ),
             child: KeyedSubtree(
               key: ValueKey(_index),
               child: switch (e) {
@@ -102,7 +122,10 @@ class _QuizSessionState extends State<QuizSession> {
                 MatchExercise() => _MatchView(
                     exercise: e,
                     onMistake: (id) => _record(id, false),
-                    onDone: () => setState(() => _matchDone = true),
+                    onDone: () {
+                      Sounds.instance.correct();
+                      setState(() => _matchDone = true);
+                    },
                   ),
               },
             ),
@@ -112,6 +135,7 @@ class _QuizSessionState extends State<QuizSession> {
           exercise: e,
           selected: _selected,
           checked: _checked,
+          cheer: _cheer,
           matchDone: _matchDone,
           onCheck: () => _check(e as ChoiceExercise),
           onContinue: _next,
@@ -121,11 +145,45 @@ class _QuizSessionState extends State<QuizSession> {
   }
 }
 
+class _ProgressBar extends StatelessWidget {
+  const _ProgressBar({required this.value});
+
+  final double value;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 18,
+      decoration: BoxDecoration(color: Palette.locked, borderRadius: BorderRadius.circular(9)),
+      child: LayoutBuilder(
+        builder: (context, c) => Align(
+          alignment: Alignment.centerLeft,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 400),
+            curve: Curves.easeOutBack,
+            width: c.maxWidth * value.clamp(0.04, 1.0),
+            decoration: BoxDecoration(color: Palette.green, borderRadius: BorderRadius.circular(9)),
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: Container(
+                margin: const EdgeInsets.fromLTRB(8, 4, 8, 0),
+                height: 4,
+                decoration: BoxDecoration(color: Colors.white38, borderRadius: BorderRadius.circular(2)),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _BottomBar extends StatelessWidget {
   const _BottomBar({
     required this.exercise,
     required this.selected,
     required this.checked,
+    required this.cheer,
     required this.matchDone,
     required this.onCheck,
     required this.onContinue,
@@ -134,6 +192,7 @@ class _BottomBar extends StatelessWidget {
   final Exercise exercise;
   final String? selected;
   final bool checked;
+  final String cheer;
   final bool matchDone;
   final VoidCallback onCheck;
   final VoidCallback onContinue;
@@ -141,56 +200,76 @@ class _BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = AppScope.of(context);
-    final scheme = Theme.of(context).colorScheme;
     final e = exercise;
-
     Widget? feedback;
-    Color? background;
-    VoidCallback? action;
-    var label = 'Continue';
+    Color background = Colors.transparent;
+    var button = ChunkyButton(label: 'Continue', onPressed: onContinue, color: Palette.green, shadow: Palette.greenDark);
 
     switch (e) {
       case LearnExercise():
-        action = onContinue;
+        break;
       case MatchExercise():
-        action = matchDone ? onContinue : null;
+        button = ChunkyButton(
+            label: 'Continue', onPressed: matchDone ? onContinue : null, color: Palette.green, shadow: Palette.greenDark);
       case ChoiceExercise():
         if (!checked) {
-          label = 'Check';
-          action = selected == null ? null : onCheck;
+          button = ChunkyButton(
+              label: 'Check', onPressed: selected == null ? null : onCheck, color: Palette.green, shadow: Palette.greenDark);
         } else {
-          action = onContinue;
           final right = selected == e.conceptId;
-          background = right ? Colors.green.withValues(alpha: 0.15) : scheme.errorContainer;
+          final fg = right ? Palette.greenDark : Palette.coralDark;
+          background = right ? Palette.greenSoft : Palette.coralSoft;
           final t = state.target.entry(e.conceptId);
           final n = state.native.entry(e.conceptId);
-          feedback = Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          feedback = Row(
             children: [
-              Text(right ? '✅ Correct!' : '❌ Not quite',
-                  style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
-              const SizedBox(height: 4),
-              Text(
-                '${t.text}${t.roman != null && state.showRomanization ? ' (${t.roman})' : ''} = ${n.text}',
-                style: const TextStyle(fontSize: 16),
+              Container(
+                width: 44,
+                height: 44,
+                decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                child: Icon(right ? Icons.check_rounded : Icons.close_rounded, color: fg, size: 30),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(right ? '✅ Correct!' : '❌ Not quite',
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: fg)),
+                    Text(cheer, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: fg)),
+                    const SizedBox(height: 2),
+                    Text(
+                      '${t.text}${t.roman != null && state.showRomanization ? ' (${t.roman})' : ''} = ${n.text}',
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: fg),
+                    ),
+                  ],
+                ),
               ),
             ],
           );
+          button = right
+              ? ChunkyButton(label: 'Continue', onPressed: onContinue, color: Palette.green, shadow: Palette.greenDark)
+              : ChunkyButton(label: 'Got it', onPressed: onContinue, color: Palette.coral, shadow: Palette.coralDark);
         }
     }
 
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
-      color: background ?? Colors.transparent,
-      padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
+      decoration: BoxDecoration(
+        color: background,
+        border: background == Colors.transparent
+            ? const Border(top: BorderSide(color: Palette.line, width: 2))
+            : null,
+      ),
+      padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
       child: SafeArea(
         top: false,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.min,
           children: [
-            if (feedback != null) ...[feedback, const SizedBox(height: 12)],
-            FilledButton(onPressed: action, child: Text(label)),
+            if (feedback != null) ...[feedback, const SizedBox(height: 14)],
+            button,
           ],
         ),
       ),
@@ -208,17 +287,16 @@ class _LearnView extends StatefulWidget {
 }
 
 class _LearnViewState extends State<_LearnView> {
+  late final String _intro = Cheers.newWord();
+
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => _play());
-  }
-
-  void _play() {
-    if (!mounted) return;
-    final s = AppScope.read(context);
-    Speech.instance.speak(
-        s.target.entry(widget.exercise.conceptId).text, s.target.ttsLocale, rate: s.speechRate);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final s = AppScope.read(context);
+      s.say(s.target.entry(widget.exercise.conceptId).text);
+    });
   }
 
   @override
@@ -227,40 +305,57 @@ class _LearnViewState extends State<_LearnView> {
     final id = widget.exercise.conceptId;
     final t = state.target.entry(id);
     final n = state.native.entry(id);
-    final theme = Theme.of(context);
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        children: [
-          Text('New word', style: theme.textTheme.labelLarge?.copyWith(
-              color: theme.colorScheme.primary)),
-          const SizedBox(height: 16),
-          Text(state.course.concepts[id]?.emoji ?? '', style: const TextStyle(fontSize: 88)),
-          const SizedBox(height: 16),
-          WordText(entry: t, size: 40),
-          const SizedBox(height: 8),
-          SpeakButton(text: t.text, size: 32, filled: true),
-          const SizedBox(height: 16),
-          Text(n.text, textAlign: TextAlign.center, style: theme.textTheme.titleLarge?.copyWith(
-              color: theme.colorScheme.onSurfaceVariant)),
-          if (t.note != null) ...[
-            const SizedBox(height: 20),
-            Card(
-              elevation: 0,
-              color: theme.colorScheme.surfaceContainerHigh,
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Row(
-                  children: [
-                    const Text('💡 '),
-                    Expanded(child: Text(t.note!)),
-                  ],
-                ),
-              ),
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(20, 8, 20, 20),
+      children: [
+        Text('New word', style: Theme.of(context).textTheme.titleLarge),
+        const SizedBox(height: 12),
+        MascotSays(text: _intro, mood: MascotMood.happy, size: 64),
+        const SizedBox(height: 16),
+        Container(
+          padding: const EdgeInsets.fromLTRB(20, 24, 20, 24),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(24),
+            border: const Border(
+              top: BorderSide(color: Palette.line, width: 2),
+              left: BorderSide(color: Palette.line, width: 2),
+              right: BorderSide(color: Palette.line, width: 2),
+              bottom: BorderSide(color: Palette.line, width: 6),
             ),
-          ],
-        ],
-      ),
+          ),
+          child: Column(
+            children: [
+              Text(state.course.concepts[id]?.emoji ?? '', style: const TextStyle(fontSize: 80)),
+              const SizedBox(height: 12),
+              WordText(entry: t, size: 40, color: Palette.ink),
+              const SizedBox(height: 14),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SpeakButton(text: t.text, size: 56),
+                  const SizedBox(width: 12),
+                  SpeakButton(text: t.text, size: 44, slow: true),
+                ],
+              ),
+              const SizedBox(height: 16),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(color: Palette.violetSoft, borderRadius: BorderRadius.circular(12)),
+                child: Text(n.text,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Palette.violetDark)),
+              ),
+              if (t.note != null) ...[
+                const SizedBox(height: 14),
+                Text('💡 ${t.note!}',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(color: Palette.inkSoft, fontWeight: FontWeight.w700)),
+              ],
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
@@ -290,8 +385,7 @@ class _ChoiceViewState extends State<_ChoiceView> {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (!mounted) return;
         final s = AppScope.read(context);
-        Speech.instance.speak(s.target.entry(widget.exercise.conceptId).text,
-            s.target.ttsLocale, rate: s.speechRate);
+        s.say(s.target.entry(widget.exercise.conceptId).text);
       });
     }
   }
@@ -300,51 +394,47 @@ class _ChoiceViewState extends State<_ChoiceView> {
   Widget build(BuildContext context) {
     final state = AppScope.of(context);
     final e = widget.exercise;
-    final theme = Theme.of(context);
     final t = state.target.entry(e.conceptId);
 
     final (String instruction, Widget prompt) = switch (e.mode) {
       ChoiceMode.targetToNative => (
           'What does this mean?',
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SpeakButton(text: t.text),
-              Flexible(child: WordText(entry: t, size: 34)),
-            ],
+          MascotSays(
+            text: t.text,
+            size: 72,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SpeakButton(text: t.text, size: 40),
+                const SizedBox(width: 12),
+                Flexible(child: WordText(entry: t, size: 28, center: false)),
+              ],
+            ),
           ),
         ),
       ChoiceMode.nativeToTarget => (
           'How do you say this in ${state.target.name}?',
-          Column(children: [
-            Text(state.course.concepts[e.conceptId]?.emoji ?? '',
-                style: const TextStyle(fontSize: 56)),
-            const SizedBox(height: 8),
-            Text(state.native.entry(e.conceptId).text,
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w700)),
-          ]),
+          Center(
+            child: Column(children: [
+              Text(state.course.concepts[e.conceptId]?.emoji ?? '', style: const TextStyle(fontSize: 64)),
+              const SizedBox(height: 6),
+              Text(state.native.entry(e.conceptId).text,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900)),
+            ]),
+          ),
         ),
       ChoiceMode.listen => (
           'What did you hear?',
-          Column(children: [
-            SizedBox.square(
-              dimension: 96,
-              child: IconButton.filled(
-                iconSize: 48,
-                icon: const Icon(Icons.volume_up_rounded),
-                tooltip: 'Play again',
-                onPressed: () => Speech.instance.speak(t.text, state.target.ttsLocale,
-                    rate: state.speechRate),
-              ),
-            ),
-            const SizedBox(height: 8),
-            TextButton(
-              onPressed: () => Speech.instance.speak(t.text, state.target.ttsLocale,
-                  rate: state.speechRate * 0.6),
-              child: const Text('🐢 Slower'),
-            ),
-          ]),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              SpeakButton(text: t.text, size: 96),
+              const SizedBox(width: 16),
+              SpeakButton(text: t.text, size: 60, slow: true),
+            ],
+          ),
         ),
     };
 
@@ -352,80 +442,48 @@ class _ChoiceViewState extends State<_ChoiceView> {
 
     return ListView(
       key: ValueKey('answer:${e.conceptId}'),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       children: [
-        Text(instruction, style: theme.textTheme.titleMedium),
+        Text(instruction, style: Theme.of(context).textTheme.titleLarge),
+        const SizedBox(height: 20),
+        prompt,
         const SizedBox(height: 24),
-        Center(child: prompt),
-        const SizedBox(height: 28),
         for (final id in e.options)
-          _OptionCard(
+          Padding(
             key: ValueKey('option:$id'),
-            selected: widget.selected == id,
-            state: !widget.checked
-                ? null
-                : id == e.conceptId
-                    ? true
-                    : widget.selected == id
-                        ? false
-                        : null,
-            onTap: widget.checked ? null : () {
-              widget.onSelect(id);
-              if (showTarget) {
-                Speech.instance.speak(state.target.entry(id).text, state.target.ttsLocale,
-                    rate: state.speechRate);
-              }
-            },
-            child: showTarget
-                ? WordText(entry: state.target.entry(id), size: 22, center: false)
-                : Text(state.native.entry(id).text, style: const TextStyle(fontSize: 18)),
+            padding: const EdgeInsets.only(bottom: 12),
+            child: _option(state, id, showTarget),
           ),
       ],
     );
   }
-}
 
-class _OptionCard extends StatelessWidget {
-  const _OptionCard({
-    super.key,
-    required this.child,
-    required this.selected,
-    required this.onTap,
-    this.state,
-  });
-
-  final Widget child;
-  final bool selected;
-
-  /// true = correct answer, false = chosen wrong answer, null = neutral.
-  final bool? state;
-  final VoidCallback? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final Color border = switch (state) {
-      true => Colors.green,
-      false => scheme.error,
-      null => selected ? scheme.primary : scheme.outlineVariant,
-    };
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
-      child: Material(
-        color: selected ? scheme.primaryContainer.withValues(alpha: 0.5) : scheme.surface,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14),
-          side: BorderSide(color: border, width: selected || state != null ? 2.5 : 1.5),
-        ),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(14),
-          onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
-            child: Align(alignment: Alignment.centerLeft, child: child),
-          ),
-        ),
-      ),
+  Widget _option(AppState state, String id, bool showTarget) {
+    final e = widget.exercise;
+    final selected = widget.selected == id;
+    final isAnswer = id == e.conceptId;
+    final (Color border, Color fill, Color text) = !widget.checked
+        ? selected
+            ? (const Color(0xFF9C85FF), Palette.violetSoft, Palette.violetDark)
+            : (Palette.line, Colors.white, Palette.ink)
+        : isAnswer
+            ? (Palette.green, Palette.greenSoft, Palette.greenDark)
+            : selected
+                ? (Palette.coral, Palette.coralSoft, Palette.coralDark)
+                : (Palette.line, Colors.white, Palette.inkSoft);
+    return ChunkyCard(
+      border: border,
+      fill: fill,
+      onTap: widget.checked
+          ? null
+          : () {
+              widget.onSelect(id);
+              if (showTarget) state.say(state.target.entry(id).text);
+            },
+      child: showTarget
+          ? WordText(entry: state.target.entry(id), size: 22, center: false, color: text)
+          : Text(state.native.entry(id).text,
+              style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800, color: text)),
     );
   }
 }
@@ -452,9 +510,7 @@ class _MatchViewState extends State<_MatchView> {
 
   void _tap({String? left, String? right}) {
     final s = AppScope.read(context);
-    if (left != null) {
-      Speech.instance.speak(s.target.entry(left).text, s.target.ttsLocale, rate: s.speechRate);
-    }
+    if (left != null) s.say(s.target.entry(left).text);
     setState(() {
       _pickLeft = left ?? _pickLeft;
       _pickRight = right ?? _pickRight;
@@ -462,12 +518,14 @@ class _MatchViewState extends State<_MatchView> {
       if (_pickLeft == null || _pickRight == null) return;
       if (_pickLeft == _pickRight) {
         _matched.add(_pickLeft!);
+        HapticFeedback.lightImpact();
         if (_matched.length == _left.length) widget.onDone();
       } else {
         widget.onMistake(_pickLeft!);
         widget.onMistake(_pickRight!);
         _wrongLeft = _pickLeft;
         _wrongRight = _pickRight;
+        HapticFeedback.heavyImpact();
       }
       _pickLeft = _pickRight = null;
     });
@@ -476,48 +534,37 @@ class _MatchViewState extends State<_MatchView> {
   @override
   Widget build(BuildContext context) {
     final state = AppScope.of(context);
-    final scheme = Theme.of(context).colorScheme;
 
     Widget tile(String id, bool left) {
       final matched = _matched.contains(id);
       final picked = left ? _pickLeft == id : _pickRight == id;
       final wrong = left ? _wrongLeft == id : _wrongRight == id;
       final entry = left ? state.target.entry(id) : state.native.entry(id);
+      final (Color border, Color fill, Color text) = matched
+          ? (Palette.line, Palette.background, Palette.lockedDark)
+          : wrong
+              ? (Palette.coral, Palette.coralSoft, Palette.coralDark)
+              : picked
+                  ? (const Color(0xFF9C85FF), Palette.violetSoft, Palette.violetDark)
+                  : (Palette.line, Colors.white, Palette.ink);
       return Padding(
         key: ValueKey('${left ? 'left' : 'right'}:$id'),
-        padding: const EdgeInsets.only(bottom: 10),
-        child: AnimatedOpacity(
-          duration: const Duration(milliseconds: 250),
-          opacity: matched ? 0.35 : 1,
-          child: Material(
-            color: matched
-                ? Colors.green.withValues(alpha: 0.15)
-                : picked
-                    ? scheme.primaryContainer
-                    : scheme.surface,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-              side: BorderSide(
-                color: wrong ? scheme.error : picked ? scheme.primary : scheme.outlineVariant,
-                width: wrong || picked ? 2.5 : 1.5,
-              ),
-            ),
-            child: InkWell(
-              borderRadius: BorderRadius.circular(12),
-              onTap: matched ? null : () => left ? _tap(left: id) : _tap(right: id),
-              child: SizedBox(
-                height: 64,
-                child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: left
-                        ? FittedBox(child: WordText(entry: entry, size: 20))
-                        : Text(entry.text, textAlign: TextAlign.center,
-                            maxLines: 2, overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(fontSize: 16)),
-                  ),
-                ),
-              ),
+        padding: const EdgeInsets.only(bottom: 12),
+        child: ChunkyCard(
+          border: border,
+          fill: fill,
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          onTap: matched ? null : () => left ? _tap(left: id) : _tap(right: id),
+          child: SizedBox(
+            height: 62,
+            child: Center(
+              child: left
+                  ? FittedBox(child: WordText(entry: entry, size: 20, color: text))
+                  : Text(entry.text,
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: text)),
             ),
           ),
         ),
@@ -525,10 +572,10 @@ class _MatchViewState extends State<_MatchView> {
     }
 
     return ListView(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       children: [
-        Text('Tap the matching pairs', style: Theme.of(context).textTheme.titleMedium),
-        const SizedBox(height: 24),
+        Text('Tap the matching pairs', style: Theme.of(context).textTheme.titleLarge),
+        const SizedBox(height: 20),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -543,7 +590,7 @@ class _MatchViewState extends State<_MatchView> {
 }
 
 /// Shown at the end of a lesson or practice round.
-class ResultsView extends StatelessWidget {
+class ResultsView extends StatefulWidget {
   const ResultsView({
     super.key,
     required this.title,
@@ -558,78 +605,114 @@ class ResultsView extends StatelessWidget {
   final VoidCallback onDone;
 
   @override
+  State<ResultsView> createState() => _ResultsViewState();
+}
+
+class _ResultsViewState extends State<ResultsView> {
+  @override
+  void initState() {
+    super.initState();
+    Sounds.instance.complete();
+    HapticFeedback.mediumImpact();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final state = AppScope.of(context);
-    final theme = Theme.of(context);
-    final right = answers.values.where((v) => v).length;
-    final pct = answers.isEmpty ? 100 : (right * 100 / answers.length).round();
-    final missed = answers.entries.where((e) => !e.value).map((e) => e.key).toList();
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          children: [
-            const Spacer(),
-            Text(pct >= 80 ? '🎉' : '💪', style: const TextStyle(fontSize: 80)),
-            const SizedBox(height: 12),
-            Text(title, style: theme.textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w800)),
-            const SizedBox(height: 24),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+    final right = widget.answers.values.where((v) => v).length;
+    final pct = widget.answers.isEmpty ? 100 : (right * 100 / widget.answers.length).round();
+    final missed = widget.answers.entries.where((e) => !e.value).map((e) => e.key).toList();
+    return Stack(
+      children: [
+        SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 24, 20, 16),
+            child: Column(
               children: [
-                _ResultChip(label: 'XP', value: '+$xp'),
-                const SizedBox(width: 12),
-                _ResultChip(label: 'Accuracy', value: '$pct%'),
-                const SizedBox(width: 12),
-                _ResultChip(label: 'Streak', value: '🔥 ${state.currentStreak}'),
+                const Spacer(),
+                Mascot(mood: pct >= 80 ? MascotMood.cheer : MascotMood.happy, size: 150),
+                const SizedBox(height: 16),
+                Text(widget.title,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Palette.sunDark)),
+                const SizedBox(height: 6),
+                Text(Cheers.lessonDone(pct),
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w700, color: Palette.inkSoft)),
+                const SizedBox(height: 24),
+                Row(
+                  children: [
+                    Expanded(child: _StatTile(label: 'Total XP', value: '⚡ ${widget.xp}', color: Palette.sun)),
+                    const SizedBox(width: 10),
+                    Expanded(child: _StatTile(label: 'Accuracy', value: '🎯 $pct%', color: Palette.green)),
+                    const SizedBox(width: 10),
+                    Expanded(child: _StatTile(label: 'Streak', value: '🔥 ${state.currentStreak}', color: Palette.flame)),
+                  ],
+                ),
+                if (missed.isNotEmpty) ...[
+                  const SizedBox(height: 20),
+                  const Text('Words to practise',
+                      style: TextStyle(fontWeight: FontWeight.w900, color: Palette.inkSoft)),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    alignment: WrapAlignment.center,
+                    children: [
+                      for (final id in missed)
+                        Chip(
+                          side: const BorderSide(color: Palette.line, width: 2),
+                          backgroundColor: Colors.white,
+                          label: Text('${state.target.entry(id).text} · ${state.native.entry(id).text}',
+                              style: const TextStyle(fontWeight: FontWeight.w800)),
+                        ),
+                    ],
+                  ),
+                ],
+                const Spacer(),
+                ChunkyButton(label: 'Continue', onPressed: widget.onDone, color: Palette.green, shadow: Palette.greenDark),
               ],
             ),
-            if (missed.isNotEmpty) ...[
-              const SizedBox(height: 24),
-              Text('Words to practise', style: theme.textTheme.titleSmall),
-              const SizedBox(height: 8),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                alignment: WrapAlignment.center,
-                children: [
-                  for (final id in missed)
-                    Chip(label: Text('${state.target.entry(id).text} · ${state.native.entry(id).text}')),
-                ],
-              ),
-            ],
-            const Spacer(),
-            FilledButton(onPressed: onDone, child: const Text('Continue')),
-          ],
+          ),
         ),
-      ),
+        const Positioned.fill(child: Confetti()),
+      ],
     );
   }
 }
 
-class _ResultChip extends StatelessWidget {
-  const _ResultChip({required this.label, required this.value});
+class _StatTile extends StatelessWidget {
+  const _StatTile({required this.label, required this.value, required this.color});
 
   final String label;
   final String value;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
     return Container(
-      width: 96,
-      padding: const EdgeInsets.symmetric(vertical: 12),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHigh,
-        borderRadius: BorderRadius.circular(14),
+        color: color,
+        borderRadius: BorderRadius.circular(16),
       ),
+      padding: const EdgeInsets.all(2.5),
       child: Column(
         children: [
-          Text(value, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800)),
-          Text(label, style: TextStyle(color: scheme.onSurfaceVariant)),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4),
+            child: Text(label.toUpperCase(),
+                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 11, letterSpacing: 0.8)),
+          ),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(14)),
+            child: Text(value,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: color)),
+          ),
         ],
       ),
     );
   }
 }
-

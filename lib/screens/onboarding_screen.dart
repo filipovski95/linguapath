@@ -2,118 +2,116 @@ import 'package:flutter/material.dart';
 
 import '../data/models.dart';
 import '../logic/app_state.dart';
+import '../ui/chunky_button.dart';
+import '../ui/mascot.dart';
+import '../ui/palette.dart';
 
-/// Picks the language the learner speaks and the one they want to learn.
+/// Picks the one language to learn. Explanations are in the base language
+/// (English unless changed in Settings).
 ///
-/// Also used from Settings to switch languages, in which case it pops when done.
-class OnboardingScreen extends StatefulWidget {
+/// Also used from Settings to switch course, in which case it pops when done.
+class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key, this.fromSettings = false});
 
   final bool fromSettings;
 
   @override
-  State<OnboardingScreen> createState() => _OnboardingScreenState();
-}
-
-class _OnboardingScreenState extends State<OnboardingScreen> {
-  String? _native;
-
-  @override
-  void initState() {
-    super.initState();
-    final s = AppScope.read(context);
-    if (widget.fromSettings) _native = s.nativeCode;
-  }
-
-  @override
   Widget build(BuildContext context) {
     final state = AppScope.of(context);
-    final langs = state.content.languages.values.toList();
-    final choosingTarget = _native != null;
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(
-        leading: choosingTarget && !widget.fromSettings
-            ? BackButton(onPressed: () => setState(() => _native = null))
-            : null,
-        title: widget.fromSettings ? const Text('Change languages') : null,
-      ),
+      appBar: fromSettings ? AppBar(title: const Text('Choose a course')) : null,
       body: SafeArea(
         child: ListView(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+          padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
           children: [
-            if (!widget.fromSettings) ...[
-              Text('LinguaPath', style: theme.textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.w800, color: theme.colorScheme.primary)),
-              const SizedBox(height: 4),
-            ],
-            Text(
-              choosingTarget ? 'What do you want to learn?' : 'Which language do you speak?',
-              style: theme.textTheme.titleLarge,
-            ),
-            const SizedBox(height: 4),
-            Text(
-              choosingTarget
-                  ? 'You can add more languages any time.'
-                  : 'Translations will be shown in this language.',
-              style: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurfaceVariant),
-            ),
-            const SizedBox(height: 20),
-            for (final l in langs)
-              if (!choosingTarget || l.code != _native)
-                _LanguageTile(
-                  language: l,
-                  selected: choosingTarget
-                      ? l.code == state.targetCode && widget.fromSettings
-                      : l.code == _native,
-                  onTap: () => _pick(state, l),
-                ),
-            if (widget.fromSettings && choosingTarget) ...[
-              const SizedBox(height: 16),
-              TextButton(
-                onPressed: () => setState(() => _native = null),
-                child: Text('I speak: ${state.content.language(_native!).name} (change)'),
+            if (!fromSettings) ...[
+              Center(
+                child: Text('LinguaPath',
+                    style: theme.textTheme.headlineMedium?.copyWith(color: Palette.violet, letterSpacing: -0.5)),
               ),
+              const SizedBox(height: 16),
             ],
+            const MascotSays(
+              mood: MascotMood.happy,
+              size: 96,
+              text: "Hi, I'm Pip! Which language do you want to learn?",
+            ),
+            const SizedBox(height: 8),
+            Text('Learn one language at a time. You can switch courses whenever you like.',
+                style: theme.textTheme.bodyMedium?.copyWith(color: Palette.inkSoft)),
+            const SizedBox(height: 16),
+            LayoutBuilder(builder: (context, c) {
+              final cols = c.maxWidth > 520 ? 3 : 2;
+              const gap = 12.0;
+              final w = (c.maxWidth - gap * (cols - 1)) / cols;
+              return Wrap(
+                spacing: gap,
+                runSpacing: gap,
+                children: [
+                  for (final l in state.courses)
+                    SizedBox(
+                      width: w,
+                      child: _CourseCard(
+                        language: l,
+                        selected: fromSettings && l.code == state.targetCode,
+                        progress: state.progressFor(l.code).completed.length,
+                        onTap: () {
+                          state.setTarget(l.code);
+                          if (fromSettings) Navigator.of(context).pop();
+                        },
+                      ),
+                    ),
+                ],
+              );
+            }),
           ],
         ),
       ),
     );
   }
-
-  void _pick(AppState state, Language l) {
-    if (_native == null) {
-      setState(() => _native = l.code);
-      return;
-    }
-    state.setLanguages(native: _native!, target: l.code);
-    if (widget.fromSettings) Navigator.of(context).pop();
-  }
 }
 
-class _LanguageTile extends StatelessWidget {
-  const _LanguageTile({required this.language, required this.onTap, this.selected = false});
+class _CourseCard extends StatelessWidget {
+  const _CourseCard({
+    required this.language,
+    required this.onTap,
+    required this.progress,
+    this.selected = false,
+  });
 
   final Language language;
   final VoidCallback onTap;
+  final int progress;
   final bool selected;
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    return Card(
-      elevation: 0,
-      color: selected ? scheme.primaryContainer : scheme.surfaceContainerHigh,
-      margin: const EdgeInsets.only(bottom: 10),
-      child: ListTile(
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-        leading: Text(language.flag, style: const TextStyle(fontSize: 32)),
-        title: Text(language.name, style: const TextStyle(fontWeight: FontWeight.w600)),
-        subtitle: Text(language.nativeName),
-        trailing: const Icon(Icons.chevron_right),
+    return Semantics(
+      button: true,
+      label: language.name,
+      excludeSemantics: true,
+      child: ChunkyCard(
         onTap: onTap,
+        border: selected ? const Color(0xFF9C85FF) : Palette.line,
+        fill: selected ? Palette.violetSoft : Colors.white,
+        padding: const EdgeInsets.fromLTRB(12, 16, 12, 14),
+        child: Column(
+          children: [
+            Text(language.flag, style: const TextStyle(fontSize: 48)),
+            const SizedBox(height: 6),
+            Text(language.name,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Palette.ink)),
+            Text(
+              progress > 0 ? '$progress ${progress == 1 ? 'lesson' : 'lessons'} done' : language.nativeName,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontWeight: FontWeight.w700, color: progress > 0 ? Palette.green : Palette.inkSoft),
+            ),
+          ],
+        ),
       ),
     );
   }

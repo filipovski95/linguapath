@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../logic/app_state.dart';
+import '../ui/palette.dart';
+import '../widgets/word_text.dart';
 import 'learn_tab.dart';
+import 'onboarding_screen.dart';
 import 'review_tab.dart';
 import 'settings_tab.dart';
 import 'words_tab.dart';
@@ -20,30 +23,52 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final state = AppScope.of(context);
     final due = state.dueWords.length;
-    final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        titleSpacing: 16,
+        toolbarHeight: 60,
+        titleSpacing: 12,
         title: Row(
           children: [
-            Text(state.target.flag, style: const TextStyle(fontSize: 26)),
-            const SizedBox(width: 10),
-            Flexible(
-              child: Text(state.target.name, overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(fontWeight: FontWeight.w700)),
+            Tooltip(
+              message: 'Change course',
+              child: InkWell(
+                borderRadius: BorderRadius.circular(12),
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (_) => const OnboardingScreen(fromSettings: true))),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Palette.line, width: 2),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(state.target.flag, style: const TextStyle(fontSize: 22)),
+                      const Icon(Icons.expand_more_rounded, size: 18, color: Palette.inkSoft),
+                    ],
+                  ),
+                ),
+              ),
             ),
+            const Spacer(),
+            StatPill(
+              icon: '🔥',
+              value: '${state.currentStreak}',
+              color: Palette.flame,
+              dim: !state.practicedToday,
+              tooltip: state.practicedToday ? 'Day streak' : 'Do a lesson today to keep your streak',
+            ),
+            const SizedBox(width: 18),
+            StatPill(icon: '⚡', value: '${state.progress.xp}', color: Palette.sunDark, tooltip: 'Total XP'),
+            const SizedBox(width: 18),
+            StatPill(icon: '📚', value: '${state.learnedWords.length}', color: Palette.violet, tooltip: 'Words learned'),
           ],
         ),
-        actions: [
-          _Stat(
-            icon: '🔥',
-            value: state.currentStreak,
-            tooltip: state.practicedToday ? 'Day streak' : 'Practice today to keep your streak',
-            dim: !state.practicedToday,
-          ),
-          _Stat(icon: '⭐', value: state.progress.xp, tooltip: 'Total XP'),
-          const SizedBox(width: 8),
-        ],
+        bottom: const PreferredSize(
+          preferredSize: Size.fromHeight(2),
+          child: Divider(height: 2, thickness: 2, color: Palette.line),
+        ),
       ),
       body: IndexedStack(
         index: _tab,
@@ -56,47 +81,22 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _tab,
+        height: 68,
         onDestinationSelected: (i) => setState(() => _tab = i),
         destinations: [
-          const NavigationDestination(icon: Icon(Icons.school_outlined),
-              selectedIcon: Icon(Icons.school), label: 'Learn'),
+          const NavigationDestination(icon: Text('🏠', style: TextStyle(fontSize: 24)), label: 'Learn'),
           NavigationDestination(
-            icon: Badge(isLabelVisible: due > 0, label: Text('$due'),
-                child: const Icon(Icons.style_outlined)),
-            selectedIcon: Badge(isLabelVisible: due > 0, label: Text('$due'),
-                backgroundColor: theme.colorScheme.error,
-                child: const Icon(Icons.style)),
+            icon: Badge(
+              isLabelVisible: due > 0,
+              backgroundColor: Palette.coral,
+              label: Text('$due'),
+              child: const Text('🧠', style: TextStyle(fontSize: 24)),
+            ),
             label: 'Review',
           ),
-          const NavigationDestination(icon: Icon(Icons.menu_book_outlined),
-              selectedIcon: Icon(Icons.menu_book), label: 'Words'),
-          const NavigationDestination(icon: Icon(Icons.settings_outlined),
-              selectedIcon: Icon(Icons.settings), label: 'Settings'),
+          const NavigationDestination(icon: Text('📖', style: TextStyle(fontSize: 24)), label: 'Words'),
+          const NavigationDestination(icon: Text('⚙️', style: TextStyle(fontSize: 24)), label: 'Settings'),
         ],
-      ),
-    );
-  }
-}
-
-class _Stat extends StatelessWidget {
-  const _Stat({required this.icon, required this.value, required this.tooltip, this.dim = false});
-
-  final String icon;
-  final int value;
-  final String tooltip;
-  final bool dim;
-
-  @override
-  Widget build(BuildContext context) {
-    return Tooltip(
-      message: tooltip,
-      child: Opacity(
-        opacity: dim ? 0.5 : 1,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 6),
-          child: Text('$icon $value',
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
-        ),
       ),
     );
   }

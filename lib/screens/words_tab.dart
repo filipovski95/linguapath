@@ -70,7 +70,7 @@ class _WordsTabState extends State<WordsTab> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     if (cards[id] != null) _Strength(box: cards[id]!.box),
-                    SpeakButton(text: state.target.entry(id).text, size: 24),
+                    SpeakButton(text: state.target.entry(id).text, size: 36),
                   ],
                 ),
               ),

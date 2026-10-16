@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../logic/app_state.dart';
 import '../logic/exercises.dart';
-import '../logic/speech.dart';
 import '../logic/srs.dart';
 import '../widgets/word_text.dart';
+import '../ui/chunky_button.dart';
+import '../ui/mascot.dart';
+import '../ui/palette.dart';
 import 'quiz_session.dart';
 
 /// Flashcards for words that are due, using spaced repetition.
@@ -41,7 +43,7 @@ class _ReviewTabState extends State<ReviewTab> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(learned == 0 ? '🌱' : '✨', style: const TextStyle(fontSize: 72)),
+              Mascot(mood: learned == 0 ? MascotMood.thinking : MascotMood.cheer, size: 130),
               const SizedBox(height: 16),
               Text(
                 learned == 0 ? 'No words yet' : 'All caught up!',
@@ -57,9 +59,9 @@ class _ReviewTabState extends State<ReviewTab> {
               ),
               if (learned >= 4) ...[
                 const SizedBox(height: 24),
-                OutlinedButton.icon(
-                  icon: const Icon(Icons.bolt),
-                  label: const Text('Quick practice anyway'),
+                ChunkyButton(
+                  label: 'Quick practice',
+                  icon: Icons.bolt_rounded,
                   onPressed: () => _openPractice(context, state),
                 ),
               ],
@@ -84,20 +86,28 @@ class _ReviewTabState extends State<ReviewTab> {
           Expanded(
             child: GestureDetector(
               onTap: () {
-                if (!_flipped) {
-                  Speech.instance.speak(t.text, state.target.ttsLocale, rate: state.speechRate);
-                }
+                if (!_flipped) state.say(t.text);
                 setState(() => _flipped = !_flipped);
               },
-              child: Card(
-                elevation: 2,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(28),
+                  border: const Border(
+                    top: BorderSide(color: Palette.line, width: 2),
+                    left: BorderSide(color: Palette.line, width: 2),
+                    right: BorderSide(color: Palette.line, width: 2),
+                    bottom: BorderSide(color: Palette.line, width: 7),
+                  ),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(24),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      WordText(entry: t, size: 44),
-                      SpeakButton(text: t.text, size: 32),
+                      WordText(entry: t, size: 44, color: Palette.ink),
+                      const SizedBox(height: 12),
+                      SpeakButton(text: t.text, size: 52),
                       const SizedBox(height: 24),
                       AnimatedCrossFade(
                         duration: const Duration(milliseconds: 200),
@@ -129,19 +139,17 @@ class _ReviewTabState extends State<ReviewTab> {
           if (_flipped)
             Row(
               children: [
-                Expanded(child: _GradeButton(label: 'Again', color: theme.colorScheme.error,
-                    onTap: () => _grade(id, ReviewGrade.again))),
+                Expanded(child: ChunkyButton(label: 'Again', color: Palette.coral, shadow: Palette.coralDark,
+                    onPressed: () => _grade(id, ReviewGrade.again))),
                 const SizedBox(width: 10),
-                Expanded(child: _GradeButton(label: 'Good', color: theme.colorScheme.primary,
-                    onTap: () => _grade(id, ReviewGrade.good))),
+                Expanded(child: ChunkyButton(label: 'Good', onPressed: () => _grade(id, ReviewGrade.good))),
                 const SizedBox(width: 10),
-                Expanded(child: _GradeButton(label: 'Easy', color: Colors.green,
-                    onTap: () => _grade(id, ReviewGrade.easy))),
+                Expanded(child: ChunkyButton(label: 'Easy', color: Palette.green, shadow: Palette.greenDark,
+                    onPressed: () => _grade(id, ReviewGrade.easy))),
               ],
             )
           else
-            FilledButton(onPressed: () => setState(() => _flipped = true),
-                child: const Text('Show answer')),
+            ChunkyButton(label: 'Show answer', onPressed: () => setState(() => _flipped = true)),
         ],
       ),
     );
@@ -155,21 +163,6 @@ class _ReviewTabState extends State<ReviewTab> {
       builder: (_) => _PracticeScreen(exercises: exercises),
     ));
   }
-}
-
-class _GradeButton extends StatelessWidget {
-  const _GradeButton({required this.label, required this.color, required this.onTap});
-
-  final String label;
-  final Color color;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) => FilledButton(
-        style: FilledButton.styleFrom(backgroundColor: color),
-        onPressed: onTap,
-        child: Text(label),
-      );
 }
 
 class _PracticeScreen extends StatefulWidget {

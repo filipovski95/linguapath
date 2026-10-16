@@ -79,7 +79,7 @@ Then finish every item under **Dashboard → Set up your app**:
 | Government app / Financial features / Health | No / None / None. |
 | App category | Education. Contact email: your email. |
 
-**Store listing** (Grow → Store presence → Main store listing): copy the texts from `store/listing.md` and upload from `store/`:
+**Store listing** (Grow → Store presence → Main store listing): copy the English texts from `store/listings/en-US.md`, then add translations (Store presence → Translations → Add your own) from the other files in `store/listings/`, and upload from `store/`:
 - App icon: `play-icon-512.png` (512×512)
 - Feature graphic: `feature-graphic-1024x500.png`
 - Phone screenshots: the files in `store/screenshots/` (1080×1920, need 2–8)

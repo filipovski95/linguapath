@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:linguapath/data/models.dart';
 import 'package:linguapath/logic/app_state.dart';
+import 'package:linguapath/logic/sounds.dart';
 import 'package:linguapath/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -27,7 +28,10 @@ void main() {
     return AppState(content, await SharedPreferences.getInstance(), clock: () => now);
   }
 
-  setUp(() => now = DateTime(2026, 10, 16, 9));
+  setUp(() {
+    now = DateTime(2026, 10, 16, 9);
+    Sounds.instance.forceOff = true;
+  });
 
   group('AppState', () {
     test('only the first lesson starts unlocked', () async {
@@ -65,6 +69,16 @@ void main() {
       expect(s.currentStreak, 0);
     });
 
+    test('changing the base to the course language asks for a new course', () async {
+      final s = await freshState();
+      s.setTarget('de');
+      expect(s.isSetUp, isTrue);
+      s.setBase('de');
+      expect(s.isSetUp, isFalse);
+      expect(s.courses.map((l) => l.code), contains('en'));
+      expect(s.courses.map((l) => l.code), isNot(contains('de')));
+    });
+
     test('progress survives a restart and is kept per language', () async {
       final s = await freshState();
       s.setLanguages(native: 'en', target: 'zh');
@@ -81,19 +95,23 @@ void main() {
   testWidgets('onboarding, then a full first lesson', (tester) async {
     tester.view.physicalSize = const Size(1080, 2340); // a typical phone
     tester.view.devicePixelRatio = 3;
+    tester.platformDispatcher.accessibilityFeaturesTestValue =
+        const FakeAccessibilityFeatures(disableAnimations: true);
     addTearDown(tester.view.reset);
+    addTearDown(tester.platformDispatcher.clearAccessibilityFeaturesTestValue);
     final s = await freshState();
     await tester.pumpWidget(LinguaPathApp(state: s));
-    expect(find.text('Which language do you speak?'), findsOneWidget);
+    expect(find.textContaining('Which language do you want to learn?'), findsOneWidget);
+    expect(s.nativeCode, 'en');
+    expect(find.text('English'), findsNothing, reason: 'the base language is not offered as a course');
 
-    await tester.tap(find.text('English').first);
-    await tester.pumpAndSettle();
-    expect(find.text('What do you want to learn?'), findsOneWidget);
     await tester.tap(find.text('German'));
     await tester.pumpAndSettle();
+    expect(find.text('START'), findsOneWidget);
 
-    expect(find.text('Start learning'), findsOneWidget);
-    await tester.tap(find.text('Start learning'));
+    await tester.tap(find.byKey(const ValueKey('lesson:greetings_1')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('START +10 XP'));
     await tester.pumpAndSettle();
     expect(find.text('New word'), findsOneWidget);
 
@@ -107,7 +125,7 @@ void main() {
         await tester.ensureVisible(find.byKey(ValueKey('option:$id')));
         await tester.tap(find.byKey(ValueKey('option:$id')));
         await tester.pump();
-        await tester.tap(find.widgetWithText(FilledButton, 'Check'));
+        await tester.tap(find.text('CHECK'));
         await tester.pumpAndSettle();
         expect(find.text('✅ Correct!'), findsOneWidget);
       } else if (find.text('Tap the matching pairs').evaluate().isNotEmpty) {
@@ -122,15 +140,14 @@ void main() {
         }
         await tester.pumpAndSettle();
       }
-      await tester.tap(find.widgetWithText(FilledButton, 'Continue'));
+      await tester.tap(find.text('CONTINUE'));
       await tester.pumpAndSettle();
     }
     expect(find.text('Lesson complete!'), findsOneWidget);
-    expect(find.text('100%'), findsOneWidget);
-    await tester.tap(find.text('Continue'));
+    expect(find.text('🎯 100%'), findsOneWidget);
+    await tester.tap(find.text('CONTINUE'));
     await tester.pumpAndSettle();
     expect(s.progress.completed, hasLength(1));
-    expect(find.text('Up next'), findsOneWidget);
+    expect(find.text('NEXT'), findsOneWidget);
   });
 }
-
