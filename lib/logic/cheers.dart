@@ -26,8 +26,8 @@ class Cheers {
   static String lessonDone(int accuracy) => accuracy == 100
       ? _pick(['Flawless! Every answer right!', 'Perfect lesson! I’m so proud!'])
       : accuracy >= 80
-          ? _pick(['Lesson complete! Great work!', 'You did it! Well done!'])
-          : _pick(['Lesson complete! Practice makes perfect.', 'Done! Every lesson makes you stronger.']);
+          ? _pick(['Great work! Keep it up!', 'You did it! Well done!'])
+          : _pick(['Practice makes perfect. Keep going!', 'Done! Every lesson makes you stronger.']);
 
   static String greeting(int hour) => hour < 12
       ? _pick(['Good morning! Ready to learn?', 'Morning! A quick lesson?'])

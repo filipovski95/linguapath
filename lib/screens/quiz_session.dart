@@ -395,6 +395,8 @@ class _ChoiceViewState extends State<_ChoiceView> {
     final state = AppScope.of(context);
     final e = widget.exercise;
     final t = state.target.entry(e.conceptId);
+    // Small phones: shrink the prompt so all four answers fit above the bottom bar.
+    final compact = MediaQuery.sizeOf(context).height < 720;
 
     final (String instruction, Widget prompt) = switch (e.mode) {
       ChoiceMode.targetToNative => (
@@ -416,11 +418,11 @@ class _ChoiceViewState extends State<_ChoiceView> {
           'How do you say this in ${state.target.name}?',
           Center(
             child: Column(children: [
-              Text(state.course.concepts[e.conceptId]?.emoji ?? '', style: const TextStyle(fontSize: 64)),
-              const SizedBox(height: 6),
+              Text(state.course.concepts[e.conceptId]?.emoji ?? '', style: TextStyle(fontSize: compact ? 44 : 64)),
+              const SizedBox(height: 4),
               Text(state.native.entry(e.conceptId).text,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900)),
+                  style: TextStyle(fontSize: compact ? 24 : 28, fontWeight: FontWeight.w900)),
             ]),
           ),
         ),
@@ -430,7 +432,7 @@ class _ChoiceViewState extends State<_ChoiceView> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              SpeakButton(text: t.text, size: 96),
+              SpeakButton(text: t.text, size: compact ? 76 : 96),
               const SizedBox(width: 16),
               SpeakButton(text: t.text, size: 60, slow: true),
             ],
@@ -445,20 +447,20 @@ class _ChoiceViewState extends State<_ChoiceView> {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       children: [
         Text(instruction, style: Theme.of(context).textTheme.titleLarge),
-        const SizedBox(height: 20),
+        SizedBox(height: compact ? 12 : 20),
         prompt,
-        const SizedBox(height: 24),
+        SizedBox(height: compact ? 14 : 24),
         for (final id in e.options)
           Padding(
             key: ValueKey('option:$id'),
-            padding: const EdgeInsets.only(bottom: 12),
-            child: _option(state, id, showTarget),
+            padding: EdgeInsets.only(bottom: compact ? 8 : 12),
+            child: _option(state, id, showTarget, compact),
           ),
       ],
     );
   }
 
-  Widget _option(AppState state, String id, bool showTarget) {
+  Widget _option(AppState state, String id, bool showTarget, bool compact) {
     final e = widget.exercise;
     final selected = widget.selected == id;
     final isAnswer = id == e.conceptId;
@@ -474,6 +476,7 @@ class _ChoiceViewState extends State<_ChoiceView> {
     return ChunkyCard(
       border: border,
       fill: fill,
+      padding: EdgeInsets.symmetric(horizontal: 18, vertical: compact ? 10 : 14),
       onTap: widget.checked
           ? null
           : () {
