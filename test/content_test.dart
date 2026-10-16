@@ -42,6 +42,16 @@ void main() {
         expect(extra, isEmpty, reason: 'Unknown ids in $code.json: ${extra.join(', ')}');
       });
 
+      test('no two concepts share the same text', () {
+        // Two identical answers would make quiz and match questions ambiguous.
+        final seen = <String, String>{};
+        for (final e in lang.entries.entries) {
+          final t = e.value.text.toLowerCase();
+          expect(seen[t], isNull, reason: '$code: "${e.key}" and "${seen[t]}" are both "$t"');
+          seen[t] = e.key;
+        }
+      });
+
       test('has no empty text', () {
         for (final e in lang.entries.entries) {
           expect(e.value.text.trim(), isNotEmpty, reason: '$code/${e.key}');

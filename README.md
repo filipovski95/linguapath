@@ -1,7 +1,7 @@
 # LinguaPath
 
 An offline-first language learning app for Android, built with Flutter.
-It starts with **Chinese (Mandarin), English, German and Portuguese (Brazil)**, and a learner can study any of them from any of the others (for example German from Chinese).
+It has **Chinese (Mandarin), English, German, Portuguese (Brazil), Spanish, French and Macedonian**, and a learner can study any of them from any of the others (for example German from Chinese).
 
 ## What's in the MVP
 

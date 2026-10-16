@@ -1,0 +1,293 @@
+{
+ "code": "es",
+ "name": "Spanish",
+ "nativeName": "Español",
+ "flag": "🇪🇸",
+ "ttsLocale": "es-ES",
+ "entries": {
+  "hello": {
+   "text": "Hola"
+  },
+  "goodbye": {
+   "text": "Adiós"
+  },
+  "thank_you": {
+   "text": "Gracias"
+  },
+  "please": {
+   "text": "Por favor"
+  },
+  "yes": {
+   "text": "Sí"
+  },
+  "no": {
+   "text": "No"
+  },
+  "sorry": {
+   "text": "Lo siento"
+  },
+  "good_morning": {
+   "text": "Buenos días"
+  },
+  "good_night": {
+   "text": "Buenas noches"
+  },
+  "how_are_you": {
+   "text": "¿Cómo estás?"
+  },
+  "im_fine": {
+   "text": "Estoy bien"
+  },
+  "my_name_is": {
+   "text": "Me llamo …"
+  },
+  "one": {
+   "text": "uno"
+  },
+  "two": {
+   "text": "dos"
+  },
+  "three": {
+   "text": "tres"
+  },
+  "four": {
+   "text": "cuatro"
+  },
+  "five": {
+   "text": "cinco"
+  },
+  "six": {
+   "text": "seis"
+  },
+  "seven": {
+   "text": "siete"
+  },
+  "eight": {
+   "text": "ocho"
+  },
+  "nine": {
+   "text": "nueve"
+  },
+  "ten": {
+   "text": "diez"
+  },
+  "water": {
+   "text": "el agua"
+  },
+  "coffee": {
+   "text": "el café"
+  },
+  "tea": {
+   "text": "el té"
+  },
+  "bread": {
+   "text": "el pan"
+  },
+  "rice": {
+   "text": "el arroz"
+  },
+  "apple": {
+   "text": "la manzana"
+  },
+  "milk": {
+   "text": "la leche"
+  },
+  "egg": {
+   "text": "el huevo"
+  },
+  "fish": {
+   "text": "el pescado"
+  },
+  "meat": {
+   "text": "la carne"
+  },
+  "beer": {
+   "text": "la cerveza"
+  },
+  "delicious": {
+   "text": "delicioso"
+  },
+  "im_hungry": {
+   "text": "Tengo hambre"
+  },
+  "the_bill": {
+   "text": "La cuenta, por favor"
+  },
+  "mother": {
+   "text": "la madre"
+  },
+  "father": {
+   "text": "el padre"
+  },
+  "brother": {
+   "text": "el hermano"
+  },
+  "sister": {
+   "text": "la hermana"
+  },
+  "friend": {
+   "text": "el amigo",
+   "note": "Female: la amiga."
+  },
+  "child": {
+   "text": "el niño"
+  },
+  "man": {
+   "text": "el hombre"
+  },
+  "woman": {
+   "text": "la mujer"
+  },
+  "i": {
+   "text": "yo"
+  },
+  "you": {
+   "text": "tú",
+   "note": "Informal. Formal: usted."
+  },
+  "he": {
+   "text": "él"
+  },
+  "she": {
+   "text": "ella"
+  },
+  "we": {
+   "text": "nosotros"
+  },
+  "red": {
+   "text": "rojo"
+  },
+  "blue": {
+   "text": "azul"
+  },
+  "green": {
+   "text": "verde"
+  },
+  "yellow": {
+   "text": "amarillo"
+  },
+  "black": {
+   "text": "negro"
+  },
+  "white": {
+   "text": "blanco"
+  },
+  "big": {
+   "text": "grande"
+  },
+  "small": {
+   "text": "pequeño"
+  },
+  "hot": {
+   "text": "caliente"
+  },
+  "cold": {
+   "text": "frío"
+  },
+  "good": {
+   "text": "bueno"
+  },
+  "bad": {
+   "text": "malo"
+  },
+  "airport": {
+   "text": "el aeropuerto"
+  },
+  "train_station": {
+   "text": "la estación de tren"
+  },
+  "hotel": {
+   "text": "el hotel"
+  },
+  "taxi": {
+   "text": "el taxi"
+  },
+  "toilet": {
+   "text": "el baño",
+   "note": "Also: el servicio (Spain)."
+  },
+  "ticket": {
+   "text": "el billete",
+   "note": "Latin America: el boleto."
+  },
+  "left": {
+   "text": "izquierda"
+  },
+  "right": {
+   "text": "derecha"
+  },
+  "straight_ahead": {
+   "text": "todo recto"
+  },
+  "where_is": {
+   "text": "¿Dónde está …?"
+  },
+  "how_much": {
+   "text": "¿Cuánto cuesta?"
+  },
+  "i_dont_understand": {
+   "text": "No entiendo"
+  },
+  "speak_english": {
+   "text": "¿Hablas inglés?"
+  },
+  "today": {
+   "text": "hoy"
+  },
+  "tomorrow": {
+   "text": "mañana"
+  },
+  "yesterday": {
+   "text": "ayer"
+  },
+  "now": {
+   "text": "ahora"
+  },
+  "day": {
+   "text": "el día"
+  },
+  "week": {
+   "text": "la semana"
+  },
+  "month": {
+   "text": "el mes"
+  },
+  "year": {
+   "text": "el año"
+  },
+  "what_time": {
+   "text": "¿Qué hora es?"
+  },
+  "to_eat": {
+   "text": "comer"
+  },
+  "to_drink": {
+   "text": "beber"
+  },
+  "to_go": {
+   "text": "ir"
+  },
+  "to_come": {
+   "text": "venir"
+  },
+  "to_see": {
+   "text": "ver"
+  },
+  "to_speak": {
+   "text": "hablar"
+  },
+  "to_want": {
+   "text": "querer"
+  },
+  "to_like": {
+   "text": "gustar",
+   "note": "Literally “to please”: me gusta el café = I like coffee."
+  },
+  "to_sleep": {
+   "text": "dormir"
+  },
+  "to_learn": {
+   "text": "aprender"
+  }
+ }
+}

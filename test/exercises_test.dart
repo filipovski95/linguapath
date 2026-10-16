@@ -13,8 +13,11 @@ void main() {
   final zh = Language.fromJson(read('languages/zh.json'));
   final en = Language.fromJson(read('languages/en.json'));
   final de = Language.fromJson(read('languages/de.json'));
+  final mk = Language.fromJson(read('languages/mk.json'));
+  final fr = Language.fromJson(read('languages/fr.json'));
+  final es = Language.fromJson(read('languages/es.json'));
 
-  for (final (target, native) in [(zh, en), (de, zh), (en, de)]) {
+  for (final (target, native) in [(zh, en), (de, zh), (en, de), (mk, en), (fr, mk), (es, fr)]) {
     test('${target.code} from ${native.code}: every lesson builds valid exercises', () {
       for (var seed = 0; seed < 20; seed++) {
         final b = ExerciseBuilder(course: course, target: target, native: native, random: Random(seed));
