@@ -58,6 +58,9 @@ class AppState extends ChangeNotifier {
   bool showRomanization = true;
   bool soundOn = true;
 
+  /// Include exercises where the learner types the answer.
+  bool typingOn = true;
+
   /// Voice chosen in Settings, per course language (empty = automatic).
   final Map<String, String> voices = {};
   double speechRate = 0.45;
@@ -195,6 +198,11 @@ class AppState extends ChangeNotifier {
     _save();
   }
 
+  void setTypingOn(bool value) {
+    typingOn = value;
+    _save();
+  }
+
   void setSpeechRate(double value) {
     speechRate = value;
     _save();
@@ -232,6 +240,7 @@ class AppState extends ChangeNotifier {
       showRomanization = j['showRoman'] as bool? ?? true;
       soundOn = j['sound'] as bool? ?? true;
       Sounds.instance.enabled = soundOn;
+      typingOn = j['typing'] as bool? ?? true;
       (j['voices'] as Map<String, dynamic>? ?? {}).forEach((k, v) => voices[k] = v as String);
       speechRate = (j['speechRate'] as num?)?.toDouble() ?? speechRate;
       streak = j['streak'] as int? ?? 0;
@@ -250,6 +259,7 @@ class AppState extends ChangeNotifier {
       'target': targetCode,
       'showRoman': showRomanization,
       'sound': soundOn,
+      'typing': typingOn,
       'voices': voices,
       'speechRate': speechRate,
       'streak': streak,

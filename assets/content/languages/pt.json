@@ -289,6 +289,690 @@
   },
   "to_learn": {
    "text": "aprender"
+  },
+  "excuse_me": {
+   "text": "Com licença"
+  },
+  "no_problem": {
+   "text": "Sem problema"
+  },
+  "help": {
+   "text": "Socorro!"
+  },
+  "i_dont_know": {
+   "text": "Não sei"
+  },
+  "see_you_later": {
+   "text": "Até logo"
+  },
+  "welcome": {
+   "text": "Bem-vindo",
+   "note": "To a woman: bem-vinda."
+  },
+  "congratulations": {
+   "text": "Parabéns"
+  },
+  "good_luck": {
+   "text": "Boa sorte"
+  },
+  "nice_to_meet_you": {
+   "text": "Muito prazer"
+  },
+  "of_course": {
+   "text": "Claro"
+  },
+  "maybe": {
+   "text": "Talvez"
+  },
+  "good_evening": {
+   "text": "Boa noite!",
+   "note": "Same words as “good night”: used both to greet and to say goodbye in the evening."
+  },
+  "what": {
+   "text": "O quê?"
+  },
+  "who": {
+   "text": "Quem?"
+  },
+  "where": {
+   "text": "Onde?"
+  },
+  "when": {
+   "text": "Quando?"
+  },
+  "why": {
+   "text": "Por quê?"
+  },
+  "how": {
+   "text": "Como?"
+  },
+  "how_many": {
+   "text": "Quantos?",
+   "note": "Feminine: quantas?"
+  },
+  "which": {
+   "text": "Qual?"
+  },
+  "this": {
+   "text": "este",
+   "note": "In speech Brazilians often say “esse”."
+  },
+  "that": {
+   "text": "aquele"
+  },
+  "they": {
+   "text": "eles",
+   "note": "All-female group: elas."
+  },
+  "here": {
+   "text": "aqui"
+  },
+  "eleven": {
+   "text": "onze"
+  },
+  "twelve": {
+   "text": "doze"
+  },
+  "fifteen": {
+   "text": "quinze"
+  },
+  "twenty": {
+   "text": "vinte"
+  },
+  "thirty": {
+   "text": "trinta"
+  },
+  "fifty": {
+   "text": "cinquenta"
+  },
+  "hundred": {
+   "text": "cem"
+  },
+  "thousand": {
+   "text": "mil"
+  },
+  "grandmother": {
+   "text": "a avó"
+  },
+  "grandfather": {
+   "text": "o avô"
+  },
+  "son": {
+   "text": "o filho"
+  },
+  "daughter": {
+   "text": "a filha"
+  },
+  "husband": {
+   "text": "o marido"
+  },
+  "wife": {
+   "text": "a esposa"
+  },
+  "baby": {
+   "text": "o bebê"
+  },
+  "family": {
+   "text": "a família"
+  },
+  "dog": {
+   "text": "o cachorro"
+  },
+  "cat": {
+   "text": "o gato"
+  },
+  "bird": {
+   "text": "o pássaro"
+  },
+  "horse": {
+   "text": "o cavalo"
+  },
+  "cow": {
+   "text": "a vaca"
+  },
+  "pig": {
+   "text": "o porco"
+  },
+  "chicken_animal": {
+   "text": "a galinha"
+  },
+  "mouse": {
+   "text": "o rato"
+  },
+  "rabbit": {
+   "text": "o coelho"
+  },
+  "bear": {
+   "text": "o urso"
+  },
+  "lion": {
+   "text": "o leão"
+  },
+  "elephant": {
+   "text": "o elefante"
+  },
+  "banana": {
+   "text": "a banana"
+  },
+  "orange_fruit": {
+   "text": "a laranja"
+  },
+  "grapes": {
+   "text": "as uvas"
+  },
+  "strawberry": {
+   "text": "o morango"
+  },
+  "lemon": {
+   "text": "o limão"
+  },
+  "tomato": {
+   "text": "o tomate"
+  },
+  "potato": {
+   "text": "a batata"
+  },
+  "carrot": {
+   "text": "a cenoura"
+  },
+  "onion": {
+   "text": "a cebola"
+  },
+  "salad": {
+   "text": "a salada"
+  },
+  "cheese": {
+   "text": "o queijo"
+  },
+  "soup": {
+   "text": "a sopa"
+  },
+  "sugar": {
+   "text": "o açúcar"
+  },
+  "salt": {
+   "text": "o sal"
+  },
+  "cake": {
+   "text": "o bolo"
+  },
+  "ice_cream": {
+   "text": "o sorvete"
+  },
+  "juice": {
+   "text": "o suco"
+  },
+  "wine": {
+   "text": "o vinho"
+  },
+  "breakfast": {
+   "text": "o café da manhã"
+  },
+  "lunch": {
+   "text": "o almoço"
+  },
+  "dinner": {
+   "text": "o jantar"
+  },
+  "menu": {
+   "text": "o cardápio"
+  },
+  "i_would_like": {
+   "text": "Eu gostaria de …"
+  },
+  "cheers": {
+   "text": "Saúde!"
+  },
+  "waiter": {
+   "text": "o garçom"
+  },
+  "vegetarian": {
+   "text": "vegetariano"
+  },
+  "spicy": {
+   "text": "apimentado"
+  },
+  "sweet": {
+   "text": "doce"
+  },
+  "table_for_two": {
+   "text": "Uma mesa para dois, por favor"
+  },
+  "head": {
+   "text": "a cabeça"
+  },
+  "eye": {
+   "text": "o olho"
+  },
+  "ear": {
+   "text": "a orelha"
+  },
+  "nose": {
+   "text": "o nariz"
+  },
+  "mouth": {
+   "text": "a boca"
+  },
+  "hand": {
+   "text": "a mão"
+  },
+  "foot": {
+   "text": "o pé"
+  },
+  "hair": {
+   "text": "o cabelo"
+  },
+  "tooth": {
+   "text": "o dente"
+  },
+  "heart": {
+   "text": "o coração"
+  },
+  "shirt": {
+   "text": "a camiseta"
+  },
+  "trousers": {
+   "text": "a calça"
+  },
+  "dress": {
+   "text": "o vestido"
+  },
+  "shoes": {
+   "text": "os sapatos"
+  },
+  "hat": {
+   "text": "o chapéu"
+  },
+  "coat": {
+   "text": "o casaco"
+  },
+  "socks": {
+   "text": "as meias"
+  },
+  "bag": {
+   "text": "a bolsa"
+  },
+  "house": {
+   "text": "a casa"
+  },
+  "room": {
+   "text": "o quarto",
+   "note": "Specifically a bedroom or hotel room; living room is “a sala”."
+  },
+  "kitchen": {
+   "text": "a cozinha"
+  },
+  "bed": {
+   "text": "a cama"
+  },
+  "chair": {
+   "text": "a cadeira"
+  },
+  "table": {
+   "text": "a mesa"
+  },
+  "window": {
+   "text": "a janela"
+  },
+  "key": {
+   "text": "a chave"
+  },
+  "phone": {
+   "text": "o celular",
+   "note": "Mobile phone; a landline is “o telefone”."
+  },
+  "computer": {
+   "text": "o computador"
+  },
+  "book": {
+   "text": "o livro"
+  },
+  "door": {
+   "text": "a porta"
+  },
+  "city": {
+   "text": "a cidade"
+  },
+  "street": {
+   "text": "a rua"
+  },
+  "shop": {
+   "text": "a loja"
+  },
+  "market": {
+   "text": "o mercado"
+  },
+  "bank": {
+   "text": "o banco"
+  },
+  "hospital": {
+   "text": "o hospital"
+  },
+  "school": {
+   "text": "a escola"
+  },
+  "restaurant_place": {
+   "text": "o restaurante"
+  },
+  "park": {
+   "text": "o parque"
+  },
+  "museum": {
+   "text": "o museu"
+  },
+  "church": {
+   "text": "a igreja"
+  },
+  "pharmacy": {
+   "text": "a farmácia"
+  },
+  "car": {
+   "text": "o carro"
+  },
+  "bus": {
+   "text": "o ônibus"
+  },
+  "train": {
+   "text": "o trem"
+  },
+  "plane": {
+   "text": "o avião"
+  },
+  "bike": {
+   "text": "a bicicleta"
+  },
+  "boat": {
+   "text": "o barco"
+  },
+  "subway": {
+   "text": "o metrô"
+  },
+  "map": {
+   "text": "o mapa"
+  },
+  "passport": {
+   "text": "o passaporte"
+  },
+  "suitcase": {
+   "text": "a mala"
+  },
+  "sun": {
+   "text": "o sol"
+  },
+  "rain": {
+   "text": "a chuva"
+  },
+  "snow": {
+   "text": "a neve"
+  },
+  "wind": {
+   "text": "o vento"
+  },
+  "cloud": {
+   "text": "a nuvem"
+  },
+  "sea": {
+   "text": "o mar"
+  },
+  "mountain": {
+   "text": "a montanha"
+  },
+  "river": {
+   "text": "o rio"
+  },
+  "tree": {
+   "text": "a árvore"
+  },
+  "flower": {
+   "text": "a flor"
+  },
+  "monday": {
+   "text": "segunda-feira"
+  },
+  "tuesday": {
+   "text": "terça-feira"
+  },
+  "wednesday": {
+   "text": "quarta-feira"
+  },
+  "thursday": {
+   "text": "quinta-feira"
+  },
+  "friday": {
+   "text": "sexta-feira"
+  },
+  "saturday": {
+   "text": "sábado"
+  },
+  "sunday": {
+   "text": "domingo"
+  },
+  "spring": {
+   "text": "a primavera"
+  },
+  "summer": {
+   "text": "o verão"
+  },
+  "autumn": {
+   "text": "o outono"
+  },
+  "winter": {
+   "text": "o inverno"
+  },
+  "morning": {
+   "text": "a manhã"
+  },
+  "evening": {
+   "text": "o fim de tarde",
+   "note": "Brazilians usually just say “a noite” for evening."
+  },
+  "night": {
+   "text": "a noite"
+  },
+  "hour": {
+   "text": "a hora"
+  },
+  "minute": {
+   "text": "o minuto"
+  },
+  "pink": {
+   "text": "rosa"
+  },
+  "purple": {
+   "text": "roxo"
+  },
+  "brown": {
+   "text": "marrom"
+  },
+  "grey": {
+   "text": "cinza"
+  },
+  "new": {
+   "text": "novo"
+  },
+  "old": {
+   "text": "velho"
+  },
+  "beautiful": {
+   "text": "bonito"
+  },
+  "fast": {
+   "text": "rápido"
+  },
+  "slow": {
+   "text": "lento"
+  },
+  "easy": {
+   "text": "fácil"
+  },
+  "difficult": {
+   "text": "difícil"
+  },
+  "happy": {
+   "text": "feliz"
+  },
+  "sad": {
+   "text": "triste"
+  },
+  "tired": {
+   "text": "cansado"
+  },
+  "angry": {
+   "text": "bravo",
+   "note": "Brazilian usage; “irritado” also works."
+  },
+  "scared": {
+   "text": "assustado"
+  },
+  "bored": {
+   "text": "entediado"
+  },
+  "i_love_you": {
+   "text": "Eu te amo"
+  },
+  "i_miss_you": {
+   "text": "Estou com saudade",
+   "note": "“Saudade” is a famous Portuguese word for longing."
+  },
+  "teacher": {
+   "text": "o professor"
+  },
+  "doctor": {
+   "text": "o médico"
+  },
+  "student": {
+   "text": "o aluno"
+  },
+  "cook": {
+   "text": "o cozinheiro"
+  },
+  "police_officer": {
+   "text": "o policial"
+  },
+  "driver": {
+   "text": "o motorista"
+  },
+  "work": {
+   "text": "o trabalho"
+  },
+  "office": {
+   "text": "o escritório"
+  },
+  "to_read": {
+   "text": "ler"
+  },
+  "to_write": {
+   "text": "escrever"
+  },
+  "to_listen": {
+   "text": "ouvir"
+  },
+  "to_buy": {
+   "text": "comprar"
+  },
+  "to_pay": {
+   "text": "pagar"
+  },
+  "to_work": {
+   "text": "trabalhar"
+  },
+  "to_play": {
+   "text": "jogar",
+   "note": "For games and sports; children playing is “brincar”."
+  },
+  "to_run": {
+   "text": "correr"
+  },
+  "to_walk": {
+   "text": "andar"
+  },
+  "to_cook": {
+   "text": "cozinhar"
+  },
+  "to_open": {
+   "text": "abrir"
+  },
+  "to_close": {
+   "text": "fechar"
+  },
+  "to_know": {
+   "text": "saber"
+  },
+  "to_think": {
+   "text": "pensar"
+  },
+  "to_love": {
+   "text": "amar"
+  },
+  "money": {
+   "text": "o dinheiro"
+  },
+  "price": {
+   "text": "o preço"
+  },
+  "cheap": {
+   "text": "barato"
+  },
+  "expensive": {
+   "text": "caro"
+  },
+  "open_sign": {
+   "text": "Aberto"
+  },
+  "closed_sign": {
+   "text": "Fechado"
+  },
+  "cash": {
+   "text": "em dinheiro",
+   "note": "As in “pagar em dinheiro” (pay in cash)."
+  },
+  "receipt": {
+   "text": "o recibo"
+  },
+  "sick": {
+   "text": "doente"
+  },
+  "pain": {
+   "text": "a dor"
+  },
+  "medicine": {
+   "text": "o remédio"
+  },
+  "i_need_a_doctor": {
+   "text": "Preciso de um médico"
+  },
+  "headache": {
+   "text": "a dor de cabeça"
+  },
+  "emergency": {
+   "text": "a emergência"
+  },
+  "call_the_police": {
+   "text": "Chame a polícia!"
+  },
+  "music": {
+   "text": "a música"
+  },
+  "movie": {
+   "text": "o filme"
+  },
+  "sport": {
+   "text": "o esporte"
+  },
+  "game": {
+   "text": "o jogo"
+  },
+  "football": {
+   "text": "o futebol"
+  },
+  "photo": {
+   "text": "a foto"
+  },
+  "to_dance": {
+   "text": "dançar"
+  },
+  "beach": {
+   "text": "a praia"
   }
  }
 }

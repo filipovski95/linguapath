@@ -382,6 +382,917 @@
   "to_learn": {
    "text": "学习",
    "roman": "xuéxí"
+  },
+  "excuse_me": {
+   "text": "打扰一下",
+   "roman": "dǎrǎo yíxià",
+   "note": "To ask a question, 请问 (qǐngwèn) is also common."
+  },
+  "no_problem": {
+   "text": "没问题",
+   "roman": "méi wèntí"
+  },
+  "help": {
+   "text": "救命！",
+   "roman": "jiùmìng!"
+  },
+  "i_dont_know": {
+   "text": "我不知道",
+   "roman": "wǒ bù zhīdào"
+  },
+  "see_you_later": {
+   "text": "一会儿见",
+   "roman": "yíhuìr jiàn"
+  },
+  "welcome": {
+   "text": "欢迎",
+   "roman": "huānyíng"
+  },
+  "congratulations": {
+   "text": "恭喜",
+   "roman": "gōngxǐ"
+  },
+  "good_luck": {
+   "text": "祝你好运",
+   "roman": "zhù nǐ hǎoyùn"
+  },
+  "nice_to_meet_you": {
+   "text": "很高兴认识你",
+   "roman": "hěn gāoxìng rènshi nǐ"
+  },
+  "of_course": {
+   "text": "当然",
+   "roman": "dāngrán"
+  },
+  "maybe": {
+   "text": "也许",
+   "roman": "yěxǔ"
+  },
+  "good_evening": {
+   "text": "晚上好",
+   "roman": "wǎnshang hǎo"
+  },
+  "what": {
+   "text": "什么？",
+   "roman": "shénme?"
+  },
+  "who": {
+   "text": "谁？",
+   "roman": "shéi?"
+  },
+  "where": {
+   "text": "哪里？",
+   "roman": "nǎlǐ?"
+  },
+  "when": {
+   "text": "什么时候？",
+   "roman": "shénme shíhou?"
+  },
+  "why": {
+   "text": "为什么？",
+   "roman": "wèishénme?"
+  },
+  "how": {
+   "text": "怎么？",
+   "roman": "zěnme?"
+  },
+  "how_many": {
+   "text": "多少？",
+   "roman": "duōshao?",
+   "note": "For small numbers, 几 (jǐ) is used instead."
+  },
+  "which": {
+   "text": "哪个？",
+   "roman": "nǎge?"
+  },
+  "this": {
+   "text": "这个",
+   "roman": "zhège"
+  },
+  "that": {
+   "text": "那个",
+   "roman": "nàge"
+  },
+  "they": {
+   "text": "他们",
+   "roman": "tāmen"
+  },
+  "here": {
+   "text": "这里",
+   "roman": "zhèlǐ"
+  },
+  "eleven": {
+   "text": "十一",
+   "roman": "shíyī"
+  },
+  "twelve": {
+   "text": "十二",
+   "roman": "shí'èr"
+  },
+  "fifteen": {
+   "text": "十五",
+   "roman": "shíwǔ"
+  },
+  "twenty": {
+   "text": "二十",
+   "roman": "èrshí"
+  },
+  "thirty": {
+   "text": "三十",
+   "roman": "sānshí"
+  },
+  "fifty": {
+   "text": "五十",
+   "roman": "wǔshí"
+  },
+  "hundred": {
+   "text": "一百",
+   "roman": "yìbǎi"
+  },
+  "thousand": {
+   "text": "一千",
+   "roman": "yìqiān"
+  },
+  "grandmother": {
+   "text": "奶奶",
+   "roman": "nǎinai",
+   "note": "Father's mother; mother's mother is 外婆 (wàipó) or 姥姥 (lǎolao)."
+  },
+  "grandfather": {
+   "text": "爷爷",
+   "roman": "yéye",
+   "note": "Father's father; mother's father is 外公 (wàigōng) or 姥爷 (lǎoye)."
+  },
+  "son": {
+   "text": "儿子",
+   "roman": "érzi"
+  },
+  "daughter": {
+   "text": "女儿",
+   "roman": "nǚ'ér"
+  },
+  "husband": {
+   "text": "丈夫",
+   "roman": "zhàngfu",
+   "note": "Informal: 老公 (lǎogōng)."
+  },
+  "wife": {
+   "text": "妻子",
+   "roman": "qīzi",
+   "note": "Informal: 老婆 (lǎopo)."
+  },
+  "baby": {
+   "text": "宝宝",
+   "roman": "bǎobao"
+  },
+  "family": {
+   "text": "家人",
+   "roman": "jiārén"
+  },
+  "dog": {
+   "text": "狗",
+   "roman": "gǒu"
+  },
+  "cat": {
+   "text": "猫",
+   "roman": "māo"
+  },
+  "bird": {
+   "text": "鸟",
+   "roman": "niǎo"
+  },
+  "horse": {
+   "text": "马",
+   "roman": "mǎ"
+  },
+  "cow": {
+   "text": "牛",
+   "roman": "niú"
+  },
+  "pig": {
+   "text": "猪",
+   "roman": "zhū"
+  },
+  "chicken_animal": {
+   "text": "鸡",
+   "roman": "jī"
+  },
+  "mouse": {
+   "text": "老鼠",
+   "roman": "lǎoshǔ"
+  },
+  "rabbit": {
+   "text": "兔子",
+   "roman": "tùzi"
+  },
+  "bear": {
+   "text": "熊",
+   "roman": "xióng"
+  },
+  "lion": {
+   "text": "狮子",
+   "roman": "shīzi"
+  },
+  "elephant": {
+   "text": "大象",
+   "roman": "dàxiàng"
+  },
+  "banana": {
+   "text": "香蕉",
+   "roman": "xiāngjiāo"
+  },
+  "orange_fruit": {
+   "text": "橙子",
+   "roman": "chéngzi"
+  },
+  "grapes": {
+   "text": "葡萄",
+   "roman": "pútao"
+  },
+  "strawberry": {
+   "text": "草莓",
+   "roman": "cǎoméi"
+  },
+  "lemon": {
+   "text": "柠檬",
+   "roman": "níngméng"
+  },
+  "tomato": {
+   "text": "西红柿",
+   "roman": "xīhóngshì"
+  },
+  "potato": {
+   "text": "土豆",
+   "roman": "tǔdòu"
+  },
+  "carrot": {
+   "text": "胡萝卜",
+   "roman": "húluóbo"
+  },
+  "onion": {
+   "text": "洋葱",
+   "roman": "yángcōng"
+  },
+  "salad": {
+   "text": "沙拉",
+   "roman": "shālā"
+  },
+  "cheese": {
+   "text": "奶酪",
+   "roman": "nǎilào"
+  },
+  "soup": {
+   "text": "汤",
+   "roman": "tāng"
+  },
+  "sugar": {
+   "text": "糖",
+   "roman": "táng"
+  },
+  "salt": {
+   "text": "盐",
+   "roman": "yán"
+  },
+  "cake": {
+   "text": "蛋糕",
+   "roman": "dàngāo"
+  },
+  "ice_cream": {
+   "text": "冰淇淋",
+   "roman": "bīngqílín"
+  },
+  "juice": {
+   "text": "果汁",
+   "roman": "guǒzhī"
+  },
+  "wine": {
+   "text": "葡萄酒",
+   "roman": "pútaojiǔ",
+   "note": "酒 (jiǔ) on its own means alcohol in general."
+  },
+  "breakfast": {
+   "text": "早饭",
+   "roman": "zǎofàn"
+  },
+  "lunch": {
+   "text": "午饭",
+   "roman": "wǔfàn"
+  },
+  "dinner": {
+   "text": "晚饭",
+   "roman": "wǎnfàn"
+  },
+  "menu": {
+   "text": "菜单",
+   "roman": "càidān"
+  },
+  "i_would_like": {
+   "text": "我想要…",
+   "roman": "wǒ xiǎng yào …"
+  },
+  "cheers": {
+   "text": "干杯！",
+   "roman": "gānbēi!"
+  },
+  "waiter": {
+   "text": "服务员",
+   "roman": "fúwùyuán"
+  },
+  "vegetarian": {
+   "text": "素食者",
+   "roman": "sùshízhě",
+   "note": "To say “I'm vegetarian”: 我吃素 (wǒ chī sù)."
+  },
+  "spicy": {
+   "text": "辣",
+   "roman": "là"
+  },
+  "sweet": {
+   "text": "甜",
+   "roman": "tián"
+  },
+  "table_for_two": {
+   "text": "两位，谢谢",
+   "roman": "liǎng wèi, xièxie",
+   "note": "Said when staff ask how many people are dining."
+  },
+  "head": {
+   "text": "头",
+   "roman": "tóu"
+  },
+  "eye": {
+   "text": "眼睛",
+   "roman": "yǎnjing"
+  },
+  "ear": {
+   "text": "耳朵",
+   "roman": "ěrduo"
+  },
+  "nose": {
+   "text": "鼻子",
+   "roman": "bízi"
+  },
+  "mouth": {
+   "text": "嘴",
+   "roman": "zuǐ"
+  },
+  "hand": {
+   "text": "手",
+   "roman": "shǒu"
+  },
+  "foot": {
+   "text": "脚",
+   "roman": "jiǎo"
+  },
+  "hair": {
+   "text": "头发",
+   "roman": "tóufa"
+  },
+  "tooth": {
+   "text": "牙齿",
+   "roman": "yáchǐ"
+  },
+  "heart": {
+   "text": "心",
+   "roman": "xīn"
+  },
+  "shirt": {
+   "text": "衬衫",
+   "roman": "chènshān",
+   "note": "A T-shirt is T恤 (T xù)."
+  },
+  "trousers": {
+   "text": "裤子",
+   "roman": "kùzi"
+  },
+  "dress": {
+   "text": "连衣裙",
+   "roman": "liányīqún"
+  },
+  "shoes": {
+   "text": "鞋",
+   "roman": "xié"
+  },
+  "hat": {
+   "text": "帽子",
+   "roman": "màozi"
+  },
+  "coat": {
+   "text": "外套",
+   "roman": "wàitào"
+  },
+  "socks": {
+   "text": "袜子",
+   "roman": "wàzi"
+  },
+  "bag": {
+   "text": "包",
+   "roman": "bāo"
+  },
+  "house": {
+   "text": "房子",
+   "roman": "fángzi"
+  },
+  "room": {
+   "text": "房间",
+   "roman": "fángjiān"
+  },
+  "kitchen": {
+   "text": "厨房",
+   "roman": "chúfáng"
+  },
+  "bed": {
+   "text": "床",
+   "roman": "chuáng"
+  },
+  "chair": {
+   "text": "椅子",
+   "roman": "yǐzi"
+  },
+  "table": {
+   "text": "桌子",
+   "roman": "zhuōzi"
+  },
+  "window": {
+   "text": "窗户",
+   "roman": "chuānghu"
+  },
+  "key": {
+   "text": "钥匙",
+   "roman": "yàoshi"
+  },
+  "phone": {
+   "text": "手机",
+   "roman": "shǒujī",
+   "note": "A landline phone is 电话 (diànhuà)."
+  },
+  "computer": {
+   "text": "电脑",
+   "roman": "diànnǎo"
+  },
+  "book": {
+   "text": "书",
+   "roman": "shū"
+  },
+  "door": {
+   "text": "门",
+   "roman": "mén"
+  },
+  "city": {
+   "text": "城市",
+   "roman": "chéngshì"
+  },
+  "street": {
+   "text": "街",
+   "roman": "jiē"
+  },
+  "shop": {
+   "text": "商店",
+   "roman": "shāngdiàn"
+  },
+  "market": {
+   "text": "市场",
+   "roman": "shìchǎng"
+  },
+  "bank": {
+   "text": "银行",
+   "roman": "yínháng"
+  },
+  "hospital": {
+   "text": "医院",
+   "roman": "yīyuàn"
+  },
+  "school": {
+   "text": "学校",
+   "roman": "xuéxiào"
+  },
+  "restaurant_place": {
+   "text": "餐厅",
+   "roman": "cāntīng"
+  },
+  "park": {
+   "text": "公园",
+   "roman": "gōngyuán"
+  },
+  "museum": {
+   "text": "博物馆",
+   "roman": "bówùguǎn"
+  },
+  "church": {
+   "text": "教堂",
+   "roman": "jiàotáng"
+  },
+  "pharmacy": {
+   "text": "药店",
+   "roman": "yàodiàn"
+  },
+  "car": {
+   "text": "汽车",
+   "roman": "qìchē"
+  },
+  "bus": {
+   "text": "公交车",
+   "roman": "gōngjiāochē"
+  },
+  "train": {
+   "text": "火车",
+   "roman": "huǒchē"
+  },
+  "plane": {
+   "text": "飞机",
+   "roman": "fēijī"
+  },
+  "bike": {
+   "text": "自行车",
+   "roman": "zìxíngchē"
+  },
+  "boat": {
+   "text": "船",
+   "roman": "chuán"
+  },
+  "subway": {
+   "text": "地铁",
+   "roman": "dìtiě"
+  },
+  "map": {
+   "text": "地图",
+   "roman": "dìtú"
+  },
+  "passport": {
+   "text": "护照",
+   "roman": "hùzhào"
+  },
+  "suitcase": {
+   "text": "行李箱",
+   "roman": "xínglixiāng"
+  },
+  "sun": {
+   "text": "太阳",
+   "roman": "tàiyáng"
+  },
+  "rain": {
+   "text": "雨",
+   "roman": "yǔ"
+  },
+  "snow": {
+   "text": "雪",
+   "roman": "xuě"
+  },
+  "wind": {
+   "text": "风",
+   "roman": "fēng"
+  },
+  "cloud": {
+   "text": "云",
+   "roman": "yún"
+  },
+  "sea": {
+   "text": "海",
+   "roman": "hǎi"
+  },
+  "mountain": {
+   "text": "山",
+   "roman": "shān"
+  },
+  "river": {
+   "text": "河",
+   "roman": "hé"
+  },
+  "tree": {
+   "text": "树",
+   "roman": "shù"
+  },
+  "flower": {
+   "text": "花",
+   "roman": "huā"
+  },
+  "monday": {
+   "text": "星期一",
+   "roman": "xīngqīyī"
+  },
+  "tuesday": {
+   "text": "星期二",
+   "roman": "xīngqī'èr"
+  },
+  "wednesday": {
+   "text": "星期三",
+   "roman": "xīngqīsān"
+  },
+  "thursday": {
+   "text": "星期四",
+   "roman": "xīngqīsì"
+  },
+  "friday": {
+   "text": "星期五",
+   "roman": "xīngqīwǔ"
+  },
+  "saturday": {
+   "text": "星期六",
+   "roman": "xīngqīliù"
+  },
+  "sunday": {
+   "text": "星期天",
+   "roman": "xīngqītiān",
+   "note": "Also written 星期日 (xīngqīrì)."
+  },
+  "spring": {
+   "text": "春天",
+   "roman": "chūntiān"
+  },
+  "summer": {
+   "text": "夏天",
+   "roman": "xiàtiān"
+  },
+  "autumn": {
+   "text": "秋天",
+   "roman": "qiūtiān"
+  },
+  "winter": {
+   "text": "冬天",
+   "roman": "dōngtiān"
+  },
+  "morning": {
+   "text": "早上",
+   "roman": "zǎoshang"
+  },
+  "evening": {
+   "text": "晚上",
+   "roman": "wǎnshang"
+  },
+  "night": {
+   "text": "夜里",
+   "roman": "yèli"
+  },
+  "hour": {
+   "text": "小时",
+   "roman": "xiǎoshí"
+  },
+  "minute": {
+   "text": "分钟",
+   "roman": "fēnzhōng"
+  },
+  "pink": {
+   "text": "粉色",
+   "roman": "fěnsè"
+  },
+  "purple": {
+   "text": "紫色",
+   "roman": "zǐsè"
+  },
+  "brown": {
+   "text": "棕色",
+   "roman": "zōngsè"
+  },
+  "grey": {
+   "text": "灰色",
+   "roman": "huīsè"
+  },
+  "new": {
+   "text": "新",
+   "roman": "xīn"
+  },
+  "old": {
+   "text": "旧",
+   "roman": "jiù"
+  },
+  "beautiful": {
+   "text": "漂亮",
+   "roman": "piàoliang"
+  },
+  "fast": {
+   "text": "快",
+   "roman": "kuài"
+  },
+  "slow": {
+   "text": "慢",
+   "roman": "màn"
+  },
+  "easy": {
+   "text": "容易",
+   "roman": "róngyì"
+  },
+  "difficult": {
+   "text": "难",
+   "roman": "nán"
+  },
+  "happy": {
+   "text": "高兴",
+   "roman": "gāoxìng"
+  },
+  "sad": {
+   "text": "难过",
+   "roman": "nánguò"
+  },
+  "tired": {
+   "text": "累",
+   "roman": "lèi"
+  },
+  "angry": {
+   "text": "生气",
+   "roman": "shēngqì"
+  },
+  "scared": {
+   "text": "害怕",
+   "roman": "hàipà"
+  },
+  "bored": {
+   "text": "无聊",
+   "roman": "wúliáo"
+  },
+  "i_love_you": {
+   "text": "我爱你",
+   "roman": "wǒ ài nǐ"
+  },
+  "i_miss_you": {
+   "text": "我想你",
+   "roman": "wǒ xiǎng nǐ"
+  },
+  "teacher": {
+   "text": "老师",
+   "roman": "lǎoshī"
+  },
+  "doctor": {
+   "text": "医生",
+   "roman": "yīshēng"
+  },
+  "student": {
+   "text": "学生",
+   "roman": "xuésheng"
+  },
+  "cook": {
+   "text": "厨师",
+   "roman": "chúshī"
+  },
+  "police_officer": {
+   "text": "警察",
+   "roman": "jǐngchá"
+  },
+  "driver": {
+   "text": "司机",
+   "roman": "sījī"
+  },
+  "work": {
+   "text": "工作",
+   "roman": "gōngzuò"
+  },
+  "office": {
+   "text": "办公室",
+   "roman": "bàngōngshì"
+  },
+  "to_read": {
+   "text": "读",
+   "roman": "dú",
+   "note": "“To read a book” is usually 看书 (kàn shū)."
+  },
+  "to_write": {
+   "text": "写",
+   "roman": "xiě"
+  },
+  "to_listen": {
+   "text": "听",
+   "roman": "tīng"
+  },
+  "to_buy": {
+   "text": "买",
+   "roman": "mǎi"
+  },
+  "to_pay": {
+   "text": "付钱",
+   "roman": "fùqián"
+  },
+  "to_work": {
+   "text": "上班",
+   "roman": "shàngbān",
+   "note": "Literally “go to work”; 工作 (gōngzuò) is also used as a verb."
+  },
+  "to_play": {
+   "text": "玩",
+   "roman": "wán"
+  },
+  "to_run": {
+   "text": "跑",
+   "roman": "pǎo"
+  },
+  "to_walk": {
+   "text": "走路",
+   "roman": "zǒulù"
+  },
+  "to_cook": {
+   "text": "做饭",
+   "roman": "zuòfàn"
+  },
+  "to_open": {
+   "text": "打开",
+   "roman": "dǎkāi"
+  },
+  "to_close": {
+   "text": "关",
+   "roman": "guān"
+  },
+  "to_know": {
+   "text": "知道",
+   "roman": "zhīdào"
+  },
+  "to_think": {
+   "text": "想",
+   "roman": "xiǎng"
+  },
+  "to_love": {
+   "text": "爱",
+   "roman": "ài"
+  },
+  "money": {
+   "text": "钱",
+   "roman": "qián"
+  },
+  "price": {
+   "text": "价格",
+   "roman": "jiàgé"
+  },
+  "cheap": {
+   "text": "便宜",
+   "roman": "piányi"
+  },
+  "expensive": {
+   "text": "贵",
+   "roman": "guì"
+  },
+  "open_sign": {
+   "text": "营业中",
+   "roman": "yíngyè zhōng"
+  },
+  "closed_sign": {
+   "text": "休息中",
+   "roman": "xiūxi zhōng"
+  },
+  "cash": {
+   "text": "现金",
+   "roman": "xiànjīn"
+  },
+  "receipt": {
+   "text": "小票",
+   "roman": "xiǎopiào",
+   "note": "An official tax receipt is 发票 (fāpiào)."
+  },
+  "sick": {
+   "text": "生病",
+   "roman": "shēngbìng"
+  },
+  "pain": {
+   "text": "疼",
+   "roman": "téng"
+  },
+  "medicine": {
+   "text": "药",
+   "roman": "yào"
+  },
+  "i_need_a_doctor": {
+   "text": "我需要看医生",
+   "roman": "wǒ xūyào kàn yīshēng"
+  },
+  "headache": {
+   "text": "头疼",
+   "roman": "tóuténg"
+  },
+  "emergency": {
+   "text": "紧急情况",
+   "roman": "jǐnjí qíngkuàng"
+  },
+  "call_the_police": {
+   "text": "快报警！",
+   "roman": "kuài bàojǐng!"
+  },
+  "music": {
+   "text": "音乐",
+   "roman": "yīnyuè"
+  },
+  "movie": {
+   "text": "电影",
+   "roman": "diànyǐng"
+  },
+  "sport": {
+   "text": "运动",
+   "roman": "yùndòng"
+  },
+  "game": {
+   "text": "游戏",
+   "roman": "yóuxì"
+  },
+  "football": {
+   "text": "足球",
+   "roman": "zúqiú"
+  },
+  "photo": {
+   "text": "照片",
+   "roman": "zhàopiàn"
+  },
+  "to_dance": {
+   "text": "跳舞",
+   "roman": "tiàowǔ"
+  },
+  "beach": {
+   "text": "海滩",
+   "roman": "hǎitān"
   }
  }
 }

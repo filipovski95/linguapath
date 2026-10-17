@@ -116,6 +116,7 @@ void main() {
     expect(find.text('New word'), findsOneWidget);
 
     // Play through by always choosing the right answer.
+    var typedSome = false;
     for (var step = 0; step < 80; step++) {
       if (find.text('Lesson complete!').evaluate().isNotEmpty) break;
       final question = find.byWidgetPredicate(
@@ -128,6 +129,18 @@ void main() {
         await tester.tap(find.text('CHECK'));
         await tester.pumpAndSettle();
         expect(find.text('✅ Correct!'), findsOneWidget);
+      } else if (find.byKey(const ValueKey('type-answer')).evaluate().isNotEmpty) {
+        final typing = find.byWidgetPredicate(
+            (w) => w.key is ValueKey<String> && (w.key as ValueKey<String>).value.startsWith('type:'));
+        final id = (typing.evaluate().first.widget.key as ValueKey<String>).value.substring(5);
+        // Lower case and without punctuation still counts.
+        final answer = s.target.entry(id).text.toLowerCase().replaceAll(RegExp(r'[!?.,]'), '');
+        await tester.enterText(find.byKey(const ValueKey('type-answer')), answer);
+        await tester.pump();
+        await tester.tap(find.text('CHECK'));
+        await tester.pumpAndSettle();
+        expect(find.text('✅ Correct!'), findsOneWidget);
+        typedSome = true;
       } else if (find.text('Tap the matching pairs').evaluate().isNotEmpty) {
         for (final id in s.course.allLessons.first.conceptIds) {
           if (find.byKey(ValueKey('left:$id')).evaluate().isEmpty) continue;
@@ -144,6 +157,7 @@ void main() {
       await tester.pumpAndSettle();
     }
     expect(find.text('Lesson complete!'), findsOneWidget);
+    expect(typedSome, isTrue, reason: 'lessons include typing exercises');
     expect(find.text('🎯 100%'), findsOneWidget);
     await tester.tap(find.text('CONTINUE'));
     await tester.pumpAndSettle();

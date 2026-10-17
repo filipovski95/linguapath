@@ -158,7 +158,7 @@ class _ReviewTabState extends State<ReviewTab> {
   void _openPractice(BuildContext context, AppState state) {
     final words = state.practiceWords(8);
     final exercises = ExerciseBuilder(course: state.course, target: state.target,
-        native: state.native).forWords(words);
+        native: state.native, typing: state.typingOn).forWords(words);
     Navigator.of(context).push(MaterialPageRoute(
       builder: (_) => _PracticeScreen(exercises: exercises),
     ));

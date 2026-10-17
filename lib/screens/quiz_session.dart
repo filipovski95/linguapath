@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../logic/answer_check.dart';
 import '../logic/app_state.dart';
 import '../logic/cheers.dart';
 import '../logic/exercises.dart';
@@ -34,7 +35,9 @@ class _QuizSessionState extends State<QuizSession> {
   int _inARow = 0;
 
   String? _selected;
+  String _typed = '';
   bool _checked = false;
+  bool _right = false;
   String _cheer = '';
   bool _matchDone = false;
 
@@ -44,12 +47,34 @@ class _QuizSessionState extends State<QuizSession> {
     _answers[id] = (_answers[id] ?? true) && correct;
   }
 
-  void _check(ChoiceExercise e) {
-    final correct = _selected == e.conceptId;
-    _record(e.conceptId, correct);
+  void _check() {
+    final e = _current;
+    final state = AppScope.read(context);
+    final String id;
+    final bool correct;
+    var almost = false;
+    switch (e) {
+      case ChoiceExercise():
+        id = e.conceptId;
+        correct = _selected == id;
+      case TypeExercise():
+        id = e.conceptId;
+        final entry = state.target.entry(id);
+        correct = AnswerCheck.matches(_typed, entry);
+        almost = correct && !AnswerCheck.exact(_typed, entry);
+        state.say(entry.text);
+      default:
+        return;
+    }
+    _right = correct;
+    _record(id, correct);
     if (correct) {
       _inARow++;
-      _cheer = _inARow >= 3 && _inARow % 3 == 0 ? Cheers.streak(_inARow) : Cheers.correct();
+      _cheer = almost
+          ? 'Almost perfect! Watch the accents.'
+          : _inARow >= 3 && _inARow % 3 == 0
+              ? Cheers.streak(_inARow)
+              : Cheers.correct();
       Sounds.instance.correct();
       HapticFeedback.lightImpact();
     } else {
@@ -70,6 +95,7 @@ class _QuizSessionState extends State<QuizSession> {
     setState(() {
       _index++;
       _selected = null;
+      _typed = '';
       _checked = false;
       _matchDone = false;
     });
@@ -119,6 +145,15 @@ class _QuizSessionState extends State<QuizSession> {
                     checked: _checked,
                     onSelect: (id) => setState(() => _selected = id),
                   ),
+                TypeExercise() => _TypeView(
+                    exercise: e,
+                    checked: _checked,
+                    right: _right,
+                    onChanged: (v) => setState(() => _typed = v),
+                    onSubmit: () {
+                      if (!_checked && _typed.trim().isNotEmpty) _check();
+                    },
+                  ),
                 MatchExercise() => _MatchView(
                     exercise: e,
                     onMistake: (id) => _record(id, false),
@@ -133,11 +168,12 @@ class _QuizSessionState extends State<QuizSession> {
         ),
         _BottomBar(
           exercise: e,
-          selected: _selected,
+          canCheck: e is TypeExercise ? _typed.trim().isNotEmpty : _selected != null,
           checked: _checked,
+          right: _right,
           cheer: _cheer,
           matchDone: _matchDone,
-          onCheck: () => _check(e as ChoiceExercise),
+          onCheck: _check,
           onContinue: _next,
         ),
       ],
@@ -181,8 +217,9 @@ class _ProgressBar extends StatelessWidget {
 class _BottomBar extends StatelessWidget {
   const _BottomBar({
     required this.exercise,
-    required this.selected,
+    required this.canCheck,
     required this.checked,
+    required this.right,
     required this.cheer,
     required this.matchDone,
     required this.onCheck,
@@ -190,8 +227,9 @@ class _BottomBar extends StatelessWidget {
   });
 
   final Exercise exercise;
-  final String? selected;
+  final bool canCheck;
   final bool checked;
+  final bool right;
   final String cheer;
   final bool matchDone;
   final VoidCallback onCheck;
@@ -211,16 +249,15 @@ class _BottomBar extends StatelessWidget {
       case MatchExercise():
         button = ChunkyButton(
             label: 'Continue', onPressed: matchDone ? onContinue : null, color: Palette.green, shadow: Palette.greenDark);
-      case ChoiceExercise():
+      case ChoiceExercise(:final conceptId) || TypeExercise(:final conceptId):
         if (!checked) {
           button = ChunkyButton(
-              label: 'Check', onPressed: selected == null ? null : onCheck, color: Palette.green, shadow: Palette.greenDark);
+              label: 'Check', onPressed: canCheck ? onCheck : null, color: Palette.green, shadow: Palette.greenDark);
         } else {
-          final right = selected == e.conceptId;
           final fg = right ? Palette.greenDark : Palette.coralDark;
           background = right ? Palette.greenSoft : Palette.coralSoft;
-          final t = state.target.entry(e.conceptId);
-          final n = state.native.entry(e.conceptId);
+          final t = state.target.entry(conceptId);
+          final n = state.native.entry(conceptId);
           feedback = Row(
             children: [
               Container(
@@ -487,6 +524,124 @@ class _ChoiceViewState extends State<_ChoiceView> {
           ? WordText(entry: state.target.entry(id), size: 22, center: false, color: text)
           : Text(state.native.entry(id).text,
               style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800, color: text)),
+    );
+  }
+}
+
+class _TypeView extends StatefulWidget {
+  const _TypeView({
+    required this.exercise,
+    required this.checked,
+    required this.right,
+    required this.onChanged,
+    required this.onSubmit,
+  });
+
+  final TypeExercise exercise;
+  final bool checked;
+  final bool right;
+  final ValueChanged<String> onChanged;
+  final VoidCallback onSubmit;
+
+  @override
+  State<_TypeView> createState() => _TypeViewState();
+}
+
+class _TypeViewState extends State<_TypeView> {
+  final _controller = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.exercise.listen) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        final s = AppScope.read(context);
+        s.say(s.target.entry(widget.exercise.conceptId).text);
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final state = AppScope.of(context);
+    final e = widget.exercise;
+    final t = state.target.entry(e.conceptId);
+    final compact = MediaQuery.sizeOf(context).height < 720;
+    final hint = switch (state.target.code) {
+      'zh' => 'Characters or Pinyin are both fine',
+      'mk' => 'Cyrillic or Latin letters are both fine',
+      _ => null,
+    };
+    final border = !widget.checked
+        ? Palette.line
+        : widget.right
+            ? Palette.green
+            : Palette.coral;
+
+    return ListView(
+      key: ValueKey('type:${e.conceptId}'),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      children: [
+        Text(e.listen ? 'Type what you hear' : 'Write this in ${state.target.name}',
+            style: Theme.of(context).textTheme.titleLarge),
+        SizedBox(height: compact ? 12 : 20),
+        if (e.listen)
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              SpeakButton(text: t.text, size: compact ? 76 : 96),
+              const SizedBox(width: 16),
+              SpeakButton(text: t.text, size: 60, slow: true),
+            ],
+          )
+        else
+          Center(
+            child: Column(children: [
+              Text(state.course.concepts[e.conceptId]?.emoji ?? '', style: TextStyle(fontSize: compact ? 44 : 64)),
+              const SizedBox(height: 4),
+              Text(state.native.entry(e.conceptId).text,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: compact ? 24 : 28, fontWeight: FontWeight.w900)),
+            ]),
+          ),
+        SizedBox(height: compact ? 16 : 24),
+        TextField(
+          key: const ValueKey('type-answer'),
+          controller: _controller,
+          autofocus: true,
+          readOnly: widget.checked,
+          autocorrect: false,
+          enableSuggestions: false,
+          textCapitalization: TextCapitalization.none,
+          textInputAction: TextInputAction.done,
+          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: Palette.ink),
+          decoration: InputDecoration(
+            hintText: 'Type in ${state.target.name}',
+            filled: true,
+            fillColor: Colors.white,
+            contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16), borderSide: BorderSide(color: border, width: 2)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+                borderSide: BorderSide(color: widget.checked ? border : Palette.violet, width: 2.5)),
+          ),
+          onChanged: widget.onChanged,
+          onSubmitted: (_) => widget.onSubmit(),
+        ),
+        if (hint != null) ...[
+          const SizedBox(height: 8),
+          Text(hint, style: const TextStyle(color: Palette.inkSoft, fontWeight: FontWeight.w600)),
+        ],
+      ],
     );
   }
 }

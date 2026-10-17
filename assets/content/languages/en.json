@@ -283,6 +283,678 @@
   },
   "to_learn": {
    "text": "to learn"
+  },
+  "excuse_me": {
+   "text": "Excuse me"
+  },
+  "no_problem": {
+   "text": "No problem"
+  },
+  "help": {
+   "text": "Help!"
+  },
+  "i_dont_know": {
+   "text": "I don't know"
+  },
+  "see_you_later": {
+   "text": "See you later"
+  },
+  "welcome": {
+   "text": "Welcome"
+  },
+  "congratulations": {
+   "text": "Congratulations"
+  },
+  "good_luck": {
+   "text": "Good luck"
+  },
+  "nice_to_meet_you": {
+   "text": "Nice to meet you"
+  },
+  "of_course": {
+   "text": "Of course"
+  },
+  "maybe": {
+   "text": "Maybe"
+  },
+  "good_evening": {
+   "text": "Good evening"
+  },
+  "what": {
+   "text": "What?"
+  },
+  "who": {
+   "text": "Who?"
+  },
+  "where": {
+   "text": "Where?"
+  },
+  "when": {
+   "text": "When?"
+  },
+  "why": {
+   "text": "Why?"
+  },
+  "how": {
+   "text": "How?"
+  },
+  "how_many": {
+   "text": "How many?"
+  },
+  "which": {
+   "text": "Which?"
+  },
+  "this": {
+   "text": "this"
+  },
+  "that": {
+   "text": "that"
+  },
+  "they": {
+   "text": "they"
+  },
+  "here": {
+   "text": "here"
+  },
+  "eleven": {
+   "text": "Eleven"
+  },
+  "twelve": {
+   "text": "Twelve"
+  },
+  "fifteen": {
+   "text": "Fifteen"
+  },
+  "twenty": {
+   "text": "Twenty"
+  },
+  "thirty": {
+   "text": "Thirty"
+  },
+  "fifty": {
+   "text": "Fifty"
+  },
+  "hundred": {
+   "text": "One hundred"
+  },
+  "thousand": {
+   "text": "One thousand"
+  },
+  "grandmother": {
+   "text": "Grandmother"
+  },
+  "grandfather": {
+   "text": "Grandfather"
+  },
+  "son": {
+   "text": "Son"
+  },
+  "daughter": {
+   "text": "Daughter"
+  },
+  "husband": {
+   "text": "Husband"
+  },
+  "wife": {
+   "text": "Wife"
+  },
+  "baby": {
+   "text": "Baby"
+  },
+  "family": {
+   "text": "Family"
+  },
+  "dog": {
+   "text": "Dog"
+  },
+  "cat": {
+   "text": "Cat"
+  },
+  "bird": {
+   "text": "Bird"
+  },
+  "horse": {
+   "text": "Horse"
+  },
+  "cow": {
+   "text": "Cow"
+  },
+  "pig": {
+   "text": "Pig"
+  },
+  "chicken_animal": {
+   "text": "Chicken"
+  },
+  "mouse": {
+   "text": "Mouse"
+  },
+  "rabbit": {
+   "text": "Rabbit"
+  },
+  "bear": {
+   "text": "Bear"
+  },
+  "lion": {
+   "text": "Lion"
+  },
+  "elephant": {
+   "text": "Elephant"
+  },
+  "banana": {
+   "text": "Banana"
+  },
+  "orange_fruit": {
+   "text": "Orange"
+  },
+  "grapes": {
+   "text": "Grapes"
+  },
+  "strawberry": {
+   "text": "Strawberry"
+  },
+  "lemon": {
+   "text": "Lemon"
+  },
+  "tomato": {
+   "text": "Tomato"
+  },
+  "potato": {
+   "text": "Potato"
+  },
+  "carrot": {
+   "text": "Carrot"
+  },
+  "onion": {
+   "text": "Onion"
+  },
+  "salad": {
+   "text": "Salad"
+  },
+  "cheese": {
+   "text": "Cheese"
+  },
+  "soup": {
+   "text": "Soup"
+  },
+  "sugar": {
+   "text": "Sugar"
+  },
+  "salt": {
+   "text": "Salt"
+  },
+  "cake": {
+   "text": "Cake"
+  },
+  "ice_cream": {
+   "text": "Ice cream"
+  },
+  "juice": {
+   "text": "Juice"
+  },
+  "wine": {
+   "text": "Wine"
+  },
+  "breakfast": {
+   "text": "Breakfast"
+  },
+  "lunch": {
+   "text": "Lunch"
+  },
+  "dinner": {
+   "text": "Dinner"
+  },
+  "menu": {
+   "text": "Menu"
+  },
+  "i_would_like": {
+   "text": "I would like …"
+  },
+  "cheers": {
+   "text": "Cheers!"
+  },
+  "waiter": {
+   "text": "Waiter"
+  },
+  "vegetarian": {
+   "text": "Vegetarian"
+  },
+  "spicy": {
+   "text": "Spicy"
+  },
+  "sweet": {
+   "text": "Sweet"
+  },
+  "table_for_two": {
+   "text": "A table for two, please"
+  },
+  "head": {
+   "text": "Head"
+  },
+  "eye": {
+   "text": "Eye"
+  },
+  "ear": {
+   "text": "Ear"
+  },
+  "nose": {
+   "text": "Nose"
+  },
+  "mouth": {
+   "text": "Mouth"
+  },
+  "hand": {
+   "text": "Hand"
+  },
+  "foot": {
+   "text": "Foot"
+  },
+  "hair": {
+   "text": "Hair"
+  },
+  "tooth": {
+   "text": "Tooth"
+  },
+  "heart": {
+   "text": "Heart"
+  },
+  "shirt": {
+   "text": "Shirt"
+  },
+  "trousers": {
+   "text": "Trousers"
+  },
+  "dress": {
+   "text": "Dress"
+  },
+  "shoes": {
+   "text": "Shoes"
+  },
+  "hat": {
+   "text": "Hat"
+  },
+  "coat": {
+   "text": "Coat"
+  },
+  "socks": {
+   "text": "Socks"
+  },
+  "bag": {
+   "text": "Bag"
+  },
+  "house": {
+   "text": "House"
+  },
+  "room": {
+   "text": "Room"
+  },
+  "kitchen": {
+   "text": "Kitchen"
+  },
+  "bed": {
+   "text": "Bed"
+  },
+  "chair": {
+   "text": "Chair"
+  },
+  "table": {
+   "text": "Table"
+  },
+  "window": {
+   "text": "Window"
+  },
+  "key": {
+   "text": "Key"
+  },
+  "phone": {
+   "text": "Phone"
+  },
+  "computer": {
+   "text": "Computer"
+  },
+  "book": {
+   "text": "Book"
+  },
+  "door": {
+   "text": "Door"
+  },
+  "city": {
+   "text": "City"
+  },
+  "street": {
+   "text": "Street"
+  },
+  "shop": {
+   "text": "Shop"
+  },
+  "market": {
+   "text": "Market"
+  },
+  "bank": {
+   "text": "Bank"
+  },
+  "hospital": {
+   "text": "Hospital"
+  },
+  "school": {
+   "text": "School"
+  },
+  "restaurant_place": {
+   "text": "Restaurant"
+  },
+  "park": {
+   "text": "Park"
+  },
+  "museum": {
+   "text": "Museum"
+  },
+  "church": {
+   "text": "Church"
+  },
+  "pharmacy": {
+   "text": "Pharmacy"
+  },
+  "car": {
+   "text": "Car"
+  },
+  "bus": {
+   "text": "Bus"
+  },
+  "train": {
+   "text": "Train"
+  },
+  "plane": {
+   "text": "Plane"
+  },
+  "bike": {
+   "text": "Bike"
+  },
+  "boat": {
+   "text": "Boat"
+  },
+  "subway": {
+   "text": "Subway"
+  },
+  "map": {
+   "text": "Map"
+  },
+  "passport": {
+   "text": "Passport"
+  },
+  "suitcase": {
+   "text": "Suitcase"
+  },
+  "sun": {
+   "text": "Sun"
+  },
+  "rain": {
+   "text": "Rain"
+  },
+  "snow": {
+   "text": "Snow"
+  },
+  "wind": {
+   "text": "Wind"
+  },
+  "cloud": {
+   "text": "Cloud"
+  },
+  "sea": {
+   "text": "Sea"
+  },
+  "mountain": {
+   "text": "Mountain"
+  },
+  "river": {
+   "text": "River"
+  },
+  "tree": {
+   "text": "Tree"
+  },
+  "flower": {
+   "text": "Flower"
+  },
+  "monday": {
+   "text": "Monday"
+  },
+  "tuesday": {
+   "text": "Tuesday"
+  },
+  "wednesday": {
+   "text": "Wednesday"
+  },
+  "thursday": {
+   "text": "Thursday"
+  },
+  "friday": {
+   "text": "Friday"
+  },
+  "saturday": {
+   "text": "Saturday"
+  },
+  "sunday": {
+   "text": "Sunday"
+  },
+  "spring": {
+   "text": "Spring"
+  },
+  "summer": {
+   "text": "Summer"
+  },
+  "autumn": {
+   "text": "Autumn"
+  },
+  "winter": {
+   "text": "Winter"
+  },
+  "morning": {
+   "text": "Morning"
+  },
+  "evening": {
+   "text": "Evening"
+  },
+  "night": {
+   "text": "Night"
+  },
+  "hour": {
+   "text": "Hour"
+  },
+  "minute": {
+   "text": "Minute"
+  },
+  "pink": {
+   "text": "Pink"
+  },
+  "purple": {
+   "text": "Purple"
+  },
+  "brown": {
+   "text": "Brown"
+  },
+  "grey": {
+   "text": "Grey"
+  },
+  "new": {
+   "text": "New"
+  },
+  "old": {
+   "text": "Old"
+  },
+  "beautiful": {
+   "text": "Beautiful"
+  },
+  "fast": {
+   "text": "Fast"
+  },
+  "slow": {
+   "text": "Slow"
+  },
+  "easy": {
+   "text": "Easy"
+  },
+  "difficult": {
+   "text": "Difficult"
+  },
+  "happy": {
+   "text": "Happy"
+  },
+  "sad": {
+   "text": "Sad"
+  },
+  "tired": {
+   "text": "Tired"
+  },
+  "angry": {
+   "text": "Angry"
+  },
+  "scared": {
+   "text": "Scared"
+  },
+  "bored": {
+   "text": "Bored"
+  },
+  "i_love_you": {
+   "text": "I love you"
+  },
+  "i_miss_you": {
+   "text": "I miss you"
+  },
+  "teacher": {
+   "text": "Teacher"
+  },
+  "doctor": {
+   "text": "Doctor"
+  },
+  "student": {
+   "text": "Student"
+  },
+  "cook": {
+   "text": "Cook"
+  },
+  "police_officer": {
+   "text": "Police officer"
+  },
+  "driver": {
+   "text": "Driver"
+  },
+  "work": {
+   "text": "Work"
+  },
+  "office": {
+   "text": "Office"
+  },
+  "to_read": {
+   "text": "to read"
+  },
+  "to_write": {
+   "text": "to write"
+  },
+  "to_listen": {
+   "text": "to listen"
+  },
+  "to_buy": {
+   "text": "to buy"
+  },
+  "to_pay": {
+   "text": "to pay"
+  },
+  "to_work": {
+   "text": "to work"
+  },
+  "to_play": {
+   "text": "to play"
+  },
+  "to_run": {
+   "text": "to run"
+  },
+  "to_walk": {
+   "text": "to walk"
+  },
+  "to_cook": {
+   "text": "to cook"
+  },
+  "to_open": {
+   "text": "to open"
+  },
+  "to_close": {
+   "text": "to close"
+  },
+  "to_know": {
+   "text": "to know"
+  },
+  "to_think": {
+   "text": "to think"
+  },
+  "to_love": {
+   "text": "to love"
+  },
+  "money": {
+   "text": "Money"
+  },
+  "price": {
+   "text": "Price"
+  },
+  "cheap": {
+   "text": "Cheap"
+  },
+  "expensive": {
+   "text": "Expensive"
+  },
+  "open_sign": {
+   "text": "Open"
+  },
+  "closed_sign": {
+   "text": "Closed"
+  },
+  "cash": {
+   "text": "Cash"
+  },
+  "receipt": {
+   "text": "Receipt"
+  },
+  "sick": {
+   "text": "Sick"
+  },
+  "pain": {
+   "text": "Pain"
+  },
+  "medicine": {
+   "text": "Medicine"
+  },
+  "i_need_a_doctor": {
+   "text": "I need a doctor"
+  },
+  "headache": {
+   "text": "Headache"
+  },
+  "emergency": {
+   "text": "Emergency"
+  },
+  "call_the_police": {
+   "text": "Call the police!"
+  },
+  "music": {
+   "text": "Music"
+  },
+  "movie": {
+   "text": "Movie"
+  },
+  "sport": {
+   "text": "Sport"
+  },
+  "game": {
+   "text": "Game"
+  },
+  "football": {
+   "text": "Football"
+  },
+  "photo": {
+   "text": "Photo"
+  },
+  "to_dance": {
+   "text": "to dance"
+  },
+  "beach": {
+   "text": "Beach"
   }
  }
 }

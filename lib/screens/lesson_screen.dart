@@ -23,7 +23,7 @@ class _LessonScreenState extends State<LessonScreen> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     final s = AppScope.read(context);
-    _exercises ??= ExerciseBuilder(course: s.course, target: s.target, native: s.native)
+    _exercises ??= ExerciseBuilder(course: s.course, target: s.target, native: s.native, typing: s.typingOn)
         .forLesson(widget.lesson);
   }
 

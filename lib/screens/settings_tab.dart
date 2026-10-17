@@ -40,6 +40,12 @@ class SettingsTab extends StatelessWidget {
             onChanged: state.setShowRomanization,
           ),
         SwitchListTile(
+          title: const Text('Typing exercises'),
+          subtitle: const Text('Sometimes type the answer instead of picking it'),
+          value: state.typingOn,
+          onChanged: state.setTypingOn,
+        ),
+        SwitchListTile(
           title: const Text('Sound effects'),
           subtitle: const Text('Chimes for right and wrong answers'),
           value: state.soundOn,

@@ -32,6 +32,14 @@ class ChoiceExercise extends Exercise {
   final List<String> options;
 }
 
+/// Type the word in the language being learned, after seeing its meaning
+/// or (with [listen]) hearing it.
+class TypeExercise extends Exercise {
+  const TypeExercise(this.conceptId, {this.listen = false});
+  final String conceptId;
+  final bool listen;
+}
+
 /// Tap the matching pairs between the two languages.
 class MatchExercise extends Exercise {
   const MatchExercise(this.conceptIds);
@@ -44,12 +52,16 @@ class ExerciseBuilder {
     required this.course,
     required this.target,
     required this.native,
+    this.typing = true,
     Random? random,
   }) : _random = random ?? Random();
 
   final Course course;
   final Language target;
   final Language native;
+
+  /// Whether to include exercises that need the keyboard.
+  final bool typing;
   final Random _random;
 
   static const optionCount = 4;
@@ -60,7 +72,7 @@ class ExerciseBuilder {
     if (lesson.practice) {
       final picked = [...ids]..shuffle(_random);
       final quiz = [
-        for (final id in picked.take(practiceLength)) _randomChoice(id, ids),
+        for (final id in picked.take(practiceLength)) _randomExercise(id, ids),
       ];
       return [...quiz, MatchExercise(picked.take(5).toList())];
     }
@@ -75,17 +87,30 @@ class ExerciseBuilder {
         if (_random.nextBool())
           ChoiceExercise(id, ChoiceMode.listen, _options(id, ids, native)),
     ]..shuffle(_random);
+    // Typing comes last, once the words have been seen a few times.
+    final typed = [...ids]..shuffle(_random);
+    final typeQuiz = <Exercise>[
+      if (typing && typed.isNotEmpty) TypeExercise(typed[0]),
+      if (typing && typed.length > 1) TypeExercise(typed[1], listen: true),
+    ];
     return [
       for (final id in ids) LearnExercise(id),
       ...quiz,
       if (ids.length >= 3) MatchExercise(ids.take(5).toList()),
+      ...typeQuiz,
     ];
   }
 
   /// A short quiz over words the learner already knows (used by Review).
   List<Exercise> forWords(List<String> ids) {
     final picked = [...ids]..shuffle(_random);
-    return [for (final id in picked) _randomChoice(id, ids)];
+    return [for (final id in picked) _randomExercise(id, ids)];
+  }
+
+  /// Mostly multiple choice, with about one in four typed when typing is on.
+  Exercise _randomExercise(String id, List<String> pool) {
+    if (typing && _random.nextInt(4) == 0) return TypeExercise(id, listen: _random.nextBool());
+    return _randomChoice(id, pool);
   }
 
   ChoiceExercise _randomChoice(String id, List<String> pool) {
