@@ -69,7 +69,7 @@ Then finish every item under **Dashboard → Set up your app**:
 
 | Item | What to enter |
 |---|---|
-| Privacy policy | A public URL hosting `docs/privacy-policy.md` (GitHub Pages, Google Sites or your website). Required even though the app collects nothing. |
+| Privacy policy | https://filipovski95.github.io/linguapath/privacy.html (published from `web/privacy.html` with the web build). |
 | App access | All functionality is available without special access. |
 | Ads | No, the app does not contain ads. |
 | Content rating | Fill in the questionnaire: category *Reference, News, or Educational*; answer No to violence, sexual content, gambling, user interaction, etc. Expect *Everyone / PEGI 3*. |
@@ -98,5 +98,5 @@ Play App Signing is turned on automatically: Google holds the final app-signing 
 - [ ] 12 testers with Android phones for the 14-day closed test
 - [ ] Upload key created and backed up
 - [ ] Final decision on app name and app id (`com.ruflo.linguapath`)
-- [ ] A public URL for the privacy policy
+- [x] A public URL for the privacy policy (https://filipovski95.github.io/linguapath/privacy.html)
 - [ ] Contact email for the store listing

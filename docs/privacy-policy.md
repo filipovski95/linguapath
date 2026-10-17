@@ -1,6 +1,6 @@
 # LinguaPath Privacy Policy
 
-_Last updated: 16 October 2026_
+_Last updated: 17 October 2026_
 
 LinguaPath is a language learning app. We built it so that it works without collecting anything about you.
 
@@ -14,4 +14,4 @@ LinguaPath is a language learning app. We built it so that it works without coll
 
 **Changes:** if this policy changes, the new version will be posted at this address with a new date.
 
-**Contact:** [your email address]
+**Contact:** use the developer email shown on the app's Google Play page.
