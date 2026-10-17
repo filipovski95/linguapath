@@ -51,18 +51,31 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            const Spacer(),
-            StatPill(
-              icon: '🔥',
-              value: '${state.currentStreak}',
-              color: Palette.flame,
-              dim: !state.practicedToday,
-              tooltip: state.practicedToday ? 'Day streak' : 'Do a lesson today to keep your streak',
+            const SizedBox(width: 12),
+            // Shrinks rather than overflows on narrow phones or with large text.
+            Expanded(
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerRight,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    StatPill(
+                      icon: '🔥',
+                      value: '${state.currentStreak}',
+                      color: Palette.flame,
+                      dim: !state.practicedToday,
+                      tooltip: state.practicedToday ? 'Day streak' : 'Do a lesson today to keep your streak',
+                    ),
+                    const SizedBox(width: 18),
+                    StatPill(icon: '⚡', value: '${state.progress.xp}', color: Palette.sunDark, tooltip: 'Total XP'),
+                    const SizedBox(width: 18),
+                    StatPill(
+                        icon: '📚', value: '${state.learnedWords.length}', color: Palette.violet, tooltip: 'Words learned'),
+                  ],
+                ),
+              ),
             ),
-            const SizedBox(width: 18),
-            StatPill(icon: '⚡', value: '${state.progress.xp}', color: Palette.sunDark, tooltip: 'Total XP'),
-            const SizedBox(width: 18),
-            StatPill(icon: '📚', value: '${state.learnedWords.length}', color: Palette.violet, tooltip: 'Words learned'),
           ],
         ),
         bottom: const PreferredSize(
@@ -74,29 +87,34 @@ class _HomeScreenState extends State<HomeScreen> {
         index: _tab,
         children: [
           LearnTab(onOpenReview: () => setState(() => _tab = 1)),
-          const ReviewTab(),
+          // A new course or a reset starts a fresh review session.
+          ReviewTab(key: ValueKey('${state.targetCode}:${state.learnedWords.isEmpty}')),
           const WordsTab(),
           const SettingsTab(),
         ],
       ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _tab,
-        height: 68,
-        onDestinationSelected: (i) => setState(() => _tab = i),
-        destinations: [
-          const NavigationDestination(icon: Text('🏠', style: TextStyle(fontSize: 24)), label: 'Learn'),
-          NavigationDestination(
-            icon: Badge(
-              isLabelVisible: due > 0,
-              backgroundColor: Palette.coral,
-              label: Text('$due'),
-              child: const Text('🧠', style: TextStyle(fontSize: 24)),
+      // The bar has a fixed height, so very large text would push its labels off screen.
+      bottomNavigationBar: MediaQuery.withClampedTextScaling(
+        maxScaleFactor: 1.3,
+        child: NavigationBar(
+          selectedIndex: _tab,
+          height: 68,
+          onDestinationSelected: (i) => setState(() => _tab = i),
+          destinations: [
+            const NavigationDestination(icon: Text('🏠', style: TextStyle(fontSize: 24)), label: 'Learn'),
+            NavigationDestination(
+              icon: Badge(
+                isLabelVisible: due > 0,
+                backgroundColor: Palette.coral,
+                label: Text('$due'),
+                child: const Text('🧠', style: TextStyle(fontSize: 24)),
+              ),
+              label: 'Review',
             ),
-            label: 'Review',
-          ),
-          const NavigationDestination(icon: Text('📖', style: TextStyle(fontSize: 24)), label: 'Words'),
-          const NavigationDestination(icon: Text('⚙️', style: TextStyle(fontSize: 24)), label: 'Settings'),
-        ],
+            const NavigationDestination(icon: Text('📖', style: TextStyle(fontSize: 24)), label: 'Words'),
+            const NavigationDestination(icon: Text('⚙️', style: TextStyle(fontSize: 24)), label: 'Settings'),
+          ],
+        ),
       ),
     );
   }

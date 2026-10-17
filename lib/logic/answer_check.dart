@@ -44,11 +44,32 @@ class AnswerCheck {
         if (e.roman != null) ...e.roman!.split('/'),
       ];
 
+  static final _han = RegExp(r'[\u4e00-\u9fff]');
+  static final _cyrillic = RegExp(r'[\u0400-\u04ff]');
+
+  /// How people type a romanization on a plain keyboard: Pinyin with tone
+  /// numbers and "v" for "ü" (ni3 hao3, nv3), Macedonian Latin with
+  /// digraphs instead of háčeks (kuche, kjerka).
+  static String _keyboard(String plain, Entry e) {
+    if (_han.hasMatch(e.text)) return plain.replaceAll(RegExp('[1-5]'), '').replaceAll('v', 'u');
+    if (_cyrillic.hasMatch(e.text)) {
+      return plain
+          .replaceAll('dzh', 'dz')
+          .replaceAll(RegExp('(?<=[kg])j'), '')
+          .replaceAll(RegExp('(?<=[csz])h'), '');
+    }
+    return plain;
+  }
+
   /// True if [typed] is an acceptable answer for [e].
   static bool matches(String typed, Entry e) {
     final t = _plain(typed);
     if (t.isEmpty) return false;
-    return _forms(e).any((f) => _plain(f) == t);
+    if (_forms(e).any((f) => _plain(f) == t)) return true;
+    // Only the romanization is typed with a plain keyboard's shortcuts.
+    if (e.roman == null) return false;
+    final k = _keyboard(t, e);
+    return e.roman!.split('/').any((f) => _keyboard(_plain(f), e) == k);
   }
 
   /// True if [typed] matches with accents exactly right (or none were needed).

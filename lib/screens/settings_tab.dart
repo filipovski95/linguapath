@@ -54,7 +54,7 @@ class SettingsTab extends StatelessWidget {
         ListTile(
           leading: const Icon(Icons.record_voice_over_rounded),
           title: const Text('Voice'),
-          subtitle: Text(state.voiceName ?? 'Automatic (most natural voice on this phone)'),
+          subtitle: Text(state.voiceName ?? 'Automatic (most natural voice on this device)'),
           trailing: const Icon(Icons.chevron_right),
           onTap: () => _pickVoice(context, state),
         ),

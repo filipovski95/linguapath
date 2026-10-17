@@ -100,36 +100,43 @@ class _ReviewTabState extends State<ReviewTab> {
                     bottom: BorderSide(color: Palette.line, width: 7),
                   ),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      WordText(entry: t, size: 44, color: Palette.ink),
-                      const SizedBox(height: 12),
-                      SpeakButton(text: t.text, size: 52),
-                      const SizedBox(height: 24),
-                      AnimatedCrossFade(
-                        duration: const Duration(milliseconds: 200),
-                        crossFadeState:
-                            _flipped ? CrossFadeState.showSecond : CrossFadeState.showFirst,
-                        firstChild: Text('Tap to reveal',
-                            style: TextStyle(color: theme.colorScheme.onSurfaceVariant)),
-                        secondChild: Column(
-                          children: [
-                            Text(state.course.concepts[id]?.emoji ?? '',
-                                style: const TextStyle(fontSize: 48)),
-                            Text(n.text,
-                                textAlign: TextAlign.center,
-                                style: theme.textTheme.headlineSmall),
-                            if (t.note != null) ...[
-                              const SizedBox(height: 8),
-                              Text('💡 ${t.note!}', textAlign: TextAlign.center),
-                            ],
-                          ],
-                        ),
+                // Scrolls when a long word, a note or large text don't fit.
+                child: LayoutBuilder(
+                  builder: (context, c) => SingleChildScrollView(
+                    padding: const EdgeInsets.all(24),
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(minHeight: (c.maxHeight - 48).clamp(0, double.infinity)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          WordText(entry: t, size: 44, color: Palette.ink),
+                          const SizedBox(height: 12),
+                          SpeakButton(text: t.text, size: 52),
+                          const SizedBox(height: 24),
+                          AnimatedCrossFade(
+                            duration: const Duration(milliseconds: 200),
+                            crossFadeState:
+                                _flipped ? CrossFadeState.showSecond : CrossFadeState.showFirst,
+                            firstChild: const Text('Tap to reveal', style: TextStyle(color: Palette.inkSoft)),
+                            secondChild: Column(
+                              children: [
+                                Text(state.course.concepts[id]?.emoji ?? '',
+                                    style: const TextStyle(fontSize: 48)),
+                                Text(n.text,
+                                    textAlign: TextAlign.center,
+                                    style: theme.textTheme.headlineSmall?.copyWith(color: Palette.ink)),
+                                if (t.note != null) ...[
+                                  const SizedBox(height: 8),
+                                  Text('💡 ${t.note!}',
+                                      textAlign: TextAlign.center,
+                                      style: const TextStyle(color: Palette.inkSoft)),
+                                ],
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ),

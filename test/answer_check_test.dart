@@ -39,6 +39,20 @@ void main() {
     expect(ok('kuce', 'куче', 'kuče'), isTrue);
   });
 
+  test('Pinyin can be typed with tone numbers and v for ü', () {
+    expect(ok('ni3 hao3', '你好', 'nǐ hǎo'), isTrue);
+    expect(ok('nv3er2', '女儿', "nǚ'ér"), isTrue);
+    expect(ok('ni3 hao4 ma', '你好', 'nǐ hǎo'), isFalse);
+  });
+
+  test('Macedonian Latin can be typed with digraphs', () {
+    expect(ok('kuche', 'куче', 'kuče'), isTrue);
+    expect(ok('kjerka', 'ќерка', 'ḱerka'), isTrue);
+    expect(ok('zhena', 'жена', 'žena'), isTrue);
+    expect(ok('shto', 'што', 'što'), isTrue);
+    expect(ok('kuke', 'куче', 'kuče'), isFalse);
+  });
+
   test('rejects wrong words and empty answers', () {
     expect(ok('Tschüss', 'Hallo'), isFalse);
     expect(ok('', 'Hallo'), isFalse);

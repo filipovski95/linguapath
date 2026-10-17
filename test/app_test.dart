@@ -69,6 +69,68 @@ void main() {
       expect(s.currentStreak, 0);
     });
 
+    test('a clock that moves back a day keeps the streak', () async {
+      final s = await freshState();
+      s.setLanguages(native: 'en', target: 'es');
+      final l = s.course.allLessons.first;
+      s.completeLesson(l, {});
+      now = now.add(const Duration(days: 1));
+      s.completeLesson(l, {});
+      expect(s.currentStreak, 2);
+      now = now.subtract(const Duration(days: 1)); // e.g. flying west over midnight
+      s.completeLesson(l, {});
+      now = now.add(const Duration(days: 1));
+      expect(s.currentStreak, 2);
+    });
+
+    test('streak survives midnight but not a skipped day', () async {
+      final s = await freshState();
+      s.setLanguages(native: 'en', target: 'fr');
+      now = DateTime(2026, 10, 16, 23, 59);
+      s.completeLesson(s.course.allLessons.first, {});
+      now = DateTime(2026, 10, 17, 0, 1);
+      expect(s.currentStreak, 1);
+      expect(s.practicedToday, isFalse);
+      now = DateTime(2026, 10, 19, 0, 1);
+      expect(s.currentStreak, 0);
+    });
+
+    test('reset clears progress in every course', () async {
+      final s = await freshState();
+      s.setLanguages(native: 'en', target: 'zh');
+      s.completeLesson(s.course.allLessons.first, {});
+      s.setTarget('de');
+      s.completeLesson(s.course.allLessons.first, {});
+      s.resetProgress();
+      expect(s.progress.completed, isEmpty);
+      expect(s.progressFor('zh').completed, isEmpty);
+      expect(s.currentStreak, 0);
+      final reloaded = AppState(content, await SharedPreferences.getInstance(), clock: () => now);
+      expect(reloaded.progressFor('zh').cards, isEmpty);
+      expect(reloaded.targetCode, 'de');
+    });
+
+    test('words a newer course dropped are not offered for review', () async {
+      final s = await freshState({
+        'linguapath_state_v1': jsonEncode({
+          'native': 'en',
+          'target': 'de',
+          'progress': {
+            'de': {
+              'completed': [],
+              'xp': 0,
+              'cards': {
+                'hello': {'b': 0, 'd': 0},
+                'no_longer_taught': {'b': 0, 'd': 0},
+              },
+            },
+          },
+        }),
+      });
+      expect(s.dueWords, ['hello']);
+      expect(s.learnedWords, ['hello']);
+    });
+
     test('changing the base to the course language asks for a new course', () async {
       final s = await freshState();
       s.setTarget('de');
@@ -90,6 +152,52 @@ void main() {
       reloaded.setLanguages(native: 'en', target: 'de');
       expect(reloaded.progress.completed, isEmpty);
     });
+  });
+
+  testWidgets('choosing the course language as the base returns to onboarding', (tester) async {
+    tester.view.physicalSize = const Size(1080, 2340);
+    tester.view.devicePixelRatio = 3;
+    tester.platformDispatcher.accessibilityFeaturesTestValue =
+        const FakeAccessibilityFeatures(disableAnimations: true);
+    addTearDown(tester.view.reset);
+    addTearDown(tester.platformDispatcher.clearAccessibilityFeaturesTestValue);
+    final s = await freshState();
+    s.setLanguages(native: 'en', target: 'fr');
+    await tester.pumpWidget(SaylarkApp(state: s));
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Explanations in'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Français'));
+    await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull);
+    expect(find.textContaining('Which language do you want to learn?'), findsOneWidget);
+    expect(find.text('French'), findsNothing);
+    await tester.tap(find.text('English').first);
+    await tester.pumpAndSettle();
+    expect(s.targetCode, 'en');
+    expect(find.text('START'), findsOneWidget);
+  });
+
+  testWidgets('switching course from the top bar keeps each course apart', (tester) async {
+    tester.view.physicalSize = const Size(1080, 2340);
+    tester.view.devicePixelRatio = 3;
+    tester.platformDispatcher.accessibilityFeaturesTestValue =
+        const FakeAccessibilityFeatures(disableAnimations: true);
+    addTearDown(tester.view.reset);
+    addTearDown(tester.platformDispatcher.clearAccessibilityFeaturesTestValue);
+    final s = await freshState();
+    s.setLanguages(native: 'en', target: 'zh');
+    s.completeLesson(s.course.allLessons.first, {});
+    await tester.pumpWidget(SaylarkApp(state: s));
+    await tester.tap(find.byTooltip('Change course'));
+    await tester.pumpAndSettle();
+    expect(find.text('1 lesson done'), findsOneWidget);
+    await tester.tap(find.text('Spanish'));
+    await tester.pumpAndSettle();
+    expect(s.targetCode, 'es');
+    expect(find.text('START'), findsOneWidget);
+    expect(s.progressFor('zh').completed, hasLength(1));
   });
 
   testWidgets('onboarding, then a full first lesson', (tester) async {

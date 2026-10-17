@@ -93,23 +93,28 @@ class _ChunkyButtonState extends State<ChunkyButton> {
                         : null,
                   ),
                   alignment: Alignment.center,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      if (widget.icon != null) ...[
-                        Icon(widget.icon, color: fg),
-                        const SizedBox(width: 8),
-                      ],
-                      Text(
-                        widget.label.toUpperCase(),
-                        style: TextStyle(
-                          color: fg,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: 0.8,
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  // Long labels or large text shrink instead of overflowing.
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (widget.icon != null) ...[
+                          Icon(widget.icon, color: fg),
+                          const SizedBox(width: 8),
+                        ],
+                        Text(
+                          widget.label.toUpperCase(),
+                          style: TextStyle(
+                            color: fg,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 0.8,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),

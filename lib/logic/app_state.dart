@@ -127,12 +127,13 @@ class AppState extends ChangeNotifier {
 
   // ---- Review ----
 
-  List<String> get learnedWords => progress.cards.keys.toList();
+  /// Words with a review card, skipping any a newer course no longer has.
+  List<String> get learnedWords => progress.cards.keys.where(course.concepts.containsKey).toList();
 
   List<String> get dueWords {
     final t = today;
     final due = progress.cards.entries
-        .where((e) => Srs.isDue(e.value, t))
+        .where((e) => course.concepts.containsKey(e.key) && Srs.isDue(e.value, t))
         .map((e) => e.key)
         .toList();
     due.sort((a, b) => progress.cards[a]!.dueDay.compareTo(progress.cards[b]!.dueDay));
@@ -146,7 +147,8 @@ class AppState extends ChangeNotifier {
   void review(String conceptId, ReviewGrade grade) {
     final card = progress.cards[conceptId] ?? Srs.introduce(today);
     progress.cards[conceptId] = Srs.review(card, grade, today);
-    progress.xp += xpPerReview;
+    // "Again" keeps the card due, so it earns nothing; otherwise XP could be farmed.
+    if (grade != ReviewGrade.again) progress.xp += xpPerReview;
     _touch();
   }
 
@@ -220,7 +222,8 @@ class AppState extends ChangeNotifier {
   void _touch() {
     final t = today;
     final last = _lastActiveDay;
-    if (last != t) {
+    // A clock that moved back (flying west, a manual change) must not reset the streak.
+    if (last == null || t > last) {
       streak = (last != null && t - last == 1) ? streak + 1 : 1;
       _lastActiveDay = t;
     }

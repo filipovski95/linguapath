@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../data/models.dart';
 import '../logic/app_state.dart';
 import '../logic/srs.dart';
 import '../widgets/word_text.dart';
@@ -44,22 +45,21 @@ class _WordsTabState extends State<WordsTab> {
           onChanged: (v) => setState(() => _query = v),
         ),
         const SizedBox(height: 8),
-        Row(
-          children: [
-            FilterChip(
-              label: Text('Learned (${cards.length})'),
-              selected: _learnedOnly,
-              onSelected: (v) => setState(() => _learnedOnly = v),
-            ),
-          ],
+        Align(
+          alignment: AlignmentDirectional.centerStart,
+          child: FilterChip(
+            label: Text('Learned (${state.learnedWords.length})'),
+            selected: _learnedOnly,
+            onSelected: (v) => setState(() => _learnedOnly = v),
+          ),
         ),
         for (final unit in state.course.units) ...[
-          if (unit.lessons.last.conceptIds.any(matches)) ...[
+          if (_words(unit).any(matches)) ...[
             Padding(
               padding: const EdgeInsets.only(top: 20, bottom: 4),
               child: Text('${unit.emoji} ${unit.title}', style: theme.textTheme.titleMedium),
             ),
-            for (final id in unit.lessons.last.conceptIds.where(matches))
+            for (final id in _words(unit).where(matches))
               ListTile(
                 contentPadding: EdgeInsets.zero,
                 leading: Text(state.course.concepts[id]?.emoji ?? '',
@@ -79,6 +79,9 @@ class _WordsTabState extends State<WordsTab> {
       ],
     );
   }
+
+  /// Every word taught in [unit], in course order.
+  static Iterable<String> _words(Unit unit) => {for (final l in unit.lessons) ...l.conceptIds};
 }
 
 /// How well a word is known, as filled dots.

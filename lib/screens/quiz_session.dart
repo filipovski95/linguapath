@@ -150,8 +150,13 @@ class _QuizSessionState extends State<QuizSession> {
                     checked: _checked,
                     right: _right,
                     onChanged: (v) => setState(() => _typed = v),
+                    // Enter checks the answer, and a second Enter moves on.
                     onSubmit: () {
-                      if (!_checked && _typed.trim().isNotEmpty) _check();
+                      if (_checked) {
+                        _next();
+                      } else if (_typed.trim().isNotEmpty) {
+                        _check();
+                      }
                     },
                   ),
                 MatchExercise() => _MatchView(
@@ -305,7 +310,14 @@ class _BottomBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.min,
           children: [
-            if (feedback != null) ...[feedback, const SizedBox(height: 14)],
+            if (feedback != null) ...[
+              // Large text must never push the button off a small screen.
+              ConstrainedBox(
+                constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.3),
+                child: SingleChildScrollView(child: feedback),
+              ),
+              const SizedBox(height: 14),
+            ],
             button,
           ],
         ),
@@ -625,6 +637,7 @@ class _TypeViewState extends State<_TypeView> {
           style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: Palette.ink),
           decoration: InputDecoration(
             hintText: 'Type in ${state.target.name}',
+            hintStyle: const TextStyle(color: Palette.inkSoft, fontWeight: FontWeight.w600),
             filled: true,
             fillColor: Colors.white,
             contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
@@ -787,47 +800,62 @@ class _ResultsViewState extends State<ResultsView> {
             padding: const EdgeInsets.fromLTRB(20, 24, 20, 16),
             child: Column(
               children: [
-                const Spacer(),
-                Mascot(mood: pct >= 80 ? MascotMood.cheer : MascotMood.happy, size: 150),
-                const SizedBox(height: 16),
-                Text(widget.title,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Palette.sunDark)),
-                const SizedBox(height: 6),
-                Text(Cheers.lessonDone(pct),
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w700, color: Palette.inkSoft)),
-                const SizedBox(height: 24),
-                Row(
-                  children: [
-                    Expanded(child: _StatTile(label: 'Total XP', value: '⚡ ${widget.xp}', color: Palette.sun)),
-                    const SizedBox(width: 10),
-                    Expanded(child: _StatTile(label: 'Accuracy', value: '🎯 $pct%', color: Palette.green)),
-                    const SizedBox(width: 10),
-                    Expanded(child: _StatTile(label: 'Streak', value: '🔥 ${state.currentStreak}', color: Palette.flame)),
-                  ],
-                ),
-                if (missed.isNotEmpty) ...[
-                  const SizedBox(height: 20),
-                  const Text('Words to practise',
-                      style: TextStyle(fontWeight: FontWeight.w900, color: Palette.inkSoft)),
-                  const SizedBox(height: 8),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    alignment: WrapAlignment.center,
-                    children: [
-                      for (final id in missed)
-                        Chip(
-                          side: const BorderSide(color: Palette.line, width: 2),
-                          backgroundColor: Colors.white,
-                          label: Text('${state.target.entry(id).text} · ${state.native.entry(id).text}',
-                              style: const TextStyle(fontWeight: FontWeight.w800)),
+                // Centered when it fits, scrolls when many words were missed or text is large.
+                Expanded(
+                  child: LayoutBuilder(
+                    builder: (context, c) => SingleChildScrollView(
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(minHeight: c.maxHeight),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Mascot(mood: pct >= 80 ? MascotMood.cheer : MascotMood.happy, size: 150),
+                            const SizedBox(height: 16),
+                            Text(widget.title,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Palette.sunDark)),
+                            const SizedBox(height: 6),
+                            Text(Cheers.lessonDone(pct),
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w700, color: Palette.inkSoft)),
+                            const SizedBox(height: 24),
+                            Row(
+                              children: [
+                                Expanded(child: _StatTile(label: 'Total XP', value: '⚡ ${widget.xp}', color: Palette.sun)),
+                                const SizedBox(width: 10),
+                                Expanded(child: _StatTile(label: 'Accuracy', value: '🎯 $pct%', color: Palette.green)),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                    child: _StatTile(label: 'Streak', value: '🔥 ${state.currentStreak}', color: Palette.flame)),
+                              ],
+                            ),
+                            if (missed.isNotEmpty) ...[
+                              const SizedBox(height: 20),
+                              const Text('Words to practise',
+                                  style: TextStyle(fontWeight: FontWeight.w900, color: Palette.inkSoft)),
+                              const SizedBox(height: 8),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
+                                alignment: WrapAlignment.center,
+                                children: [
+                                  for (final id in missed)
+                                    Chip(
+                                      side: const BorderSide(color: Palette.line, width: 2),
+                                      backgroundColor: Colors.white,
+                                      label: Text('${state.target.entry(id).text} · ${state.native.entry(id).text}',
+                                          style: const TextStyle(fontWeight: FontWeight.w800, color: Palette.ink)),
+                                    ),
+                                ],
+                              ),
+                            ],
+                          ],
                         ),
-                    ],
+                      ),
+                    ),
                   ),
-                ],
-                const Spacer(),
+                ),
+                const SizedBox(height: 16),
                 ChunkyButton(label: 'Continue', onPressed: widget.onDone, color: Palette.green, shadow: Palette.greenDark),
               ],
             ),

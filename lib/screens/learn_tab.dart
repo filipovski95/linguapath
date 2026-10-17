@@ -321,6 +321,9 @@ void _showLessonSheet(BuildContext context, Lesson lesson, Color color, Color sh
   showModalBottomSheet<void>(
     context: context,
     backgroundColor: Colors.transparent,
+    // Lets a long word list scroll instead of overflowing on small phones.
+    isScrollControlled: true,
+    useSafeArea: true,
     builder: (sheet) => Container(
       margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
       padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
@@ -331,31 +334,33 @@ void _showLessonSheet(BuildContext context, Lesson lesson, Color color, Color sh
       ),
       child: SafeArea(
         top: false,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(lesson.practice ? 'Unit practice' : lesson.title,
-                style: const TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.w900)),
-            const SizedBox(height: 6),
-            Text(
-              lesson.practice
-                  ? 'Mix of everything from this unit.'
-                  : lesson.conceptIds.map((id) => state.target.entry(id).text).join(' · '),
-              style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w700),
-            ),
-            const SizedBox(height: 18),
-            ChunkyButton(
-              label: done ? 'Practice again +5 XP' : 'Start +10 XP',
-              color: Colors.white,
-              shadow: const Color(0x33000000),
-              textColor: color,
-              onPressed: () {
-                Navigator.pop(sheet);
-                openLesson(context, lesson);
-              },
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(lesson.practice ? 'Unit practice' : lesson.title,
+                  style: const TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.w900)),
+              const SizedBox(height: 6),
+              Text(
+                lesson.practice
+                    ? 'Mix of everything from this unit.'
+                    : lesson.conceptIds.map((id) => state.target.entry(id).text).join(' · '),
+                style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w700),
+              ),
+              const SizedBox(height: 18),
+              ChunkyButton(
+                label: done ? 'Practice again +5 XP' : 'Start +10 XP',
+                color: Colors.white,
+                shadow: const Color(0x33000000),
+                textColor: color,
+                onPressed: () {
+                  Navigator.pop(sheet);
+                  openLesson(context, lesson);
+                },
+              ),
+            ],
+          ),
         ),
       ),
     ),

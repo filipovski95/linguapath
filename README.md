@@ -6,7 +6,7 @@ It has **Chinese (Mandarin), English, German, Portuguese (Brazil), Spanish, Fren
 ## What's in the MVP
 
 - **Onboarding**: pick the language you speak and the one you want to learn.
-- **Course path**: 8 units, 29 lessons, 93 words and phrases (greetings, numbers, food, family, colors, travel, time, everyday verbs). Lessons unlock in order; each unit ends with a practice round.
+- **Course path**: 44 units, 156 lessons, 441 words and phrases (from greetings, numbers and food to weather, travel, the airport, the hotel, sports and celebrations). Lessons unlock in order; each unit ends with a practice round.
 - **Lessons**: new-word cards (emoji, word, Pinyin for Chinese, pronunciation, usage tips), then a shuffled quiz: meaning → word, word → meaning, listening, and match-the-pairs. Wrong answers come back at the end.
 - **Review**: spaced-repetition flashcards (Leitner boxes: 1, 2, 4, 8, 16, 32 days). Missed quiz answers are due again the same day.
 - **Words**: a searchable phrasebook with pronunciation and a memory-strength indicator.
@@ -49,7 +49,7 @@ Requires the Flutter SDK (3.47 or newer) and, for Android, Android Studio (which
 
 ```bash
 flutter pub get
-flutter test                 # 35 tests
+flutter test
 flutter run                  # on a connected phone or emulator
 flutter run -d chrome        # quick preview in a browser
 flutter build appbundle      # release .aab for Google Play (see docs/PUBLISHING.md)
