@@ -1,4 +1,4 @@
-"""Resize tool/icons/*.png into Android launcher icons, web icons and the Play Store icon."""
+"""Resize tool/icons/*.png (drawn by tool/make_icon_art.py) into Android launcher icons, web icons and the Play Store icon."""
 import os
 from PIL import Image, ImageDraw
 full = Image.open('tool/icons/icon-full.png').convert('RGBA')
@@ -13,7 +13,7 @@ for name, k in {'mdpi': 1, 'hdpi': 1.5, 'xhdpi': 2, 'xxhdpi': 3, 'xxxhdpi': 4}.i
     rounded(full).resize((int(48 * k),) * 2, Image.LANCZOS).save(f'{res}/mipmap-{name}/ic_launcher.png')
     fg.resize((int(108 * k),) * 2, Image.LANCZOS).save(f'{res}/mipmap-{name}/ic_launcher_foreground.png')
 open(f'{res}/values/ic_launcher_background.xml', 'w').write(
-    '<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">#FFC531</color>\n</resources>\n')
+    '<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">#6C4BF4</color>\n</resources>\n')
 full.convert('RGB').resize((512, 512), Image.LANCZOS).save('store/play-icon-512.png')
 for sz, fn, r in [(192, 'Icon-192.png', True), (512, 'Icon-512.png', True), (192, 'Icon-maskable-192.png', False), (512, 'Icon-maskable-512.png', False)]:
     im = rounded(full) if r else full
