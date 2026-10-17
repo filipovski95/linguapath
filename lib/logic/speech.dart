@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
+import 'web_media.dart';
+
 /// A voice installed on the phone.
 class Voice {
   const Voice({required this.name, required this.locale, this.quality = 0, this.needsInternet = false});
@@ -63,6 +65,7 @@ class Speech {
   Future<void> speak(String text, String locale, {double rate = 0.45, String? voiceName}) async {
     final clean = text.replaceAll('…', '').replaceAll('...', '').trim();
     if (clean.isEmpty) return;
+    if (kIsWeb && webSpeak(clean, locale, rate, voiceName)) return;
     try {
       await _tts.stop();
       await _tts.setLanguage(locale);

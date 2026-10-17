@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../logic/app_state.dart';
@@ -71,8 +72,7 @@ class SettingsTab extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
             "Words are spoken by your phone's text-to-speech voice. If you hear nothing, "
-            'install the ${state.target.name} voice in Android Settings › Accessibility › '
-            'Text-to-speech.',
+            'install the ${state.target.name} voice in ${_voiceSettingsPath()}.',
             style: theme.textTheme.bodySmall,
           ),
         ),
@@ -98,7 +98,7 @@ class SettingsTab extends StatelessWidget {
         const AboutListTile(
           icon: Icon(Icons.info_outline),
           applicationName: 'LinguaPath',
-          applicationVersion: '0.1.0',
+          applicationVersion: '1.0.0',
           aboutBoxChildren: [
             Text('Learn languages offline. No account, no ads, no data leaves your phone.'),
           ],
@@ -106,6 +106,14 @@ class SettingsTab extends StatelessWidget {
       ],
     );
   }
+}
+
+/// Where the learner installs voices on their device.
+String _voiceSettingsPath() {
+  final ios = defaultTargetPlatform == TargetPlatform.iOS || defaultTargetPlatform == TargetPlatform.macOS;
+  return ios
+      ? 'iPhone Settings › Accessibility › Spoken Content › Voices'
+      : 'Android Settings › Accessibility › Text-to-speech';
 }
 
 Future<void> _pickVoice(BuildContext context, AppState state) async {
@@ -121,10 +129,9 @@ Future<void> _pickVoice(BuildContext context, AppState state) async {
           child: const Text('Automatic (recommended)', style: TextStyle(fontWeight: FontWeight.w800)),
         ),
         if (voices.isEmpty)
-          const Padding(
-            padding: EdgeInsets.all(24),
-            child: Text('No voices found for this language. Install one in Android Settings › '
-                'Accessibility › Text-to-speech › Install voice data.'),
+          Padding(
+            padding: const EdgeInsets.all(24),
+            child: Text('No voices found for this language. Install one in ${_voiceSettingsPath()}.'),
           ),
         for (final v in voices)
           SimpleDialogOption(

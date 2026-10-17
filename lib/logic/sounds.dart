@@ -1,6 +1,8 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 
+import 'web_media.dart';
+
 /// Short feedback sounds. Failing to play is never an error for the learner.
 class Sounds {
   Sounds._();
@@ -21,6 +23,7 @@ class Sounds {
 
   Future<void> _play(String asset) async {
     if (!enabled || forceOff) return;
+    if (kIsWeb && webPlaySound('assets/assets/$asset')) return;
     try {
       final p = _player ??= AudioPlayer();
       await p.stop();

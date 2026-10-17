@@ -1,8 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'data/content_repository.dart';
 import 'logic/app_state.dart';
+import 'logic/web_media.dart';
 import 'screens/home_screen.dart';
 import 'screens/onboarding_screen.dart';
 import 'ui/palette.dart';
@@ -21,7 +23,7 @@ class LinguaPathApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppScope(
+    final app = AppScope(
       state: state,
       child: MaterialApp(
         title: 'LinguaPath',
@@ -31,6 +33,9 @@ class LinguaPathApp extends StatelessWidget {
         home: const _Root(),
       ),
     );
+    // In the browser, the first tap unlocks speech and sound (needed on iPhone).
+    if (!kIsWeb) return app;
+    return Listener(onPointerDown: (_) => webUnlockMedia(), child: app);
   }
 }
 
