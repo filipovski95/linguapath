@@ -1,5 +1,5 @@
-name: linguapath
-description: "LinguaPath: offline-first language learning (Chinese, English, German, Portuguese, Spanish, French, Macedonian)."
+name: saylark
+description: "Saylark: offline-first language learning (Chinese, English, German, Portuguese, Spanish, French, Macedonian)."
 publish_to: 'none'
 version: 1.0.0+1
 

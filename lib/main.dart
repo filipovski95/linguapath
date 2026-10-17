@@ -13,11 +13,11 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final content = await ContentRepository().load();
   final prefs = await SharedPreferences.getInstance();
-  runApp(LinguaPathApp(state: AppState(content, prefs)));
+  runApp(SaylarkApp(state: AppState(content, prefs)));
 }
 
-class LinguaPathApp extends StatelessWidget {
-  const LinguaPathApp({super.key, required this.state});
+class SaylarkApp extends StatelessWidget {
+  const SaylarkApp({super.key, required this.state});
 
   final AppState state;
 
@@ -26,7 +26,7 @@ class LinguaPathApp extends StatelessWidget {
     final app = AppScope(
       state: state,
       child: MaterialApp(
-        title: 'LinguaPath',
+        title: 'Saylark',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(Brightness.light),
         darkTheme: buildTheme(Brightness.dark),

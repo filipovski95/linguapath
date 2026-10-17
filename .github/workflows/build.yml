@@ -45,10 +45,10 @@ jobs:
 
       - run: flutter build appbundle --release
       - run: flutter build apk --release
-      - run: cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/LinguaPath.apk
+      - run: cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/Saylark.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: linguapath-release
+          name: saylark-release
           path: |
             build/app/outputs/bundle/release/app-release.aab
             build/app/outputs/flutter-apk/app-release.apk
@@ -65,8 +65,8 @@ jobs:
           make_latest: false
           body: |
             Test build from ${{ github.sha }}.
-            On your Android phone: download LinguaPath.apk, open it, and allow installing from this source when asked.
-          files: build/app/outputs/flutter-apk/LinguaPath.apk
+            On your Android phone: download Saylark.apk, open it, and allow installing from this source when asked.
+          files: build/app/outputs/flutter-apk/Saylark.apk
 
       # The web version (for iPhone testers) at https://filipovski95.github.io/linguapath/
       - name: Build web version

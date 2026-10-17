@@ -1,7 +1,7 @@
 # Google Play listing (fr-FR)
 
 **App name** (30/30):
-LinguaPath : Apprendre langues
+Saylark : Apprendre langues
 
 **Short description** (76/80):
 Apprenez l'anglais, l'espagnol et plus hors ligne. Leçons courtes, sans pub.
@@ -10,7 +10,7 @@ Apprenez l'anglais, l'espagnol et plus hors ligne. Leçons courtes, sans pub.
 
 Apprenez les grandes langues du monde en quelques minutes par jour, partout, même sans internet.
 
-LinguaPath propose des cours de chinois (mandarin), anglais, espagnol, français, allemand, portugais et macédonien. Choisissez un cours et suivez votre chemin, leçon après leçon, avec Pip, votre guide sympathique.
+Saylark propose des cours de chinois (mandarin), anglais, espagnol, français, allemand, portugais et macédonien. Choisissez un cours et suivez votre chemin, leçon après leçon, avec Pip, votre guide sympathique.
 
 ★ DES LEÇONS COURTES
 Chaque leçon présente quelques mots nouveaux avec image et prononciation, puis les fait pratiquer avec des petits jeux : choisir le sens, trouver le bon mot, écouter et choisir, relier les paires.

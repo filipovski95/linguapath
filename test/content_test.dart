@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:linguapath/data/models.dart';
+import 'package:saylark/data/models.dart';
 
 /// Guards the content files, so a new language can't ship with gaps.
 void main() {

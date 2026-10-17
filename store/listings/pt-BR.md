@@ -1,7 +1,7 @@
 # Google Play listing (pt-BR)
 
 **App name** (27/30):
-LinguaPath: Aprenda Idiomas
+Saylark: Aprenda Idiomas
 
 **Short description** (69/80):
 Aprenda inglês, espanhol e mais offline. Lições curtas, sem anúncios.
@@ -10,7 +10,7 @@ Aprenda inglês, espanhol e mais offline. Lições curtas, sem anúncios.
 
 Aprenda os grandes idiomas do mundo em poucos minutos por dia, em qualquer lugar, até sem internet.
 
-O LinguaPath tem cursos de chinês (mandarim), inglês, espanhol, francês, alemão, português e macedônio. Escolha um curso e siga seu caminho, lição por lição, com o Pip, seu guia simpático.
+O Saylark tem cursos de chinês (mandarim), inglês, espanhol, francês, alemão, português e macedônio. Escolha um curso e siga seu caminho, lição por lição, com o Pip, seu guia simpático.
 
 ★ LIÇÕES CURTINHAS
 Cada lição apresenta algumas palavras novas com imagem e pronúncia e depois treina com jogos rápidos: escolha o significado, escolha a palavra certa, ouça e escolha, e ligue os pares.

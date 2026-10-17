@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:linguapath/data/models.dart';
-import 'package:linguapath/logic/answer_check.dart';
+import 'package:saylark/data/models.dart';
+import 'package:saylark/logic/answer_check.dart';
 
 void main() {
   bool ok(String typed, String text, [String? roman]) =>

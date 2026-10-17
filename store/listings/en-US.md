@@ -1,7 +1,7 @@
 # Google Play listing (en-US)
 
 **App name** (27/30):
-LinguaPath: Learn Languages
+Saylark: Learn Languages
 
 **Short description** (77/80):
 Learn Chinese, Spanish, French, German & more offline. Short lessons, no ads.
@@ -10,7 +10,7 @@ Learn Chinese, Spanish, French, German & more offline. Short lessons, no ads.
 
 Learn the world's big languages in a few minutes a day, anywhere, even without internet.
 
-LinguaPath teaches Chinese (Mandarin), English, Spanish, French, German, Portuguese and Macedonian. Pick one course and follow your path, lesson by lesson, with Pip, your friendly guide.
+Saylark teaches Chinese (Mandarin), English, Spanish, French, German, Portuguese and Macedonian. Pick one course and follow your path, lesson by lesson, with Pip, your friendly guide.
 
 ★ BITE-SIZE LESSONS
 Each lesson introduces a few new words with pictures and pronunciation, then checks them with quick games: choose the meaning, pick the right word, listen and choose, and match the pairs.

@@ -28,7 +28,7 @@ class OnboardingScreen extends StatelessWidget {
           children: [
             if (!fromSettings) ...[
               Center(
-                child: Text('LinguaPath',
+                child: Text('Saylark',
                     style: theme.textTheme.headlineMedium?.copyWith(color: Palette.violet, letterSpacing: -0.5)),
               ),
               const SizedBox(height: 16),

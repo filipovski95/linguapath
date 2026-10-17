@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:linguapath/logic/srs.dart';
+import 'package:saylark/logic/srs.dart';
 
 void main() {
   const today = 20000;

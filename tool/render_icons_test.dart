@@ -3,8 +3,8 @@
 // Output goes to tool/icons/, then tool/make_icons.py resizes it for Android, web and Play.
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:linguapath/ui/mascot.dart';
-import 'package:linguapath/ui/palette.dart';
+import 'package:saylark/ui/mascot.dart';
+import 'package:saylark/ui/palette.dart';
 
 Widget _canvas(Widget child) => MediaQuery(
       data: const MediaQueryData(),

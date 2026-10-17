@@ -1,4 +1,4 @@
-# Publishing LinguaPath on Google Play
+# Publishing Saylark on Google Play
 
 Everything in the app is ready for Play except the parts only you can do: the developer account, your signing key, and the forms in Play Console. This is the order to do them in.
 
@@ -57,13 +57,13 @@ flutter build appbundle --release
 Output: `build/app/outputs/bundle/release/app-release.aab`. Google Play only accepts `.aab` bundles for new apps. Before each new upload, raise the version in `pubspec.yaml` (`version: 0.1.0+1` → `0.1.1+2`; the number after `+` must always go up).
 
 Already set in the project:
-- App id `com.ruflo.linguapath` (**permanent once uploaded** — change it in `android/app/build.gradle.kts` now if you want a different one).
+- App id `com.ruflo.saylark` (**permanent once uploaded** — change it in `android/app/build.gradle.kts` now if you want a different one).
 - Target Android 16 (API 36), minimum Android 7 (API 24), which meets Play's current target-API rule.
-- App name "LinguaPath", launcher icon, no internet or other sensitive permissions.
+- App name "Saylark", launcher icon, no internet or other sensitive permissions.
 
 ## 5. Create the app in Play Console
 
-**Create app** → name *LinguaPath*, default language English (US), **App**, **Free**, accept the declarations.
+**Create app** → name *Saylark*, default language English (US), **App**, **Free**, accept the declarations.
 
 Then finish every item under **Dashboard → Set up your app**:
 
@@ -97,6 +97,6 @@ Play App Signing is turned on automatically: Google holds the final app-signing 
 - [ ] Play developer account + $25 + ID verification
 - [ ] 12 testers with Android phones for the 14-day closed test
 - [ ] Upload key created and backed up
-- [ ] Final decision on app name and app id (`com.ruflo.linguapath`)
+- [ ] Final decision on app name and app id (`com.ruflo.saylark`)
 - [x] A public URL for the privacy policy (https://filipovski95.github.io/linguapath/privacy.html)
 - [ ] Contact email for the store listing

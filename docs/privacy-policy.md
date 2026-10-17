@@ -1,8 +1,8 @@
-# LinguaPath Privacy Policy
+# Saylark Privacy Policy
 
 _Last updated: 17 October 2026_
 
-LinguaPath is a language learning app. We built it so that it works without collecting anything about you.
+Saylark is a language learning app. We built it so that it works without collecting anything about you.
 
 **What we collect:** nothing. The app has no account, no analytics, no advertising and no network access.
 

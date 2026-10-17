@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// LinguaPath's colors. Violet brand, sunny yellow highlights,
+/// Saylark's colors. Violet brand, sunny yellow highlights,
 /// and one bright color per unit so the course path feels like a journey.
 class Palette {
   static const violet = Color(0xFF6C4BF4);

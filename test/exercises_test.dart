@@ -3,8 +3,8 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:linguapath/data/models.dart';
-import 'package:linguapath/logic/exercises.dart';
+import 'package:saylark/data/models.dart';
+import 'package:saylark/logic/exercises.dart';
 
 void main() {
   Map<String, dynamic> read(String path) =>

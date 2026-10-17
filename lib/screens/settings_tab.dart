@@ -103,7 +103,7 @@ class SettingsTab extends StatelessWidget {
         ),
         const AboutListTile(
           icon: Icon(Icons.info_outline),
-          applicationName: 'LinguaPath',
+          applicationName: 'Saylark',
           applicationVersion: '1.0.0',
           aboutBoxChildren: [
             Text('Learn languages offline. No account, no ads, no data leaves your phone.'),

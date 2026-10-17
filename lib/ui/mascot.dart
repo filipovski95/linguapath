@@ -6,7 +6,7 @@ import 'palette.dart';
 
 enum MascotMood { idle, happy, cheer, sad, thinking }
 
-/// Pip, LinguaPath's guide: a little speech-bubble creature.
+/// Pip, Saylark's guide: a little speech-bubble creature.
 /// Drawn in code so it stays crisp at any size and can bob and blink.
 class Mascot extends StatefulWidget {
   const Mascot({super.key, this.mood = MascotMood.idle, this.size = 96, this.animate = true});

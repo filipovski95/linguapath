@@ -3,10 +3,10 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:linguapath/data/models.dart';
-import 'package:linguapath/logic/app_state.dart';
-import 'package:linguapath/logic/sounds.dart';
-import 'package:linguapath/main.dart';
+import 'package:saylark/data/models.dart';
+import 'package:saylark/logic/app_state.dart';
+import 'package:saylark/logic/sounds.dart';
+import 'package:saylark/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 ContentBundle loadContent() {
@@ -100,7 +100,7 @@ void main() {
     addTearDown(tester.view.reset);
     addTearDown(tester.platformDispatcher.clearAccessibilityFeaturesTestValue);
     final s = await freshState();
-    await tester.pumpWidget(LinguaPathApp(state: s));
+    await tester.pumpWidget(SaylarkApp(state: s));
     expect(find.textContaining('Which language do you want to learn?'), findsOneWidget);
     expect(s.nativeCode, 'en');
     expect(find.text('English'), findsNothing, reason: 'the base language is not offered as a course');

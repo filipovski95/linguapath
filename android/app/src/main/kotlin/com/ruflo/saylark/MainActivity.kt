@@ -1,4 +1,4 @@
-package com.ruflo.linguapath
+package com.ruflo.saylark
 
 import io.flutter.embedding.android.FlutterActivity
 
