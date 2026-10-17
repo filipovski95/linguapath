@@ -1,0 +1,3500 @@
+{
+ "version": 3,
+ "concepts": {
+  "hello": {
+   "emoji": "👋"
+  },
+  "goodbye": {
+   "emoji": "🚪"
+  },
+  "thank_you": {
+   "emoji": "🙏"
+  },
+  "please": {
+   "emoji": "💁"
+  },
+  "yes": {
+   "emoji": "✅"
+  },
+  "no": {
+   "emoji": "❌"
+  },
+  "sorry": {
+   "emoji": "😔"
+  },
+  "good_morning": {
+   "emoji": "🌅"
+  },
+  "good_night": {
+   "emoji": "🌙"
+  },
+  "how_are_you": {
+   "emoji": "🤔"
+  },
+  "im_fine": {
+   "emoji": "😊"
+  },
+  "my_name_is": {
+   "emoji": "📛"
+  },
+  "one": {
+   "emoji": "1️⃣"
+  },
+  "two": {
+   "emoji": "2️⃣"
+  },
+  "three": {
+   "emoji": "3️⃣"
+  },
+  "four": {
+   "emoji": "4️⃣"
+  },
+  "five": {
+   "emoji": "5️⃣"
+  },
+  "six": {
+   "emoji": "6️⃣"
+  },
+  "seven": {
+   "emoji": "7️⃣"
+  },
+  "eight": {
+   "emoji": "8️⃣"
+  },
+  "nine": {
+   "emoji": "9️⃣"
+  },
+  "ten": {
+   "emoji": "🔟"
+  },
+  "water": {
+   "emoji": "💧"
+  },
+  "coffee": {
+   "emoji": "☕"
+  },
+  "tea": {
+   "emoji": "🍵"
+  },
+  "bread": {
+   "emoji": "🍞"
+  },
+  "rice": {
+   "emoji": "🍚"
+  },
+  "apple": {
+   "emoji": "🍎"
+  },
+  "milk": {
+   "emoji": "🥛"
+  },
+  "egg": {
+   "emoji": "🥚"
+  },
+  "fish": {
+   "emoji": "🐟"
+  },
+  "meat": {
+   "emoji": "🥩"
+  },
+  "beer": {
+   "emoji": "🍺"
+  },
+  "delicious": {
+   "emoji": "😋"
+  },
+  "im_hungry": {
+   "emoji": "🍽️"
+  },
+  "the_bill": {
+   "emoji": "🧾"
+  },
+  "mother": {
+   "emoji": "👩"
+  },
+  "father": {
+   "emoji": "👨"
+  },
+  "brother": {
+   "emoji": "👦"
+  },
+  "sister": {
+   "emoji": "👧"
+  },
+  "friend": {
+   "emoji": "🤝"
+  },
+  "child": {
+   "emoji": "🧒"
+  },
+  "man": {
+   "emoji": "🧔"
+  },
+  "woman": {
+   "emoji": "👱‍♀️"
+  },
+  "i": {
+   "emoji": "🙋"
+  },
+  "you": {
+   "emoji": "👉"
+  },
+  "he": {
+   "emoji": "🙎‍♂️"
+  },
+  "she": {
+   "emoji": "🙎‍♀️"
+  },
+  "we": {
+   "emoji": "👫"
+  },
+  "red": {
+   "emoji": "🔴"
+  },
+  "blue": {
+   "emoji": "🔵"
+  },
+  "green": {
+   "emoji": "🟢"
+  },
+  "yellow": {
+   "emoji": "🟡"
+  },
+  "black": {
+   "emoji": "⚫"
+  },
+  "white": {
+   "emoji": "⚪"
+  },
+  "big": {
+   "emoji": "🐘"
+  },
+  "small": {
+   "emoji": "🐭"
+  },
+  "hot": {
+   "emoji": "🔥"
+  },
+  "cold": {
+   "emoji": "🧊"
+  },
+  "good": {
+   "emoji": "👍"
+  },
+  "bad": {
+   "emoji": "👎"
+  },
+  "airport": {
+   "emoji": "✈️"
+  },
+  "train_station": {
+   "emoji": "🚉"
+  },
+  "hotel": {
+   "emoji": "🏨"
+  },
+  "taxi": {
+   "emoji": "🚕"
+  },
+  "toilet": {
+   "emoji": "🚻"
+  },
+  "ticket": {
+   "emoji": "🎫"
+  },
+  "left": {
+   "emoji": "⬅️"
+  },
+  "right": {
+   "emoji": "➡️"
+  },
+  "straight_ahead": {
+   "emoji": "⬆️"
+  },
+  "where_is": {
+   "emoji": "📍"
+  },
+  "how_much": {
+   "emoji": "💰"
+  },
+  "i_dont_understand": {
+   "emoji": "🤷"
+  },
+  "speak_english": {
+   "emoji": "🗣️"
+  },
+  "today": {
+   "emoji": "📅"
+  },
+  "tomorrow": {
+   "emoji": "⏭️"
+  },
+  "yesterday": {
+   "emoji": "⏮️"
+  },
+  "now": {
+   "emoji": "⏱️"
+  },
+  "day": {
+   "emoji": "☀️"
+  },
+  "week": {
+   "emoji": "🗓️"
+  },
+  "month": {
+   "emoji": "📆"
+  },
+  "year": {
+   "emoji": "🎆"
+  },
+  "what_time": {
+   "emoji": "🕒"
+  },
+  "to_eat": {
+   "emoji": "🍽️"
+  },
+  "to_drink": {
+   "emoji": "🥤"
+  },
+  "to_go": {
+   "emoji": "🚶"
+  },
+  "to_come": {
+   "emoji": "🫴"
+  },
+  "to_see": {
+   "emoji": "👀"
+  },
+  "to_speak": {
+   "emoji": "💬"
+  },
+  "to_want": {
+   "emoji": "🎯"
+  },
+  "to_like": {
+   "emoji": "❤️"
+  },
+  "to_sleep": {
+   "emoji": "😴"
+  },
+  "to_learn": {
+   "emoji": "📚"
+  },
+  "excuse_me": {
+   "emoji": "🙇"
+  },
+  "no_problem": {
+   "emoji": "👍"
+  },
+  "help": {
+   "emoji": "🆘"
+  },
+  "i_dont_know": {
+   "emoji": "🤷"
+  },
+  "see_you_later": {
+   "emoji": "👋"
+  },
+  "welcome": {
+   "emoji": "🤗"
+  },
+  "congratulations": {
+   "emoji": "🎉"
+  },
+  "good_luck": {
+   "emoji": "🍀"
+  },
+  "nice_to_meet_you": {
+   "emoji": "🤝"
+  },
+  "of_course": {
+   "emoji": "✔️"
+  },
+  "maybe": {
+   "emoji": "🤔"
+  },
+  "good_evening": {
+   "emoji": "🌆"
+  },
+  "what": {
+   "emoji": "❓"
+  },
+  "who": {
+   "emoji": "🙋"
+  },
+  "where": {
+   "emoji": "📍"
+  },
+  "when": {
+   "emoji": "🕰️"
+  },
+  "why": {
+   "emoji": "🤷‍♀️"
+  },
+  "how": {
+   "emoji": "🛠️"
+  },
+  "how_many": {
+   "emoji": "🧮"
+  },
+  "which": {
+   "emoji": "👉"
+  },
+  "this": {
+   "emoji": "👇"
+  },
+  "that": {
+   "emoji": "☝️"
+  },
+  "they": {
+   "emoji": "👥"
+  },
+  "here": {
+   "emoji": "⬇️"
+  },
+  "eleven": {
+   "emoji": "🔢"
+  },
+  "twelve": {
+   "emoji": "🔢"
+  },
+  "fifteen": {
+   "emoji": "🔢"
+  },
+  "twenty": {
+   "emoji": "🔢"
+  },
+  "thirty": {
+   "emoji": "🔢"
+  },
+  "fifty": {
+   "emoji": "🔢"
+  },
+  "hundred": {
+   "emoji": "💯"
+  },
+  "thousand": {
+   "emoji": "🔢"
+  },
+  "grandmother": {
+   "emoji": "👵"
+  },
+  "grandfather": {
+   "emoji": "👴"
+  },
+  "son": {
+   "emoji": "👦"
+  },
+  "daughter": {
+   "emoji": "👧"
+  },
+  "husband": {
+   "emoji": "🤵"
+  },
+  "wife": {
+   "emoji": "👰"
+  },
+  "baby": {
+   "emoji": "👶"
+  },
+  "family": {
+   "emoji": "👪"
+  },
+  "dog": {
+   "emoji": "🐶"
+  },
+  "cat": {
+   "emoji": "🐱"
+  },
+  "bird": {
+   "emoji": "🐦"
+  },
+  "horse": {
+   "emoji": "🐴"
+  },
+  "cow": {
+   "emoji": "🐄"
+  },
+  "pig": {
+   "emoji": "🐷"
+  },
+  "chicken_animal": {
+   "emoji": "🐔"
+  },
+  "mouse": {
+   "emoji": "🐭"
+  },
+  "rabbit": {
+   "emoji": "🐰"
+  },
+  "bear": {
+   "emoji": "🐻"
+  },
+  "lion": {
+   "emoji": "🦁"
+  },
+  "elephant": {
+   "emoji": "🐘"
+  },
+  "banana": {
+   "emoji": "🍌"
+  },
+  "orange_fruit": {
+   "emoji": "🍊"
+  },
+  "grapes": {
+   "emoji": "🍇"
+  },
+  "strawberry": {
+   "emoji": "🍓"
+  },
+  "lemon": {
+   "emoji": "🍋"
+  },
+  "tomato": {
+   "emoji": "🍅"
+  },
+  "potato": {
+   "emoji": "🥔"
+  },
+  "carrot": {
+   "emoji": "🥕"
+  },
+  "onion": {
+   "emoji": "🧅"
+  },
+  "salad": {
+   "emoji": "🥗"
+  },
+  "cheese": {
+   "emoji": "🧀"
+  },
+  "soup": {
+   "emoji": "🍲"
+  },
+  "sugar": {
+   "emoji": "🍬"
+  },
+  "salt": {
+   "emoji": "🧂"
+  },
+  "cake": {
+   "emoji": "🍰"
+  },
+  "ice_cream": {
+   "emoji": "🍦"
+  },
+  "juice": {
+   "emoji": "🧃"
+  },
+  "wine": {
+   "emoji": "🍷"
+  },
+  "breakfast": {
+   "emoji": "🥞"
+  },
+  "lunch": {
+   "emoji": "🥪"
+  },
+  "dinner": {
+   "emoji": "🍽️"
+  },
+  "menu": {
+   "emoji": "📋"
+  },
+  "i_would_like": {
+   "emoji": "🙋"
+  },
+  "cheers": {
+   "emoji": "🥂"
+  },
+  "waiter": {
+   "emoji": "🧑‍🍳"
+  },
+  "vegetarian": {
+   "emoji": "🥦"
+  },
+  "spicy": {
+   "emoji": "🌶️"
+  },
+  "sweet": {
+   "emoji": "🍭"
+  },
+  "table_for_two": {
+   "emoji": "👫"
+  },
+  "head": {
+   "emoji": "🙂"
+  },
+  "eye": {
+   "emoji": "👁️"
+  },
+  "ear": {
+   "emoji": "👂"
+  },
+  "nose": {
+   "emoji": "👃"
+  },
+  "mouth": {
+   "emoji": "👄"
+  },
+  "hand": {
+   "emoji": "✋"
+  },
+  "foot": {
+   "emoji": "🦶"
+  },
+  "hair": {
+   "emoji": "💇"
+  },
+  "tooth": {
+   "emoji": "🦷"
+  },
+  "heart": {
+   "emoji": "❤️"
+  },
+  "shirt": {
+   "emoji": "👕"
+  },
+  "trousers": {
+   "emoji": "👖"
+  },
+  "dress": {
+   "emoji": "👗"
+  },
+  "shoes": {
+   "emoji": "👟"
+  },
+  "hat": {
+   "emoji": "🧢"
+  },
+  "coat": {
+   "emoji": "🧥"
+  },
+  "socks": {
+   "emoji": "🧦"
+  },
+  "bag": {
+   "emoji": "👜"
+  },
+  "house": {
+   "emoji": "🏠"
+  },
+  "room": {
+   "emoji": "🛋️"
+  },
+  "kitchen": {
+   "emoji": "🍳"
+  },
+  "bed": {
+   "emoji": "🛏️"
+  },
+  "chair": {
+   "emoji": "🪑"
+  },
+  "table": {
+   "emoji": "🔲"
+  },
+  "window": {
+   "emoji": "🪟"
+  },
+  "key": {
+   "emoji": "🔑"
+  },
+  "phone": {
+   "emoji": "📱"
+  },
+  "computer": {
+   "emoji": "💻"
+  },
+  "book": {
+   "emoji": "📖"
+  },
+  "door": {
+   "emoji": "🚪"
+  },
+  "city": {
+   "emoji": "🏙️"
+  },
+  "street": {
+   "emoji": "🛣️"
+  },
+  "shop": {
+   "emoji": "🏪"
+  },
+  "market": {
+   "emoji": "🛒"
+  },
+  "bank": {
+   "emoji": "🏦"
+  },
+  "hospital": {
+   "emoji": "🏥"
+  },
+  "school": {
+   "emoji": "🏫"
+  },
+  "restaurant_place": {
+   "emoji": "🍴"
+  },
+  "park": {
+   "emoji": "🌳"
+  },
+  "museum": {
+   "emoji": "🏛️"
+  },
+  "church": {
+   "emoji": "⛪"
+  },
+  "pharmacy": {
+   "emoji": "💊"
+  },
+  "car": {
+   "emoji": "🚗"
+  },
+  "bus": {
+   "emoji": "🚌"
+  },
+  "train": {
+   "emoji": "🚆"
+  },
+  "plane": {
+   "emoji": "✈️"
+  },
+  "bike": {
+   "emoji": "🚲"
+  },
+  "boat": {
+   "emoji": "⛵"
+  },
+  "subway": {
+   "emoji": "🚇"
+  },
+  "map": {
+   "emoji": "🗺️"
+  },
+  "passport": {
+   "emoji": "🛂"
+  },
+  "suitcase": {
+   "emoji": "🧳"
+  },
+  "sun": {
+   "emoji": "☀️"
+  },
+  "rain": {
+   "emoji": "🌧️"
+  },
+  "snow": {
+   "emoji": "❄️"
+  },
+  "wind": {
+   "emoji": "🌬️"
+  },
+  "cloud": {
+   "emoji": "☁️"
+  },
+  "sea": {
+   "emoji": "🌊"
+  },
+  "mountain": {
+   "emoji": "⛰️"
+  },
+  "river": {
+   "emoji": "🏞️"
+  },
+  "tree": {
+   "emoji": "🌲"
+  },
+  "flower": {
+   "emoji": "🌸"
+  },
+  "monday": {
+   "emoji": "📅"
+  },
+  "tuesday": {
+   "emoji": "📅"
+  },
+  "wednesday": {
+   "emoji": "📅"
+  },
+  "thursday": {
+   "emoji": "📅"
+  },
+  "friday": {
+   "emoji": "📅"
+  },
+  "saturday": {
+   "emoji": "📅"
+  },
+  "sunday": {
+   "emoji": "📅"
+  },
+  "spring": {
+   "emoji": "🌱"
+  },
+  "summer": {
+   "emoji": "🏖️"
+  },
+  "autumn": {
+   "emoji": "🍂"
+  },
+  "winter": {
+   "emoji": "⛄"
+  },
+  "morning": {
+   "emoji": "🌄"
+  },
+  "evening": {
+   "emoji": "🌇"
+  },
+  "night": {
+   "emoji": "🌃"
+  },
+  "hour": {
+   "emoji": "⏰"
+  },
+  "minute": {
+   "emoji": "⏱️"
+  },
+  "pink": {
+   "emoji": "🩷"
+  },
+  "purple": {
+   "emoji": "💜"
+  },
+  "brown": {
+   "emoji": "🤎"
+  },
+  "grey": {
+   "emoji": "🩶"
+  },
+  "new": {
+   "emoji": "🆕"
+  },
+  "old": {
+   "emoji": "🏚️"
+  },
+  "beautiful": {
+   "emoji": "🌺"
+  },
+  "fast": {
+   "emoji": "⚡"
+  },
+  "slow": {
+   "emoji": "🐢"
+  },
+  "easy": {
+   "emoji": "👌"
+  },
+  "difficult": {
+   "emoji": "🧗"
+  },
+  "happy": {
+   "emoji": "😄"
+  },
+  "sad": {
+   "emoji": "😢"
+  },
+  "tired": {
+   "emoji": "😴"
+  },
+  "angry": {
+   "emoji": "😠"
+  },
+  "scared": {
+   "emoji": "😨"
+  },
+  "bored": {
+   "emoji": "🥱"
+  },
+  "i_love_you": {
+   "emoji": "💖"
+  },
+  "i_miss_you": {
+   "emoji": "🥺"
+  },
+  "teacher": {
+   "emoji": "🧑‍🏫"
+  },
+  "doctor": {
+   "emoji": "🧑‍⚕️"
+  },
+  "student": {
+   "emoji": "🧑‍🎓"
+  },
+  "cook": {
+   "emoji": "👨‍🍳"
+  },
+  "police_officer": {
+   "emoji": "👮"
+  },
+  "driver": {
+   "emoji": "🚕"
+  },
+  "work": {
+   "emoji": "💼"
+  },
+  "office": {
+   "emoji": "🏢"
+  },
+  "to_read": {
+   "emoji": "📚"
+  },
+  "to_write": {
+   "emoji": "✍️"
+  },
+  "to_listen": {
+   "emoji": "🎧"
+  },
+  "to_buy": {
+   "emoji": "🛍️"
+  },
+  "to_pay": {
+   "emoji": "💳"
+  },
+  "to_work": {
+   "emoji": "🛠️"
+  },
+  "to_play": {
+   "emoji": "🎲"
+  },
+  "to_run": {
+   "emoji": "🏃"
+  },
+  "to_walk": {
+   "emoji": "🚶"
+  },
+  "to_cook": {
+   "emoji": "🥘"
+  },
+  "to_open": {
+   "emoji": "🔓"
+  },
+  "to_close": {
+   "emoji": "🔒"
+  },
+  "to_know": {
+   "emoji": "🧠"
+  },
+  "to_think": {
+   "emoji": "💭"
+  },
+  "to_love": {
+   "emoji": "😍"
+  },
+  "money": {
+   "emoji": "💵"
+  },
+  "price": {
+   "emoji": "🏷️"
+  },
+  "cheap": {
+   "emoji": "💸"
+  },
+  "expensive": {
+   "emoji": "💎"
+  },
+  "open_sign": {
+   "emoji": "🟢"
+  },
+  "closed_sign": {
+   "emoji": "🔴"
+  },
+  "cash": {
+   "emoji": "💶"
+  },
+  "receipt": {
+   "emoji": "🧾"
+  },
+  "sick": {
+   "emoji": "🤒"
+  },
+  "pain": {
+   "emoji": "🤕"
+  },
+  "medicine": {
+   "emoji": "💉"
+  },
+  "i_need_a_doctor": {
+   "emoji": "🚑"
+  },
+  "headache": {
+   "emoji": "🤯"
+  },
+  "emergency": {
+   "emoji": "🚨"
+  },
+  "call_the_police": {
+   "emoji": "📞"
+  },
+  "music": {
+   "emoji": "🎵"
+  },
+  "movie": {
+   "emoji": "🎬"
+  },
+  "sport": {
+   "emoji": "🏅"
+  },
+  "game": {
+   "emoji": "🎮"
+  },
+  "football": {
+   "emoji": "⚽"
+  },
+  "photo": {
+   "emoji": "📷"
+  },
+  "to_dance": {
+   "emoji": "💃"
+  },
+  "beach": {
+   "emoji": "🏝️"
+  },
+  "country": {
+   "emoji": "🌍"
+  },
+  "language": {
+   "emoji": "🔤"
+  },
+  "where_are_you_from": {
+   "emoji": "🧭"
+  },
+  "i_am_from": {
+   "emoji": "🏡"
+  },
+  "china": {
+   "emoji": "🇨🇳"
+  },
+  "germany": {
+   "emoji": "🇩🇪"
+  },
+  "france": {
+   "emoji": "🇫🇷"
+  },
+  "spain": {
+   "emoji": "🇪🇸"
+  },
+  "italy": {
+   "emoji": "🇮🇹"
+  },
+  "brazil": {
+   "emoji": "🇧🇷"
+  },
+  "usa": {
+   "emoji": "🇺🇸"
+  },
+  "north_macedonia": {
+   "emoji": "🇲🇰"
+  },
+  "weather": {
+   "emoji": "🌦️"
+  },
+  "its_hot": {
+   "emoji": "🥵"
+  },
+  "its_cold": {
+   "emoji": "🥶"
+  },
+  "its_raining": {
+   "emoji": "☔"
+  },
+  "storm": {
+   "emoji": "⛈️"
+  },
+  "fog": {
+   "emoji": "🌫️"
+  },
+  "rainbow": {
+   "emoji": "🌈"
+  },
+  "umbrella": {
+   "emoji": "🌂"
+  },
+  "moon": {
+   "emoji": "🌕"
+  },
+  "star": {
+   "emoji": "⭐"
+  },
+  "temperature": {
+   "emoji": "🌡️"
+  },
+  "its_windy": {
+   "emoji": "🍃"
+  },
+  "pen": {
+   "emoji": "🖊️"
+  },
+  "pencil": {
+   "emoji": "✏️"
+  },
+  "notebook": {
+   "emoji": "📓"
+  },
+  "backpack": {
+   "emoji": "🎒"
+  },
+  "homework": {
+   "emoji": "📝"
+  },
+  "ruler": {
+   "emoji": "📏"
+  },
+  "scissors": {
+   "emoji": "✂️"
+  },
+  "paper": {
+   "emoji": "📄"
+  },
+  "knife": {
+   "emoji": "🔪"
+  },
+  "spoon": {
+   "emoji": "🥄"
+  },
+  "chopsticks": {
+   "emoji": "🥢"
+  },
+  "teapot": {
+   "emoji": "🍶"
+  },
+  "bottle": {
+   "emoji": "🍾"
+  },
+  "glass": {
+   "emoji": "🥃"
+  },
+  "olive_oil": {
+   "emoji": "🛢️"
+  },
+  "butter": {
+   "emoji": "🧈"
+  },
+  "garlic": {
+   "emoji": "🧄"
+  },
+  "honey": {
+   "emoji": "🍯"
+  },
+  "pasta": {
+   "emoji": "🍝"
+  },
+  "pizza": {
+   "emoji": "🍕"
+  },
+  "to_wake_up": {
+   "emoji": "🌞"
+  },
+  "to_shower": {
+   "emoji": "🚿"
+  },
+  "to_brush_teeth": {
+   "emoji": "😬"
+  },
+  "to_get_dressed": {
+   "emoji": "👔"
+  },
+  "to_clean": {
+   "emoji": "🧹"
+  },
+  "to_wash": {
+   "emoji": "🛁"
+  },
+  "to_watch_tv": {
+   "emoji": "📺"
+  },
+  "to_rest": {
+   "emoji": "🧘"
+  },
+  "internet": {
+   "emoji": "🌐"
+  },
+  "email": {
+   "emoji": "📧"
+  },
+  "message": {
+   "emoji": "📩"
+  },
+  "battery": {
+   "emoji": "🔋"
+  },
+  "charger": {
+   "emoji": "🔌"
+  },
+  "screen": {
+   "emoji": "🖥️"
+  },
+  "keyboard": {
+   "emoji": "⌨️"
+  },
+  "to_call": {
+   "emoji": "🤙"
+  },
+  "basketball": {
+   "emoji": "🏀"
+  },
+  "tennis": {
+   "emoji": "🎾"
+  },
+  "volleyball": {
+   "emoji": "🏐"
+  },
+  "skiing": {
+   "emoji": "🎿"
+  },
+  "to_swim": {
+   "emoji": "🏊"
+  },
+  "to_ride_a_bike": {
+   "emoji": "🚴"
+  },
+  "gym": {
+   "emoji": "🏋️"
+  },
+  "to_win": {
+   "emoji": "🏆"
+  },
+  "birthday": {
+   "emoji": "🎂"
+  },
+  "happy_birthday": {
+   "emoji": "🥳"
+  },
+  "gift": {
+   "emoji": "🎁"
+  },
+  "party": {
+   "emoji": "🎈"
+  },
+  "wedding": {
+   "emoji": "💒"
+  },
+  "christmas": {
+   "emoji": "🎄"
+  },
+  "merry_christmas": {
+   "emoji": "🎅"
+  },
+  "happy_new_year": {
+   "emoji": "🎇"
+  },
+  "near": {
+   "emoji": "🤏"
+  },
+  "far": {
+   "emoji": "🔭"
+  },
+  "traffic_lights": {
+   "emoji": "🚦"
+  },
+  "bridge": {
+   "emoji": "🌉"
+  },
+  "turn_left": {
+   "emoji": "↩️"
+  },
+  "turn_right": {
+   "emoji": "↪️"
+  },
+  "gas_station": {
+   "emoji": "⛽"
+  },
+  "bus_stop": {
+   "emoji": "🚏"
+  },
+  "departure": {
+   "emoji": "🛫"
+  },
+  "arrival": {
+   "emoji": "🛬"
+  },
+  "seat": {
+   "emoji": "💺"
+  },
+  "boarding_pass": {
+   "emoji": "🎟️"
+  },
+  "flight": {
+   "emoji": "🛩️"
+  },
+  "customs": {
+   "emoji": "🛃"
+  },
+  "baggage_claim": {
+   "emoji": "🛄"
+  },
+  "pilot": {
+   "emoji": "🧑‍✈️"
+  },
+  "reception": {
+   "emoji": "🛎️"
+  },
+  "i_have_a_reservation": {
+   "emoji": "🔖"
+  },
+  "elevator": {
+   "emoji": "⏫"
+  },
+  "stairs": {
+   "emoji": "⤴️"
+  },
+  "soap": {
+   "emoji": "🧼"
+  },
+  "wifi": {
+   "emoji": "📶"
+  },
+  "password": {
+   "emoji": "🔐"
+  },
+  "it_doesnt_work": {
+   "emoji": "🔧"
+  },
+  "to_sing": {
+   "emoji": "🎤"
+  },
+  "to_draw": {
+   "emoji": "🖍️"
+  },
+  "to_laugh": {
+   "emoji": "😂"
+  },
+  "to_cry": {
+   "emoji": "😭"
+  },
+  "to_wait": {
+   "emoji": "⏳"
+  },
+  "to_drive": {
+   "emoji": "🚘"
+  },
+  "to_find": {
+   "emoji": "🔍"
+  },
+  "to_send": {
+   "emoji": "📤"
+  },
+  "to_understand": {
+   "emoji": "💡"
+  },
+  "to_live": {
+   "emoji": "🏘️"
+  },
+  "to_give": {
+   "emoji": "🤲"
+  },
+  "to_repeat": {
+   "emoji": "🔁"
+  },
+  "speak_slowly": {
+   "emoji": "🐌"
+  },
+  "what_does_it_mean": {
+   "emoji": "🤨"
+  },
+  "lets_go": {
+   "emoji": "🚀"
+  },
+  "have_a_nice_day": {
+   "emoji": "🌻"
+  },
+  "me_too": {
+   "emoji": "👯"
+  },
+  "really": {
+   "emoji": "😮"
+  },
+  "great": {
+   "emoji": "🤩"
+  },
+  "be_careful": {
+   "emoji": "⚠️"
+  },
+  "im_lost": {
+   "emoji": "😵‍💫"
+  },
+  "enjoy_your_meal": {
+   "emoji": "🍛"
+  },
+  "take_care": {
+   "emoji": "💞"
+  },
+  "see_you_soon": {
+   "emoji": "🔜"
+  }
+ },
+ "units": [
+  {
+   "id": "greetings",
+   "title": "Greetings & basics",
+   "emoji": "👋",
+   "lessons": [
+    {
+     "id": "greetings_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "hello",
+      "goodbye",
+      "thank_you",
+      "please"
+     ]
+    },
+    {
+     "id": "greetings_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "yes",
+      "no",
+      "sorry",
+      "good_morning"
+     ]
+    },
+    {
+     "id": "greetings_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "good_night",
+      "how_are_you",
+      "im_fine",
+      "my_name_is"
+     ]
+    },
+    {
+     "id": "greetings_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "hello",
+      "goodbye",
+      "thank_you",
+      "please",
+      "yes",
+      "no",
+      "sorry",
+      "good_morning",
+      "good_night",
+      "how_are_you",
+      "im_fine",
+      "my_name_is"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "title": "Numbers 1–10",
+   "emoji": "🔢",
+   "lessons": [
+    {
+     "id": "numbers_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+     ]
+    },
+    {
+     "id": "numbers_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten"
+     ]
+    },
+    {
+     "id": "numbers_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "food",
+   "title": "Food & drink",
+   "emoji": "🍜",
+   "lessons": [
+    {
+     "id": "food_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "water",
+      "coffee",
+      "tea",
+      "bread",
+      "rice"
+     ]
+    },
+    {
+     "id": "food_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "apple",
+      "milk",
+      "egg",
+      "fish",
+      "meat"
+     ]
+    },
+    {
+     "id": "food_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "beer",
+      "delicious",
+      "im_hungry",
+      "the_bill"
+     ]
+    },
+    {
+     "id": "food_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "water",
+      "coffee",
+      "tea",
+      "bread",
+      "rice",
+      "apple",
+      "milk",
+      "egg",
+      "fish",
+      "meat",
+      "beer",
+      "delicious",
+      "im_hungry",
+      "the_bill"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "people",
+   "title": "Family & people",
+   "emoji": "👪",
+   "lessons": [
+    {
+     "id": "people_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "mother",
+      "father",
+      "brother",
+      "sister",
+      "friend"
+     ]
+    },
+    {
+     "id": "people_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "child",
+      "man",
+      "woman",
+      "i",
+      "you"
+     ]
+    },
+    {
+     "id": "people_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "he",
+      "she",
+      "we"
+     ]
+    },
+    {
+     "id": "people_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "mother",
+      "father",
+      "brother",
+      "sister",
+      "friend",
+      "child",
+      "man",
+      "woman",
+      "i",
+      "you",
+      "he",
+      "she",
+      "we"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "describe",
+   "title": "Colors & describing",
+   "emoji": "🎨",
+   "lessons": [
+    {
+     "id": "describe_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "red",
+      "blue",
+      "green",
+      "yellow"
+     ]
+    },
+    {
+     "id": "describe_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "black",
+      "white",
+      "big",
+      "small"
+     ]
+    },
+    {
+     "id": "describe_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "hot",
+      "cold",
+      "good",
+      "bad"
+     ]
+    },
+    {
+     "id": "describe_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "red",
+      "blue",
+      "green",
+      "yellow",
+      "black",
+      "white",
+      "big",
+      "small",
+      "hot",
+      "cold",
+      "good",
+      "bad"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "title": "Travel & directions",
+   "emoji": "✈️",
+   "lessons": [
+    {
+     "id": "travel_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "airport",
+      "train_station",
+      "hotel",
+      "taxi",
+      "toilet"
+     ]
+    },
+    {
+     "id": "travel_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "ticket",
+      "left",
+      "right",
+      "straight_ahead",
+      "where_is"
+     ]
+    },
+    {
+     "id": "travel_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "how_much",
+      "i_dont_understand",
+      "speak_english"
+     ]
+    },
+    {
+     "id": "travel_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "airport",
+      "train_station",
+      "hotel",
+      "taxi",
+      "toilet",
+      "ticket",
+      "left",
+      "right",
+      "straight_ahead",
+      "where_is",
+      "how_much",
+      "i_dont_understand",
+      "speak_english"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "time",
+   "title": "Time & days",
+   "emoji": "📅",
+   "lessons": [
+    {
+     "id": "time_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "today",
+      "tomorrow",
+      "yesterday",
+      "now",
+      "day"
+     ]
+    },
+    {
+     "id": "time_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "week",
+      "month",
+      "year",
+      "what_time"
+     ]
+    },
+    {
+     "id": "time_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "today",
+      "tomorrow",
+      "yesterday",
+      "now",
+      "day",
+      "week",
+      "month",
+      "year",
+      "what_time"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "verbs",
+   "title": "Everyday actions",
+   "emoji": "🏃",
+   "lessons": [
+    {
+     "id": "verbs_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "to_eat",
+      "to_drink",
+      "to_go",
+      "to_come",
+      "to_see"
+     ]
+    },
+    {
+     "id": "verbs_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "to_speak",
+      "to_want",
+      "to_like",
+      "to_sleep",
+      "to_learn"
+     ]
+    },
+    {
+     "id": "verbs_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "to_eat",
+      "to_drink",
+      "to_go",
+      "to_come",
+      "to_see",
+      "to_speak",
+      "to_want",
+      "to_like",
+      "to_sleep",
+      "to_learn"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "phrases",
+   "title": "Useful phrases",
+   "emoji": "💬",
+   "lessons": [
+    {
+     "id": "phrases_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "excuse_me",
+      "no_problem",
+      "help",
+      "i_dont_know"
+     ]
+    },
+    {
+     "id": "phrases_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "see_you_later",
+      "welcome",
+      "congratulations",
+      "good_luck"
+     ]
+    },
+    {
+     "id": "phrases_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "nice_to_meet_you",
+      "of_course",
+      "maybe",
+      "good_evening"
+     ]
+    },
+    {
+     "id": "phrases_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "excuse_me",
+      "no_problem",
+      "help",
+      "i_dont_know",
+      "see_you_later",
+      "welcome",
+      "congratulations",
+      "good_luck",
+      "nice_to_meet_you",
+      "of_course",
+      "maybe",
+      "good_evening"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "questions",
+   "title": "Questions & pointers",
+   "emoji": "❓",
+   "lessons": [
+    {
+     "id": "questions_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "what",
+      "who",
+      "where",
+      "when"
+     ]
+    },
+    {
+     "id": "questions_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "why",
+      "how",
+      "how_many",
+      "which"
+     ]
+    },
+    {
+     "id": "questions_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "this",
+      "that",
+      "they",
+      "here"
+     ]
+    },
+    {
+     "id": "questions_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "what",
+      "who",
+      "where",
+      "when",
+      "why",
+      "how",
+      "how_many",
+      "which",
+      "this",
+      "that",
+      "they",
+      "here"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "numbers_more",
+   "title": "Numbers 11–1000",
+   "emoji": "🔢",
+   "lessons": [
+    {
+     "id": "numbers_more_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "eleven",
+      "twelve",
+      "fifteen",
+      "twenty"
+     ]
+    },
+    {
+     "id": "numbers_more_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "thirty",
+      "fifty",
+      "hundred",
+      "thousand"
+     ]
+    },
+    {
+     "id": "numbers_more_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "eleven",
+      "twelve",
+      "fifteen",
+      "twenty",
+      "thirty",
+      "fifty",
+      "hundred",
+      "thousand"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "family_more",
+   "title": "More family",
+   "emoji": "👪",
+   "lessons": [
+    {
+     "id": "family_more_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "grandmother",
+      "grandfather",
+      "son",
+      "daughter"
+     ]
+    },
+    {
+     "id": "family_more_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "husband",
+      "wife",
+      "baby",
+      "family"
+     ]
+    },
+    {
+     "id": "family_more_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "grandmother",
+      "grandfather",
+      "son",
+      "daughter",
+      "husband",
+      "wife",
+      "baby",
+      "family"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "animals",
+   "title": "Animals",
+   "emoji": "🐶",
+   "lessons": [
+    {
+     "id": "animals_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "dog",
+      "cat",
+      "bird",
+      "horse"
+     ]
+    },
+    {
+     "id": "animals_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "cow",
+      "pig",
+      "chicken_animal",
+      "mouse"
+     ]
+    },
+    {
+     "id": "animals_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "rabbit",
+      "bear",
+      "lion",
+      "elephant"
+     ]
+    },
+    {
+     "id": "animals_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "dog",
+      "cat",
+      "bird",
+      "horse",
+      "cow",
+      "pig",
+      "chicken_animal",
+      "mouse",
+      "rabbit",
+      "bear",
+      "lion",
+      "elephant"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "fruit_veg",
+   "title": "Fruit & vegetables",
+   "emoji": "🍓",
+   "lessons": [
+    {
+     "id": "fruit_veg_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "banana",
+      "orange_fruit",
+      "grapes",
+      "strawberry"
+     ]
+    },
+    {
+     "id": "fruit_veg_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "lemon",
+      "tomato",
+      "potato"
+     ]
+    },
+    {
+     "id": "fruit_veg_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "carrot",
+      "onion",
+      "salad"
+     ]
+    },
+    {
+     "id": "fruit_veg_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "banana",
+      "orange_fruit",
+      "grapes",
+      "strawberry",
+      "lemon",
+      "tomato",
+      "potato",
+      "carrot",
+      "onion",
+      "salad"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "food_more",
+   "title": "More food",
+   "emoji": "🧀",
+   "lessons": [
+    {
+     "id": "food_more_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "cheese",
+      "soup",
+      "sugar",
+      "salt"
+     ]
+    },
+    {
+     "id": "food_more_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "cake",
+      "ice_cream",
+      "juice",
+      "wine"
+     ]
+    },
+    {
+     "id": "food_more_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "breakfast",
+      "lunch",
+      "dinner"
+     ]
+    },
+    {
+     "id": "food_more_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "cheese",
+      "soup",
+      "sugar",
+      "salt",
+      "cake",
+      "ice_cream",
+      "juice",
+      "wine",
+      "breakfast",
+      "lunch",
+      "dinner"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "restaurant",
+   "title": "At the restaurant",
+   "emoji": "🍴",
+   "lessons": [
+    {
+     "id": "restaurant_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "menu",
+      "i_would_like",
+      "cheers",
+      "waiter"
+     ]
+    },
+    {
+     "id": "restaurant_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "vegetarian",
+      "spicy",
+      "sweet",
+      "table_for_two"
+     ]
+    },
+    {
+     "id": "restaurant_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "menu",
+      "i_would_like",
+      "cheers",
+      "waiter",
+      "vegetarian",
+      "spicy",
+      "sweet",
+      "table_for_two"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "title": "The body",
+   "emoji": "💪",
+   "lessons": [
+    {
+     "id": "body_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "head",
+      "eye",
+      "ear",
+      "nose"
+     ]
+    },
+    {
+     "id": "body_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "mouth",
+      "hand",
+      "foot"
+     ]
+    },
+    {
+     "id": "body_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "hair",
+      "tooth",
+      "heart"
+     ]
+    },
+    {
+     "id": "body_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "head",
+      "eye",
+      "ear",
+      "nose",
+      "mouth",
+      "hand",
+      "foot",
+      "hair",
+      "tooth",
+      "heart"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "clothes",
+   "title": "Clothes",
+   "emoji": "👕",
+   "lessons": [
+    {
+     "id": "clothes_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "shirt",
+      "trousers",
+      "dress",
+      "shoes"
+     ]
+    },
+    {
+     "id": "clothes_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "hat",
+      "coat",
+      "socks",
+      "bag"
+     ]
+    },
+    {
+     "id": "clothes_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "shirt",
+      "trousers",
+      "dress",
+      "shoes",
+      "hat",
+      "coat",
+      "socks",
+      "bag"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "title": "At home",
+   "emoji": "🏠",
+   "lessons": [
+    {
+     "id": "home_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "house",
+      "room",
+      "kitchen",
+      "bed"
+     ]
+    },
+    {
+     "id": "home_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "chair",
+      "table",
+      "window",
+      "key"
+     ]
+    },
+    {
+     "id": "home_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "phone",
+      "computer",
+      "book",
+      "door"
+     ]
+    },
+    {
+     "id": "home_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "house",
+      "room",
+      "kitchen",
+      "bed",
+      "chair",
+      "table",
+      "window",
+      "key",
+      "phone",
+      "computer",
+      "book",
+      "door"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "city",
+   "title": "In the city",
+   "emoji": "🏙️",
+   "lessons": [
+    {
+     "id": "city_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "city",
+      "street",
+      "shop",
+      "market"
+     ]
+    },
+    {
+     "id": "city_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "bank",
+      "hospital",
+      "school",
+      "restaurant_place"
+     ]
+    },
+    {
+     "id": "city_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "park",
+      "museum",
+      "church",
+      "pharmacy"
+     ]
+    },
+    {
+     "id": "city_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "city",
+      "street",
+      "shop",
+      "market",
+      "bank",
+      "hospital",
+      "school",
+      "restaurant_place",
+      "park",
+      "museum",
+      "church",
+      "pharmacy"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "transport",
+   "title": "Getting around",
+   "emoji": "🚗",
+   "lessons": [
+    {
+     "id": "transport_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "car",
+      "bus",
+      "train",
+      "plane"
+     ]
+    },
+    {
+     "id": "transport_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "bike",
+      "boat",
+      "subway"
+     ]
+    },
+    {
+     "id": "transport_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "map",
+      "passport",
+      "suitcase"
+     ]
+    },
+    {
+     "id": "transport_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "car",
+      "bus",
+      "train",
+      "plane",
+      "bike",
+      "boat",
+      "subway",
+      "map",
+      "passport",
+      "suitcase"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "nature",
+   "title": "Weather & nature",
+   "emoji": "☀️",
+   "lessons": [
+    {
+     "id": "nature_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "sun",
+      "rain",
+      "snow",
+      "wind"
+     ]
+    },
+    {
+     "id": "nature_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "cloud",
+      "sea",
+      "mountain"
+     ]
+    },
+    {
+     "id": "nature_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "river",
+      "tree",
+      "flower"
+     ]
+    },
+    {
+     "id": "nature_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "sun",
+      "rain",
+      "snow",
+      "wind",
+      "cloud",
+      "sea",
+      "mountain",
+      "river",
+      "tree",
+      "flower"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "week",
+   "title": "Days of the week",
+   "emoji": "📅",
+   "lessons": [
+    {
+     "id": "week_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday"
+     ]
+    },
+    {
+     "id": "week_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "friday",
+      "saturday",
+      "sunday"
+     ]
+    },
+    {
+     "id": "week_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "saturday",
+      "sunday"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "seasons",
+   "title": "Seasons & times of day",
+   "emoji": "🍂",
+   "lessons": [
+    {
+     "id": "seasons_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "spring",
+      "summer",
+      "autumn"
+     ]
+    },
+    {
+     "id": "seasons_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "winter",
+      "morning",
+      "evening"
+     ]
+    },
+    {
+     "id": "seasons_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "night",
+      "hour",
+      "minute"
+     ]
+    },
+    {
+     "id": "seasons_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter",
+      "morning",
+      "evening",
+      "night",
+      "hour",
+      "minute"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "adjectives",
+   "title": "Describing things",
+   "emoji": "✨",
+   "lessons": [
+    {
+     "id": "adjectives_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "pink",
+      "purple",
+      "brown",
+      "grey"
+     ]
+    },
+    {
+     "id": "adjectives_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "new",
+      "old",
+      "beautiful",
+      "fast"
+     ]
+    },
+    {
+     "id": "adjectives_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "slow",
+      "easy",
+      "difficult"
+     ]
+    },
+    {
+     "id": "adjectives_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "pink",
+      "purple",
+      "brown",
+      "grey",
+      "new",
+      "old",
+      "beautiful",
+      "fast",
+      "slow",
+      "easy",
+      "difficult"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "feelings",
+   "title": "Feelings",
+   "emoji": "😄",
+   "lessons": [
+    {
+     "id": "feelings_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "happy",
+      "sad",
+      "tired",
+      "angry"
+     ]
+    },
+    {
+     "id": "feelings_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "scared",
+      "bored",
+      "i_love_you",
+      "i_miss_you"
+     ]
+    },
+    {
+     "id": "feelings_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "happy",
+      "sad",
+      "tired",
+      "angry",
+      "scared",
+      "bored",
+      "i_love_you",
+      "i_miss_you"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "jobs",
+   "title": "Jobs & work",
+   "emoji": "💼",
+   "lessons": [
+    {
+     "id": "jobs_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "teacher",
+      "doctor",
+      "student",
+      "cook"
+     ]
+    },
+    {
+     "id": "jobs_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "police_officer",
+      "driver",
+      "work",
+      "office"
+     ]
+    },
+    {
+     "id": "jobs_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "teacher",
+      "doctor",
+      "student",
+      "cook",
+      "police_officer",
+      "driver",
+      "work",
+      "office"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "verbs_more",
+   "title": "More actions",
+   "emoji": "🏃",
+   "lessons": [
+    {
+     "id": "verbs_more_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "to_read",
+      "to_write",
+      "to_listen",
+      "to_buy"
+     ]
+    },
+    {
+     "id": "verbs_more_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "to_pay",
+      "to_work",
+      "to_play",
+      "to_run"
+     ]
+    },
+    {
+     "id": "verbs_more_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "to_walk",
+      "to_cook",
+      "to_open",
+      "to_close"
+     ]
+    },
+    {
+     "id": "verbs_more_4",
+     "title": "Lesson 4",
+     "concepts": [
+      "to_know",
+      "to_think",
+      "to_love"
+     ]
+    },
+    {
+     "id": "verbs_more_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "to_read",
+      "to_write",
+      "to_listen",
+      "to_buy",
+      "to_pay",
+      "to_work",
+      "to_play",
+      "to_run",
+      "to_walk",
+      "to_cook",
+      "to_open",
+      "to_close",
+      "to_know",
+      "to_think",
+      "to_love"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "shopping",
+   "title": "Shopping",
+   "emoji": "🛍️",
+   "lessons": [
+    {
+     "id": "shopping_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "money",
+      "price",
+      "cheap",
+      "expensive"
+     ]
+    },
+    {
+     "id": "shopping_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "open_sign",
+      "closed_sign",
+      "cash",
+      "receipt"
+     ]
+    },
+    {
+     "id": "shopping_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "money",
+      "price",
+      "cheap",
+      "expensive",
+      "open_sign",
+      "closed_sign",
+      "cash",
+      "receipt"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "title": "Health & emergencies",
+   "emoji": "🚑",
+   "lessons": [
+    {
+     "id": "health_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "sick",
+      "pain",
+      "medicine",
+      "i_need_a_doctor"
+     ]
+    },
+    {
+     "id": "health_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "headache",
+      "emergency",
+      "call_the_police"
+     ]
+    },
+    {
+     "id": "health_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "sick",
+      "pain",
+      "medicine",
+      "i_need_a_doctor",
+      "headache",
+      "emergency",
+      "call_the_police"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "hobbies",
+   "title": "Free time",
+   "emoji": "🎵",
+   "lessons": [
+    {
+     "id": "hobbies_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "music",
+      "movie",
+      "sport",
+      "game"
+     ]
+    },
+    {
+     "id": "hobbies_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "football",
+      "photo",
+      "to_dance",
+      "beach"
+     ]
+    },
+    {
+     "id": "hobbies_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "music",
+      "movie",
+      "sport",
+      "game",
+      "football",
+      "photo",
+      "to_dance",
+      "beach"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "countries",
+   "title": "Countries & languages",
+   "emoji": "🌍",
+   "lessons": [
+    {
+     "id": "countries_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "country",
+      "language",
+      "where_are_you_from",
+      "i_am_from"
+     ]
+    },
+    {
+     "id": "countries_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "china",
+      "germany",
+      "france",
+      "spain"
+     ]
+    },
+    {
+     "id": "countries_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "italy",
+      "brazil",
+      "usa",
+      "north_macedonia"
+     ]
+    },
+    {
+     "id": "countries_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "country",
+      "language",
+      "where_are_you_from",
+      "i_am_from",
+      "china",
+      "germany",
+      "france",
+      "spain",
+      "italy",
+      "brazil",
+      "usa",
+      "north_macedonia"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "title": "Weather",
+   "emoji": "🌦️",
+   "lessons": [
+    {
+     "id": "weather_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "weather",
+      "its_hot",
+      "its_cold",
+      "its_raining"
+     ]
+    },
+    {
+     "id": "weather_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "storm",
+      "fog",
+      "rainbow",
+      "umbrella"
+     ]
+    },
+    {
+     "id": "weather_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "moon",
+      "star",
+      "temperature",
+      "its_windy"
+     ]
+    },
+    {
+     "id": "weather_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "weather",
+      "its_hot",
+      "its_cold",
+      "its_raining",
+      "storm",
+      "fog",
+      "rainbow",
+      "umbrella",
+      "moon",
+      "star",
+      "temperature",
+      "its_windy"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "school_things",
+   "title": "At school",
+   "emoji": "🎒",
+   "lessons": [
+    {
+     "id": "school_things_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "pen",
+      "pencil",
+      "notebook",
+      "backpack"
+     ]
+    },
+    {
+     "id": "school_things_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "homework",
+      "ruler",
+      "scissors",
+      "paper"
+     ]
+    },
+    {
+     "id": "school_things_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "pen",
+      "pencil",
+      "notebook",
+      "backpack",
+      "homework",
+      "ruler",
+      "scissors",
+      "paper"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "kitchen",
+   "title": "In the kitchen",
+   "emoji": "🥄",
+   "lessons": [
+    {
+     "id": "kitchen_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "knife",
+      "spoon",
+      "chopsticks",
+      "teapot"
+     ]
+    },
+    {
+     "id": "kitchen_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "bottle",
+      "glass",
+      "olive_oil",
+      "butter"
+     ]
+    },
+    {
+     "id": "kitchen_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "garlic",
+      "honey",
+      "pasta",
+      "pizza"
+     ]
+    },
+    {
+     "id": "kitchen_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "knife",
+      "spoon",
+      "chopsticks",
+      "teapot",
+      "bottle",
+      "glass",
+      "olive_oil",
+      "butter",
+      "garlic",
+      "honey",
+      "pasta",
+      "pizza"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "routine",
+   "title": "Daily routine",
+   "emoji": "⏰",
+   "lessons": [
+    {
+     "id": "routine_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "to_wake_up",
+      "to_shower",
+      "to_brush_teeth",
+      "to_get_dressed"
+     ]
+    },
+    {
+     "id": "routine_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "to_clean",
+      "to_wash",
+      "to_watch_tv",
+      "to_rest"
+     ]
+    },
+    {
+     "id": "routine_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "to_wake_up",
+      "to_shower",
+      "to_brush_teeth",
+      "to_get_dressed",
+      "to_clean",
+      "to_wash",
+      "to_watch_tv",
+      "to_rest"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Phone & technology",
+   "emoji": "📲",
+   "lessons": [
+    {
+     "id": "tech_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "internet",
+      "email",
+      "message",
+      "battery"
+     ]
+    },
+    {
+     "id": "tech_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "charger",
+      "screen",
+      "keyboard",
+      "to_call"
+     ]
+    },
+    {
+     "id": "tech_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "internet",
+      "email",
+      "message",
+      "battery",
+      "charger",
+      "screen",
+      "keyboard",
+      "to_call"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "sports",
+   "title": "Sports",
+   "emoji": "🏀",
+   "lessons": [
+    {
+     "id": "sports_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "basketball",
+      "tennis",
+      "volleyball",
+      "skiing"
+     ]
+    },
+    {
+     "id": "sports_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "to_swim",
+      "to_ride_a_bike",
+      "gym",
+      "to_win"
+     ]
+    },
+    {
+     "id": "sports_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "basketball",
+      "tennis",
+      "volleyball",
+      "skiing",
+      "to_swim",
+      "to_ride_a_bike",
+      "gym",
+      "to_win"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "celebrations",
+   "title": "Celebrations",
+   "emoji": "🎂",
+   "lessons": [
+    {
+     "id": "celebrations_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "birthday",
+      "happy_birthday",
+      "gift",
+      "party"
+     ]
+    },
+    {
+     "id": "celebrations_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "wedding",
+      "christmas",
+      "merry_christmas",
+      "happy_new_year"
+     ]
+    },
+    {
+     "id": "celebrations_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "birthday",
+      "happy_birthday",
+      "gift",
+      "party",
+      "wedding",
+      "christmas",
+      "merry_christmas",
+      "happy_new_year"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "directions",
+   "title": "Finding your way",
+   "emoji": "🚦",
+   "lessons": [
+    {
+     "id": "directions_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "near",
+      "far",
+      "traffic_lights",
+      "bridge"
+     ]
+    },
+    {
+     "id": "directions_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "turn_left",
+      "turn_right",
+      "gas_station",
+      "bus_stop"
+     ]
+    },
+    {
+     "id": "directions_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "near",
+      "far",
+      "traffic_lights",
+      "bridge",
+      "turn_left",
+      "turn_right",
+      "gas_station",
+      "bus_stop"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "airport",
+   "title": "At the airport",
+   "emoji": "🛫",
+   "lessons": [
+    {
+     "id": "airport_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "departure",
+      "arrival",
+      "seat",
+      "boarding_pass"
+     ]
+    },
+    {
+     "id": "airport_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "flight",
+      "customs",
+      "baggage_claim",
+      "pilot"
+     ]
+    },
+    {
+     "id": "airport_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "departure",
+      "arrival",
+      "seat",
+      "boarding_pass",
+      "flight",
+      "customs",
+      "baggage_claim",
+      "pilot"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "hotel_stay",
+   "title": "At the hotel",
+   "emoji": "🛎️",
+   "lessons": [
+    {
+     "id": "hotel_stay_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "reception",
+      "i_have_a_reservation",
+      "elevator",
+      "stairs"
+     ]
+    },
+    {
+     "id": "hotel_stay_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "soap",
+      "wifi",
+      "password",
+      "it_doesnt_work"
+     ]
+    },
+    {
+     "id": "hotel_stay_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "reception",
+      "i_have_a_reservation",
+      "elevator",
+      "stairs",
+      "soap",
+      "wifi",
+      "password",
+      "it_doesnt_work"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "verbs_three",
+   "title": "Even more actions",
+   "emoji": "🎤",
+   "lessons": [
+    {
+     "id": "verbs_three_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "to_sing",
+      "to_draw",
+      "to_laugh",
+      "to_cry"
+     ]
+    },
+    {
+     "id": "verbs_three_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "to_wait",
+      "to_drive",
+      "to_find",
+      "to_send"
+     ]
+    },
+    {
+     "id": "verbs_three_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "to_understand",
+      "to_live",
+      "to_give",
+      "to_repeat"
+     ]
+    },
+    {
+     "id": "verbs_three_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "to_sing",
+      "to_draw",
+      "to_laugh",
+      "to_cry",
+      "to_wait",
+      "to_drive",
+      "to_find",
+      "to_send",
+      "to_understand",
+      "to_live",
+      "to_give",
+      "to_repeat"
+     ],
+     "practice": true
+    }
+   ]
+  },
+  {
+   "id": "phrases_two",
+   "title": "More useful phrases",
+   "emoji": "🗨️",
+   "lessons": [
+    {
+     "id": "phrases_two_1",
+     "title": "Lesson 1",
+     "concepts": [
+      "speak_slowly",
+      "what_does_it_mean",
+      "lets_go",
+      "have_a_nice_day"
+     ]
+    },
+    {
+     "id": "phrases_two_2",
+     "title": "Lesson 2",
+     "concepts": [
+      "me_too",
+      "really",
+      "great",
+      "be_careful"
+     ]
+    },
+    {
+     "id": "phrases_two_3",
+     "title": "Lesson 3",
+     "concepts": [
+      "im_lost",
+      "enjoy_your_meal",
+      "take_care",
+      "see_you_soon"
+     ]
+    },
+    {
+     "id": "phrases_two_practice",
+     "title": "Unit practice",
+     "concepts": [
+      "speak_slowly",
+      "what_does_it_mean",
+      "lets_go",
+      "have_a_nice_day",
+      "me_too",
+      "really",
+      "great",
+      "be_careful",
+      "im_lost",
+      "enjoy_your_meal",
+      "take_care",
+      "see_you_soon"
+     ],
+     "practice": true
+    }
+   ]
+  }
+ ]
+}

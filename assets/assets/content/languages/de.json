@@ -1,0 +1,1361 @@
+{
+ "code": "de",
+ "name": "German",
+ "nativeName": "Deutsch",
+ "flag": "🇩🇪",
+ "ttsLocale": "de-DE",
+ "entries": {
+  "hello": {
+   "text": "Hallo"
+  },
+  "goodbye": {
+   "text": "Tschüss",
+   "note": "Informal. Formal: “Auf Wiedersehen”."
+  },
+  "thank_you": {
+   "text": "Danke"
+  },
+  "please": {
+   "text": "Bitte"
+  },
+  "yes": {
+   "text": "Ja"
+  },
+  "no": {
+   "text": "Nein"
+  },
+  "sorry": {
+   "text": "Entschuldigung"
+  },
+  "good_morning": {
+   "text": "Guten Morgen"
+  },
+  "good_night": {
+   "text": "Gute Nacht"
+  },
+  "how_are_you": {
+   "text": "Wie geht's?",
+   "note": "Informal. Formal: “Wie geht es Ihnen?”"
+  },
+  "im_fine": {
+   "text": "Mir geht's gut"
+  },
+  "my_name_is": {
+   "text": "Ich heiße …"
+  },
+  "one": {
+   "text": "eins"
+  },
+  "two": {
+   "text": "zwei"
+  },
+  "three": {
+   "text": "drei"
+  },
+  "four": {
+   "text": "vier"
+  },
+  "five": {
+   "text": "fünf"
+  },
+  "six": {
+   "text": "sechs"
+  },
+  "seven": {
+   "text": "sieben"
+  },
+  "eight": {
+   "text": "acht"
+  },
+  "nine": {
+   "text": "neun"
+  },
+  "ten": {
+   "text": "zehn"
+  },
+  "water": {
+   "text": "das Wasser"
+  },
+  "coffee": {
+   "text": "der Kaffee"
+  },
+  "tea": {
+   "text": "der Tee"
+  },
+  "bread": {
+   "text": "das Brot"
+  },
+  "rice": {
+   "text": "der Reis"
+  },
+  "apple": {
+   "text": "der Apfel"
+  },
+  "milk": {
+   "text": "die Milch"
+  },
+  "egg": {
+   "text": "das Ei"
+  },
+  "fish": {
+   "text": "der Fisch"
+  },
+  "meat": {
+   "text": "das Fleisch"
+  },
+  "beer": {
+   "text": "das Bier"
+  },
+  "delicious": {
+   "text": "lecker"
+  },
+  "im_hungry": {
+   "text": "Ich habe Hunger"
+  },
+  "the_bill": {
+   "text": "Die Rechnung, bitte"
+  },
+  "mother": {
+   "text": "die Mutter"
+  },
+  "father": {
+   "text": "der Vater"
+  },
+  "brother": {
+   "text": "der Bruder"
+  },
+  "sister": {
+   "text": "die Schwester"
+  },
+  "friend": {
+   "text": "der Freund",
+   "note": "Female: die Freundin."
+  },
+  "child": {
+   "text": "das Kind"
+  },
+  "man": {
+   "text": "der Mann"
+  },
+  "woman": {
+   "text": "die Frau"
+  },
+  "i": {
+   "text": "ich"
+  },
+  "you": {
+   "text": "du",
+   "note": "Informal. Formal: Sie."
+  },
+  "he": {
+   "text": "er"
+  },
+  "she": {
+   "text": "sie"
+  },
+  "we": {
+   "text": "wir"
+  },
+  "red": {
+   "text": "rot"
+  },
+  "blue": {
+   "text": "blau"
+  },
+  "green": {
+   "text": "grün"
+  },
+  "yellow": {
+   "text": "gelb"
+  },
+  "black": {
+   "text": "schwarz"
+  },
+  "white": {
+   "text": "weiß"
+  },
+  "big": {
+   "text": "groß"
+  },
+  "small": {
+   "text": "klein"
+  },
+  "hot": {
+   "text": "heiß"
+  },
+  "cold": {
+   "text": "kalt"
+  },
+  "good": {
+   "text": "gut"
+  },
+  "bad": {
+   "text": "schlecht"
+  },
+  "airport": {
+   "text": "der Flughafen"
+  },
+  "train_station": {
+   "text": "der Bahnhof"
+  },
+  "hotel": {
+   "text": "das Hotel"
+  },
+  "taxi": {
+   "text": "das Taxi"
+  },
+  "toilet": {
+   "text": "die Toilette"
+  },
+  "ticket": {
+   "text": "das Ticket"
+  },
+  "left": {
+   "text": "links"
+  },
+  "right": {
+   "text": "rechts"
+  },
+  "straight_ahead": {
+   "text": "geradeaus"
+  },
+  "where_is": {
+   "text": "Wo ist …?"
+  },
+  "how_much": {
+   "text": "Wie viel kostet das?"
+  },
+  "i_dont_understand": {
+   "text": "Ich verstehe nicht"
+  },
+  "speak_english": {
+   "text": "Sprechen Sie Englisch?"
+  },
+  "today": {
+   "text": "heute"
+  },
+  "tomorrow": {
+   "text": "morgen"
+  },
+  "yesterday": {
+   "text": "gestern"
+  },
+  "now": {
+   "text": "jetzt"
+  },
+  "day": {
+   "text": "der Tag"
+  },
+  "week": {
+   "text": "die Woche"
+  },
+  "month": {
+   "text": "der Monat"
+  },
+  "year": {
+   "text": "das Jahr"
+  },
+  "what_time": {
+   "text": "Wie spät ist es?"
+  },
+  "to_eat": {
+   "text": "essen"
+  },
+  "to_drink": {
+   "text": "trinken"
+  },
+  "to_go": {
+   "text": "gehen"
+  },
+  "to_come": {
+   "text": "kommen"
+  },
+  "to_see": {
+   "text": "sehen"
+  },
+  "to_speak": {
+   "text": "sprechen"
+  },
+  "to_want": {
+   "text": "wollen"
+  },
+  "to_like": {
+   "text": "mögen"
+  },
+  "to_sleep": {
+   "text": "schlafen"
+  },
+  "to_learn": {
+   "text": "lernen"
+  },
+  "excuse_me": {
+   "text": "Entschuldigen Sie",
+   "note": "Formal. Informal: “Entschuldige”."
+  },
+  "no_problem": {
+   "text": "Kein Problem"
+  },
+  "help": {
+   "text": "Hilfe!"
+  },
+  "i_dont_know": {
+   "text": "Ich weiß nicht"
+  },
+  "see_you_later": {
+   "text": "Bis später"
+  },
+  "welcome": {
+   "text": "Willkommen"
+  },
+  "congratulations": {
+   "text": "Herzlichen Glückwunsch"
+  },
+  "good_luck": {
+   "text": "Viel Glück"
+  },
+  "nice_to_meet_you": {
+   "text": "Freut mich"
+  },
+  "of_course": {
+   "text": "Natürlich"
+  },
+  "maybe": {
+   "text": "Vielleicht"
+  },
+  "good_evening": {
+   "text": "Guten Abend"
+  },
+  "what": {
+   "text": "Was?"
+  },
+  "who": {
+   "text": "Wer?"
+  },
+  "where": {
+   "text": "Wo?"
+  },
+  "when": {
+   "text": "Wann?"
+  },
+  "why": {
+   "text": "Warum?"
+  },
+  "how": {
+   "text": "Wie?"
+  },
+  "how_many": {
+   "text": "Wie viele?"
+  },
+  "which": {
+   "text": "Welcher?",
+   "note": "Changes with gender: welche (f), welches (n)."
+  },
+  "this": {
+   "text": "das hier"
+  },
+  "that": {
+   "text": "das da"
+  },
+  "they": {
+   "text": "sie (Plural)",
+   "note": "Same word as “she” (sie); the verb form shows which is meant."
+  },
+  "here": {
+   "text": "hier"
+  },
+  "eleven": {
+   "text": "elf"
+  },
+  "twelve": {
+   "text": "zwölf"
+  },
+  "fifteen": {
+   "text": "fünfzehn"
+  },
+  "twenty": {
+   "text": "zwanzig"
+  },
+  "thirty": {
+   "text": "dreißig"
+  },
+  "fifty": {
+   "text": "fünfzig"
+  },
+  "hundred": {
+   "text": "hundert"
+  },
+  "thousand": {
+   "text": "tausend"
+  },
+  "grandmother": {
+   "text": "die Großmutter",
+   "note": "Informal: die Oma."
+  },
+  "grandfather": {
+   "text": "der Großvater",
+   "note": "Informal: der Opa."
+  },
+  "son": {
+   "text": "der Sohn"
+  },
+  "daughter": {
+   "text": "die Tochter"
+  },
+  "husband": {
+   "text": "der Ehemann",
+   "note": "Often just “mein Mann”."
+  },
+  "wife": {
+   "text": "die Ehefrau",
+   "note": "Often just “meine Frau”."
+  },
+  "baby": {
+   "text": "das Baby"
+  },
+  "family": {
+   "text": "die Familie"
+  },
+  "dog": {
+   "text": "der Hund"
+  },
+  "cat": {
+   "text": "die Katze"
+  },
+  "bird": {
+   "text": "der Vogel"
+  },
+  "horse": {
+   "text": "das Pferd"
+  },
+  "cow": {
+   "text": "die Kuh"
+  },
+  "pig": {
+   "text": "das Schwein"
+  },
+  "chicken_animal": {
+   "text": "das Huhn"
+  },
+  "mouse": {
+   "text": "die Maus"
+  },
+  "rabbit": {
+   "text": "der Hase"
+  },
+  "bear": {
+   "text": "der Bär"
+  },
+  "lion": {
+   "text": "der Löwe"
+  },
+  "elephant": {
+   "text": "der Elefant"
+  },
+  "banana": {
+   "text": "die Banane"
+  },
+  "orange_fruit": {
+   "text": "die Orange"
+  },
+  "grapes": {
+   "text": "die Trauben"
+  },
+  "strawberry": {
+   "text": "die Erdbeere"
+  },
+  "lemon": {
+   "text": "die Zitrone"
+  },
+  "tomato": {
+   "text": "die Tomate"
+  },
+  "potato": {
+   "text": "die Kartoffel"
+  },
+  "carrot": {
+   "text": "die Karotte"
+  },
+  "onion": {
+   "text": "die Zwiebel"
+  },
+  "salad": {
+   "text": "der Salat"
+  },
+  "cheese": {
+   "text": "der Käse"
+  },
+  "soup": {
+   "text": "die Suppe"
+  },
+  "sugar": {
+   "text": "der Zucker"
+  },
+  "salt": {
+   "text": "das Salz"
+  },
+  "cake": {
+   "text": "der Kuchen"
+  },
+  "ice_cream": {
+   "text": "das Eis"
+  },
+  "juice": {
+   "text": "der Saft"
+  },
+  "wine": {
+   "text": "der Wein"
+  },
+  "breakfast": {
+   "text": "das Frühstück"
+  },
+  "lunch": {
+   "text": "das Mittagessen"
+  },
+  "dinner": {
+   "text": "das Abendessen"
+  },
+  "menu": {
+   "text": "die Speisekarte"
+  },
+  "i_would_like": {
+   "text": "Ich hätte gern …"
+  },
+  "cheers": {
+   "text": "Prost!"
+  },
+  "waiter": {
+   "text": "der Kellner",
+   "note": "Female: die Kellnerin."
+  },
+  "vegetarian": {
+   "text": "vegetarisch"
+  },
+  "spicy": {
+   "text": "scharf"
+  },
+  "sweet": {
+   "text": "süß"
+  },
+  "table_for_two": {
+   "text": "Einen Tisch für zwei, bitte"
+  },
+  "head": {
+   "text": "der Kopf"
+  },
+  "eye": {
+   "text": "das Auge"
+  },
+  "ear": {
+   "text": "das Ohr"
+  },
+  "nose": {
+   "text": "die Nase"
+  },
+  "mouth": {
+   "text": "der Mund"
+  },
+  "hand": {
+   "text": "die Hand"
+  },
+  "foot": {
+   "text": "der Fuß"
+  },
+  "hair": {
+   "text": "die Haare",
+   "note": "Plural in German."
+  },
+  "tooth": {
+   "text": "der Zahn"
+  },
+  "heart": {
+   "text": "das Herz"
+  },
+  "shirt": {
+   "text": "das Hemd",
+   "note": "T-shirt: das T-Shirt."
+  },
+  "trousers": {
+   "text": "die Hose",
+   "note": "Singular in German."
+  },
+  "dress": {
+   "text": "das Kleid"
+  },
+  "shoes": {
+   "text": "die Schuhe",
+   "note": "Plural. One shoe: der Schuh."
+  },
+  "hat": {
+   "text": "der Hut"
+  },
+  "coat": {
+   "text": "der Mantel"
+  },
+  "socks": {
+   "text": "die Socken",
+   "note": "Plural. One sock: die Socke."
+  },
+  "bag": {
+   "text": "die Tasche"
+  },
+  "house": {
+   "text": "das Haus"
+  },
+  "room": {
+   "text": "das Zimmer"
+  },
+  "kitchen": {
+   "text": "die Küche"
+  },
+  "bed": {
+   "text": "das Bett"
+  },
+  "chair": {
+   "text": "der Stuhl"
+  },
+  "table": {
+   "text": "der Tisch"
+  },
+  "window": {
+   "text": "das Fenster"
+  },
+  "key": {
+   "text": "der Schlüssel"
+  },
+  "phone": {
+   "text": "das Handy",
+   "note": "Mobile phone. Landline: das Telefon."
+  },
+  "computer": {
+   "text": "der Computer"
+  },
+  "book": {
+   "text": "das Buch"
+  },
+  "door": {
+   "text": "die Tür"
+  },
+  "city": {
+   "text": "die Stadt"
+  },
+  "street": {
+   "text": "die Straße"
+  },
+  "shop": {
+   "text": "das Geschäft"
+  },
+  "market": {
+   "text": "der Markt"
+  },
+  "bank": {
+   "text": "die Bank"
+  },
+  "hospital": {
+   "text": "das Krankenhaus"
+  },
+  "school": {
+   "text": "die Schule"
+  },
+  "restaurant_place": {
+   "text": "das Restaurant"
+  },
+  "park": {
+   "text": "der Park"
+  },
+  "museum": {
+   "text": "das Museum"
+  },
+  "church": {
+   "text": "die Kirche"
+  },
+  "pharmacy": {
+   "text": "die Apotheke"
+  },
+  "car": {
+   "text": "das Auto"
+  },
+  "bus": {
+   "text": "der Bus"
+  },
+  "train": {
+   "text": "der Zug"
+  },
+  "plane": {
+   "text": "das Flugzeug"
+  },
+  "bike": {
+   "text": "das Fahrrad"
+  },
+  "boat": {
+   "text": "das Boot"
+  },
+  "subway": {
+   "text": "die U-Bahn"
+  },
+  "map": {
+   "text": "die Karte"
+  },
+  "passport": {
+   "text": "der Reisepass"
+  },
+  "suitcase": {
+   "text": "der Koffer"
+  },
+  "sun": {
+   "text": "die Sonne"
+  },
+  "rain": {
+   "text": "der Regen"
+  },
+  "snow": {
+   "text": "der Schnee"
+  },
+  "wind": {
+   "text": "der Wind"
+  },
+  "cloud": {
+   "text": "die Wolke"
+  },
+  "sea": {
+   "text": "das Meer"
+  },
+  "mountain": {
+   "text": "der Berg"
+  },
+  "river": {
+   "text": "der Fluss"
+  },
+  "tree": {
+   "text": "der Baum"
+  },
+  "flower": {
+   "text": "die Blume"
+  },
+  "monday": {
+   "text": "der Montag"
+  },
+  "tuesday": {
+   "text": "der Dienstag"
+  },
+  "wednesday": {
+   "text": "der Mittwoch"
+  },
+  "thursday": {
+   "text": "der Donnerstag"
+  },
+  "friday": {
+   "text": "der Freitag"
+  },
+  "saturday": {
+   "text": "der Samstag"
+  },
+  "sunday": {
+   "text": "der Sonntag"
+  },
+  "spring": {
+   "text": "der Frühling"
+  },
+  "summer": {
+   "text": "der Sommer"
+  },
+  "autumn": {
+   "text": "der Herbst"
+  },
+  "winter": {
+   "text": "der Winter"
+  },
+  "morning": {
+   "text": "der Morgen"
+  },
+  "evening": {
+   "text": "der Abend"
+  },
+  "night": {
+   "text": "die Nacht"
+  },
+  "hour": {
+   "text": "die Stunde"
+  },
+  "minute": {
+   "text": "die Minute"
+  },
+  "pink": {
+   "text": "rosa"
+  },
+  "purple": {
+   "text": "lila"
+  },
+  "brown": {
+   "text": "braun"
+  },
+  "grey": {
+   "text": "grau"
+  },
+  "new": {
+   "text": "neu"
+  },
+  "old": {
+   "text": "alt"
+  },
+  "beautiful": {
+   "text": "schön"
+  },
+  "fast": {
+   "text": "schnell"
+  },
+  "slow": {
+   "text": "langsam"
+  },
+  "easy": {
+   "text": "einfach"
+  },
+  "difficult": {
+   "text": "schwierig"
+  },
+  "happy": {
+   "text": "glücklich"
+  },
+  "sad": {
+   "text": "traurig"
+  },
+  "tired": {
+   "text": "müde"
+  },
+  "angry": {
+   "text": "wütend"
+  },
+  "scared": {
+   "text": "ängstlich",
+   "note": "“I'm scared”: Ich habe Angst."
+  },
+  "bored": {
+   "text": "gelangweilt"
+  },
+  "i_love_you": {
+   "text": "Ich liebe dich"
+  },
+  "i_miss_you": {
+   "text": "Ich vermisse dich"
+  },
+  "teacher": {
+   "text": "der Lehrer",
+   "note": "Female: die Lehrerin."
+  },
+  "doctor": {
+   "text": "der Arzt",
+   "note": "Female: die Ärztin."
+  },
+  "student": {
+   "text": "der Student",
+   "note": "Female: die Studentin. School pupil: der Schüler."
+  },
+  "cook": {
+   "text": "der Koch",
+   "note": "Female: die Köchin."
+  },
+  "police_officer": {
+   "text": "der Polizist",
+   "note": "Female: die Polizistin."
+  },
+  "driver": {
+   "text": "der Fahrer",
+   "note": "Female: die Fahrerin."
+  },
+  "work": {
+   "text": "die Arbeit"
+  },
+  "office": {
+   "text": "das Büro"
+  },
+  "to_read": {
+   "text": "lesen"
+  },
+  "to_write": {
+   "text": "schreiben"
+  },
+  "to_listen": {
+   "text": "zuhören"
+  },
+  "to_buy": {
+   "text": "kaufen"
+  },
+  "to_pay": {
+   "text": "bezahlen"
+  },
+  "to_work": {
+   "text": "arbeiten"
+  },
+  "to_play": {
+   "text": "spielen"
+  },
+  "to_run": {
+   "text": "rennen"
+  },
+  "to_walk": {
+   "text": "zu Fuß gehen"
+  },
+  "to_cook": {
+   "text": "kochen"
+  },
+  "to_open": {
+   "text": "öffnen"
+  },
+  "to_close": {
+   "text": "schließen"
+  },
+  "to_know": {
+   "text": "wissen"
+  },
+  "to_think": {
+   "text": "denken"
+  },
+  "to_love": {
+   "text": "lieben"
+  },
+  "money": {
+   "text": "das Geld"
+  },
+  "price": {
+   "text": "der Preis"
+  },
+  "cheap": {
+   "text": "billig"
+  },
+  "expensive": {
+   "text": "teuer"
+  },
+  "open_sign": {
+   "text": "Geöffnet"
+  },
+  "closed_sign": {
+   "text": "Geschlossen"
+  },
+  "cash": {
+   "text": "das Bargeld"
+  },
+  "receipt": {
+   "text": "die Quittung"
+  },
+  "sick": {
+   "text": "krank"
+  },
+  "pain": {
+   "text": "der Schmerz",
+   "note": "Usually plural: die Schmerzen."
+  },
+  "medicine": {
+   "text": "das Medikament"
+  },
+  "i_need_a_doctor": {
+   "text": "Ich brauche einen Arzt"
+  },
+  "headache": {
+   "text": "die Kopfschmerzen",
+   "note": "Plural in German."
+  },
+  "emergency": {
+   "text": "der Notfall"
+  },
+  "call_the_police": {
+   "text": "Rufen Sie die Polizei!"
+  },
+  "music": {
+   "text": "die Musik"
+  },
+  "movie": {
+   "text": "der Film"
+  },
+  "sport": {
+   "text": "der Sport"
+  },
+  "game": {
+   "text": "das Spiel"
+  },
+  "football": {
+   "text": "der Fußball"
+  },
+  "photo": {
+   "text": "das Foto"
+  },
+  "to_dance": {
+   "text": "tanzen"
+  },
+  "beach": {
+   "text": "der Strand"
+  },
+  "country": {
+   "text": "das Land"
+  },
+  "language": {
+   "text": "die Sprache"
+  },
+  "where_are_you_from": {
+   "text": "Woher kommst du?",
+   "note": "Informal. Formal: “Woher kommen Sie?”"
+  },
+  "i_am_from": {
+   "text": "Ich komme aus …"
+  },
+  "china": {
+   "text": "China"
+  },
+  "germany": {
+   "text": "Deutschland"
+  },
+  "france": {
+   "text": "Frankreich"
+  },
+  "spain": {
+   "text": "Spanien"
+  },
+  "italy": {
+   "text": "Italien"
+  },
+  "brazil": {
+   "text": "Brasilien"
+  },
+  "usa": {
+   "text": "die USA"
+  },
+  "north_macedonia": {
+   "text": "Nordmazedonien"
+  },
+  "weather": {
+   "text": "das Wetter"
+  },
+  "its_hot": {
+   "text": "Es ist heiß"
+  },
+  "its_cold": {
+   "text": "Es ist kalt"
+  },
+  "its_raining": {
+   "text": "Es regnet"
+  },
+  "storm": {
+   "text": "der Sturm"
+  },
+  "fog": {
+   "text": "der Nebel"
+  },
+  "rainbow": {
+   "text": "der Regenbogen"
+  },
+  "umbrella": {
+   "text": "der Regenschirm"
+  },
+  "moon": {
+   "text": "der Mond"
+  },
+  "star": {
+   "text": "der Stern"
+  },
+  "temperature": {
+   "text": "die Temperatur"
+  },
+  "its_windy": {
+   "text": "Es ist windig"
+  },
+  "pen": {
+   "text": "der Kugelschreiber"
+  },
+  "pencil": {
+   "text": "der Bleistift"
+  },
+  "notebook": {
+   "text": "das Heft"
+  },
+  "backpack": {
+   "text": "der Rucksack"
+  },
+  "homework": {
+   "text": "die Hausaufgaben"
+  },
+  "ruler": {
+   "text": "das Lineal"
+  },
+  "scissors": {
+   "text": "die Schere"
+  },
+  "paper": {
+   "text": "das Papier"
+  },
+  "knife": {
+   "text": "das Messer"
+  },
+  "spoon": {
+   "text": "der Löffel"
+  },
+  "chopsticks": {
+   "text": "die Stäbchen"
+  },
+  "teapot": {
+   "text": "die Teekanne"
+  },
+  "bottle": {
+   "text": "die Flasche"
+  },
+  "glass": {
+   "text": "das Glas"
+  },
+  "olive_oil": {
+   "text": "das Olivenöl"
+  },
+  "butter": {
+   "text": "die Butter"
+  },
+  "garlic": {
+   "text": "der Knoblauch"
+  },
+  "honey": {
+   "text": "der Honig"
+  },
+  "pasta": {
+   "text": "die Nudeln"
+  },
+  "pizza": {
+   "text": "die Pizza"
+  },
+  "to_wake_up": {
+   "text": "aufwachen"
+  },
+  "to_shower": {
+   "text": "duschen"
+  },
+  "to_brush_teeth": {
+   "text": "Zähne putzen"
+  },
+  "to_get_dressed": {
+   "text": "sich anziehen"
+  },
+  "to_clean": {
+   "text": "putzen"
+  },
+  "to_wash": {
+   "text": "waschen"
+  },
+  "to_watch_tv": {
+   "text": "fernsehen"
+  },
+  "to_rest": {
+   "text": "sich ausruhen"
+  },
+  "internet": {
+   "text": "das Internet"
+  },
+  "email": {
+   "text": "die E-Mail"
+  },
+  "message": {
+   "text": "die Nachricht"
+  },
+  "battery": {
+   "text": "der Akku"
+  },
+  "charger": {
+   "text": "das Ladegerät"
+  },
+  "screen": {
+   "text": "der Bildschirm"
+  },
+  "keyboard": {
+   "text": "die Tastatur"
+  },
+  "to_call": {
+   "text": "anrufen"
+  },
+  "basketball": {
+   "text": "der Basketball"
+  },
+  "tennis": {
+   "text": "das Tennis"
+  },
+  "volleyball": {
+   "text": "der Volleyball"
+  },
+  "skiing": {
+   "text": "das Skifahren"
+  },
+  "to_swim": {
+   "text": "schwimmen"
+  },
+  "to_ride_a_bike": {
+   "text": "Fahrrad fahren"
+  },
+  "gym": {
+   "text": "das Fitnessstudio"
+  },
+  "to_win": {
+   "text": "gewinnen"
+  },
+  "birthday": {
+   "text": "der Geburtstag"
+  },
+  "happy_birthday": {
+   "text": "Alles Gute zum Geburtstag!"
+  },
+  "gift": {
+   "text": "das Geschenk"
+  },
+  "party": {
+   "text": "die Party"
+  },
+  "wedding": {
+   "text": "die Hochzeit"
+  },
+  "christmas": {
+   "text": "Weihnachten"
+  },
+  "merry_christmas": {
+   "text": "Frohe Weihnachten!"
+  },
+  "happy_new_year": {
+   "text": "Frohes neues Jahr!"
+  },
+  "near": {
+   "text": "nah"
+  },
+  "far": {
+   "text": "weit"
+  },
+  "traffic_lights": {
+   "text": "die Ampel"
+  },
+  "bridge": {
+   "text": "die Brücke"
+  },
+  "turn_left": {
+   "text": "links abbiegen"
+  },
+  "turn_right": {
+   "text": "rechts abbiegen"
+  },
+  "gas_station": {
+   "text": "die Tankstelle"
+  },
+  "bus_stop": {
+   "text": "die Bushaltestelle"
+  },
+  "departure": {
+   "text": "der Abflug"
+  },
+  "arrival": {
+   "text": "die Ankunft"
+  },
+  "seat": {
+   "text": "der Sitzplatz"
+  },
+  "boarding_pass": {
+   "text": "die Bordkarte"
+  },
+  "flight": {
+   "text": "der Flug"
+  },
+  "customs": {
+   "text": "der Zoll"
+  },
+  "baggage_claim": {
+   "text": "die Gepäckausgabe"
+  },
+  "pilot": {
+   "text": "der Pilot",
+   "note": "Female: die Pilotin."
+  },
+  "reception": {
+   "text": "die Rezeption"
+  },
+  "i_have_a_reservation": {
+   "text": "Ich habe eine Reservierung"
+  },
+  "elevator": {
+   "text": "der Aufzug"
+  },
+  "stairs": {
+   "text": "die Treppe"
+  },
+  "soap": {
+   "text": "die Seife"
+  },
+  "wifi": {
+   "text": "das WLAN"
+  },
+  "password": {
+   "text": "das Passwort"
+  },
+  "it_doesnt_work": {
+   "text": "Es funktioniert nicht"
+  },
+  "to_sing": {
+   "text": "singen"
+  },
+  "to_draw": {
+   "text": "zeichnen"
+  },
+  "to_laugh": {
+   "text": "lachen"
+  },
+  "to_cry": {
+   "text": "weinen"
+  },
+  "to_wait": {
+   "text": "warten"
+  },
+  "to_drive": {
+   "text": "fahren"
+  },
+  "to_find": {
+   "text": "finden"
+  },
+  "to_send": {
+   "text": "schicken"
+  },
+  "to_understand": {
+   "text": "verstehen"
+  },
+  "to_live": {
+   "text": "wohnen"
+  },
+  "to_give": {
+   "text": "geben"
+  },
+  "to_repeat": {
+   "text": "wiederholen"
+  },
+  "speak_slowly": {
+   "text": "Bitte sprechen Sie langsamer"
+  },
+  "what_does_it_mean": {
+   "text": "Was bedeutet das?"
+  },
+  "lets_go": {
+   "text": "Los geht's!"
+  },
+  "have_a_nice_day": {
+   "text": "Schönen Tag noch!"
+  },
+  "me_too": {
+   "text": "Ich auch"
+  },
+  "really": {
+   "text": "Wirklich?"
+  },
+  "great": {
+   "text": "Super!"
+  },
+  "be_careful": {
+   "text": "Vorsicht!"
+  },
+  "im_lost": {
+   "text": "Ich habe mich verlaufen"
+  },
+  "enjoy_your_meal": {
+   "text": "Guten Appetit!"
+  },
+  "take_care": {
+   "text": "Pass auf dich auf!"
+  },
+  "see_you_soon": {
+   "text": "Bis bald!"
+  }
+ }
+}

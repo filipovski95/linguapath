@@ -1,0 +1,1805 @@
+{
+ "code": "mk",
+ "name": "Macedonian",
+ "nativeName": "Македонски",
+ "flag": "🇲🇰",
+ "ttsLocale": "mk-MK",
+ "romanization": "Latin",
+ "entries": {
+  "hello": {
+   "text": "Здраво",
+   "roman": "Zdravo"
+  },
+  "goodbye": {
+   "text": "Довидување",
+   "roman": "Doviduvanje",
+   "note": "Informal: Чао (Čao)."
+  },
+  "thank_you": {
+   "text": "Благодарам",
+   "roman": "Blagodaram"
+  },
+  "please": {
+   "text": "Те молам",
+   "roman": "Te molam",
+   "note": "Formal: Ве молам (Ve molam)."
+  },
+  "yes": {
+   "text": "Да",
+   "roman": "Da"
+  },
+  "no": {
+   "text": "Не",
+   "roman": "Ne"
+  },
+  "sorry": {
+   "text": "Извини",
+   "roman": "Izvini",
+   "note": "Formal: Извинете (Izvinete)."
+  },
+  "good_morning": {
+   "text": "Добро утро",
+   "roman": "Dobro utro"
+  },
+  "good_night": {
+   "text": "Добра ноќ",
+   "roman": "Dobra noḱ"
+  },
+  "how_are_you": {
+   "text": "Како си?",
+   "roman": "Kako si?",
+   "note": "Formal: Како сте? (Kako ste?)"
+  },
+  "im_fine": {
+   "text": "Добро сум",
+   "roman": "Dobro sum"
+  },
+  "my_name_is": {
+   "text": "Се викам …",
+   "roman": "Se vikam …"
+  },
+  "one": {
+   "text": "еден",
+   "roman": "eden"
+  },
+  "two": {
+   "text": "два",
+   "roman": "dva"
+  },
+  "three": {
+   "text": "три",
+   "roman": "tri"
+  },
+  "four": {
+   "text": "четири",
+   "roman": "četiri"
+  },
+  "five": {
+   "text": "пет",
+   "roman": "pet"
+  },
+  "six": {
+   "text": "шест",
+   "roman": "šest"
+  },
+  "seven": {
+   "text": "седум",
+   "roman": "sedum"
+  },
+  "eight": {
+   "text": "осум",
+   "roman": "osum"
+  },
+  "nine": {
+   "text": "девет",
+   "roman": "devet"
+  },
+  "ten": {
+   "text": "десет",
+   "roman": "deset"
+  },
+  "water": {
+   "text": "вода",
+   "roman": "voda"
+  },
+  "coffee": {
+   "text": "кафе",
+   "roman": "kafe"
+  },
+  "tea": {
+   "text": "чај",
+   "roman": "čaj"
+  },
+  "bread": {
+   "text": "леб",
+   "roman": "leb"
+  },
+  "rice": {
+   "text": "ориз",
+   "roman": "oriz"
+  },
+  "apple": {
+   "text": "јаболко",
+   "roman": "jabolko"
+  },
+  "milk": {
+   "text": "млеко",
+   "roman": "mleko"
+  },
+  "egg": {
+   "text": "јајце",
+   "roman": "jajce"
+  },
+  "fish": {
+   "text": "риба",
+   "roman": "riba"
+  },
+  "meat": {
+   "text": "месо",
+   "roman": "meso"
+  },
+  "beer": {
+   "text": "пиво",
+   "roman": "pivo"
+  },
+  "delicious": {
+   "text": "вкусно",
+   "roman": "vkusno"
+  },
+  "im_hungry": {
+   "text": "Гладен сум",
+   "roman": "Gladen sum",
+   "note": "A woman says Гладна сум (Gladna sum)."
+  },
+  "the_bill": {
+   "text": "Сметката, ве молам",
+   "roman": "Smetkata, ve molam"
+  },
+  "mother": {
+   "text": "мајка",
+   "roman": "majka"
+  },
+  "father": {
+   "text": "татко",
+   "roman": "tatko"
+  },
+  "brother": {
+   "text": "брат",
+   "roman": "brat"
+  },
+  "sister": {
+   "text": "сестра",
+   "roman": "sestra"
+  },
+  "friend": {
+   "text": "пријател",
+   "roman": "prijatel",
+   "note": "Female: пријателка (prijatelka)."
+  },
+  "child": {
+   "text": "дете",
+   "roman": "dete"
+  },
+  "man": {
+   "text": "маж",
+   "roman": "maž"
+  },
+  "woman": {
+   "text": "жена",
+   "roman": "žena"
+  },
+  "i": {
+   "text": "јас",
+   "roman": "jas"
+  },
+  "you": {
+   "text": "ти",
+   "roman": "ti",
+   "note": "Informal. Formal: вие (vie)."
+  },
+  "he": {
+   "text": "тој",
+   "roman": "toj"
+  },
+  "she": {
+   "text": "таа",
+   "roman": "taa"
+  },
+  "we": {
+   "text": "ние",
+   "roman": "nie"
+  },
+  "red": {
+   "text": "црвен",
+   "roman": "crven"
+  },
+  "blue": {
+   "text": "син",
+   "roman": "sin"
+  },
+  "green": {
+   "text": "зелен",
+   "roman": "zelen"
+  },
+  "yellow": {
+   "text": "жолт",
+   "roman": "žolt"
+  },
+  "black": {
+   "text": "црн",
+   "roman": "crn"
+  },
+  "white": {
+   "text": "бел",
+   "roman": "bel"
+  },
+  "big": {
+   "text": "голем",
+   "roman": "golem"
+  },
+  "small": {
+   "text": "мал",
+   "roman": "mal"
+  },
+  "hot": {
+   "text": "жежок",
+   "roman": "žežok"
+  },
+  "cold": {
+   "text": "студен",
+   "roman": "studen"
+  },
+  "good": {
+   "text": "добар",
+   "roman": "dobar"
+  },
+  "bad": {
+   "text": "лош",
+   "roman": "loš"
+  },
+  "airport": {
+   "text": "аеродром",
+   "roman": "aerodrom"
+  },
+  "train_station": {
+   "text": "железничка станица",
+   "roman": "železnička stanica"
+  },
+  "hotel": {
+   "text": "хотел",
+   "roman": "hotel"
+  },
+  "taxi": {
+   "text": "такси",
+   "roman": "taksi"
+  },
+  "toilet": {
+   "text": "тоалет",
+   "roman": "toalet"
+  },
+  "ticket": {
+   "text": "билет",
+   "roman": "bilet"
+  },
+  "left": {
+   "text": "лево",
+   "roman": "levo"
+  },
+  "right": {
+   "text": "десно",
+   "roman": "desno"
+  },
+  "straight_ahead": {
+   "text": "право",
+   "roman": "pravo"
+  },
+  "where_is": {
+   "text": "Каде е …?",
+   "roman": "Kade e …?"
+  },
+  "how_much": {
+   "text": "Колку чини?",
+   "roman": "Kolku čini?"
+  },
+  "i_dont_understand": {
+   "text": "Не разбирам",
+   "roman": "Ne razbiram"
+  },
+  "speak_english": {
+   "text": "Зборувате ли англиски?",
+   "roman": "Zboruvate li angliski?"
+  },
+  "today": {
+   "text": "денес",
+   "roman": "denes"
+  },
+  "tomorrow": {
+   "text": "утре",
+   "roman": "utre"
+  },
+  "yesterday": {
+   "text": "вчера",
+   "roman": "včera"
+  },
+  "now": {
+   "text": "сега",
+   "roman": "sega"
+  },
+  "day": {
+   "text": "ден",
+   "roman": "den"
+  },
+  "week": {
+   "text": "недела",
+   "roman": "nedela"
+  },
+  "month": {
+   "text": "месец",
+   "roman": "mesec"
+  },
+  "year": {
+   "text": "година",
+   "roman": "godina"
+  },
+  "what_time": {
+   "text": "Колку е часот?",
+   "roman": "Kolku e časot?"
+  },
+  "to_eat": {
+   "text": "јаде",
+   "roman": "jade",
+   "note": "Macedonian has no infinitive: verbs are listed in the “he/she does” form."
+  },
+  "to_drink": {
+   "text": "пие",
+   "roman": "pie"
+  },
+  "to_go": {
+   "text": "оди",
+   "roman": "odi"
+  },
+  "to_come": {
+   "text": "доаѓа",
+   "roman": "doaǵa"
+  },
+  "to_see": {
+   "text": "гледа",
+   "roman": "gleda"
+  },
+  "to_speak": {
+   "text": "зборува",
+   "roman": "zboruva"
+  },
+  "to_want": {
+   "text": "сака",
+   "roman": "saka"
+  },
+  "to_like": {
+   "text": "се допаѓа",
+   "roman": "se dopaǵa",
+   "note": "ми се допаѓа = I like it (literally “it pleases me”)."
+  },
+  "to_sleep": {
+   "text": "спие",
+   "roman": "spie"
+  },
+  "to_learn": {
+   "text": "учи",
+   "roman": "uči"
+  },
+  "excuse_me": {
+   "text": "Извинете",
+   "roman": "Izvinete"
+  },
+  "no_problem": {
+   "text": "Нема проблем",
+   "roman": "Nema problem"
+  },
+  "help": {
+   "text": "Помош!",
+   "roman": "Pomoš!"
+  },
+  "i_dont_know": {
+   "text": "Не знам",
+   "roman": "Ne znam"
+  },
+  "see_you_later": {
+   "text": "Се гледаме",
+   "roman": "Se gledame"
+  },
+  "welcome": {
+   "text": "Добредојдовте",
+   "roman": "Dobredojdovte",
+   "note": "Informal: Добредојде (Dobredojde)."
+  },
+  "congratulations": {
+   "text": "Честитки",
+   "roman": "Čestitki"
+  },
+  "good_luck": {
+   "text": "Среќно!",
+   "roman": "Sreḱno!"
+  },
+  "nice_to_meet_you": {
+   "text": "Мило ми е",
+   "roman": "Milo mi e"
+  },
+  "of_course": {
+   "text": "Секако",
+   "roman": "Sekako"
+  },
+  "maybe": {
+   "text": "Можеби",
+   "roman": "Možebi"
+  },
+  "good_evening": {
+   "text": "Добра вечер",
+   "roman": "Dobra večer"
+  },
+  "what": {
+   "text": "Што?",
+   "roman": "Što?"
+  },
+  "who": {
+   "text": "Кој?",
+   "roman": "Koj?"
+  },
+  "where": {
+   "text": "Каде?",
+   "roman": "Kade?"
+  },
+  "when": {
+   "text": "Кога?",
+   "roman": "Koga?"
+  },
+  "why": {
+   "text": "Зошто?",
+   "roman": "Zošto?"
+  },
+  "how": {
+   "text": "Како?",
+   "roman": "Kako?"
+  },
+  "how_many": {
+   "text": "Колку?",
+   "roman": "Kolku?"
+  },
+  "which": {
+   "text": "Кој од нив?",
+   "roman": "Koj od niv?",
+   "note": "Which (of them)? The single word кој (koj) also means 'who'."
+  },
+  "this": {
+   "text": "ова",
+   "roman": "ova"
+  },
+  "that": {
+   "text": "тоа",
+   "roman": "toa"
+  },
+  "they": {
+   "text": "тие",
+   "roman": "tie"
+  },
+  "here": {
+   "text": "тука",
+   "roman": "tuka"
+  },
+  "eleven": {
+   "text": "единаесет",
+   "roman": "edinaeset"
+  },
+  "twelve": {
+   "text": "дванаесет",
+   "roman": "dvanaeset"
+  },
+  "fifteen": {
+   "text": "петнаесет",
+   "roman": "petnaeset"
+  },
+  "twenty": {
+   "text": "дваесет",
+   "roman": "dvaeset"
+  },
+  "thirty": {
+   "text": "триесет",
+   "roman": "trieset"
+  },
+  "fifty": {
+   "text": "педесет",
+   "roman": "pedeset"
+  },
+  "hundred": {
+   "text": "сто",
+   "roman": "sto"
+  },
+  "thousand": {
+   "text": "илјада",
+   "roman": "iljada"
+  },
+  "grandmother": {
+   "text": "баба",
+   "roman": "baba"
+  },
+  "grandfather": {
+   "text": "дедо",
+   "roman": "dedo"
+  },
+  "son": {
+   "text": "мој син",
+   "roman": "moj sin",
+   "note": "My son. Син (sin) = son; the same word also means 'blue'."
+  },
+  "daughter": {
+   "text": "ќерка",
+   "roman": "ḱerka"
+  },
+  "husband": {
+   "text": "сопруг",
+   "roman": "soprug"
+  },
+  "wife": {
+   "text": "сопруга",
+   "roman": "sopruga"
+  },
+  "baby": {
+   "text": "бебе",
+   "roman": "bebe"
+  },
+  "family": {
+   "text": "семејство",
+   "roman": "semejstvo"
+  },
+  "dog": {
+   "text": "куче",
+   "roman": "kuče"
+  },
+  "cat": {
+   "text": "мачка",
+   "roman": "mačka"
+  },
+  "bird": {
+   "text": "птица",
+   "roman": "ptica"
+  },
+  "horse": {
+   "text": "коњ",
+   "roman": "konj"
+  },
+  "cow": {
+   "text": "крава",
+   "roman": "krava"
+  },
+  "pig": {
+   "text": "свиња",
+   "roman": "svinja"
+  },
+  "chicken_animal": {
+   "text": "кокошка",
+   "roman": "kokoška"
+  },
+  "mouse": {
+   "text": "глушец",
+   "roman": "glušec"
+  },
+  "rabbit": {
+   "text": "зајак",
+   "roman": "zajak"
+  },
+  "bear": {
+   "text": "мечка",
+   "roman": "mečka"
+  },
+  "lion": {
+   "text": "лав",
+   "roman": "lav"
+  },
+  "elephant": {
+   "text": "слон",
+   "roman": "slon"
+  },
+  "banana": {
+   "text": "банана",
+   "roman": "banana"
+  },
+  "orange_fruit": {
+   "text": "портокал",
+   "roman": "portokal"
+  },
+  "grapes": {
+   "text": "грозје",
+   "roman": "grozje"
+  },
+  "strawberry": {
+   "text": "јагода",
+   "roman": "jagoda"
+  },
+  "lemon": {
+   "text": "лимон",
+   "roman": "limon"
+  },
+  "tomato": {
+   "text": "домат",
+   "roman": "domat"
+  },
+  "potato": {
+   "text": "компир",
+   "roman": "kompir"
+  },
+  "carrot": {
+   "text": "морков",
+   "roman": "morkov"
+  },
+  "onion": {
+   "text": "кромид",
+   "roman": "kromid"
+  },
+  "salad": {
+   "text": "салата",
+   "roman": "salata"
+  },
+  "cheese": {
+   "text": "сирење",
+   "roman": "sirenje"
+  },
+  "soup": {
+   "text": "супа",
+   "roman": "supa"
+  },
+  "sugar": {
+   "text": "шеќер",
+   "roman": "šeḱer"
+  },
+  "salt": {
+   "text": "сол",
+   "roman": "sol"
+  },
+  "cake": {
+   "text": "торта",
+   "roman": "torta"
+  },
+  "ice_cream": {
+   "text": "сладолед",
+   "roman": "sladoled"
+  },
+  "juice": {
+   "text": "сок",
+   "roman": "sok"
+  },
+  "wine": {
+   "text": "вино",
+   "roman": "vino"
+  },
+  "breakfast": {
+   "text": "појадок",
+   "roman": "pojadok"
+  },
+  "lunch": {
+   "text": "ручек",
+   "roman": "ruček"
+  },
+  "dinner": {
+   "text": "вечера",
+   "roman": "večera"
+  },
+  "menu": {
+   "text": "мени",
+   "roman": "meni"
+  },
+  "i_would_like": {
+   "text": "Би сакал …",
+   "roman": "Bi sakal …",
+   "note": "A woman says Би сакала … (Bi sakala …)."
+  },
+  "cheers": {
+   "text": "На здравје!",
+   "roman": "Na zdravje!"
+  },
+  "waiter": {
+   "text": "келнер",
+   "roman": "kelner"
+  },
+  "vegetarian": {
+   "text": "вегетаријанец",
+   "roman": "vegetarijanec",
+   "note": "Female: вегетаријанка (vegetarijanka)."
+  },
+  "spicy": {
+   "text": "лут",
+   "roman": "lut"
+  },
+  "sweet": {
+   "text": "сладок",
+   "roman": "sladok"
+  },
+  "table_for_two": {
+   "text": "Маса за двајца, ве молам",
+   "roman": "Masa za dvajca, ve molam"
+  },
+  "head": {
+   "text": "глава",
+   "roman": "glava"
+  },
+  "eye": {
+   "text": "око",
+   "roman": "oko"
+  },
+  "ear": {
+   "text": "уво",
+   "roman": "uvo"
+  },
+  "nose": {
+   "text": "нос",
+   "roman": "nos"
+  },
+  "mouth": {
+   "text": "уста",
+   "roman": "usta"
+  },
+  "hand": {
+   "text": "рака",
+   "roman": "raka"
+  },
+  "foot": {
+   "text": "стапало",
+   "roman": "stapalo",
+   "note": "нога (noga) = leg, often used for foot too."
+  },
+  "hair": {
+   "text": "коса",
+   "roman": "kosa"
+  },
+  "tooth": {
+   "text": "заб",
+   "roman": "zab"
+  },
+  "heart": {
+   "text": "срце",
+   "roman": "srce"
+  },
+  "shirt": {
+   "text": "кошула",
+   "roman": "košula",
+   "note": "T-shirt: маица (maica)."
+  },
+  "trousers": {
+   "text": "панталони",
+   "roman": "pantaloni"
+  },
+  "dress": {
+   "text": "фустан",
+   "roman": "fustan"
+  },
+  "shoes": {
+   "text": "чевли",
+   "roman": "čevli"
+  },
+  "hat": {
+   "text": "капа",
+   "roman": "kapa"
+  },
+  "coat": {
+   "text": "палто",
+   "roman": "palto"
+  },
+  "socks": {
+   "text": "чорапи",
+   "roman": "čorapi"
+  },
+  "bag": {
+   "text": "чанта",
+   "roman": "čanta"
+  },
+  "house": {
+   "text": "куќа",
+   "roman": "kuḱa"
+  },
+  "room": {
+   "text": "соба",
+   "roman": "soba"
+  },
+  "kitchen": {
+   "text": "кујна",
+   "roman": "kujna"
+  },
+  "bed": {
+   "text": "кревет",
+   "roman": "krevet"
+  },
+  "chair": {
+   "text": "стол",
+   "roman": "stol"
+  },
+  "table": {
+   "text": "маса",
+   "roman": "masa"
+  },
+  "window": {
+   "text": "прозорец",
+   "roman": "prozorec"
+  },
+  "key": {
+   "text": "клуч",
+   "roman": "kluč"
+  },
+  "phone": {
+   "text": "телефон",
+   "roman": "telefon"
+  },
+  "computer": {
+   "text": "компјутер",
+   "roman": "kompjuter"
+  },
+  "book": {
+   "text": "книга",
+   "roman": "kniga"
+  },
+  "door": {
+   "text": "врата",
+   "roman": "vrata"
+  },
+  "city": {
+   "text": "град",
+   "roman": "grad"
+  },
+  "street": {
+   "text": "улица",
+   "roman": "ulica"
+  },
+  "shop": {
+   "text": "продавница",
+   "roman": "prodavnica"
+  },
+  "market": {
+   "text": "пазар",
+   "roman": "pazar"
+  },
+  "bank": {
+   "text": "банка",
+   "roman": "banka"
+  },
+  "hospital": {
+   "text": "болница",
+   "roman": "bolnica"
+  },
+  "school": {
+   "text": "училиште",
+   "roman": "učilište"
+  },
+  "restaurant_place": {
+   "text": "ресторан",
+   "roman": "restoran"
+  },
+  "park": {
+   "text": "парк",
+   "roman": "park"
+  },
+  "museum": {
+   "text": "музеј",
+   "roman": "muzej"
+  },
+  "church": {
+   "text": "црква",
+   "roman": "crkva"
+  },
+  "pharmacy": {
+   "text": "аптека",
+   "roman": "apteka"
+  },
+  "car": {
+   "text": "автомобил",
+   "roman": "avtomobil",
+   "note": "Colloquially also кола (kola)."
+  },
+  "bus": {
+   "text": "автобус",
+   "roman": "avtobus"
+  },
+  "train": {
+   "text": "воз",
+   "roman": "voz"
+  },
+  "plane": {
+   "text": "авион",
+   "roman": "avion"
+  },
+  "bike": {
+   "text": "велосипед",
+   "roman": "velosiped"
+  },
+  "boat": {
+   "text": "чамец",
+   "roman": "čamec",
+   "note": "A large boat or ship is брод (brod)."
+  },
+  "subway": {
+   "text": "метро",
+   "roman": "metro"
+  },
+  "map": {
+   "text": "мапа",
+   "roman": "mapa"
+  },
+  "passport": {
+   "text": "пасош",
+   "roman": "pasoš"
+  },
+  "suitcase": {
+   "text": "куфер",
+   "roman": "kufer"
+  },
+  "sun": {
+   "text": "сонце",
+   "roman": "sonce"
+  },
+  "rain": {
+   "text": "дожд",
+   "roman": "dožd"
+  },
+  "snow": {
+   "text": "снег",
+   "roman": "sneg"
+  },
+  "wind": {
+   "text": "ветер",
+   "roman": "veter"
+  },
+  "cloud": {
+   "text": "облак",
+   "roman": "oblak"
+  },
+  "sea": {
+   "text": "море",
+   "roman": "more"
+  },
+  "mountain": {
+   "text": "планина",
+   "roman": "planina"
+  },
+  "river": {
+   "text": "река",
+   "roman": "reka"
+  },
+  "tree": {
+   "text": "дрво",
+   "roman": "drvo"
+  },
+  "flower": {
+   "text": "цвет",
+   "roman": "cvet"
+  },
+  "monday": {
+   "text": "понеделник",
+   "roman": "ponedelnik"
+  },
+  "tuesday": {
+   "text": "вторник",
+   "roman": "vtornik"
+  },
+  "wednesday": {
+   "text": "среда",
+   "roman": "sreda"
+  },
+  "thursday": {
+   "text": "четврток",
+   "roman": "četvrtok"
+  },
+  "friday": {
+   "text": "петок",
+   "roman": "petok"
+  },
+  "saturday": {
+   "text": "сабота",
+   "roman": "sabota"
+  },
+  "sunday": {
+   "text": "во недела",
+   "roman": "vo nedela",
+   "note": "On Sunday. Недела (nedela) means both 'Sunday' and 'week'."
+  },
+  "spring": {
+   "text": "пролет",
+   "roman": "prolet"
+  },
+  "summer": {
+   "text": "лето",
+   "roman": "leto"
+  },
+  "autumn": {
+   "text": "есен",
+   "roman": "esen"
+  },
+  "winter": {
+   "text": "зима",
+   "roman": "zima"
+  },
+  "morning": {
+   "text": "утро",
+   "roman": "utro"
+  },
+  "evening": {
+   "text": "вечер",
+   "roman": "večer"
+  },
+  "night": {
+   "text": "ноќ",
+   "roman": "noḱ"
+  },
+  "hour": {
+   "text": "час",
+   "roman": "čas"
+  },
+  "minute": {
+   "text": "минута",
+   "roman": "minuta"
+  },
+  "pink": {
+   "text": "розов",
+   "roman": "rozov"
+  },
+  "purple": {
+   "text": "виолетов",
+   "roman": "violetov"
+  },
+  "brown": {
+   "text": "кафеав",
+   "roman": "kafeav"
+  },
+  "grey": {
+   "text": "сив",
+   "roman": "siv"
+  },
+  "new": {
+   "text": "нов",
+   "roman": "nov"
+  },
+  "old": {
+   "text": "стар",
+   "roman": "star"
+  },
+  "beautiful": {
+   "text": "убав",
+   "roman": "ubav"
+  },
+  "fast": {
+   "text": "брз",
+   "roman": "brz"
+  },
+  "slow": {
+   "text": "бавен",
+   "roman": "baven"
+  },
+  "easy": {
+   "text": "лесен",
+   "roman": "lesen"
+  },
+  "difficult": {
+   "text": "тежок",
+   "roman": "težok"
+  },
+  "happy": {
+   "text": "среќен",
+   "roman": "sreḱen"
+  },
+  "sad": {
+   "text": "тажен",
+   "roman": "tažen"
+  },
+  "tired": {
+   "text": "уморен",
+   "roman": "umoren"
+  },
+  "angry": {
+   "text": "налутен",
+   "roman": "naluten"
+  },
+  "scared": {
+   "text": "уплашен",
+   "roman": "uplašen"
+  },
+  "bored": {
+   "text": "Досадно ми е",
+   "roman": "Dosadno mi e",
+   "note": "Literally 'it is boring to me' = I'm bored."
+  },
+  "i_love_you": {
+   "text": "Те сакам",
+   "roman": "Te sakam"
+  },
+  "i_miss_you": {
+   "text": "Ми недостигаш",
+   "roman": "Mi nedostigaš"
+  },
+  "teacher": {
+   "text": "наставник",
+   "roman": "nastavnik",
+   "note": "Female: наставничка (nastavnička)."
+  },
+  "doctor": {
+   "text": "лекар",
+   "roman": "lekar"
+  },
+  "student": {
+   "text": "студент",
+   "roman": "student"
+  },
+  "cook": {
+   "text": "готвач",
+   "roman": "gotvač"
+  },
+  "police_officer": {
+   "text": "полицаец",
+   "roman": "policaec"
+  },
+  "driver": {
+   "text": "возач",
+   "roman": "vozač"
+  },
+  "work": {
+   "text": "работа",
+   "roman": "rabota"
+  },
+  "office": {
+   "text": "канцеларија",
+   "roman": "kancelarija"
+  },
+  "to_read": {
+   "text": "чита",
+   "roman": "čita"
+  },
+  "to_write": {
+   "text": "пишува",
+   "roman": "pišuva"
+  },
+  "to_listen": {
+   "text": "слуша",
+   "roman": "sluša"
+  },
+  "to_buy": {
+   "text": "купува",
+   "roman": "kupuva"
+  },
+  "to_pay": {
+   "text": "плаќа",
+   "roman": "plaḱa"
+  },
+  "to_work": {
+   "text": "работи",
+   "roman": "raboti"
+  },
+  "to_play": {
+   "text": "игра",
+   "roman": "igra"
+  },
+  "to_run": {
+   "text": "трча",
+   "roman": "trča"
+  },
+  "to_walk": {
+   "text": "шета",
+   "roman": "šeta",
+   "note": "To go on foot: оди пеш (odi peš)."
+  },
+  "to_cook": {
+   "text": "готви",
+   "roman": "gotvi"
+  },
+  "to_open": {
+   "text": "отвора",
+   "roman": "otvora"
+  },
+  "to_close": {
+   "text": "затвора",
+   "roman": "zatvora"
+  },
+  "to_know": {
+   "text": "знае",
+   "roman": "znae"
+  },
+  "to_think": {
+   "text": "мисли",
+   "roman": "misli"
+  },
+  "to_love": {
+   "text": "љуби",
+   "roman": "ljubi",
+   "note": "Сака (saka) is also used for love: Те сакам = I love you."
+  },
+  "money": {
+   "text": "пари",
+   "roman": "pari"
+  },
+  "price": {
+   "text": "цена",
+   "roman": "cena"
+  },
+  "cheap": {
+   "text": "евтин",
+   "roman": "evtin"
+  },
+  "expensive": {
+   "text": "скап",
+   "roman": "skap"
+  },
+  "open_sign": {
+   "text": "Отворено",
+   "roman": "Otvoreno"
+  },
+  "closed_sign": {
+   "text": "Затворено",
+   "roman": "Zatvoreno"
+  },
+  "cash": {
+   "text": "готовина",
+   "roman": "gotovina"
+  },
+  "receipt": {
+   "text": "сметка",
+   "roman": "smetka"
+  },
+  "sick": {
+   "text": "болен",
+   "roman": "bolen"
+  },
+  "pain": {
+   "text": "болка",
+   "roman": "bolka"
+  },
+  "medicine": {
+   "text": "лек",
+   "roman": "lek"
+  },
+  "i_need_a_doctor": {
+   "text": "Ми треба лекар",
+   "roman": "Mi treba lekar"
+  },
+  "headache": {
+   "text": "главоболка",
+   "roman": "glavobolka"
+  },
+  "emergency": {
+   "text": "итен случај",
+   "roman": "iten slučaj"
+  },
+  "call_the_police": {
+   "text": "Повикајте полиција!",
+   "roman": "Povikajte policija!"
+  },
+  "music": {
+   "text": "музика",
+   "roman": "muzika"
+  },
+  "movie": {
+   "text": "филм",
+   "roman": "film"
+  },
+  "sport": {
+   "text": "спорт",
+   "roman": "sport"
+  },
+  "game": {
+   "text": "партија",
+   "roman": "partija",
+   "note": "A round of a game (of cards, chess…). Игра (igra) = game or 'plays'."
+  },
+  "football": {
+   "text": "фудбал",
+   "roman": "fudbal"
+  },
+  "photo": {
+   "text": "фотографија",
+   "roman": "fotografija"
+  },
+  "to_dance": {
+   "text": "танцува",
+   "roman": "tancuva"
+  },
+  "beach": {
+   "text": "плажа",
+   "roman": "plaža"
+  },
+  "country": {
+   "text": "земја",
+   "roman": "zemja"
+  },
+  "language": {
+   "text": "јазик",
+   "roman": "jazik"
+  },
+  "where_are_you_from": {
+   "text": "Од каде си?",
+   "roman": "Od kade si?",
+   "note": "Formal: Од каде сте? (Od kade ste?)"
+  },
+  "i_am_from": {
+   "text": "Јас сум од …",
+   "roman": "Jas sum od …"
+  },
+  "china": {
+   "text": "Кина",
+   "roman": "Kina"
+  },
+  "germany": {
+   "text": "Германија",
+   "roman": "Germanija"
+  },
+  "france": {
+   "text": "Франција",
+   "roman": "Francija"
+  },
+  "spain": {
+   "text": "Шпанија",
+   "roman": "Španija"
+  },
+  "italy": {
+   "text": "Италија",
+   "roman": "Italija"
+  },
+  "brazil": {
+   "text": "Бразил",
+   "roman": "Brazil"
+  },
+  "usa": {
+   "text": "Америка",
+   "roman": "Amerika",
+   "note": "Officially САД (SAD)."
+  },
+  "north_macedonia": {
+   "text": "Македонија",
+   "roman": "Makedonija",
+   "note": "Official name: Северна Македонија (Severna Makedonija)."
+  },
+  "weather": {
+   "text": "време",
+   "roman": "vreme",
+   "note": "Also means “time”."
+  },
+  "its_hot": {
+   "text": "Жешко е",
+   "roman": "Žeško e"
+  },
+  "its_cold": {
+   "text": "Студено е",
+   "roman": "Studeno e"
+  },
+  "its_raining": {
+   "text": "Врне дожд",
+   "roman": "Vrne dožd"
+  },
+  "storm": {
+   "text": "бура",
+   "roman": "bura"
+  },
+  "fog": {
+   "text": "магла",
+   "roman": "magla"
+  },
+  "rainbow": {
+   "text": "виножито",
+   "roman": "vinožito"
+  },
+  "umbrella": {
+   "text": "чадор",
+   "roman": "čador"
+  },
+  "moon": {
+   "text": "месечина",
+   "roman": "mesečina"
+  },
+  "star": {
+   "text": "ѕвезда",
+   "roman": "dzvezda"
+  },
+  "temperature": {
+   "text": "температура",
+   "roman": "temperatura"
+  },
+  "its_windy": {
+   "text": "Дува ветер",
+   "roman": "Duva veter"
+  },
+  "pen": {
+   "text": "пенкало",
+   "roman": "penkalo"
+  },
+  "pencil": {
+   "text": "молив",
+   "roman": "moliv"
+  },
+  "notebook": {
+   "text": "тетратка",
+   "roman": "tetratka"
+  },
+  "backpack": {
+   "text": "ранец",
+   "roman": "ranec"
+  },
+  "homework": {
+   "text": "домашна задача",
+   "roman": "domašna zadača"
+  },
+  "ruler": {
+   "text": "линијар",
+   "roman": "linijar"
+  },
+  "scissors": {
+   "text": "ножици",
+   "roman": "nožici"
+  },
+  "paper": {
+   "text": "хартија",
+   "roman": "hartija"
+  },
+  "knife": {
+   "text": "нож",
+   "roman": "nož"
+  },
+  "spoon": {
+   "text": "лажица",
+   "roman": "lažica"
+  },
+  "chopsticks": {
+   "text": "стапчиња за јадење",
+   "roman": "stapčinja za jadenje"
+  },
+  "teapot": {
+   "text": "чајник",
+   "roman": "čajnik"
+  },
+  "bottle": {
+   "text": "шише",
+   "roman": "šiše"
+  },
+  "glass": {
+   "text": "чаша",
+   "roman": "čaša"
+  },
+  "olive_oil": {
+   "text": "маслиново масло",
+   "roman": "maslinovo maslo"
+  },
+  "butter": {
+   "text": "путер",
+   "roman": "puter"
+  },
+  "garlic": {
+   "text": "лук",
+   "roman": "luk"
+  },
+  "honey": {
+   "text": "мед",
+   "roman": "med"
+  },
+  "pasta": {
+   "text": "тестенини",
+   "roman": "testenini"
+  },
+  "pizza": {
+   "text": "пица",
+   "roman": "pica"
+  },
+  "to_wake_up": {
+   "text": "се буди",
+   "roman": "se budi"
+  },
+  "to_shower": {
+   "text": "се тушира",
+   "roman": "se tušira"
+  },
+  "to_brush_teeth": {
+   "text": "ги мие забите",
+   "roman": "gi mie zabite"
+  },
+  "to_get_dressed": {
+   "text": "се облекува",
+   "roman": "se oblekuva"
+  },
+  "to_clean": {
+   "text": "чисти",
+   "roman": "čisti"
+  },
+  "to_wash": {
+   "text": "мие",
+   "roman": "mie"
+  },
+  "to_watch_tv": {
+   "text": "гледа телевизија",
+   "roman": "gleda televizija"
+  },
+  "to_rest": {
+   "text": "одмора",
+   "roman": "odmora"
+  },
+  "internet": {
+   "text": "интернет",
+   "roman": "internet"
+  },
+  "email": {
+   "text": "е-пошта",
+   "roman": "e-pošta"
+  },
+  "message": {
+   "text": "порака",
+   "roman": "poraka"
+  },
+  "battery": {
+   "text": "батерија",
+   "roman": "baterija"
+  },
+  "charger": {
+   "text": "полнач",
+   "roman": "polnač"
+  },
+  "screen": {
+   "text": "екран",
+   "roman": "ekran"
+  },
+  "keyboard": {
+   "text": "тастатура",
+   "roman": "tastatura"
+  },
+  "to_call": {
+   "text": "се јавува",
+   "roman": "se javuva"
+  },
+  "basketball": {
+   "text": "кошарка",
+   "roman": "košarka"
+  },
+  "tennis": {
+   "text": "тенис",
+   "roman": "tenis"
+  },
+  "volleyball": {
+   "text": "одбојка",
+   "roman": "odbojka"
+  },
+  "skiing": {
+   "text": "скијање",
+   "roman": "skijanje"
+  },
+  "to_swim": {
+   "text": "плива",
+   "roman": "pliva"
+  },
+  "to_ride_a_bike": {
+   "text": "вози велосипед",
+   "roman": "vozi velosiped"
+  },
+  "gym": {
+   "text": "теретана",
+   "roman": "teretana"
+  },
+  "to_win": {
+   "text": "победува",
+   "roman": "pobeduva"
+  },
+  "birthday": {
+   "text": "роденден",
+   "roman": "rodenden"
+  },
+  "happy_birthday": {
+   "text": "Среќен роденден!",
+   "roman": "Sreḱen rodenden!"
+  },
+  "gift": {
+   "text": "подарок",
+   "roman": "podarok"
+  },
+  "party": {
+   "text": "забава",
+   "roman": "zabava"
+  },
+  "wedding": {
+   "text": "свадба",
+   "roman": "svadba"
+  },
+  "christmas": {
+   "text": "Божиќ",
+   "roman": "Božiḱ",
+   "note": "Celebrated on 7 January."
+  },
+  "merry_christmas": {
+   "text": "Среќен Божиќ!",
+   "roman": "Sreḱen Božiḱ!",
+   "note": "The traditional greeting is Христос се роди! (Hristos se rodi!)"
+  },
+  "happy_new_year": {
+   "text": "Среќна Нова година!",
+   "roman": "Sreḱna Nova godina!"
+  },
+  "near": {
+   "text": "блиску",
+   "roman": "blisku"
+  },
+  "far": {
+   "text": "далеку",
+   "roman": "daleku"
+  },
+  "traffic_lights": {
+   "text": "семафор",
+   "roman": "semafor"
+  },
+  "bridge": {
+   "text": "мост",
+   "roman": "most"
+  },
+  "turn_left": {
+   "text": "Свртете лево",
+   "roman": "Svrtete levo"
+  },
+  "turn_right": {
+   "text": "Свртете десно",
+   "roman": "Svrtete desno"
+  },
+  "gas_station": {
+   "text": "бензинска пумпа",
+   "roman": "benzinska pumpa"
+  },
+  "bus_stop": {
+   "text": "автобуска постојка",
+   "roman": "avtobuska postojka"
+  },
+  "departure": {
+   "text": "заминување",
+   "roman": "zaminuvanje"
+  },
+  "arrival": {
+   "text": "пристигнување",
+   "roman": "pristignuvanje"
+  },
+  "seat": {
+   "text": "седиште",
+   "roman": "sedište"
+  },
+  "boarding_pass": {
+   "text": "бординг карта",
+   "roman": "bording karta"
+  },
+  "flight": {
+   "text": "лет",
+   "roman": "let"
+  },
+  "customs": {
+   "text": "царина",
+   "roman": "carina"
+  },
+  "baggage_claim": {
+   "text": "подигање багаж",
+   "roman": "podiganje bagaž"
+  },
+  "pilot": {
+   "text": "пилот",
+   "roman": "pilot"
+  },
+  "reception": {
+   "text": "рецепција",
+   "roman": "recepcija"
+  },
+  "i_have_a_reservation": {
+   "text": "Имам резервација",
+   "roman": "Imam rezervacija"
+  },
+  "elevator": {
+   "text": "лифт",
+   "roman": "lift"
+  },
+  "stairs": {
+   "text": "скали",
+   "roman": "skali"
+  },
+  "soap": {
+   "text": "сапун",
+   "roman": "sapun"
+  },
+  "wifi": {
+   "text": "вајфај",
+   "roman": "vajfaj"
+  },
+  "password": {
+   "text": "лозинка",
+   "roman": "lozinka"
+  },
+  "it_doesnt_work": {
+   "text": "Не работи",
+   "roman": "Ne raboti"
+  },
+  "to_sing": {
+   "text": "пее",
+   "roman": "pee"
+  },
+  "to_draw": {
+   "text": "црта",
+   "roman": "crta"
+  },
+  "to_laugh": {
+   "text": "се смее",
+   "roman": "se smee"
+  },
+  "to_cry": {
+   "text": "плаче",
+   "roman": "plače"
+  },
+  "to_wait": {
+   "text": "чека",
+   "roman": "čeka"
+  },
+  "to_drive": {
+   "text": "вози",
+   "roman": "vozi"
+  },
+  "to_find": {
+   "text": "наоѓа",
+   "roman": "naoǵa"
+  },
+  "to_send": {
+   "text": "испраќа",
+   "roman": "ispraḱa"
+  },
+  "to_understand": {
+   "text": "разбира",
+   "roman": "razbira"
+  },
+  "to_live": {
+   "text": "живее",
+   "roman": "živee"
+  },
+  "to_give": {
+   "text": "дава",
+   "roman": "dava"
+  },
+  "to_repeat": {
+   "text": "повторува",
+   "roman": "povtoruva"
+  },
+  "speak_slowly": {
+   "text": "Зборувајте побавно, ве молам",
+   "roman": "Zboruvajte pobavno, ve molam"
+  },
+  "what_does_it_mean": {
+   "text": "Што значи ова?",
+   "roman": "Što znači ova?"
+  },
+  "lets_go": {
+   "text": "Ајде!",
+   "roman": "Ajde!"
+  },
+  "have_a_nice_day": {
+   "text": "Пријатен ден!",
+   "roman": "Prijaten den!"
+  },
+  "me_too": {
+   "text": "И јас",
+   "roman": "I jas"
+  },
+  "really": {
+   "text": "Навистина?",
+   "roman": "Navistina?"
+  },
+  "great": {
+   "text": "Одлично!",
+   "roman": "Odlično!"
+  },
+  "be_careful": {
+   "text": "Внимавај!",
+   "roman": "Vnimavaj!",
+   "note": "Formal: Внимавајте! (Vnimavajte!)"
+  },
+  "im_lost": {
+   "text": "Се изгубив",
+   "roman": "Se izgubiv"
+  },
+  "enjoy_your_meal": {
+   "text": "Пријатно!",
+   "roman": "Prijatno!"
+  },
+  "take_care": {
+   "text": "Чувај се!",
+   "roman": "Čuvaj se!"
+  },
+  "see_you_soon": {
+   "text": "Се гледаме наскоро!",
+   "roman": "Se gledame naskoro!"
+  }
+ }
+}

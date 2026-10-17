@@ -1,0 +1,1366 @@
+{
+ "code": "fr",
+ "name": "French",
+ "nativeName": "Français",
+ "flag": "🇫🇷",
+ "ttsLocale": "fr-FR",
+ "entries": {
+  "hello": {
+   "text": "Salut",
+   "note": "Informal “hi”. Bonjour is the polite everyday greeting."
+  },
+  "goodbye": {
+   "text": "Au revoir"
+  },
+  "thank_you": {
+   "text": "Merci"
+  },
+  "please": {
+   "text": "S'il vous plaît",
+   "note": "Informal: s’il te plaît."
+  },
+  "yes": {
+   "text": "Oui"
+  },
+  "no": {
+   "text": "Non"
+  },
+  "sorry": {
+   "text": "Désolé",
+   "note": "A woman writes “désolée”."
+  },
+  "good_morning": {
+   "text": "Bonjour"
+  },
+  "good_night": {
+   "text": "Bonne nuit"
+  },
+  "how_are_you": {
+   "text": "Comment ça va ?"
+  },
+  "im_fine": {
+   "text": "Je vais bien"
+  },
+  "my_name_is": {
+   "text": "Je m'appelle …"
+  },
+  "one": {
+   "text": "un"
+  },
+  "two": {
+   "text": "deux"
+  },
+  "three": {
+   "text": "trois"
+  },
+  "four": {
+   "text": "quatre"
+  },
+  "five": {
+   "text": "cinq"
+  },
+  "six": {
+   "text": "six"
+  },
+  "seven": {
+   "text": "sept"
+  },
+  "eight": {
+   "text": "huit"
+  },
+  "nine": {
+   "text": "neuf"
+  },
+  "ten": {
+   "text": "dix"
+  },
+  "water": {
+   "text": "l'eau"
+  },
+  "coffee": {
+   "text": "le café"
+  },
+  "tea": {
+   "text": "le thé"
+  },
+  "bread": {
+   "text": "le pain"
+  },
+  "rice": {
+   "text": "le riz"
+  },
+  "apple": {
+   "text": "la pomme"
+  },
+  "milk": {
+   "text": "le lait"
+  },
+  "egg": {
+   "text": "l'œuf"
+  },
+  "fish": {
+   "text": "le poisson"
+  },
+  "meat": {
+   "text": "la viande"
+  },
+  "beer": {
+   "text": "la bière"
+  },
+  "delicious": {
+   "text": "délicieux"
+  },
+  "im_hungry": {
+   "text": "J'ai faim"
+  },
+  "the_bill": {
+   "text": "L'addition, s'il vous plaît"
+  },
+  "mother": {
+   "text": "la mère"
+  },
+  "father": {
+   "text": "le père"
+  },
+  "brother": {
+   "text": "le frère"
+  },
+  "sister": {
+   "text": "la sœur"
+  },
+  "friend": {
+   "text": "l'ami",
+   "note": "Female: l’amie."
+  },
+  "child": {
+   "text": "l'enfant"
+  },
+  "man": {
+   "text": "l'homme"
+  },
+  "woman": {
+   "text": "la femme"
+  },
+  "i": {
+   "text": "je"
+  },
+  "you": {
+   "text": "tu",
+   "note": "Informal. Formal: vous."
+  },
+  "he": {
+   "text": "il"
+  },
+  "she": {
+   "text": "elle"
+  },
+  "we": {
+   "text": "nous"
+  },
+  "red": {
+   "text": "rouge"
+  },
+  "blue": {
+   "text": "bleu"
+  },
+  "green": {
+   "text": "vert"
+  },
+  "yellow": {
+   "text": "jaune"
+  },
+  "black": {
+   "text": "noir"
+  },
+  "white": {
+   "text": "blanc"
+  },
+  "big": {
+   "text": "grand"
+  },
+  "small": {
+   "text": "petit"
+  },
+  "hot": {
+   "text": "chaud"
+  },
+  "cold": {
+   "text": "froid"
+  },
+  "good": {
+   "text": "bon"
+  },
+  "bad": {
+   "text": "mauvais"
+  },
+  "airport": {
+   "text": "l'aéroport"
+  },
+  "train_station": {
+   "text": "la gare"
+  },
+  "hotel": {
+   "text": "l'hôtel"
+  },
+  "taxi": {
+   "text": "le taxi"
+  },
+  "toilet": {
+   "text": "les toilettes"
+  },
+  "ticket": {
+   "text": "le billet"
+  },
+  "left": {
+   "text": "à gauche"
+  },
+  "right": {
+   "text": "à droite"
+  },
+  "straight_ahead": {
+   "text": "tout droit"
+  },
+  "where_is": {
+   "text": "Où est … ?"
+  },
+  "how_much": {
+   "text": "Combien ça coûte ?"
+  },
+  "i_dont_understand": {
+   "text": "Je ne comprends pas"
+  },
+  "speak_english": {
+   "text": "Parlez-vous anglais ?"
+  },
+  "today": {
+   "text": "aujourd'hui"
+  },
+  "tomorrow": {
+   "text": "demain"
+  },
+  "yesterday": {
+   "text": "hier"
+  },
+  "now": {
+   "text": "maintenant"
+  },
+  "day": {
+   "text": "le jour"
+  },
+  "week": {
+   "text": "la semaine"
+  },
+  "month": {
+   "text": "le mois"
+  },
+  "year": {
+   "text": "l'année"
+  },
+  "what_time": {
+   "text": "Quelle heure est-il ?"
+  },
+  "to_eat": {
+   "text": "manger"
+  },
+  "to_drink": {
+   "text": "boire"
+  },
+  "to_go": {
+   "text": "aller"
+  },
+  "to_come": {
+   "text": "venir"
+  },
+  "to_see": {
+   "text": "voir"
+  },
+  "to_speak": {
+   "text": "parler"
+  },
+  "to_want": {
+   "text": "vouloir"
+  },
+  "to_like": {
+   "text": "aimer"
+  },
+  "to_sleep": {
+   "text": "dormir"
+  },
+  "to_learn": {
+   "text": "apprendre"
+  },
+  "excuse_me": {
+   "text": "Excusez-moi",
+   "note": "Informal: excuse-moi."
+  },
+  "no_problem": {
+   "text": "Pas de problème"
+  },
+  "help": {
+   "text": "Au secours !"
+  },
+  "i_dont_know": {
+   "text": "Je ne sais pas"
+  },
+  "see_you_later": {
+   "text": "À plus tard"
+  },
+  "welcome": {
+   "text": "Bienvenue"
+  },
+  "congratulations": {
+   "text": "Félicitations"
+  },
+  "good_luck": {
+   "text": "Bonne chance"
+  },
+  "nice_to_meet_you": {
+   "text": "Enchanté",
+   "note": "A woman writes “enchantée”."
+  },
+  "of_course": {
+   "text": "Bien sûr"
+  },
+  "maybe": {
+   "text": "Peut-être"
+  },
+  "good_evening": {
+   "text": "Bonsoir"
+  },
+  "what": {
+   "text": "Quoi ?"
+  },
+  "who": {
+   "text": "Qui ?"
+  },
+  "where": {
+   "text": "Où ?"
+  },
+  "when": {
+   "text": "Quand ?"
+  },
+  "why": {
+   "text": "Pourquoi ?"
+  },
+  "how": {
+   "text": "Comment ?"
+  },
+  "how_many": {
+   "text": "Combien ?"
+  },
+  "which": {
+   "text": "Quel ?",
+   "note": "Changes form: quelle, quels, quelles."
+  },
+  "this": {
+   "text": "ceci"
+  },
+  "that": {
+   "text": "cela",
+   "note": "Often shortened to ça in speech."
+  },
+  "they": {
+   "text": "ils",
+   "note": "Elles for an all-female group."
+  },
+  "here": {
+   "text": "ici"
+  },
+  "eleven": {
+   "text": "onze"
+  },
+  "twelve": {
+   "text": "douze"
+  },
+  "fifteen": {
+   "text": "quinze"
+  },
+  "twenty": {
+   "text": "vingt"
+  },
+  "thirty": {
+   "text": "trente"
+  },
+  "fifty": {
+   "text": "cinquante"
+  },
+  "hundred": {
+   "text": "cent"
+  },
+  "thousand": {
+   "text": "mille"
+  },
+  "grandmother": {
+   "text": "la grand-mère"
+  },
+  "grandfather": {
+   "text": "le grand-père"
+  },
+  "son": {
+   "text": "le fils"
+  },
+  "daughter": {
+   "text": "la fille"
+  },
+  "husband": {
+   "text": "le mari"
+  },
+  "wife": {
+   "text": "l'épouse",
+   "note": "In everyday speech: ma femme (same word as “woman”)."
+  },
+  "baby": {
+   "text": "le bébé"
+  },
+  "family": {
+   "text": "la famille"
+  },
+  "dog": {
+   "text": "le chien"
+  },
+  "cat": {
+   "text": "le chat"
+  },
+  "bird": {
+   "text": "l'oiseau"
+  },
+  "horse": {
+   "text": "le cheval"
+  },
+  "cow": {
+   "text": "la vache"
+  },
+  "pig": {
+   "text": "le cochon"
+  },
+  "chicken_animal": {
+   "text": "la poule"
+  },
+  "mouse": {
+   "text": "la souris"
+  },
+  "rabbit": {
+   "text": "le lapin"
+  },
+  "bear": {
+   "text": "l'ours"
+  },
+  "lion": {
+   "text": "le lion"
+  },
+  "elephant": {
+   "text": "l'éléphant"
+  },
+  "banana": {
+   "text": "la banane"
+  },
+  "orange_fruit": {
+   "text": "l'orange"
+  },
+  "grapes": {
+   "text": "le raisin"
+  },
+  "strawberry": {
+   "text": "la fraise"
+  },
+  "lemon": {
+   "text": "le citron"
+  },
+  "tomato": {
+   "text": "la tomate"
+  },
+  "potato": {
+   "text": "la pomme de terre"
+  },
+  "carrot": {
+   "text": "la carotte"
+  },
+  "onion": {
+   "text": "l'oignon"
+  },
+  "salad": {
+   "text": "la salade"
+  },
+  "cheese": {
+   "text": "le fromage"
+  },
+  "soup": {
+   "text": "la soupe"
+  },
+  "sugar": {
+   "text": "le sucre"
+  },
+  "salt": {
+   "text": "le sel"
+  },
+  "cake": {
+   "text": "le gâteau"
+  },
+  "ice_cream": {
+   "text": "la glace"
+  },
+  "juice": {
+   "text": "le jus"
+  },
+  "wine": {
+   "text": "le vin"
+  },
+  "breakfast": {
+   "text": "le petit-déjeuner"
+  },
+  "lunch": {
+   "text": "le déjeuner"
+  },
+  "dinner": {
+   "text": "le dîner"
+  },
+  "menu": {
+   "text": "la carte",
+   "note": "Le menu is a fixed-price set meal."
+  },
+  "i_would_like": {
+   "text": "Je voudrais …"
+  },
+  "cheers": {
+   "text": "Santé !"
+  },
+  "waiter": {
+   "text": "le serveur"
+  },
+  "vegetarian": {
+   "text": "végétarien"
+  },
+  "spicy": {
+   "text": "épicé"
+  },
+  "sweet": {
+   "text": "sucré"
+  },
+  "table_for_two": {
+   "text": "Une table pour deux, s'il vous plaît"
+  },
+  "head": {
+   "text": "la tête"
+  },
+  "eye": {
+   "text": "l'œil",
+   "note": "Plural: les yeux."
+  },
+  "ear": {
+   "text": "l'oreille"
+  },
+  "nose": {
+   "text": "le nez"
+  },
+  "mouth": {
+   "text": "la bouche"
+  },
+  "hand": {
+   "text": "la main"
+  },
+  "foot": {
+   "text": "le pied"
+  },
+  "hair": {
+   "text": "les cheveux"
+  },
+  "tooth": {
+   "text": "la dent"
+  },
+  "heart": {
+   "text": "le cœur"
+  },
+  "shirt": {
+   "text": "la chemise"
+  },
+  "trousers": {
+   "text": "le pantalon"
+  },
+  "dress": {
+   "text": "la robe"
+  },
+  "shoes": {
+   "text": "les chaussures"
+  },
+  "hat": {
+   "text": "le chapeau"
+  },
+  "coat": {
+   "text": "le manteau"
+  },
+  "socks": {
+   "text": "les chaussettes"
+  },
+  "bag": {
+   "text": "le sac"
+  },
+  "house": {
+   "text": "la maison"
+  },
+  "room": {
+   "text": "la chambre",
+   "note": "Bedroom or hotel room. Any room in general: la pièce."
+  },
+  "kitchen": {
+   "text": "la cuisine"
+  },
+  "bed": {
+   "text": "le lit"
+  },
+  "chair": {
+   "text": "la chaise"
+  },
+  "table": {
+   "text": "la table"
+  },
+  "window": {
+   "text": "la fenêtre"
+  },
+  "key": {
+   "text": "la clé"
+  },
+  "phone": {
+   "text": "le téléphone"
+  },
+  "computer": {
+   "text": "l'ordinateur"
+  },
+  "book": {
+   "text": "le livre"
+  },
+  "door": {
+   "text": "la porte"
+  },
+  "city": {
+   "text": "la ville"
+  },
+  "street": {
+   "text": "la rue"
+  },
+  "shop": {
+   "text": "le magasin"
+  },
+  "market": {
+   "text": "le marché"
+  },
+  "bank": {
+   "text": "la banque"
+  },
+  "hospital": {
+   "text": "l'hôpital"
+  },
+  "school": {
+   "text": "l'école"
+  },
+  "restaurant_place": {
+   "text": "le restaurant"
+  },
+  "park": {
+   "text": "le parc"
+  },
+  "museum": {
+   "text": "le musée"
+  },
+  "church": {
+   "text": "l'église"
+  },
+  "pharmacy": {
+   "text": "la pharmacie"
+  },
+  "car": {
+   "text": "la voiture"
+  },
+  "bus": {
+   "text": "le bus"
+  },
+  "train": {
+   "text": "le train"
+  },
+  "plane": {
+   "text": "l'avion"
+  },
+  "bike": {
+   "text": "le vélo"
+  },
+  "boat": {
+   "text": "le bateau"
+  },
+  "subway": {
+   "text": "le métro"
+  },
+  "map": {
+   "text": "le plan",
+   "note": "A city map. A road or world map is la carte."
+  },
+  "passport": {
+   "text": "le passeport"
+  },
+  "suitcase": {
+   "text": "la valise"
+  },
+  "sun": {
+   "text": "le soleil"
+  },
+  "rain": {
+   "text": "la pluie"
+  },
+  "snow": {
+   "text": "la neige"
+  },
+  "wind": {
+   "text": "le vent"
+  },
+  "cloud": {
+   "text": "le nuage"
+  },
+  "sea": {
+   "text": "la mer"
+  },
+  "mountain": {
+   "text": "la montagne"
+  },
+  "river": {
+   "text": "la rivière"
+  },
+  "tree": {
+   "text": "l'arbre"
+  },
+  "flower": {
+   "text": "la fleur"
+  },
+  "monday": {
+   "text": "le lundi"
+  },
+  "tuesday": {
+   "text": "le mardi"
+  },
+  "wednesday": {
+   "text": "le mercredi"
+  },
+  "thursday": {
+   "text": "le jeudi"
+  },
+  "friday": {
+   "text": "le vendredi"
+  },
+  "saturday": {
+   "text": "le samedi"
+  },
+  "sunday": {
+   "text": "le dimanche"
+  },
+  "spring": {
+   "text": "le printemps"
+  },
+  "summer": {
+   "text": "l'été"
+  },
+  "autumn": {
+   "text": "l'automne"
+  },
+  "winter": {
+   "text": "l'hiver"
+  },
+  "morning": {
+   "text": "le matin"
+  },
+  "evening": {
+   "text": "le soir"
+  },
+  "night": {
+   "text": "la nuit"
+  },
+  "hour": {
+   "text": "l'heure"
+  },
+  "minute": {
+   "text": "la minute"
+  },
+  "pink": {
+   "text": "rose"
+  },
+  "purple": {
+   "text": "violet"
+  },
+  "brown": {
+   "text": "marron"
+  },
+  "grey": {
+   "text": "gris"
+  },
+  "new": {
+   "text": "nouveau"
+  },
+  "old": {
+   "text": "vieux"
+  },
+  "beautiful": {
+   "text": "beau"
+  },
+  "fast": {
+   "text": "rapide"
+  },
+  "slow": {
+   "text": "lent"
+  },
+  "easy": {
+   "text": "facile"
+  },
+  "difficult": {
+   "text": "difficile"
+  },
+  "happy": {
+   "text": "heureux"
+  },
+  "sad": {
+   "text": "triste"
+  },
+  "tired": {
+   "text": "fatigué"
+  },
+  "angry": {
+   "text": "en colère"
+  },
+  "scared": {
+   "text": "effrayé",
+   "note": "To say “I'm scared”: j'ai peur."
+  },
+  "bored": {
+   "text": "Je m'ennuie",
+   "note": "Literally “I'm bored”; French uses a verb here."
+  },
+  "i_love_you": {
+   "text": "Je t'aime"
+  },
+  "i_miss_you": {
+   "text": "Tu me manques",
+   "note": "Literally “you are missing to me”."
+  },
+  "teacher": {
+   "text": "le professeur"
+  },
+  "doctor": {
+   "text": "le médecin"
+  },
+  "student": {
+   "text": "l'étudiant",
+   "note": "Female: l’étudiante."
+  },
+  "cook": {
+   "text": "le cuisinier"
+  },
+  "police_officer": {
+   "text": "le policier"
+  },
+  "driver": {
+   "text": "le chauffeur"
+  },
+  "work": {
+   "text": "le travail"
+  },
+  "office": {
+   "text": "le bureau"
+  },
+  "to_read": {
+   "text": "lire"
+  },
+  "to_write": {
+   "text": "écrire"
+  },
+  "to_listen": {
+   "text": "écouter"
+  },
+  "to_buy": {
+   "text": "acheter"
+  },
+  "to_pay": {
+   "text": "payer"
+  },
+  "to_work": {
+   "text": "travailler"
+  },
+  "to_play": {
+   "text": "jouer"
+  },
+  "to_run": {
+   "text": "courir"
+  },
+  "to_walk": {
+   "text": "marcher"
+  },
+  "to_cook": {
+   "text": "cuisiner"
+  },
+  "to_open": {
+   "text": "ouvrir"
+  },
+  "to_close": {
+   "text": "fermer"
+  },
+  "to_know": {
+   "text": "savoir"
+  },
+  "to_think": {
+   "text": "penser"
+  },
+  "to_love": {
+   "text": "adorer",
+   "note": "Aimer means both “to like” and “to love”; adorer is a strong “to love”."
+  },
+  "money": {
+   "text": "l'argent"
+  },
+  "price": {
+   "text": "le prix"
+  },
+  "cheap": {
+   "text": "bon marché"
+  },
+  "expensive": {
+   "text": "cher"
+  },
+  "open_sign": {
+   "text": "Ouvert"
+  },
+  "closed_sign": {
+   "text": "Fermé"
+  },
+  "cash": {
+   "text": "les espèces"
+  },
+  "receipt": {
+   "text": "le reçu"
+  },
+  "sick": {
+   "text": "malade"
+  },
+  "pain": {
+   "text": "la douleur"
+  },
+  "medicine": {
+   "text": "le médicament"
+  },
+  "i_need_a_doctor": {
+   "text": "J'ai besoin d'un médecin"
+  },
+  "headache": {
+   "text": "le mal de tête"
+  },
+  "emergency": {
+   "text": "l'urgence"
+  },
+  "call_the_police": {
+   "text": "Appelez la police !"
+  },
+  "music": {
+   "text": "la musique"
+  },
+  "movie": {
+   "text": "le film"
+  },
+  "sport": {
+   "text": "le sport"
+  },
+  "game": {
+   "text": "le jeu"
+  },
+  "football": {
+   "text": "le foot",
+   "note": "Short for le football."
+  },
+  "photo": {
+   "text": "la photo"
+  },
+  "to_dance": {
+   "text": "danser"
+  },
+  "beach": {
+   "text": "la plage"
+  },
+  "country": {
+   "text": "le pays"
+  },
+  "language": {
+   "text": "la langue"
+  },
+  "where_are_you_from": {
+   "text": "D'où viens-tu ?",
+   "note": "Informal. Formal: “D'où venez-vous ?”"
+  },
+  "i_am_from": {
+   "text": "Je viens de …"
+  },
+  "china": {
+   "text": "la Chine"
+  },
+  "germany": {
+   "text": "l'Allemagne"
+  },
+  "france": {
+   "text": "la France"
+  },
+  "spain": {
+   "text": "l'Espagne"
+  },
+  "italy": {
+   "text": "l'Italie"
+  },
+  "brazil": {
+   "text": "le Brésil"
+  },
+  "usa": {
+   "text": "les États-Unis"
+  },
+  "north_macedonia": {
+   "text": "la Macédoine du Nord"
+  },
+  "weather": {
+   "text": "la météo"
+  },
+  "its_hot": {
+   "text": "Il fait chaud"
+  },
+  "its_cold": {
+   "text": "Il fait froid"
+  },
+  "its_raining": {
+   "text": "Il pleut"
+  },
+  "storm": {
+   "text": "la tempête"
+  },
+  "fog": {
+   "text": "le brouillard"
+  },
+  "rainbow": {
+   "text": "l'arc-en-ciel",
+   "note": "Masculine: un arc-en-ciel."
+  },
+  "umbrella": {
+   "text": "le parapluie"
+  },
+  "moon": {
+   "text": "la lune"
+  },
+  "star": {
+   "text": "l'étoile",
+   "note": "Feminine: une étoile."
+  },
+  "temperature": {
+   "text": "la température"
+  },
+  "its_windy": {
+   "text": "Il y a du vent"
+  },
+  "pen": {
+   "text": "le stylo"
+  },
+  "pencil": {
+   "text": "le crayon"
+  },
+  "notebook": {
+   "text": "le cahier"
+  },
+  "backpack": {
+   "text": "le sac à dos"
+  },
+  "homework": {
+   "text": "les devoirs"
+  },
+  "ruler": {
+   "text": "la règle"
+  },
+  "scissors": {
+   "text": "les ciseaux"
+  },
+  "paper": {
+   "text": "le papier"
+  },
+  "knife": {
+   "text": "le couteau"
+  },
+  "spoon": {
+   "text": "la cuillère"
+  },
+  "chopsticks": {
+   "text": "les baguettes"
+  },
+  "teapot": {
+   "text": "la théière"
+  },
+  "bottle": {
+   "text": "la bouteille"
+  },
+  "glass": {
+   "text": "le verre"
+  },
+  "olive_oil": {
+   "text": "l'huile d'olive",
+   "note": "Feminine: une huile."
+  },
+  "butter": {
+   "text": "le beurre"
+  },
+  "garlic": {
+   "text": "l'ail",
+   "note": "Masculine: un ail."
+  },
+  "honey": {
+   "text": "le miel"
+  },
+  "pasta": {
+   "text": "les pâtes"
+  },
+  "pizza": {
+   "text": "la pizza"
+  },
+  "to_wake_up": {
+   "text": "se réveiller"
+  },
+  "to_shower": {
+   "text": "se doucher"
+  },
+  "to_brush_teeth": {
+   "text": "se brosser les dents"
+  },
+  "to_get_dressed": {
+   "text": "s'habiller"
+  },
+  "to_clean": {
+   "text": "nettoyer"
+  },
+  "to_wash": {
+   "text": "laver"
+  },
+  "to_watch_tv": {
+   "text": "regarder la télé"
+  },
+  "to_rest": {
+   "text": "se reposer"
+  },
+  "internet": {
+   "text": "Internet"
+  },
+  "email": {
+   "text": "l'e-mail"
+  },
+  "message": {
+   "text": "le message"
+  },
+  "battery": {
+   "text": "la batterie"
+  },
+  "charger": {
+   "text": "le chargeur"
+  },
+  "screen": {
+   "text": "l'écran",
+   "note": "Masculine: un écran."
+  },
+  "keyboard": {
+   "text": "le clavier"
+  },
+  "to_call": {
+   "text": "appeler"
+  },
+  "basketball": {
+   "text": "le basket"
+  },
+  "tennis": {
+   "text": "le tennis"
+  },
+  "volleyball": {
+   "text": "le volley"
+  },
+  "skiing": {
+   "text": "le ski"
+  },
+  "to_swim": {
+   "text": "nager"
+  },
+  "to_ride_a_bike": {
+   "text": "faire du vélo"
+  },
+  "gym": {
+   "text": "la salle de sport"
+  },
+  "to_win": {
+   "text": "gagner"
+  },
+  "birthday": {
+   "text": "l'anniversaire",
+   "note": "Masculine: un anniversaire."
+  },
+  "happy_birthday": {
+   "text": "Joyeux anniversaire !"
+  },
+  "gift": {
+   "text": "le cadeau"
+  },
+  "party": {
+   "text": "la fête"
+  },
+  "wedding": {
+   "text": "le mariage"
+  },
+  "christmas": {
+   "text": "Noël"
+  },
+  "merry_christmas": {
+   "text": "Joyeux Noël !"
+  },
+  "happy_new_year": {
+   "text": "Bonne année !"
+  },
+  "near": {
+   "text": "près"
+  },
+  "far": {
+   "text": "loin"
+  },
+  "traffic_lights": {
+   "text": "le feu rouge",
+   "note": "Literally “the red light”, the usual way to say it in directions."
+  },
+  "bridge": {
+   "text": "le pont"
+  },
+  "turn_left": {
+   "text": "Tournez à gauche"
+  },
+  "turn_right": {
+   "text": "Tournez à droite"
+  },
+  "gas_station": {
+   "text": "la station-service"
+  },
+  "bus_stop": {
+   "text": "l'arrêt de bus",
+   "note": "Masculine: un arrêt."
+  },
+  "departure": {
+   "text": "le départ"
+  },
+  "arrival": {
+   "text": "l'arrivée",
+   "note": "Feminine: une arrivée."
+  },
+  "seat": {
+   "text": "le siège"
+  },
+  "boarding_pass": {
+   "text": "la carte d'embarquement"
+  },
+  "flight": {
+   "text": "le vol"
+  },
+  "customs": {
+   "text": "la douane"
+  },
+  "baggage_claim": {
+   "text": "le retrait des bagages"
+  },
+  "pilot": {
+   "text": "le pilote"
+  },
+  "reception": {
+   "text": "la réception"
+  },
+  "i_have_a_reservation": {
+   "text": "J'ai une réservation"
+  },
+  "elevator": {
+   "text": "l'ascenseur",
+   "note": "Masculine: un ascenseur."
+  },
+  "stairs": {
+   "text": "l'escalier",
+   "note": "Masculine: un escalier."
+  },
+  "soap": {
+   "text": "le savon"
+  },
+  "wifi": {
+   "text": "le wifi"
+  },
+  "password": {
+   "text": "le mot de passe"
+  },
+  "it_doesnt_work": {
+   "text": "Ça ne marche pas"
+  },
+  "to_sing": {
+   "text": "chanter"
+  },
+  "to_draw": {
+   "text": "dessiner"
+  },
+  "to_laugh": {
+   "text": "rire"
+  },
+  "to_cry": {
+   "text": "pleurer"
+  },
+  "to_wait": {
+   "text": "attendre"
+  },
+  "to_drive": {
+   "text": "conduire"
+  },
+  "to_find": {
+   "text": "trouver"
+  },
+  "to_send": {
+   "text": "envoyer"
+  },
+  "to_understand": {
+   "text": "comprendre"
+  },
+  "to_live": {
+   "text": "habiter"
+  },
+  "to_give": {
+   "text": "donner"
+  },
+  "to_repeat": {
+   "text": "répéter"
+  },
+  "speak_slowly": {
+   "text": "Parlez plus lentement, s'il vous plaît"
+  },
+  "what_does_it_mean": {
+   "text": "Qu'est-ce que ça veut dire ?"
+  },
+  "lets_go": {
+   "text": "On y va !"
+  },
+  "have_a_nice_day": {
+   "text": "Bonne journée !"
+  },
+  "me_too": {
+   "text": "Moi aussi"
+  },
+  "really": {
+   "text": "C'est vrai ?"
+  },
+  "great": {
+   "text": "Génial !"
+  },
+  "be_careful": {
+   "text": "Attention !"
+  },
+  "im_lost": {
+   "text": "Je suis perdu",
+   "note": "A woman says “Je suis perdue”."
+  },
+  "enjoy_your_meal": {
+   "text": "Bon appétit !"
+  },
+  "take_care": {
+   "text": "Prends soin de toi !"
+  },
+  "see_you_soon": {
+   "text": "À bientôt !"
+  }
+ }
+}

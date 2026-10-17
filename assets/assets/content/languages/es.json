@@ -1,0 +1,1393 @@
+{
+ "code": "es",
+ "name": "Spanish",
+ "nativeName": "Español",
+ "flag": "🇪🇸",
+ "ttsLocale": "es-ES",
+ "entries": {
+  "hello": {
+   "text": "Hola"
+  },
+  "goodbye": {
+   "text": "Adiós"
+  },
+  "thank_you": {
+   "text": "Gracias"
+  },
+  "please": {
+   "text": "Por favor"
+  },
+  "yes": {
+   "text": "Sí"
+  },
+  "no": {
+   "text": "No"
+  },
+  "sorry": {
+   "text": "Lo siento"
+  },
+  "good_morning": {
+   "text": "Buenos días"
+  },
+  "good_night": {
+   "text": "Buenas noches"
+  },
+  "how_are_you": {
+   "text": "¿Cómo estás?"
+  },
+  "im_fine": {
+   "text": "Estoy bien"
+  },
+  "my_name_is": {
+   "text": "Me llamo …"
+  },
+  "one": {
+   "text": "uno"
+  },
+  "two": {
+   "text": "dos"
+  },
+  "three": {
+   "text": "tres"
+  },
+  "four": {
+   "text": "cuatro"
+  },
+  "five": {
+   "text": "cinco"
+  },
+  "six": {
+   "text": "seis"
+  },
+  "seven": {
+   "text": "siete"
+  },
+  "eight": {
+   "text": "ocho"
+  },
+  "nine": {
+   "text": "nueve"
+  },
+  "ten": {
+   "text": "diez"
+  },
+  "water": {
+   "text": "el agua"
+  },
+  "coffee": {
+   "text": "el café"
+  },
+  "tea": {
+   "text": "el té"
+  },
+  "bread": {
+   "text": "el pan"
+  },
+  "rice": {
+   "text": "el arroz"
+  },
+  "apple": {
+   "text": "la manzana"
+  },
+  "milk": {
+   "text": "la leche"
+  },
+  "egg": {
+   "text": "el huevo"
+  },
+  "fish": {
+   "text": "el pescado"
+  },
+  "meat": {
+   "text": "la carne"
+  },
+  "beer": {
+   "text": "la cerveza"
+  },
+  "delicious": {
+   "text": "delicioso"
+  },
+  "im_hungry": {
+   "text": "Tengo hambre"
+  },
+  "the_bill": {
+   "text": "La cuenta, por favor"
+  },
+  "mother": {
+   "text": "la madre"
+  },
+  "father": {
+   "text": "el padre"
+  },
+  "brother": {
+   "text": "el hermano"
+  },
+  "sister": {
+   "text": "la hermana"
+  },
+  "friend": {
+   "text": "el amigo",
+   "note": "Female: la amiga."
+  },
+  "child": {
+   "text": "el niño"
+  },
+  "man": {
+   "text": "el hombre"
+  },
+  "woman": {
+   "text": "la mujer"
+  },
+  "i": {
+   "text": "yo"
+  },
+  "you": {
+   "text": "tú",
+   "note": "Informal. Formal: usted."
+  },
+  "he": {
+   "text": "él"
+  },
+  "she": {
+   "text": "ella"
+  },
+  "we": {
+   "text": "nosotros"
+  },
+  "red": {
+   "text": "rojo"
+  },
+  "blue": {
+   "text": "azul"
+  },
+  "green": {
+   "text": "verde"
+  },
+  "yellow": {
+   "text": "amarillo"
+  },
+  "black": {
+   "text": "negro"
+  },
+  "white": {
+   "text": "blanco"
+  },
+  "big": {
+   "text": "grande"
+  },
+  "small": {
+   "text": "pequeño"
+  },
+  "hot": {
+   "text": "caliente"
+  },
+  "cold": {
+   "text": "frío"
+  },
+  "good": {
+   "text": "bueno"
+  },
+  "bad": {
+   "text": "malo"
+  },
+  "airport": {
+   "text": "el aeropuerto"
+  },
+  "train_station": {
+   "text": "la estación de tren"
+  },
+  "hotel": {
+   "text": "el hotel"
+  },
+  "taxi": {
+   "text": "el taxi"
+  },
+  "toilet": {
+   "text": "el baño",
+   "note": "Also: el servicio (Spain)."
+  },
+  "ticket": {
+   "text": "el billete",
+   "note": "Latin America: el boleto."
+  },
+  "left": {
+   "text": "izquierda"
+  },
+  "right": {
+   "text": "derecha"
+  },
+  "straight_ahead": {
+   "text": "todo recto"
+  },
+  "where_is": {
+   "text": "¿Dónde está …?"
+  },
+  "how_much": {
+   "text": "¿Cuánto cuesta?"
+  },
+  "i_dont_understand": {
+   "text": "No entiendo"
+  },
+  "speak_english": {
+   "text": "¿Hablas inglés?"
+  },
+  "today": {
+   "text": "hoy"
+  },
+  "tomorrow": {
+   "text": "mañana"
+  },
+  "yesterday": {
+   "text": "ayer"
+  },
+  "now": {
+   "text": "ahora"
+  },
+  "day": {
+   "text": "el día"
+  },
+  "week": {
+   "text": "la semana"
+  },
+  "month": {
+   "text": "el mes"
+  },
+  "year": {
+   "text": "el año"
+  },
+  "what_time": {
+   "text": "¿Qué hora es?"
+  },
+  "to_eat": {
+   "text": "comer"
+  },
+  "to_drink": {
+   "text": "beber"
+  },
+  "to_go": {
+   "text": "ir"
+  },
+  "to_come": {
+   "text": "venir"
+  },
+  "to_see": {
+   "text": "ver"
+  },
+  "to_speak": {
+   "text": "hablar"
+  },
+  "to_want": {
+   "text": "querer"
+  },
+  "to_like": {
+   "text": "gustar",
+   "note": "Literally “to please”: me gusta el café = I like coffee."
+  },
+  "to_sleep": {
+   "text": "dormir"
+  },
+  "to_learn": {
+   "text": "aprender"
+  },
+  "excuse_me": {
+   "text": "Disculpe",
+   "note": "Formal; informal: disculpa / perdona."
+  },
+  "no_problem": {
+   "text": "No hay problema"
+  },
+  "help": {
+   "text": "¡Ayuda!"
+  },
+  "i_dont_know": {
+   "text": "No sé"
+  },
+  "see_you_later": {
+   "text": "Hasta luego"
+  },
+  "welcome": {
+   "text": "Bienvenido",
+   "note": "Female: bienvenida; plural: bienvenidos."
+  },
+  "congratulations": {
+   "text": "¡Felicidades!"
+  },
+  "good_luck": {
+   "text": "¡Buena suerte!"
+  },
+  "nice_to_meet_you": {
+   "text": "Mucho gusto"
+  },
+  "of_course": {
+   "text": "Claro"
+  },
+  "maybe": {
+   "text": "Quizás"
+  },
+  "good_evening": {
+   "text": "Buenas tardes",
+   "note": "Used from afternoon until dark; after dark: buenas noches."
+  },
+  "what": {
+   "text": "¿Qué?"
+  },
+  "who": {
+   "text": "¿Quién?"
+  },
+  "where": {
+   "text": "¿Dónde?"
+  },
+  "when": {
+   "text": "¿Cuándo?"
+  },
+  "why": {
+   "text": "¿Por qué?"
+  },
+  "how": {
+   "text": "¿Cómo?"
+  },
+  "how_many": {
+   "text": "¿Cuántos?",
+   "note": "Feminine: ¿cuántas?"
+  },
+  "which": {
+   "text": "¿Cuál?"
+  },
+  "this": {
+   "text": "este",
+   "note": "Feminine: esta; for an unknown thing: esto."
+  },
+  "that": {
+   "text": "ese",
+   "note": "Feminine: esa; for an unknown thing: eso."
+  },
+  "they": {
+   "text": "ellos",
+   "note": "All-female group: ellas."
+  },
+  "here": {
+   "text": "aquí"
+  },
+  "eleven": {
+   "text": "once"
+  },
+  "twelve": {
+   "text": "doce"
+  },
+  "fifteen": {
+   "text": "quince"
+  },
+  "twenty": {
+   "text": "veinte"
+  },
+  "thirty": {
+   "text": "treinta"
+  },
+  "fifty": {
+   "text": "cincuenta"
+  },
+  "hundred": {
+   "text": "cien"
+  },
+  "thousand": {
+   "text": "mil"
+  },
+  "grandmother": {
+   "text": "la abuela"
+  },
+  "grandfather": {
+   "text": "el abuelo"
+  },
+  "son": {
+   "text": "el hijo"
+  },
+  "daughter": {
+   "text": "la hija"
+  },
+  "husband": {
+   "text": "el marido",
+   "note": "Also: el esposo."
+  },
+  "wife": {
+   "text": "la esposa",
+   "note": "Also: la mujer."
+  },
+  "baby": {
+   "text": "el bebé"
+  },
+  "family": {
+   "text": "la familia"
+  },
+  "dog": {
+   "text": "el perro"
+  },
+  "cat": {
+   "text": "el gato"
+  },
+  "bird": {
+   "text": "el pájaro"
+  },
+  "horse": {
+   "text": "el caballo"
+  },
+  "cow": {
+   "text": "la vaca"
+  },
+  "pig": {
+   "text": "el cerdo"
+  },
+  "chicken_animal": {
+   "text": "la gallina",
+   "note": "The meat is el pollo."
+  },
+  "mouse": {
+   "text": "el ratón"
+  },
+  "rabbit": {
+   "text": "el conejo"
+  },
+  "bear": {
+   "text": "el oso"
+  },
+  "lion": {
+   "text": "el león"
+  },
+  "elephant": {
+   "text": "el elefante"
+  },
+  "banana": {
+   "text": "el plátano",
+   "note": "Many Latin American countries: la banana."
+  },
+  "orange_fruit": {
+   "text": "la naranja"
+  },
+  "grapes": {
+   "text": "las uvas"
+  },
+  "strawberry": {
+   "text": "la fresa",
+   "note": "Also: la frutilla (Southern South America)."
+  },
+  "lemon": {
+   "text": "el limón"
+  },
+  "tomato": {
+   "text": "el tomate"
+  },
+  "potato": {
+   "text": "la patata",
+   "note": "Latin America: la papa."
+  },
+  "carrot": {
+   "text": "la zanahoria"
+  },
+  "onion": {
+   "text": "la cebolla"
+  },
+  "salad": {
+   "text": "la ensalada"
+  },
+  "cheese": {
+   "text": "el queso"
+  },
+  "soup": {
+   "text": "la sopa"
+  },
+  "sugar": {
+   "text": "el azúcar"
+  },
+  "salt": {
+   "text": "la sal"
+  },
+  "cake": {
+   "text": "el pastel",
+   "note": "Also: la tarta (Spain), la torta (Latin America)."
+  },
+  "ice_cream": {
+   "text": "el helado"
+  },
+  "juice": {
+   "text": "el zumo",
+   "note": "Latin America: el jugo."
+  },
+  "wine": {
+   "text": "el vino"
+  },
+  "breakfast": {
+   "text": "el desayuno"
+  },
+  "lunch": {
+   "text": "la comida",
+   "note": "Also: el almuerzo."
+  },
+  "dinner": {
+   "text": "la cena"
+  },
+  "menu": {
+   "text": "la carta",
+   "note": "Also: el menú."
+  },
+  "i_would_like": {
+   "text": "Quisiera …"
+  },
+  "cheers": {
+   "text": "¡Salud!"
+  },
+  "waiter": {
+   "text": "el camarero",
+   "note": "Latin America: el mesero."
+  },
+  "vegetarian": {
+   "text": "vegetariano"
+  },
+  "spicy": {
+   "text": "picante"
+  },
+  "sweet": {
+   "text": "dulce"
+  },
+  "table_for_two": {
+   "text": "Una mesa para dos, por favor"
+  },
+  "head": {
+   "text": "la cabeza"
+  },
+  "eye": {
+   "text": "el ojo"
+  },
+  "ear": {
+   "text": "la oreja"
+  },
+  "nose": {
+   "text": "la nariz"
+  },
+  "mouth": {
+   "text": "la boca"
+  },
+  "hand": {
+   "text": "la mano",
+   "note": "Feminine despite ending in -o."
+  },
+  "foot": {
+   "text": "el pie"
+  },
+  "hair": {
+   "text": "el pelo"
+  },
+  "tooth": {
+   "text": "el diente"
+  },
+  "heart": {
+   "text": "el corazón"
+  },
+  "shirt": {
+   "text": "la camiseta",
+   "note": "Shirt with buttons: la camisa."
+  },
+  "trousers": {
+   "text": "los pantalones"
+  },
+  "dress": {
+   "text": "el vestido"
+  },
+  "shoes": {
+   "text": "los zapatos"
+  },
+  "hat": {
+   "text": "el sombrero"
+  },
+  "coat": {
+   "text": "el abrigo"
+  },
+  "socks": {
+   "text": "los calcetines",
+   "note": "Latin America: las medias."
+  },
+  "bag": {
+   "text": "el bolso",
+   "note": "Latin America: la bolsa / la cartera."
+  },
+  "house": {
+   "text": "la casa"
+  },
+  "room": {
+   "text": "la habitación",
+   "note": "Also: el cuarto."
+  },
+  "kitchen": {
+   "text": "la cocina"
+  },
+  "bed": {
+   "text": "la cama"
+  },
+  "chair": {
+   "text": "la silla"
+  },
+  "table": {
+   "text": "la mesa"
+  },
+  "window": {
+   "text": "la ventana"
+  },
+  "key": {
+   "text": "la llave"
+  },
+  "phone": {
+   "text": "el teléfono",
+   "note": "Mobile: el móvil (Spain), el celular (Latin America)."
+  },
+  "computer": {
+   "text": "el ordenador",
+   "note": "Latin America: la computadora."
+  },
+  "book": {
+   "text": "el libro"
+  },
+  "door": {
+   "text": "la puerta"
+  },
+  "city": {
+   "text": "la ciudad"
+  },
+  "street": {
+   "text": "la calle"
+  },
+  "shop": {
+   "text": "la tienda"
+  },
+  "market": {
+   "text": "el mercado"
+  },
+  "bank": {
+   "text": "el banco"
+  },
+  "hospital": {
+   "text": "el hospital"
+  },
+  "school": {
+   "text": "la escuela",
+   "note": "Also: el colegio."
+  },
+  "restaurant_place": {
+   "text": "el restaurante"
+  },
+  "park": {
+   "text": "el parque"
+  },
+  "museum": {
+   "text": "el museo"
+  },
+  "church": {
+   "text": "la iglesia"
+  },
+  "pharmacy": {
+   "text": "la farmacia"
+  },
+  "car": {
+   "text": "el coche",
+   "note": "Latin America: el carro / el auto."
+  },
+  "bus": {
+   "text": "el autobús",
+   "note": "Many varieties: el bus, el camión (Mexico)."
+  },
+  "train": {
+   "text": "el tren"
+  },
+  "plane": {
+   "text": "el avión"
+  },
+  "bike": {
+   "text": "la bicicleta",
+   "note": "Short: la bici."
+  },
+  "boat": {
+   "text": "el barco"
+  },
+  "subway": {
+   "text": "el metro"
+  },
+  "map": {
+   "text": "el mapa",
+   "note": "Masculine despite ending in -a."
+  },
+  "passport": {
+   "text": "el pasaporte"
+  },
+  "suitcase": {
+   "text": "la maleta",
+   "note": "Also: la valija (Southern South America)."
+  },
+  "sun": {
+   "text": "el sol"
+  },
+  "rain": {
+   "text": "la lluvia"
+  },
+  "snow": {
+   "text": "la nieve"
+  },
+  "wind": {
+   "text": "el viento"
+  },
+  "cloud": {
+   "text": "la nube"
+  },
+  "sea": {
+   "text": "el mar"
+  },
+  "mountain": {
+   "text": "la montaña"
+  },
+  "river": {
+   "text": "el río"
+  },
+  "tree": {
+   "text": "el árbol"
+  },
+  "flower": {
+   "text": "la flor"
+  },
+  "monday": {
+   "text": "el lunes"
+  },
+  "tuesday": {
+   "text": "el martes"
+  },
+  "wednesday": {
+   "text": "el miércoles"
+  },
+  "thursday": {
+   "text": "el jueves"
+  },
+  "friday": {
+   "text": "el viernes"
+  },
+  "saturday": {
+   "text": "el sábado"
+  },
+  "sunday": {
+   "text": "el domingo"
+  },
+  "spring": {
+   "text": "la primavera"
+  },
+  "summer": {
+   "text": "el verano"
+  },
+  "autumn": {
+   "text": "el otoño"
+  },
+  "winter": {
+   "text": "el invierno"
+  },
+  "morning": {
+   "text": "la mañana",
+   "note": "Without \"la\", mañana means tomorrow."
+  },
+  "evening": {
+   "text": "la tarde",
+   "note": "Covers afternoon and early evening."
+  },
+  "night": {
+   "text": "la noche"
+  },
+  "hour": {
+   "text": "la hora"
+  },
+  "minute": {
+   "text": "el minuto"
+  },
+  "pink": {
+   "text": "rosa"
+  },
+  "purple": {
+   "text": "morado"
+  },
+  "brown": {
+   "text": "marrón",
+   "note": "Also: café (parts of Latin America)."
+  },
+  "grey": {
+   "text": "gris"
+  },
+  "new": {
+   "text": "nuevo"
+  },
+  "old": {
+   "text": "viejo"
+  },
+  "beautiful": {
+   "text": "bonito",
+   "note": "Also: hermoso, lindo (Latin America)."
+  },
+  "fast": {
+   "text": "rápido"
+  },
+  "slow": {
+   "text": "lento"
+  },
+  "easy": {
+   "text": "fácil"
+  },
+  "difficult": {
+   "text": "difícil"
+  },
+  "happy": {
+   "text": "feliz"
+  },
+  "sad": {
+   "text": "triste"
+  },
+  "tired": {
+   "text": "cansado"
+  },
+  "angry": {
+   "text": "enfadado",
+   "note": "Latin America: enojado."
+  },
+  "scared": {
+   "text": "asustado"
+  },
+  "bored": {
+   "text": "aburrido"
+  },
+  "i_love_you": {
+   "text": "Te quiero",
+   "note": "Stronger, romantic: te amo."
+  },
+  "i_miss_you": {
+   "text": "Te echo de menos",
+   "note": "Latin America: te extraño."
+  },
+  "teacher": {
+   "text": "el profesor",
+   "note": "Female: la profesora."
+  },
+  "doctor": {
+   "text": "el médico",
+   "note": "Female: la médica; also: el doctor."
+  },
+  "student": {
+   "text": "el estudiante",
+   "note": "Female: la estudiante."
+  },
+  "cook": {
+   "text": "el cocinero",
+   "note": "Female: la cocinera."
+  },
+  "police_officer": {
+   "text": "el policía",
+   "note": "Female: la policía; \"la policía\" also means the police force."
+  },
+  "driver": {
+   "text": "el conductor",
+   "note": "Female: la conductora."
+  },
+  "work": {
+   "text": "el trabajo"
+  },
+  "office": {
+   "text": "la oficina"
+  },
+  "to_read": {
+   "text": "leer"
+  },
+  "to_write": {
+   "text": "escribir"
+  },
+  "to_listen": {
+   "text": "escuchar"
+  },
+  "to_buy": {
+   "text": "comprar"
+  },
+  "to_pay": {
+   "text": "pagar"
+  },
+  "to_work": {
+   "text": "trabajar"
+  },
+  "to_play": {
+   "text": "jugar",
+   "note": "For instruments: tocar."
+  },
+  "to_run": {
+   "text": "correr"
+  },
+  "to_walk": {
+   "text": "caminar",
+   "note": "Also: andar (Spain)."
+  },
+  "to_cook": {
+   "text": "cocinar"
+  },
+  "to_open": {
+   "text": "abrir"
+  },
+  "to_close": {
+   "text": "cerrar"
+  },
+  "to_know": {
+   "text": "saber",
+   "note": "Knowing people or places: conocer."
+  },
+  "to_think": {
+   "text": "pensar"
+  },
+  "to_love": {
+   "text": "amar",
+   "note": "Everyday, for people: querer."
+  },
+  "money": {
+   "text": "el dinero"
+  },
+  "price": {
+   "text": "el precio"
+  },
+  "cheap": {
+   "text": "barato"
+  },
+  "expensive": {
+   "text": "caro"
+  },
+  "open_sign": {
+   "text": "Abierto"
+  },
+  "closed_sign": {
+   "text": "Cerrado"
+  },
+  "cash": {
+   "text": "el efectivo"
+  },
+  "receipt": {
+   "text": "el recibo",
+   "note": "Also: el tique / el ticket."
+  },
+  "sick": {
+   "text": "enfermo"
+  },
+  "pain": {
+   "text": "el dolor"
+  },
+  "medicine": {
+   "text": "el medicamento",
+   "note": "Also: la medicina."
+  },
+  "i_need_a_doctor": {
+   "text": "Necesito un médico"
+  },
+  "headache": {
+   "text": "el dolor de cabeza"
+  },
+  "emergency": {
+   "text": "la emergencia",
+   "note": "Also: la urgencia."
+  },
+  "call_the_police": {
+   "text": "¡Llame a la policía!"
+  },
+  "music": {
+   "text": "la música"
+  },
+  "movie": {
+   "text": "la película"
+  },
+  "sport": {
+   "text": "el deporte"
+  },
+  "game": {
+   "text": "el juego"
+  },
+  "football": {
+   "text": "el fútbol"
+  },
+  "photo": {
+   "text": "la foto",
+   "note": "Feminine: short for la fotografía."
+  },
+  "to_dance": {
+   "text": "bailar"
+  },
+  "beach": {
+   "text": "la playa"
+  },
+  "country": {
+   "text": "el país"
+  },
+  "language": {
+   "text": "el idioma"
+  },
+  "where_are_you_from": {
+   "text": "¿De dónde eres?",
+   "note": "Informal. Formal: “¿De dónde es usted?”"
+  },
+  "i_am_from": {
+   "text": "Soy de …"
+  },
+  "china": {
+   "text": "China"
+  },
+  "germany": {
+   "text": "Alemania"
+  },
+  "france": {
+   "text": "Francia"
+  },
+  "spain": {
+   "text": "España"
+  },
+  "italy": {
+   "text": "Italia"
+  },
+  "brazil": {
+   "text": "Brasil"
+  },
+  "usa": {
+   "text": "Estados Unidos"
+  },
+  "north_macedonia": {
+   "text": "Macedonia del Norte"
+  },
+  "weather": {
+   "text": "el tiempo",
+   "note": "Also means “time”."
+  },
+  "its_hot": {
+   "text": "Hace calor"
+  },
+  "its_cold": {
+   "text": "Hace frío"
+  },
+  "its_raining": {
+   "text": "Está lloviendo"
+  },
+  "storm": {
+   "text": "la tormenta"
+  },
+  "fog": {
+   "text": "la niebla"
+  },
+  "rainbow": {
+   "text": "el arcoíris"
+  },
+  "umbrella": {
+   "text": "el paraguas"
+  },
+  "moon": {
+   "text": "la luna"
+  },
+  "star": {
+   "text": "la estrella"
+  },
+  "temperature": {
+   "text": "la temperatura"
+  },
+  "its_windy": {
+   "text": "Hace viento"
+  },
+  "pen": {
+   "text": "el bolígrafo"
+  },
+  "pencil": {
+   "text": "el lápiz"
+  },
+  "notebook": {
+   "text": "el cuaderno"
+  },
+  "backpack": {
+   "text": "la mochila"
+  },
+  "homework": {
+   "text": "los deberes"
+  },
+  "ruler": {
+   "text": "la regla"
+  },
+  "scissors": {
+   "text": "las tijeras"
+  },
+  "paper": {
+   "text": "el papel"
+  },
+  "knife": {
+   "text": "el cuchillo"
+  },
+  "spoon": {
+   "text": "la cuchara"
+  },
+  "chopsticks": {
+   "text": "los palillos"
+  },
+  "teapot": {
+   "text": "la tetera"
+  },
+  "bottle": {
+   "text": "la botella"
+  },
+  "glass": {
+   "text": "el vaso"
+  },
+  "olive_oil": {
+   "text": "el aceite de oliva"
+  },
+  "butter": {
+   "text": "la mantequilla"
+  },
+  "garlic": {
+   "text": "el ajo"
+  },
+  "honey": {
+   "text": "la miel"
+  },
+  "pasta": {
+   "text": "la pasta"
+  },
+  "pizza": {
+   "text": "la pizza"
+  },
+  "to_wake_up": {
+   "text": "despertarse"
+  },
+  "to_shower": {
+   "text": "ducharse"
+  },
+  "to_brush_teeth": {
+   "text": "cepillarse los dientes"
+  },
+  "to_get_dressed": {
+   "text": "vestirse"
+  },
+  "to_clean": {
+   "text": "limpiar"
+  },
+  "to_wash": {
+   "text": "lavar"
+  },
+  "to_watch_tv": {
+   "text": "ver la tele"
+  },
+  "to_rest": {
+   "text": "descansar"
+  },
+  "internet": {
+   "text": "internet"
+  },
+  "email": {
+   "text": "el correo electrónico"
+  },
+  "message": {
+   "text": "el mensaje"
+  },
+  "battery": {
+   "text": "la batería"
+  },
+  "charger": {
+   "text": "el cargador"
+  },
+  "screen": {
+   "text": "la pantalla"
+  },
+  "keyboard": {
+   "text": "el teclado"
+  },
+  "to_call": {
+   "text": "llamar"
+  },
+  "basketball": {
+   "text": "el baloncesto"
+  },
+  "tennis": {
+   "text": "el tenis"
+  },
+  "volleyball": {
+   "text": "el voleibol"
+  },
+  "skiing": {
+   "text": "el esquí"
+  },
+  "to_swim": {
+   "text": "nadar"
+  },
+  "to_ride_a_bike": {
+   "text": "montar en bici"
+  },
+  "gym": {
+   "text": "el gimnasio"
+  },
+  "to_win": {
+   "text": "ganar"
+  },
+  "birthday": {
+   "text": "el cumpleaños"
+  },
+  "happy_birthday": {
+   "text": "¡Feliz cumpleaños!"
+  },
+  "gift": {
+   "text": "el regalo"
+  },
+  "party": {
+   "text": "la fiesta"
+  },
+  "wedding": {
+   "text": "la boda"
+  },
+  "christmas": {
+   "text": "la Navidad"
+  },
+  "merry_christmas": {
+   "text": "¡Feliz Navidad!"
+  },
+  "happy_new_year": {
+   "text": "¡Feliz Año Nuevo!"
+  },
+  "near": {
+   "text": "cerca"
+  },
+  "far": {
+   "text": "lejos"
+  },
+  "traffic_lights": {
+   "text": "el semáforo"
+  },
+  "bridge": {
+   "text": "el puente"
+  },
+  "turn_left": {
+   "text": "Gire a la izquierda"
+  },
+  "turn_right": {
+   "text": "Gire a la derecha"
+  },
+  "gas_station": {
+   "text": "la gasolinera"
+  },
+  "bus_stop": {
+   "text": "la parada de autobús"
+  },
+  "departure": {
+   "text": "la salida"
+  },
+  "arrival": {
+   "text": "la llegada"
+  },
+  "seat": {
+   "text": "el asiento"
+  },
+  "boarding_pass": {
+   "text": "la tarjeta de embarque"
+  },
+  "flight": {
+   "text": "el vuelo"
+  },
+  "customs": {
+   "text": "la aduana"
+  },
+  "baggage_claim": {
+   "text": "la recogida de equipajes"
+  },
+  "pilot": {
+   "text": "el piloto",
+   "note": "Female: la piloto."
+  },
+  "reception": {
+   "text": "la recepción"
+  },
+  "i_have_a_reservation": {
+   "text": "Tengo una reserva"
+  },
+  "elevator": {
+   "text": "el ascensor"
+  },
+  "stairs": {
+   "text": "las escaleras"
+  },
+  "soap": {
+   "text": "el jabón"
+  },
+  "wifi": {
+   "text": "el wifi"
+  },
+  "password": {
+   "text": "la contraseña"
+  },
+  "it_doesnt_work": {
+   "text": "No funciona"
+  },
+  "to_sing": {
+   "text": "cantar"
+  },
+  "to_draw": {
+   "text": "dibujar"
+  },
+  "to_laugh": {
+   "text": "reír"
+  },
+  "to_cry": {
+   "text": "llorar"
+  },
+  "to_wait": {
+   "text": "esperar"
+  },
+  "to_drive": {
+   "text": "conducir"
+  },
+  "to_find": {
+   "text": "encontrar"
+  },
+  "to_send": {
+   "text": "enviar"
+  },
+  "to_understand": {
+   "text": "entender"
+  },
+  "to_live": {
+   "text": "vivir"
+  },
+  "to_give": {
+   "text": "dar"
+  },
+  "to_repeat": {
+   "text": "repetir"
+  },
+  "speak_slowly": {
+   "text": "Más despacio, por favor"
+  },
+  "what_does_it_mean": {
+   "text": "¿Qué significa esto?"
+  },
+  "lets_go": {
+   "text": "¡Vamos!"
+  },
+  "have_a_nice_day": {
+   "text": "¡Que tengas un buen día!"
+  },
+  "me_too": {
+   "text": "Yo también"
+  },
+  "really": {
+   "text": "¿En serio?"
+  },
+  "great": {
+   "text": "¡Genial!"
+  },
+  "be_careful": {
+   "text": "¡Cuidado!"
+  },
+  "im_lost": {
+   "text": "Estoy perdido",
+   "note": "A woman says “Estoy perdida”."
+  },
+  "enjoy_your_meal": {
+   "text": "¡Buen provecho!"
+  },
+  "take_care": {
+   "text": "¡Cuídate!"
+  },
+  "see_you_soon": {
+   "text": "¡Hasta pronto!"
+  }
+ }
+}
