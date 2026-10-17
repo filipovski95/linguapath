@@ -982,6 +982,380 @@
   },
   "beach": {
    "text": "der Strand"
+  },
+  "country": {
+   "text": "das Land"
+  },
+  "language": {
+   "text": "die Sprache"
+  },
+  "where_are_you_from": {
+   "text": "Woher kommst du?",
+   "note": "Informal. Formal: “Woher kommen Sie?”"
+  },
+  "i_am_from": {
+   "text": "Ich komme aus …"
+  },
+  "china": {
+   "text": "China"
+  },
+  "germany": {
+   "text": "Deutschland"
+  },
+  "france": {
+   "text": "Frankreich"
+  },
+  "spain": {
+   "text": "Spanien"
+  },
+  "italy": {
+   "text": "Italien"
+  },
+  "brazil": {
+   "text": "Brasilien"
+  },
+  "usa": {
+   "text": "die USA"
+  },
+  "north_macedonia": {
+   "text": "Nordmazedonien"
+  },
+  "weather": {
+   "text": "das Wetter"
+  },
+  "its_hot": {
+   "text": "Es ist heiß"
+  },
+  "its_cold": {
+   "text": "Es ist kalt"
+  },
+  "its_raining": {
+   "text": "Es regnet"
+  },
+  "storm": {
+   "text": "der Sturm"
+  },
+  "fog": {
+   "text": "der Nebel"
+  },
+  "rainbow": {
+   "text": "der Regenbogen"
+  },
+  "umbrella": {
+   "text": "der Regenschirm"
+  },
+  "moon": {
+   "text": "der Mond"
+  },
+  "star": {
+   "text": "der Stern"
+  },
+  "temperature": {
+   "text": "die Temperatur"
+  },
+  "its_windy": {
+   "text": "Es ist windig"
+  },
+  "pen": {
+   "text": "der Kugelschreiber"
+  },
+  "pencil": {
+   "text": "der Bleistift"
+  },
+  "notebook": {
+   "text": "das Heft"
+  },
+  "backpack": {
+   "text": "der Rucksack"
+  },
+  "homework": {
+   "text": "die Hausaufgaben"
+  },
+  "ruler": {
+   "text": "das Lineal"
+  },
+  "scissors": {
+   "text": "die Schere"
+  },
+  "paper": {
+   "text": "das Papier"
+  },
+  "knife": {
+   "text": "das Messer"
+  },
+  "spoon": {
+   "text": "der Löffel"
+  },
+  "chopsticks": {
+   "text": "die Stäbchen"
+  },
+  "teapot": {
+   "text": "die Teekanne"
+  },
+  "bottle": {
+   "text": "die Flasche"
+  },
+  "glass": {
+   "text": "das Glas"
+  },
+  "olive_oil": {
+   "text": "das Olivenöl"
+  },
+  "butter": {
+   "text": "die Butter"
+  },
+  "garlic": {
+   "text": "der Knoblauch"
+  },
+  "honey": {
+   "text": "der Honig"
+  },
+  "pasta": {
+   "text": "die Nudeln"
+  },
+  "pizza": {
+   "text": "die Pizza"
+  },
+  "to_wake_up": {
+   "text": "aufwachen"
+  },
+  "to_shower": {
+   "text": "duschen"
+  },
+  "to_brush_teeth": {
+   "text": "Zähne putzen"
+  },
+  "to_get_dressed": {
+   "text": "sich anziehen"
+  },
+  "to_clean": {
+   "text": "putzen"
+  },
+  "to_wash": {
+   "text": "waschen"
+  },
+  "to_watch_tv": {
+   "text": "fernsehen"
+  },
+  "to_rest": {
+   "text": "sich ausruhen"
+  },
+  "internet": {
+   "text": "das Internet"
+  },
+  "email": {
+   "text": "die E-Mail"
+  },
+  "message": {
+   "text": "die Nachricht"
+  },
+  "battery": {
+   "text": "der Akku"
+  },
+  "charger": {
+   "text": "das Ladegerät"
+  },
+  "screen": {
+   "text": "der Bildschirm"
+  },
+  "keyboard": {
+   "text": "die Tastatur"
+  },
+  "to_call": {
+   "text": "anrufen"
+  },
+  "basketball": {
+   "text": "der Basketball"
+  },
+  "tennis": {
+   "text": "das Tennis"
+  },
+  "volleyball": {
+   "text": "der Volleyball"
+  },
+  "skiing": {
+   "text": "das Skifahren"
+  },
+  "to_swim": {
+   "text": "schwimmen"
+  },
+  "to_ride_a_bike": {
+   "text": "Fahrrad fahren"
+  },
+  "gym": {
+   "text": "das Fitnessstudio"
+  },
+  "to_win": {
+   "text": "gewinnen"
+  },
+  "birthday": {
+   "text": "der Geburtstag"
+  },
+  "happy_birthday": {
+   "text": "Alles Gute zum Geburtstag!"
+  },
+  "gift": {
+   "text": "das Geschenk"
+  },
+  "party": {
+   "text": "die Party"
+  },
+  "wedding": {
+   "text": "die Hochzeit"
+  },
+  "christmas": {
+   "text": "Weihnachten"
+  },
+  "merry_christmas": {
+   "text": "Frohe Weihnachten!"
+  },
+  "happy_new_year": {
+   "text": "Frohes neues Jahr!"
+  },
+  "near": {
+   "text": "nah"
+  },
+  "far": {
+   "text": "weit"
+  },
+  "traffic_lights": {
+   "text": "die Ampel"
+  },
+  "bridge": {
+   "text": "die Brücke"
+  },
+  "turn_left": {
+   "text": "links abbiegen"
+  },
+  "turn_right": {
+   "text": "rechts abbiegen"
+  },
+  "gas_station": {
+   "text": "die Tankstelle"
+  },
+  "bus_stop": {
+   "text": "die Bushaltestelle"
+  },
+  "departure": {
+   "text": "der Abflug"
+  },
+  "arrival": {
+   "text": "die Ankunft"
+  },
+  "seat": {
+   "text": "der Sitzplatz"
+  },
+  "boarding_pass": {
+   "text": "die Bordkarte"
+  },
+  "flight": {
+   "text": "der Flug"
+  },
+  "customs": {
+   "text": "der Zoll"
+  },
+  "baggage_claim": {
+   "text": "die Gepäckausgabe"
+  },
+  "pilot": {
+   "text": "der Pilot",
+   "note": "Female: die Pilotin."
+  },
+  "reception": {
+   "text": "die Rezeption"
+  },
+  "i_have_a_reservation": {
+   "text": "Ich habe eine Reservierung"
+  },
+  "elevator": {
+   "text": "der Aufzug"
+  },
+  "stairs": {
+   "text": "die Treppe"
+  },
+  "soap": {
+   "text": "die Seife"
+  },
+  "wifi": {
+   "text": "das WLAN"
+  },
+  "password": {
+   "text": "das Passwort"
+  },
+  "it_doesnt_work": {
+   "text": "Es funktioniert nicht"
+  },
+  "to_sing": {
+   "text": "singen"
+  },
+  "to_draw": {
+   "text": "zeichnen"
+  },
+  "to_laugh": {
+   "text": "lachen"
+  },
+  "to_cry": {
+   "text": "weinen"
+  },
+  "to_wait": {
+   "text": "warten"
+  },
+  "to_drive": {
+   "text": "fahren"
+  },
+  "to_find": {
+   "text": "finden"
+  },
+  "to_send": {
+   "text": "schicken"
+  },
+  "to_understand": {
+   "text": "verstehen"
+  },
+  "to_live": {
+   "text": "wohnen"
+  },
+  "to_give": {
+   "text": "geben"
+  },
+  "to_repeat": {
+   "text": "wiederholen"
+  },
+  "speak_slowly": {
+   "text": "Bitte sprechen Sie langsamer"
+  },
+  "what_does_it_mean": {
+   "text": "Was bedeutet das?"
+  },
+  "lets_go": {
+   "text": "Los geht's!"
+  },
+  "have_a_nice_day": {
+   "text": "Schönen Tag noch!"
+  },
+  "me_too": {
+   "text": "Ich auch"
+  },
+  "really": {
+   "text": "Wirklich?"
+  },
+  "great": {
+   "text": "Super!"
+  },
+  "be_careful": {
+   "text": "Vorsicht!"
+  },
+  "im_lost": {
+   "text": "Ich habe mich verlaufen"
+  },
+  "enjoy_your_meal": {
+   "text": "Guten Appetit!"
+  },
+  "take_care": {
+   "text": "Pass auf dich auf!"
+  },
+  "see_you_soon": {
+   "text": "Bis bald!"
   }
  }
 }

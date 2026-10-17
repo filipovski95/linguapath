@@ -973,6 +973,381 @@
   },
   "beach": {
    "text": "a praia"
+  },
+  "country": {
+   "text": "o país"
+  },
+  "language": {
+   "text": "a língua"
+  },
+  "where_are_you_from": {
+   "text": "De onde você é?"
+  },
+  "i_am_from": {
+   "text": "Eu sou de …"
+  },
+  "china": {
+   "text": "a China"
+  },
+  "germany": {
+   "text": "a Alemanha"
+  },
+  "france": {
+   "text": "a França"
+  },
+  "spain": {
+   "text": "a Espanha"
+  },
+  "italy": {
+   "text": "a Itália"
+  },
+  "brazil": {
+   "text": "o Brasil"
+  },
+  "usa": {
+   "text": "os Estados Unidos"
+  },
+  "north_macedonia": {
+   "text": "a Macedônia do Norte"
+  },
+  "weather": {
+   "text": "o tempo",
+   "note": "Also means “time”."
+  },
+  "its_hot": {
+   "text": "Está quente"
+  },
+  "its_cold": {
+   "text": "Está frio"
+  },
+  "its_raining": {
+   "text": "Está chovendo"
+  },
+  "storm": {
+   "text": "a tempestade"
+  },
+  "fog": {
+   "text": "a neblina"
+  },
+  "rainbow": {
+   "text": "o arco-íris"
+  },
+  "umbrella": {
+   "text": "o guarda-chuva"
+  },
+  "moon": {
+   "text": "a lua"
+  },
+  "star": {
+   "text": "a estrela"
+  },
+  "temperature": {
+   "text": "a temperatura"
+  },
+  "its_windy": {
+   "text": "Está ventando"
+  },
+  "pen": {
+   "text": "a caneta"
+  },
+  "pencil": {
+   "text": "o lápis"
+  },
+  "notebook": {
+   "text": "o caderno"
+  },
+  "backpack": {
+   "text": "a mochila"
+  },
+  "homework": {
+   "text": "a lição de casa"
+  },
+  "ruler": {
+   "text": "a régua"
+  },
+  "scissors": {
+   "text": "a tesoura"
+  },
+  "paper": {
+   "text": "o papel"
+  },
+  "knife": {
+   "text": "a faca"
+  },
+  "spoon": {
+   "text": "a colher"
+  },
+  "chopsticks": {
+   "text": "os pauzinhos"
+  },
+  "teapot": {
+   "text": "o bule"
+  },
+  "bottle": {
+   "text": "a garrafa"
+  },
+  "glass": {
+   "text": "o copo"
+  },
+  "olive_oil": {
+   "text": "o azeite"
+  },
+  "butter": {
+   "text": "a manteiga"
+  },
+  "garlic": {
+   "text": "o alho"
+  },
+  "honey": {
+   "text": "o mel"
+  },
+  "pasta": {
+   "text": "o macarrão"
+  },
+  "pizza": {
+   "text": "a pizza"
+  },
+  "to_wake_up": {
+   "text": "acordar"
+  },
+  "to_shower": {
+   "text": "tomar banho"
+  },
+  "to_brush_teeth": {
+   "text": "escovar os dentes"
+  },
+  "to_get_dressed": {
+   "text": "se vestir"
+  },
+  "to_clean": {
+   "text": "limpar"
+  },
+  "to_wash": {
+   "text": "lavar"
+  },
+  "to_watch_tv": {
+   "text": "assistir TV"
+  },
+  "to_rest": {
+   "text": "descansar"
+  },
+  "internet": {
+   "text": "a internet"
+  },
+  "email": {
+   "text": "o e-mail"
+  },
+  "message": {
+   "text": "a mensagem"
+  },
+  "battery": {
+   "text": "a bateria"
+  },
+  "charger": {
+   "text": "o carregador"
+  },
+  "screen": {
+   "text": "a tela"
+  },
+  "keyboard": {
+   "text": "o teclado"
+  },
+  "to_call": {
+   "text": "ligar"
+  },
+  "basketball": {
+   "text": "o basquete"
+  },
+  "tennis": {
+   "text": "o tênis"
+  },
+  "volleyball": {
+   "text": "o vôlei"
+  },
+  "skiing": {
+   "text": "o esqui"
+  },
+  "to_swim": {
+   "text": "nadar"
+  },
+  "to_ride_a_bike": {
+   "text": "andar de bicicleta"
+  },
+  "gym": {
+   "text": "a academia"
+  },
+  "to_win": {
+   "text": "ganhar"
+  },
+  "birthday": {
+   "text": "o aniversário"
+  },
+  "happy_birthday": {
+   "text": "Feliz aniversário!"
+  },
+  "gift": {
+   "text": "o presente"
+  },
+  "party": {
+   "text": "a festa"
+  },
+  "wedding": {
+   "text": "o casamento"
+  },
+  "christmas": {
+   "text": "o Natal"
+  },
+  "merry_christmas": {
+   "text": "Feliz Natal!"
+  },
+  "happy_new_year": {
+   "text": "Feliz Ano Novo!"
+  },
+  "near": {
+   "text": "perto"
+  },
+  "far": {
+   "text": "longe"
+  },
+  "traffic_lights": {
+   "text": "o semáforo"
+  },
+  "bridge": {
+   "text": "a ponte"
+  },
+  "turn_left": {
+   "text": "Vire à esquerda"
+  },
+  "turn_right": {
+   "text": "Vire à direita"
+  },
+  "gas_station": {
+   "text": "o posto de gasolina"
+  },
+  "bus_stop": {
+   "text": "o ponto de ônibus"
+  },
+  "departure": {
+   "text": "a partida"
+  },
+  "arrival": {
+   "text": "a chegada"
+  },
+  "seat": {
+   "text": "o assento"
+  },
+  "boarding_pass": {
+   "text": "o cartão de embarque"
+  },
+  "flight": {
+   "text": "o voo"
+  },
+  "customs": {
+   "text": "a alfândega"
+  },
+  "baggage_claim": {
+   "text": "a retirada de bagagem"
+  },
+  "pilot": {
+   "text": "o piloto"
+  },
+  "reception": {
+   "text": "a recepção"
+  },
+  "i_have_a_reservation": {
+   "text": "Eu tenho uma reserva"
+  },
+  "elevator": {
+   "text": "o elevador"
+  },
+  "stairs": {
+   "text": "a escada"
+  },
+  "soap": {
+   "text": "o sabonete"
+  },
+  "wifi": {
+   "text": "o wi-fi"
+  },
+  "password": {
+   "text": "a senha"
+  },
+  "it_doesnt_work": {
+   "text": "Não funciona"
+  },
+  "to_sing": {
+   "text": "cantar"
+  },
+  "to_draw": {
+   "text": "desenhar"
+  },
+  "to_laugh": {
+   "text": "rir"
+  },
+  "to_cry": {
+   "text": "chorar"
+  },
+  "to_wait": {
+   "text": "esperar"
+  },
+  "to_drive": {
+   "text": "dirigir",
+   "note": "Portugal: conduzir."
+  },
+  "to_find": {
+   "text": "encontrar"
+  },
+  "to_send": {
+   "text": "enviar"
+  },
+  "to_understand": {
+   "text": "entender"
+  },
+  "to_live": {
+   "text": "morar"
+  },
+  "to_give": {
+   "text": "dar"
+  },
+  "to_repeat": {
+   "text": "repetir"
+  },
+  "speak_slowly": {
+   "text": "Fale mais devagar, por favor"
+  },
+  "what_does_it_mean": {
+   "text": "O que significa isso?"
+  },
+  "lets_go": {
+   "text": "Vamos!"
+  },
+  "have_a_nice_day": {
+   "text": "Tenha um bom dia!"
+  },
+  "me_too": {
+   "text": "Eu também"
+  },
+  "really": {
+   "text": "Sério?"
+  },
+  "great": {
+   "text": "Ótimo!"
+  },
+  "be_careful": {
+   "text": "Cuidado!"
+  },
+  "im_lost": {
+   "text": "Estou perdido",
+   "note": "A woman says “Estou perdida”."
+  },
+  "enjoy_your_meal": {
+   "text": "Bom apetite!"
+  },
+  "take_care": {
+   "text": "Se cuida!"
+  },
+  "see_you_soon": {
+   "text": "Até breve!"
   }
  }
 }

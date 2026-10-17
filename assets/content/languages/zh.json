@@ -1293,6 +1293,504 @@
   "beach": {
    "text": "海滩",
    "roman": "hǎitān"
+  },
+  "country": {
+   "text": "国家",
+   "roman": "guójiā"
+  },
+  "language": {
+   "text": "语言",
+   "roman": "yǔyán"
+  },
+  "where_are_you_from": {
+   "text": "你是哪国人？",
+   "roman": "nǐ shì nǎ guó rén?"
+  },
+  "i_am_from": {
+   "text": "我来自…",
+   "roman": "wǒ láizì …"
+  },
+  "china": {
+   "text": "中国",
+   "roman": "Zhōngguó"
+  },
+  "germany": {
+   "text": "德国",
+   "roman": "Déguó"
+  },
+  "france": {
+   "text": "法国",
+   "roman": "Fǎguó"
+  },
+  "spain": {
+   "text": "西班牙",
+   "roman": "Xībānyá"
+  },
+  "italy": {
+   "text": "意大利",
+   "roman": "Yìdàlì"
+  },
+  "brazil": {
+   "text": "巴西",
+   "roman": "Bāxī"
+  },
+  "usa": {
+   "text": "美国",
+   "roman": "Měiguó"
+  },
+  "north_macedonia": {
+   "text": "北马其顿",
+   "roman": "Běi Mǎqídùn"
+  },
+  "weather": {
+   "text": "天气",
+   "roman": "tiānqì"
+  },
+  "its_hot": {
+   "text": "天很热",
+   "roman": "tiān hěn rè"
+  },
+  "its_cold": {
+   "text": "天很冷",
+   "roman": "tiān hěn lěng"
+  },
+  "its_raining": {
+   "text": "下雨了",
+   "roman": "xià yǔ le"
+  },
+  "storm": {
+   "text": "暴风雨",
+   "roman": "bàofēngyǔ"
+  },
+  "fog": {
+   "text": "雾",
+   "roman": "wù"
+  },
+  "rainbow": {
+   "text": "彩虹",
+   "roman": "cǎihóng"
+  },
+  "umbrella": {
+   "text": "雨伞",
+   "roman": "yǔsǎn"
+  },
+  "moon": {
+   "text": "月亮",
+   "roman": "yuèliang"
+  },
+  "star": {
+   "text": "星星",
+   "roman": "xīngxing"
+  },
+  "temperature": {
+   "text": "温度",
+   "roman": "wēndù"
+  },
+  "its_windy": {
+   "text": "刮风了",
+   "roman": "guā fēng le"
+  },
+  "pen": {
+   "text": "笔",
+   "roman": "bǐ"
+  },
+  "pencil": {
+   "text": "铅笔",
+   "roman": "qiānbǐ"
+  },
+  "notebook": {
+   "text": "笔记本",
+   "roman": "bǐjìběn"
+  },
+  "backpack": {
+   "text": "背包",
+   "roman": "bēibāo"
+  },
+  "homework": {
+   "text": "作业",
+   "roman": "zuòyè"
+  },
+  "ruler": {
+   "text": "尺子",
+   "roman": "chǐzi"
+  },
+  "scissors": {
+   "text": "剪刀",
+   "roman": "jiǎndāo"
+  },
+  "paper": {
+   "text": "纸",
+   "roman": "zhǐ"
+  },
+  "knife": {
+   "text": "刀",
+   "roman": "dāo"
+  },
+  "spoon": {
+   "text": "勺子",
+   "roman": "sháozi"
+  },
+  "chopsticks": {
+   "text": "筷子",
+   "roman": "kuàizi"
+  },
+  "teapot": {
+   "text": "茶壶",
+   "roman": "cháhú"
+  },
+  "bottle": {
+   "text": "瓶子",
+   "roman": "píngzi"
+  },
+  "glass": {
+   "text": "玻璃杯",
+   "roman": "bōlibēi"
+  },
+  "olive_oil": {
+   "text": "橄榄油",
+   "roman": "gǎnlǎnyóu"
+  },
+  "butter": {
+   "text": "黄油",
+   "roman": "huángyóu"
+  },
+  "garlic": {
+   "text": "大蒜",
+   "roman": "dàsuàn"
+  },
+  "honey": {
+   "text": "蜂蜜",
+   "roman": "fēngmì"
+  },
+  "pasta": {
+   "text": "意大利面",
+   "roman": "yìdàlìmiàn"
+  },
+  "pizza": {
+   "text": "比萨",
+   "roman": "bǐsà"
+  },
+  "to_wake_up": {
+   "text": "起床",
+   "roman": "qǐchuáng",
+   "note": "Literally “to get out of bed”."
+  },
+  "to_shower": {
+   "text": "洗澡",
+   "roman": "xǐzǎo"
+  },
+  "to_brush_teeth": {
+   "text": "刷牙",
+   "roman": "shuāyá"
+  },
+  "to_get_dressed": {
+   "text": "穿衣服",
+   "roman": "chuān yīfu"
+  },
+  "to_clean": {
+   "text": "打扫",
+   "roman": "dǎsǎo"
+  },
+  "to_wash": {
+   "text": "洗",
+   "roman": "xǐ"
+  },
+  "to_watch_tv": {
+   "text": "看电视",
+   "roman": "kàn diànshì"
+  },
+  "to_rest": {
+   "text": "休息",
+   "roman": "xiūxi"
+  },
+  "internet": {
+   "text": "互联网",
+   "roman": "hùliánwǎng"
+  },
+  "email": {
+   "text": "电子邮件",
+   "roman": "diànzǐ yóujiàn"
+  },
+  "message": {
+   "text": "消息",
+   "roman": "xiāoxi"
+  },
+  "battery": {
+   "text": "电池",
+   "roman": "diànchí"
+  },
+  "charger": {
+   "text": "充电器",
+   "roman": "chōngdiànqì"
+  },
+  "screen": {
+   "text": "屏幕",
+   "roman": "píngmù"
+  },
+  "keyboard": {
+   "text": "键盘",
+   "roman": "jiànpán"
+  },
+  "to_call": {
+   "text": "打电话",
+   "roman": "dǎ diànhuà"
+  },
+  "basketball": {
+   "text": "篮球",
+   "roman": "lánqiú"
+  },
+  "tennis": {
+   "text": "网球",
+   "roman": "wǎngqiú"
+  },
+  "volleyball": {
+   "text": "排球",
+   "roman": "páiqiú"
+  },
+  "skiing": {
+   "text": "滑雪",
+   "roman": "huáxuě"
+  },
+  "to_swim": {
+   "text": "游泳",
+   "roman": "yóuyǒng"
+  },
+  "to_ride_a_bike": {
+   "text": "骑自行车",
+   "roman": "qí zìxíngchē"
+  },
+  "gym": {
+   "text": "健身房",
+   "roman": "jiànshēnfáng"
+  },
+  "to_win": {
+   "text": "赢",
+   "roman": "yíng"
+  },
+  "birthday": {
+   "text": "生日",
+   "roman": "shēngrì"
+  },
+  "happy_birthday": {
+   "text": "生日快乐！",
+   "roman": "shēngrì kuàilè!"
+  },
+  "gift": {
+   "text": "礼物",
+   "roman": "lǐwù"
+  },
+  "party": {
+   "text": "派对",
+   "roman": "pàiduì"
+  },
+  "wedding": {
+   "text": "婚礼",
+   "roman": "hūnlǐ"
+  },
+  "christmas": {
+   "text": "圣诞节",
+   "roman": "Shèngdànjié"
+  },
+  "merry_christmas": {
+   "text": "圣诞快乐！",
+   "roman": "Shèngdàn kuàilè!"
+  },
+  "happy_new_year": {
+   "text": "新年快乐！",
+   "roman": "xīnnián kuàilè!"
+  },
+  "near": {
+   "text": "近",
+   "roman": "jìn"
+  },
+  "far": {
+   "text": "远",
+   "roman": "yuǎn"
+  },
+  "traffic_lights": {
+   "text": "红绿灯",
+   "roman": "hónglǜdēng"
+  },
+  "bridge": {
+   "text": "桥",
+   "roman": "qiáo"
+  },
+  "turn_left": {
+   "text": "左转",
+   "roman": "zuǒ zhuǎn"
+  },
+  "turn_right": {
+   "text": "右转",
+   "roman": "yòu zhuǎn"
+  },
+  "gas_station": {
+   "text": "加油站",
+   "roman": "jiāyóuzhàn"
+  },
+  "bus_stop": {
+   "text": "公交车站",
+   "roman": "gōngjiāo chēzhàn"
+  },
+  "departure": {
+   "text": "出发",
+   "roman": "chūfā"
+  },
+  "arrival": {
+   "text": "到达",
+   "roman": "dàodá"
+  },
+  "seat": {
+   "text": "座位",
+   "roman": "zuòwèi"
+  },
+  "boarding_pass": {
+   "text": "登机牌",
+   "roman": "dēngjīpái"
+  },
+  "flight": {
+   "text": "航班",
+   "roman": "hángbān"
+  },
+  "customs": {
+   "text": "海关",
+   "roman": "hǎiguān"
+  },
+  "baggage_claim": {
+   "text": "行李提取处",
+   "roman": "xíngli tíqǔchù"
+  },
+  "pilot": {
+   "text": "飞行员",
+   "roman": "fēixíngyuán"
+  },
+  "reception": {
+   "text": "前台",
+   "roman": "qiántái"
+  },
+  "i_have_a_reservation": {
+   "text": "我有预订",
+   "roman": "wǒ yǒu yùdìng"
+  },
+  "elevator": {
+   "text": "电梯",
+   "roman": "diàntī"
+  },
+  "stairs": {
+   "text": "楼梯",
+   "roman": "lóutī"
+  },
+  "soap": {
+   "text": "肥皂",
+   "roman": "féizào"
+  },
+  "wifi": {
+   "text": "无线网",
+   "roman": "wúxiànwǎng"
+  },
+  "password": {
+   "text": "密码",
+   "roman": "mìmǎ"
+  },
+  "it_doesnt_work": {
+   "text": "坏了",
+   "roman": "huài le",
+   "note": "Literally “it's broken”."
+  },
+  "to_sing": {
+   "text": "唱歌",
+   "roman": "chànggē"
+  },
+  "to_draw": {
+   "text": "画画",
+   "roman": "huàhuà"
+  },
+  "to_laugh": {
+   "text": "笑",
+   "roman": "xiào"
+  },
+  "to_cry": {
+   "text": "哭",
+   "roman": "kū"
+  },
+  "to_wait": {
+   "text": "等",
+   "roman": "děng"
+  },
+  "to_drive": {
+   "text": "开车",
+   "roman": "kāichē"
+  },
+  "to_find": {
+   "text": "找到",
+   "roman": "zhǎodào"
+  },
+  "to_send": {
+   "text": "发送",
+   "roman": "fāsòng"
+  },
+  "to_understand": {
+   "text": "明白",
+   "roman": "míngbai"
+  },
+  "to_live": {
+   "text": "住",
+   "roman": "zhù"
+  },
+  "to_give": {
+   "text": "给",
+   "roman": "gěi"
+  },
+  "to_repeat": {
+   "text": "重复",
+   "roman": "chóngfù"
+  },
+  "speak_slowly": {
+   "text": "请说慢一点",
+   "roman": "qǐng shuō màn yìdiǎn"
+  },
+  "what_does_it_mean": {
+   "text": "这是什么意思？",
+   "roman": "zhè shì shénme yìsi?"
+  },
+  "lets_go": {
+   "text": "我们走吧！",
+   "roman": "wǒmen zǒu ba!"
+  },
+  "have_a_nice_day": {
+   "text": "祝你今天愉快！",
+   "roman": "zhù nǐ jīntiān yúkuài!"
+  },
+  "me_too": {
+   "text": "我也是",
+   "roman": "wǒ yě shì"
+  },
+  "really": {
+   "text": "真的吗？",
+   "roman": "zhēn de ma?"
+  },
+  "great": {
+   "text": "太好了！",
+   "roman": "tài hǎo le!"
+  },
+  "be_careful": {
+   "text": "小心！",
+   "roman": "xiǎoxīn!"
+  },
+  "im_lost": {
+   "text": "我迷路了",
+   "roman": "wǒ mílù le"
+  },
+  "enjoy_your_meal": {
+   "text": "请慢用！",
+   "roman": "qǐng màn yòng!"
+  },
+  "take_care": {
+   "text": "保重！",
+   "roman": "bǎozhòng!"
+  },
+  "see_you_soon": {
+   "text": "回头见！",
+   "roman": "huítóu jiàn!"
   }
  }
 }

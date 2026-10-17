@@ -976,6 +976,391 @@
   },
   "beach": {
    "text": "la plage"
+  },
+  "country": {
+   "text": "le pays"
+  },
+  "language": {
+   "text": "la langue"
+  },
+  "where_are_you_from": {
+   "text": "D'où viens-tu ?",
+   "note": "Informal. Formal: “D'où venez-vous ?”"
+  },
+  "i_am_from": {
+   "text": "Je viens de …"
+  },
+  "china": {
+   "text": "la Chine"
+  },
+  "germany": {
+   "text": "l'Allemagne"
+  },
+  "france": {
+   "text": "la France"
+  },
+  "spain": {
+   "text": "l'Espagne"
+  },
+  "italy": {
+   "text": "l'Italie"
+  },
+  "brazil": {
+   "text": "le Brésil"
+  },
+  "usa": {
+   "text": "les États-Unis"
+  },
+  "north_macedonia": {
+   "text": "la Macédoine du Nord"
+  },
+  "weather": {
+   "text": "la météo"
+  },
+  "its_hot": {
+   "text": "Il fait chaud"
+  },
+  "its_cold": {
+   "text": "Il fait froid"
+  },
+  "its_raining": {
+   "text": "Il pleut"
+  },
+  "storm": {
+   "text": "la tempête"
+  },
+  "fog": {
+   "text": "le brouillard"
+  },
+  "rainbow": {
+   "text": "l'arc-en-ciel",
+   "note": "Masculine: un arc-en-ciel."
+  },
+  "umbrella": {
+   "text": "le parapluie"
+  },
+  "moon": {
+   "text": "la lune"
+  },
+  "star": {
+   "text": "l'étoile",
+   "note": "Feminine: une étoile."
+  },
+  "temperature": {
+   "text": "la température"
+  },
+  "its_windy": {
+   "text": "Il y a du vent"
+  },
+  "pen": {
+   "text": "le stylo"
+  },
+  "pencil": {
+   "text": "le crayon"
+  },
+  "notebook": {
+   "text": "le cahier"
+  },
+  "backpack": {
+   "text": "le sac à dos"
+  },
+  "homework": {
+   "text": "les devoirs"
+  },
+  "ruler": {
+   "text": "la règle"
+  },
+  "scissors": {
+   "text": "les ciseaux"
+  },
+  "paper": {
+   "text": "le papier"
+  },
+  "knife": {
+   "text": "le couteau"
+  },
+  "spoon": {
+   "text": "la cuillère"
+  },
+  "chopsticks": {
+   "text": "les baguettes"
+  },
+  "teapot": {
+   "text": "la théière"
+  },
+  "bottle": {
+   "text": "la bouteille"
+  },
+  "glass": {
+   "text": "le verre"
+  },
+  "olive_oil": {
+   "text": "l'huile d'olive",
+   "note": "Feminine: une huile."
+  },
+  "butter": {
+   "text": "le beurre"
+  },
+  "garlic": {
+   "text": "l'ail",
+   "note": "Masculine: un ail."
+  },
+  "honey": {
+   "text": "le miel"
+  },
+  "pasta": {
+   "text": "les pâtes"
+  },
+  "pizza": {
+   "text": "la pizza"
+  },
+  "to_wake_up": {
+   "text": "se réveiller"
+  },
+  "to_shower": {
+   "text": "se doucher"
+  },
+  "to_brush_teeth": {
+   "text": "se brosser les dents"
+  },
+  "to_get_dressed": {
+   "text": "s'habiller"
+  },
+  "to_clean": {
+   "text": "nettoyer"
+  },
+  "to_wash": {
+   "text": "laver"
+  },
+  "to_watch_tv": {
+   "text": "regarder la télé"
+  },
+  "to_rest": {
+   "text": "se reposer"
+  },
+  "internet": {
+   "text": "Internet"
+  },
+  "email": {
+   "text": "l'e-mail"
+  },
+  "message": {
+   "text": "le message"
+  },
+  "battery": {
+   "text": "la batterie"
+  },
+  "charger": {
+   "text": "le chargeur"
+  },
+  "screen": {
+   "text": "l'écran",
+   "note": "Masculine: un écran."
+  },
+  "keyboard": {
+   "text": "le clavier"
+  },
+  "to_call": {
+   "text": "appeler"
+  },
+  "basketball": {
+   "text": "le basket"
+  },
+  "tennis": {
+   "text": "le tennis"
+  },
+  "volleyball": {
+   "text": "le volley"
+  },
+  "skiing": {
+   "text": "le ski"
+  },
+  "to_swim": {
+   "text": "nager"
+  },
+  "to_ride_a_bike": {
+   "text": "faire du vélo"
+  },
+  "gym": {
+   "text": "la salle de sport"
+  },
+  "to_win": {
+   "text": "gagner"
+  },
+  "birthday": {
+   "text": "l'anniversaire",
+   "note": "Masculine: un anniversaire."
+  },
+  "happy_birthday": {
+   "text": "Joyeux anniversaire !"
+  },
+  "gift": {
+   "text": "le cadeau"
+  },
+  "party": {
+   "text": "la fête"
+  },
+  "wedding": {
+   "text": "le mariage"
+  },
+  "christmas": {
+   "text": "Noël"
+  },
+  "merry_christmas": {
+   "text": "Joyeux Noël !"
+  },
+  "happy_new_year": {
+   "text": "Bonne année !"
+  },
+  "near": {
+   "text": "près"
+  },
+  "far": {
+   "text": "loin"
+  },
+  "traffic_lights": {
+   "text": "le feu rouge",
+   "note": "Literally “the red light”, the usual way to say it in directions."
+  },
+  "bridge": {
+   "text": "le pont"
+  },
+  "turn_left": {
+   "text": "Tournez à gauche"
+  },
+  "turn_right": {
+   "text": "Tournez à droite"
+  },
+  "gas_station": {
+   "text": "la station-service"
+  },
+  "bus_stop": {
+   "text": "l'arrêt de bus",
+   "note": "Masculine: un arrêt."
+  },
+  "departure": {
+   "text": "le départ"
+  },
+  "arrival": {
+   "text": "l'arrivée",
+   "note": "Feminine: une arrivée."
+  },
+  "seat": {
+   "text": "le siège"
+  },
+  "boarding_pass": {
+   "text": "la carte d'embarquement"
+  },
+  "flight": {
+   "text": "le vol"
+  },
+  "customs": {
+   "text": "la douane"
+  },
+  "baggage_claim": {
+   "text": "le retrait des bagages"
+  },
+  "pilot": {
+   "text": "le pilote"
+  },
+  "reception": {
+   "text": "la réception"
+  },
+  "i_have_a_reservation": {
+   "text": "J'ai une réservation"
+  },
+  "elevator": {
+   "text": "l'ascenseur",
+   "note": "Masculine: un ascenseur."
+  },
+  "stairs": {
+   "text": "l'escalier",
+   "note": "Masculine: un escalier."
+  },
+  "soap": {
+   "text": "le savon"
+  },
+  "wifi": {
+   "text": "le wifi"
+  },
+  "password": {
+   "text": "le mot de passe"
+  },
+  "it_doesnt_work": {
+   "text": "Ça ne marche pas"
+  },
+  "to_sing": {
+   "text": "chanter"
+  },
+  "to_draw": {
+   "text": "dessiner"
+  },
+  "to_laugh": {
+   "text": "rire"
+  },
+  "to_cry": {
+   "text": "pleurer"
+  },
+  "to_wait": {
+   "text": "attendre"
+  },
+  "to_drive": {
+   "text": "conduire"
+  },
+  "to_find": {
+   "text": "trouver"
+  },
+  "to_send": {
+   "text": "envoyer"
+  },
+  "to_understand": {
+   "text": "comprendre"
+  },
+  "to_live": {
+   "text": "habiter"
+  },
+  "to_give": {
+   "text": "donner"
+  },
+  "to_repeat": {
+   "text": "répéter"
+  },
+  "speak_slowly": {
+   "text": "Parlez plus lentement, s'il vous plaît"
+  },
+  "what_does_it_mean": {
+   "text": "Qu'est-ce que ça veut dire ?"
+  },
+  "lets_go": {
+   "text": "On y va !"
+  },
+  "have_a_nice_day": {
+   "text": "Bonne journée !"
+  },
+  "me_too": {
+   "text": "Moi aussi"
+  },
+  "really": {
+   "text": "C'est vrai ?"
+  },
+  "great": {
+   "text": "Génial !"
+  },
+  "be_careful": {
+   "text": "Attention !"
+  },
+  "im_lost": {
+   "text": "Je suis perdu",
+   "note": "A woman says “Je suis perdue”."
+  },
+  "enjoy_your_meal": {
+   "text": "Bon appétit !"
+  },
+  "take_care": {
+   "text": "Prends soin de toi !"
+  },
+  "see_you_soon": {
+   "text": "À bientôt !"
   }
  }
 }
